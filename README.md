@@ -13,7 +13,7 @@
   <p>
     'projects' is a portfolio website - this repository contains its source code
        <br />
-    <a href="https://spatulatom.github.io/projects/"><strong>View the deployed website »</strong></a>
+    <a href="https://spatulatom.github.io/projects-online/"><strong>View the deployed website »</strong></a>
     <br />
     <br />
    
