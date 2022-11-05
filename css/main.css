@@ -319,7 +319,25 @@ footer {
   text-align: center;
 }
 
+.white-mode{
+  position: absolute;
+  top: 4rem;
+  right: 1rem;
+  cursor: pointer;
+}
+.white{
+  color: black;
+  background-color:rgb(75, 88, 96);
+}
+
 @media (max-width: 1200px) {
+  .white-mode{
+    position: absolute;
+    top: 2rem;
+    right: 4rem;
+    cursor: pointer;
+  }
+
   #myMenu {
     display: none;
   }
@@ -356,13 +374,3 @@ footer {
 }
 
 
-.white-mode{
-  position: absolute;
-  top: 4rem;
-  right: 1rem;
-  cursor: pointer;
-}
-.white{
-  color: black;
-  background-color:rgb(75, 88, 96);
-}
