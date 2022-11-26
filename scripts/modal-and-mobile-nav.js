@@ -40,26 +40,30 @@ mobileLinks.forEach((link) => {
     // items have to be queried from inside teh function every click
     // if the queried outsied of the function styling is not removed
     let items = document.querySelectorAll('.link.current');
-    if (items.length) {
-      items[0].classList.remove('current');
-    }
+
+    items[0].classList.remove('current');
 
     link.classList.add('current');
   });
 });
 
 // logic for mobile nav:
+// toggleButton.addEventListener('click', function () {
+//   let item = document.querySelector('.open');
+//   console.log('item', item);
+//   if (item !== null) {
+//     console.log('nnnnn');
+//     mobileNav.classList.remove('open');
+//     console.log('nnndddnn');
+//   } else {
+//     mobileNav.classList.add('open');
+//   }
+// });
+
 toggleButton.addEventListener('click', function () {
-  let item = document.querySelector('.open');
-  console.log('item', item);
-  if (item !== null) {
-    console.log('nnnnn');
-    mobileNav.classList.remove('open');
-    console.log('nnndddnn');
-  } else {
-    mobileNav.classList.add('open');
-  }
+ mobileNav.classList.toggle('open')
 });
+
 
 mobileNavItems.forEach((item) => {
   item.addEventListener('click', () => {
