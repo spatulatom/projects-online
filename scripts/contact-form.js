@@ -23,7 +23,7 @@ const handleFormSubmit= async(event)=> {
             
             try{
                 // const response = await fetch('http://localhost:5000/contact-form',{
-                const response = await fetch('https://my-contact-form-backend.herokuapp.com/contact-form',{
+                const response = await fetch('https://my-portfolio-backend.onrender.com/contact-form',{
                 method: 'POST',
                 headers: {
                     "Content-Type": "application/json"
