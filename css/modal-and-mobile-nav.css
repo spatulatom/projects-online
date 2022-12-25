@@ -59,10 +59,10 @@
   }
   
   .mobile-nav__item .link {
-    font-weight: 700;
+    font-weight: 500;
     /* font-family: "Courier"; */
     font-family: 'JetBrains Mono', monospace;
-    font-size: 2rem;
+    font-size: 1.5rem;
     text-decoration: none;
     color: #212428;
   }
