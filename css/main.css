@@ -11,7 +11,6 @@
   --green: #a3aca7;
 }
 
-
 /* desktop nav: */
 
 #myMenu {
@@ -99,7 +98,6 @@ li a {
   position: relative;
 }
 
-
 .s1 h1 {
   font-size: 4rem;
   margin-bottom: 0;
@@ -179,6 +177,9 @@ li a {
   font-size: 0.8rem;
   text-align: right;
   margin-top: 0.7rem;
+}
+.ss0 {
+  background-color: rgb(30, 30, 40);
 }
 
 .ss1 {
@@ -319,19 +320,19 @@ footer {
   text-align: center;
 }
 
-.white-mode{
+.white-mode {
   position: absolute;
   top: 4rem;
   right: 1rem;
   cursor: pointer;
 }
-.white{
+.white {
   color: black;
-  background-color:rgb(75, 88, 96);
+  background-color: rgb(75, 88, 96);
 }
 
 @media (max-width: 1200px) {
-  .white-mode{
+  .white-mode {
     position: absolute;
     top: 2rem;
     right: 4rem;
@@ -372,5 +373,3 @@ footer {
     display: none;
   }
 }
-
-
