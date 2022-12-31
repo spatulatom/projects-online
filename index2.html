@@ -1,0 +1,679 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projects</title>
+
+    <!-- favicon: -->
+    <link rel="shortcut icon" href="imgs/favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="imgs/favicon.ico" type="image/x-icon" />
+
+    <!-- fullpage.js  -->
+    <link
+      rel="stylesheet"
+      href="css/fullpage.css"
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- font awsome: -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <!-- css -->
+    <link rel="stylesheet" href="css/contact-form.css" />
+    <link rel="stylesheet" href="css/button.css" />
+    <link rel="stylesheet" href="css/social-icons.css" />
+    <link rel="stylesheet" href="css/modal-and-mobile-nav.css" />
+    <link rel="stylesheet" href="css/tooltip.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/coursor-effect.css" />
+
+    <!-- google fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Iceland&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Figtree:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <ul id="myMenu">
+      <li data-menuanchor="firstPage" class="active">
+        <a href="#firstPage"><i class="fa-solid fa-house"></i>Home</a>
+      </li>
+      <li data-menuanchor="secondPage">
+        <a href="#secondPage"><i class="fa fa-th"> </i>Projects</a>
+      </li>
+      <li data-menuanchor="fourthPage">
+        <a href="#fourthPage"><i class="fa fa-envelope"></i>Contact</a>
+      </li>
+    </ul>
+
+    <!-- mobile nav -->
+    <button class="toggle-button">
+      <span class="toggle-button__bar"></span>
+      <span class="toggle-button__bar"></span>
+      <span class="toggle-button__bar"></span>
+    </button>
+
+    <nav class="mobile-nav">
+      <ul class="mobile-nav__items">
+        <li class="mobile-nav__item">
+          <a href="#firstPage" class="link current">Home</a>
+        </li>
+        <li class="mobile-nav__item">
+          <a href="#secondPage" class="link">Projects</a>
+        </li>
+        <li class="mobile-nav__item">
+          <a href="#fourthPage" class="link">Contact</a>
+        </li>
+      </ul>
+    </nav>
+
+    <div id="fullpage">
+      <div class="section fp-auto-height s1">
+        <!-- <div class="white-mode"><i class="fa-solid fa-moon fa-2xl"></i></div> -->
+        <div class="section__content">
+          <div class="cursor"></div>
+
+          <h1>Welcome.</h1>
+          <h2>web development, JavaScript, projects</h2>
+          <div class="s1__button">
+            <a class="button-docs bigger" href="#secondPage"
+              >projects projects projects</a
+            >
+          </div>
+        </div>
+      </div>
+
+      <div class="section fp-auto-height s2">
+        <div class="slide ss-1">
+          <div class="section__content">
+            <a
+              href="https://react-next-auth-ashy.vercel.app/"
+              target="_blank"
+              class="slide__image"
+            >
+              <img src="imgs/bookmark.png" alt="" />
+            </a>
+
+            <div class="slide__text">
+              <!-- slide__text--content div is needed for the overlap -->
+              <div class="slide__text--content">
+                <h2>joke's manager (Next.js, Tailwind)</h2>
+                <h4>
+                  Generate a joke and save it on your account. A fullstack
+                  Next.js 12 app with Tailwind used for styling. User login/create account
+                  interface. Static Site Generation (SSG) and Incremental Static
+                  Regeneration (ISG) for better Search Engine Optimazation
+                  and performance. Also Server Side Rendering (SSR) in use.
+                  NextAuth for authentication and routes protection on the
+                  client and on the server side. MongoDB for data storage. React
+                  Context for apps wide state management. Notification for better
+                  UX when REST API requests are made to the backend APIs or external APIs.
+                </h4>
+                <h6>Next.js, NextAuth.js, Tailwind, MongoDB, Vercel</h6>
+                <div class="tooltips">
+                  <a
+                    href="https://github.com/spatulatom/react-next-auth#readme"
+                    target="_blank"
+                    class="tooltip"
+                  >
+                    <span><i class="fab fa-github fa-xl"></i></span>
+                    <span class="tooltiptext">On GitHub</span>
+                  </a>
+                  <a
+                    href="https://react-next-auth-ashy.vercel.app/"
+                    target="_blank"
+                    class="tooltip"
+                  >
+                    <span><i class="fa-solid fa-eye fa-xl"></i></span>
+                    <span class="tooltiptext">Deployed Website</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="slide ss0">
+          <div class="section__content">
+            <a
+              href="https://e-fashion-dc7d0.web.app/"
+              target="_blank"
+              class="slide__image"
+            >
+              <img src="imgs/e-fashion4.png" alt="" />
+            </a>
+
+            <div class="slide__text">
+              <!-- slide__text--content div is needed for the overlap -->
+              <div class="slide__text--content">
+                <h2>e-fashion (MERN)</h2>
+                <h4>
+                  E-fashion is an online clothing store with user
+                  authentication, sandbox PayPal payment, MongoDB and Amazon Web
+                  Services used for storage. There are many different filters to
+                  search for desired products, they can be cross-referenced to
+                  narrow down searches (for ex.: jackets + price between 10-20 €
+                  + 4-star customers rating). Ratings and cusomers reviews.
+                  'TOOLS' in the menu provides options for easy management of
+                  products descriptions and images as well as adding new
+                  products; managing customers' accounts; managing pending and
+                  completed clients' orders.
+                </h4>
+                <h6>
+                  React.js, Redux, Node, Express.js, MongoDB, Amazon Web
+                  Services API, Firebase and Render for deployment
+                </h6>
+                <div class="tooltips">
+                  <a
+                    href="https://github.com/spatulatom/e-store-redux-mern#readme-top"
+                    target="_blank"
+                    class="tooltip"
+                  >
+                    <span><i class="fab fa-github fa-xl"></i></span>
+                    <span class="tooltiptext">On GitHub</span>
+                  </a>
+                  <a
+                    href="https://e-fashion-dc7d0.web.app/"
+                    target="_blank"
+                    class="tooltip"
+                  >
+                    <span><i class="fa-solid fa-eye fa-xl"></i></span>
+                    <span class="tooltiptext">Deployed Website</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="slide ss1">
+          <div class="section__content">
+            <a
+              href="https://eventsbook-91260.web.app/allevents"
+              target="_blank"
+              class="slide__image"
+            >
+              <img src="imgs/ev1.png" alt="" />
+            </a>
+
+            <div class="slide__text">
+              <!-- slide__text--content div is needed for the overlap -->
+              <div class="slide__text--content">
+                <h2>eventsbook (MERN)</h2>
+                <h4>
+                  This app is a social media platform where users can log
+                  in/create an account, upload photos/create posts (about
+                  upcoming social events) and add likes and comments. Users can
+                  also tag their event's location on the map or change their
+                  passwords. Currently, there are a few dummy accounts created.
+                  This project was great fun to make and it was completed at the
+                  end of the Udemy course
+                  <a
+                    href=" https://www.udemy.com/course/react-nodejs-express-mongodb-the-mern-fullstack-guide/learn/lecture/16833284?start=0#overview"
+                    alt="Udemy course"
+                    target="_blank"
+                  >
+                    "The MERN guide".
+                  </a>
+                </h4>
+                <h6>
+                  React.js, Node, Express.js, MongoDB, Amazon Web Services API,
+                  Firebase and Render for deployment
+                </h6>
+                <div class="tooltips">
+                  <a
+                    href="https://github.com/spatulatom/frontend-eventsbook#readme-top"
+                    target="_blank"
+                    class="tooltip"
+                  >
+                    <span><i class="fab fa-github fa-xl"></i></span>
+                    <span class="tooltiptext">On GitHub</span>
+                  </a>
+                  <a
+                    href="https://eventsbook-91260.web.app/allevents"
+                    target="_blank"
+                    class="tooltip"
+                  >
+                    <span><i class="fa-solid fa-eye fa-xl"></i></span>
+                    <span class="tooltiptext">Deployed Website</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="slide ss2">
+          <div class="section__content">
+            <a
+              href="https://react-next-js-webb-app.vercel.app/"
+              target="_blank"
+              class="slide__image"
+            >
+              <img src="imgs/cd1.png" alt="" />
+            </a>
+
+            <div class="slide__text">
+              <!-- slide__text--content div is needed for the overlap -->
+              <div class="slide__text--content">
+                <h2>california destinations (Next.js)</h2>
+                <h4>
+                  This project is a demo tourist website with a list of hotels
+                  to pick from. It explores many Next.js features like how to
+                  make pages and routes, how to link between them, how to use
+                  styles, how to create a Layout component used across all app
+                  like Navbar or Footer, how to use static assests like images,
+                  how to insert different metadata to each page, how to fetch
+                  data on the server side (from JSONPlaceholder APIs) with
+                  Next.js build in functions: getStaticProps() and
+                  getStaticPaths() and, finally, how to deploy the app on
+                  Vercel.
+                </h4>
+                <h6>React.js, Next.js, Vercel</h6>
+                <div class="tooltips">
+                  <a
+                    href="https://github.com/spatulatom/react-next.js-webb-app#readme-top"
+                    target="_blank"
+                    class="tooltip"
+                  >
+                    <span><i class="fab fa-github fa-xl"></i></span>
+                    <span class="tooltiptext">On GitHub</span>
+                  </a>
+                  <a
+                    href="https://react-next-js-webb-app.vercel.app/"
+                    target="_blank"
+                    class="tooltip"
+                  >
+                    <span><i class="fa-solid fa-eye fa-xl"></i></span>
+                    <span class="tooltiptext">Deployed Website</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="slide ss3">
+          <div class="section__content">
+            <a
+              href="https://spatulatom.github.io/todo-reactjs-redux/"
+              target="_blank"
+              class="slide__image"
+            >
+              <img src="imgs/td1.png" alt="" />
+            </a>
+
+            <div class="slide__text">
+              <!-- slide__text--content div is needed for the overlap -->
+              <div class="slide__text--content">
+                <h2>a to-do list (Redux)</h2>
+
+                <h4>
+                  This little project is a to-do list built with React and Redux
+                  library. Tasks on the list can be marked as completed or they
+                  can be deleted. The list can be sorted as follows: it can
+                  display all tasks, only completed tasks or only uncompleted
+                  tasks. Tasks are being saved in localStorage. Exploring the
+                  Redux library while building this app was great fun.
+                </h4>
+                <h6>HTML, CSS, React.js, Redux</h6>
+                <div class="tooltips">
+                  <a
+                    href="https://github.com/spatulatom/todo-reactjs-redux/tree/master#readme-top"
+                    target="_blank"
+                    class="tooltip"
+                  >
+                    <span><i class="fab fa-github fa-xl"></i></span>
+                    <span class="tooltiptext">On GitHub</span>
+                  </a>
+                  <a
+                    href="https://spatulatom.github.io/todo-reactjs-redux/"
+                    target="_blank"
+                    class="tooltip"
+                  >
+                    <span><i class="fa-solid fa-eye fa-xl"></i></span>
+                    <span class="tooltiptext">Deployed Website</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="slide ss4">
+          <div class="section__content">
+            <a
+              href="https://spatulatom.github.io/todo-reactjs-typescript/"
+              target="_blank"
+              class="slide__image"
+            >
+              <img src="imgs/typescript.png" alt="" />
+            </a>
+
+            <div class="slide__text">
+              <!-- slide__text--content div is needed for the overlap -->
+              <div class="slide__text--content">
+                <h2>a to-do list (TypeScript)</h2>
+
+                <h4>
+                  This TypeScript in React To-Do list allows us to add tasks to
+                  our list and then delete them upon clicking on them. It
+                  explores all different types with emphasis on generic ones.
+                  The app was built as a finishing project of the Udemy course
+                  <a
+                    href="https://www.udemy.com/course/understanding-typescript/learn/lecture/17751414?start=0#overview"
+                    alt="udemy course"
+                    target="_blank"
+                    >'Understanding TypeScript".</a
+                  >
+                </h4>
+                <h6>HTML, CSS, React, TypeScript</h6>
+                <div class="tooltips">
+                  <a
+                    href="https://github.com/spatulatom/todo-reactjs-typescript/tree/master#readme-top"
+                    target="_blank"
+                    class="tooltip"
+                  >
+                    <span><i class="fab fa-github fa-xl"></i></span>
+                    <span class="tooltiptext">On GitHub</span>
+                  </a>
+                  <a
+                    href="https://spatulatom.github.io/todo-reactjs-typescript/"
+                    target="_blank"
+                    class="tooltip"
+                  >
+                    <span><i class="fa-solid fa-eye fa-xl"></i></span>
+                    <span class="tooltiptext">Deployed Website</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="slide ss5">
+          <div class="section__content">
+            <a
+              href="https://spatulatom.github.io/bootstrap-demo-website/"
+              target="_blank"
+              class="slide__image"
+            >
+              <img src="imgs/bootstrap1.png" alt="" />
+            </a>
+
+            <div class="slide__text">
+              <!-- slide__text--content div is needed for the overlap -->
+              <div class="slide__text--content">
+                <h2>adhoc (Bootstrap)</h2>
+
+                <h4>
+                  This project is using Bootstrap for creating a clear layout
+                  and polished style of a demo commerce website. The website is
+                  fully responsive with a dedicated mobile navbar that opens
+                  with the 'hamburger' icon. It also features a photo slide
+                  carousel at the bottom of the page. The project was completed
+                  at the end of the
+                  <a
+                    href="https://www.codecademy.com/"
+                    target="_blank"
+                    alt="codecademy"
+                    >codecademy.com</a
+                  >
+                  course 'Learn Bootstrap'.
+                </h4>
+                <h6>Bootstrap</h6>
+                <div class="tooltips">
+                  <a
+                    href="https://github.com/spatulatom/bootstrap-demo-website#readme-top"
+                    target="_blank"
+                    class="tooltip"
+                  >
+                    <span><i class="fab fa-github fa-xl"></i></span>
+                    <span class="tooltiptext">On GitHub</span>
+                  </a>
+                  <a
+                    href="https://spatulatom.github.io/bootstrap-demo-website/"
+                    target="_blank"
+                    class="tooltip"
+                  >
+                    <span><i class="fa-solid fa-eye fa-xl"></i></span>
+                    <span class="tooltiptext">Deployed Website</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="slide ss6">
+          <div class="section__content">
+            <a
+              href="https://spatulatom.github.io/sass-project/"
+              target="_blank"
+              class="slide__image"
+            >
+              <img src="imgs/japan.png" alt="" />
+            </a>
+
+            <div class="slide__text">
+              <!-- slide__text--content div is needed for the overlap -->
+              <div class="slide__text--content">
+                <h2>visit japan (SASS)</h2>
+
+                <h4>
+                  This project is only a touch on SASS and an attempt to
+                  familiarize with its concepts. Variables, lists, nestings,
+                  mixins (include@), selectors, extend@, simple functions like
+                  @each and index(), organizing our scss files structure with
+                  partials imported into the main scss file - all that is being
+                  used to create a parallax effect on a demo tourist website.
+                </h4>
+                <h6>HTML, CSS, SASS</h6>
+                <div class="tooltips">
+                  <a
+                    href="https://github.com/spatulatom/sass-project#readme-top"
+                    target="_blank"
+                    class="tooltip"
+                  >
+                    <span><i class="fab fa-github fa-xl"></i></span>
+                    <span class="tooltiptext">On GitHub</span>
+                  </a>
+                  <a
+                    href="https://spatulatom.github.io/sass-project/"
+                    target="_blank"
+                    class="tooltip"
+                  >
+                    <span><i class="fa-solid fa-eye fa-xl"></i></span>
+                    <span class="tooltiptext">Deployed Website</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="slide ss7">
+          <div class="section__content">
+            <a
+              href="http://zaproszenia-zywiec.pl/"
+              target="_blank"
+              class="slide__image"
+            >
+              <img src="imgs/wordpress.png" alt="" />
+            </a>
+
+            <div class="slide__text">
+              <!-- slide__text--content div is needed for the overlap -->
+              <div class="slide__text--content">
+                <h2>wedding invitations (Wordpress)</h2>
+
+                <h4>
+                  A wedding cards invitation website in WordPress with an
+                  e-commerce plugging. Invitations can be sorted into many
+                  categories. For each invitation, there is a quick view option
+                  or a separate page where users can leave comments or share the
+                  product on social media. There are some custom CSS changes
+                  applied.The website is hosted on a commercial platform
+                  hosting.linux.pl.
+                </h4>
+                <h6>CSS, Wordpress</h6>
+                <div class="tooltips">
+                  <a
+                    href="http://zaproszenia-zywiec.pl/"
+                    target="_blank"
+                    class="tooltip"
+                  >
+                    <span><i class="fa-solid fa-eye fa-xl"></i></span>
+                    <span class="tooltiptext">Deployed Website</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="section fp-auto-height s3">
+        <div class="section__content">
+          <div class="social">
+            <div class="social__image">
+              <img src="imgs/map.jpg" alt="map" />
+            </div>
+            <ul class="wrapper">
+              <a
+                target="_blank"
+                href="https://github.com/spatulatom"
+                alt="github link"
+              >
+                <li class="icon github">
+                  <span class="tooltip">GitHub</span>
+                  <span><i class="fab fa-github"></i></span>
+                </li>
+              </a>
+              <a
+              target="_blank"
+              href="https://github.com/spatulatom"
+              alt="github link"
+            >
+              <li class="icon github">
+                <span class="tooltip">LinkedIn</span>
+                <span><i class="fab fa-linkedin"></i></span>
+              </li>
+            </a>
+              <a
+                target="_blank"
+                href="https://www.linkedin.com/in/tomasz-s-069249244/"
+                alt="github again"
+              >
+                <li class="icon facebook">
+                  <span class="tooltip">Twitter</span>
+                  <span><i class="fa-brands fa-twitter fa-lg"></i></span>
+                </li>
+              </a>
+            </ul>
+          </div>
+
+          <div class="contact">
+            <form class="form">
+              <h3>WHERE I WORK</h3>
+              <h2><i class="fa fa-map-marker fa-fw"></i>Ireland, Europe</h2>
+              <h2>
+                <i class="fa fa-envelope fa-fw"></i> Email: elkom9393@gmail.com
+              </h2>
+
+              <div class="form__result">
+                <span class="form__display">I'd love your feedback!</span>
+              </div>
+              <input
+                name="name"
+                type="text"
+                class="feedback-input"
+                placeholder="Name or subject"
+                required
+              />
+              <input
+                name="email"
+                type="email"
+                class="feedback-input"
+                placeholder="Email"
+                required
+              />
+              <input
+                name="email2"
+                type="email"
+                class="feedback-input feedback-input--second"
+                placeholder="Confirm email"
+                required
+              />
+              <!-- <input name="subject" type="text" class="feedback-input" placeholder="Subject" required/> -->
+              <textarea
+                name="text"
+                class="feedback-input"
+                placeholder="Feedback"
+                maxlength="1000"
+                required
+              ></textarea>
+              <button type="submit" value="Send Message">
+                <i class="fa fa-paper-plane"></i> Send
+              </button>
+            </form>
+          </div>
+        </div>
+
+        <footer>
+          <h4>&copy projects 2022</h4>
+        </footer>
+      </div>
+    </div>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.11/fullpage.min.js"
+      integrity="sha512-ojnoeSkK5NDwnuW5S0ZnddobHez8Bx1yVa3RE+Cd0fGEuY/NEd4sgVF/CJ6eDtnOeLZLbTJpNFrCkUYbHS2hRA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="./scripts/contact-form.js"></script>
+
+    <script src="./scripts/coursor-effect.js"></script>
+    <script src="./scripts/modal-and-mobile-nav.js"></script>
+
+    <script type="text/javascript" src="fullpage.extensions.min.js"></script>
+
+    <script>
+      new fullpage('#fullpage', {
+        autoScrolling: false,
+        slidesNavigation: true,
+        slidesNavPosition: 'bottom',
+        navigation: true,
+        anchors: ['firstPage', 'secondPage', 'fourthPage'],
+        menu: '#myMenu',
+        controlArrowsHTML: [
+          '<div class="fp-arrow"></div>',
+          '<div class="fp-arrow"></div>',
+        ],
+        // paddingBottom: '30px'
+      });
+    </script>
+  </body>
+</html>
