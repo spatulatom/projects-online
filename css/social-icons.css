@@ -21,8 +21,8 @@ body {
   display: flex;
   justify-content: center;
   list-style: none;
-  padding-top: 5rem;
-  padding-bottom: 3rem;
+  padding-top: 6rem;
+  padding-bottom: 2rem;
 }
 
 .wrapper .icon {
@@ -30,8 +30,8 @@ body {
   background: #585f5b;
   color: white;
   border-radius: 50%;
-  padding: 15px;
-  margin: 15px;
+  padding: 10px;
+  margin: 10px;
   width: 60px;
   height: 60px;
   font-size: 18px;
