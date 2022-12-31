@@ -21,6 +21,8 @@ body {
   display: flex;
   justify-content: center;
   list-style: none;
+  padding-top: 5rem;
+  padding-bottom: 3rem;
 }
 
 .wrapper .icon {
