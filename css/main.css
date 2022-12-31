@@ -88,7 +88,7 @@ li a {
 
 .section__content {
   /* margin-top: 5rem; */
-  max-width: 1400px;
+  /* max-width: 1400px; */
   width: 80vw;
   /* min-height: 100vh; */
 }
@@ -96,7 +96,7 @@ li a {
 .fp-is-overflow .fp-overflow.fp-auto-height,
 .fp-is-overflow .fp-overflow.fp-auto-height-responsive,
 .fp-is-overflow > .fp-overflow {
-  overflow-y: hidden;
+  /* overflow-y: hidden; */
 }
 
 .fp-table {
@@ -123,10 +123,10 @@ li a {
   font-weight: 100;
   /* font-style: italic; */
 }
-.s1__button {
+/* .s1__button {
   margin-top: 3rem;
   text-align: center;
-}
+} */
 
 /* section s2 - portfolio: */
 .s2 {

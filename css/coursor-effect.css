@@ -5,8 +5,8 @@
   transform: translate(-50%, -50%);
   pointer-events: none;
 
-  width: 400px;
-  height: 400px;
+  width: 600px;
+  height: 600px;
   border: 2px solid white;
   border-radius: 50%;
   /* position absolute becuse through js we will modify the top and bottom 
