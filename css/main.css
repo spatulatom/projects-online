@@ -216,7 +216,6 @@ li a {
   background-position: bottom;
 }
 
-
 .ss2 {
   background-color: rgb(30, 30, 40);
 }
@@ -231,7 +230,6 @@ li a {
 .ss8 {
   background-color: rgb(30, 30, 40);
 }
- 
 
 /* SECTION 2 (PROJECTS) TOOLTIP WHEN HOVERING OVER GITHUB 
 ICONS AND AN EYE ICON UNDER PROJECT DESCRIPTION: */
@@ -240,7 +238,7 @@ ICONS AND AN EYE ICON UNDER PROJECT DESCRIPTION: */
   display: inline-block;
   border-bottom: 1px dotted black;
   margin-right: 3rem;
-  /* margin-left: 3rem; */
+  margin-left: 3rem;
   text-decoration: none;
 }
 
