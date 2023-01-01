@@ -88,6 +88,9 @@ html.fp-enabled,
     border-width: 38.5px 0 38.5px 34px;
     border-color: transparent transparent transparent #fff;
 }
+.fp-overflow{
+    /* width: 100%; */
+}
 /* .fp-scrollable {
     overflow: hidden;
     position: relative;
