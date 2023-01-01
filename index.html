@@ -167,18 +167,23 @@
             </div>
           </div>
         </div>
-     lll
-
-      
+        lll
       </div>
 
-      <div class="section fp-auto-height s3">
-        <div class="section__content">
-          <div class="social">
-            <div class="social__image">
-              <img src="imgs/map.jpg" alt="map" />
+      <div class="section s3">
+        <!-- ther is a div in here added by fullpage.js with display-block proprty -->
+        <div
+          class="container m-auto p-12 pt-20 flex flex-col-reverse gap-8 lg:flex-row justify-start items-center"
+        >
+          <div class="flex flex-col p-4 basis-2/5 justify-center items-center">
+            <div class="overflow-hidden rounded-md">
+              <img
+                class="transition-all hover:scale-150"
+                src="imgs/map.jpg"
+                alt="map"
+              />
             </div>
-            <ul class="wrapper">
+            <ul class="wrapper mt-6">
               <a
                 target="_blank"
                 href="https://github.com/spatulatom"
@@ -212,22 +217,25 @@
             </ul>
           </div>
 
-          <div class="contact">
+          <div class="text-center lg:text-left">
             <form class="form">
-              <h3>WHERE I WORK</h3>
-              <h2><i class="fa fa-map-marker fa-fw"></i>Ireland, Europe</h2>
-              <h2>
-                <i class="fa fa-envelope fa-fw"></i> Email: elkom9393@gmail.com
-              </h2>
+              <h2 class="text-4xl mb-4">WHERE I WORK</h2>
+              <h3 class="text-lg uppercase p-2">
+                <i class="fa-solid fa-location-pin fa-xl mr-3 text-[#a3aca7] hover:text-white"></i></i>Ireland, Europe
+              </h3>
+              <h3>
+                <i class="fa-solid fa-envelope fa-2xl text-[#a3aca7] hover:text-white mr-1"></i> email:
+                elkom9393@gmail.com
+              </h3>
 
-              <div class="form__result">
-                <span class="form__display">I'd love your feedback!</span>
-              </div>
+              
+                <h2 class="form__feedback p-3 pt-6 italic text-xl text-[#a3aca7]">I'd love your feedback:</h2>
+              
               <input
                 name="name"
                 type="text"
                 class="feedback-input"
-                placeholder="Name or subject"
+                placeholder="Name"
                 required
               />
               <input
@@ -248,7 +256,7 @@
               <textarea
                 name="text"
                 class="feedback-input"
-                placeholder="Feedback"
+                placeholder="feedback"
                 maxlength="1000"
                 required
               ></textarea>
@@ -259,8 +267,8 @@
           </div>
         </div>
 
-        <footer>
-          <h4>&copy projects 2022</h4>
+        <footer class="border-t-2 border-[#a3aca7] p-4 flex justify-center items-center h-24 text-[#a3aca7] absolute bottom-0 w-full">
+          <h4 class="text-[#a3aca7] uppercase">&copy projects 2022</h4>
         </footer>
       </div>
     </div>

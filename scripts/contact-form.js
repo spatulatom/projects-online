@@ -1,5 +1,5 @@
 const formData = document.querySelector(".form");
-const results = document.querySelector(".form__display");
+const results = document.querySelector(".form__feedback");
 
 const handleFormSubmit= async(event)=> {
     event.preventDefault();

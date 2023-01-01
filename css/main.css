@@ -224,80 +224,95 @@ li a {
 }
 
 .s3 .section__content {
-  display: flex;
-  flex-wrap: wrap;
+  /* display: flex;
+  flex-wrap: wrap; */
 }
 .contact {
-  flex: 65%;
+  /* flex: 65%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-bottom: 3rem;
+  padding-bottom: 3rem; */
 }
 .social {
-  flex: 30%;
+  /* flex: 30%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-right: 1rem;
+  padding-right: 1rem; */
   /* padding-bottom: 5rem; */
 }
 .social__image {
-  width: 284px;
+  /* width: 284px;
   height: 186px;
   overflow: hidden;
-  border-radius: 5px;
+  border-radius: 5px; */
 }
 
 .social__image img {
-  width: 100%;
+  /* width: 100%;
   height: 100%;
-  transition: all 1s linear;
+  transition: all 1s linear; */
 }
 .social__image img:hover {
-  transform: scale(7.5);
+  /* transform: scale(7.5); */
 }
 
 .s3 h1 {
-  text-align: center;
+  /* text-align: center; */
 }
 .s3 h3 {
   /* text-align: center; */
-  margin-bottom: 2rem;
+  /* margin-bottom: 2rem;
   font-size: 1.5rem;
-  font-weight: 400;
+  font-weight: 400; */
 }
 .s3 h2 {
-  font-size: 1.2rem;
+  /* font-size: 1.2rem;
   font-weight: 300;
-  margin-bottom: .5rem;
+  margin-bottom: .5rem; */
 }
 .s3 ul {
   /* float: left; */
-  padding-left: 0;
+  /* padding-left: 0; */
 }
 .contact h2 i {
-  transform: scale(1.2);
+  /* transform: scale(1.2);
   margin-right: 1rem;
-  color: var(--green);
+  color: var(--green); */
 }
 .contact h2 i:hover {
-  color: white;
-  transform: scale(1.8);
+  /* color: white;
+  transform: scale(1.8); */
 }
 .s3 .button-docs {
   /* pointer-events: none; */
-  text-align: center;
-  margin-bottom: 2rem;
+  /* text-align: center;
+  margin-bottom: 2rem; */
 }
 footer {
-  border-top: var(--green) 1px solid;
-  padding: 0.5rem;
-  text-align: center;
+  /* border-top: var(--green) 1px solid; */
+  /* padding: 0.5rem;
+  text-align: center; */
   /* width: 100vw; */
 }
+.form__display {
+  /* display: block;
+  color: white;
+  width: 100%;
+  /* text-align: center; */
+  /* padding: 0.5rem;
+  margin-top: 2rem;
+  margin-bottom: 5px;
+  font-size: 1.2rem; */
+  /* font-style: italic;
+  border-radius: 5px; */
+  /* margin-bottom: 0.3rem; */
+  /* background-color: transparent; */
+}
+
 
 /* horizontal nav: */
 .fp-arrow.fp-controlArrow.fp-prev {
