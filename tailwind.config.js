@@ -27,7 +27,7 @@ module.exports = {
       width:{
         "80v": "80vw"
       }
-    },
+        },
   },
   plugins: [],
 };
