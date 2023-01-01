@@ -1,28 +1,3 @@
-// let whiteMode = document.querySelector('.white-mode');
-// let s1 = document.querySelector('.s1');
-// let s2 = document.querySelector('.s2');
-// let s3 = document.querySelector('.s3');
-
-// whiteMode.addEventListener('click', function () {
-//   let item = document.querySelector('.white');
-//   console.log('item', s1, s3);
-//   if (item !== null) {
-//     let whites = document.querySelectorAll('.white');
-//     console.log(whites, 'whites');
-//     whites.forEach((link) => {
-//       link.classList.remove('white');
-//     });
-
-//     console.log('nnndddnn');
-//   } else {
-//     whiteMode.classList.add('white');
-//     s1.classList.add('white');
-//     s2.classList.add('white');
-//     s3.classList.add('white');
-//   }
-
-// });
-
 let toggleButton = document.querySelector('.toggle-button');
 let mobileNav = document.querySelector('.mobile-nav');
 let mobileNavItems = document.querySelectorAll('.mobile-nav__item a');
@@ -61,9 +36,8 @@ mobileLinks.forEach((link) => {
 // });
 
 toggleButton.addEventListener('click', function () {
- mobileNav.classList.toggle('open')
+  mobileNav.classList.toggle('open');
 });
-
 
 mobileNavItems.forEach((item) => {
   item.addEventListener('click', () => {

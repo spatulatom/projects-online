@@ -20,12 +20,66 @@
   font-family: 'Figtree', sans-serif;
   color: white;
 }
+body {
+  background: rgb(30, 30, 40);
+}
 :root {
   --green: #a3aca7;
 }
 
-/* desktop nav: */
+/* GENERAL STYLING - CURSOR EFFECT AS A RING FOLLOWING THE MOUSE CURSOR: */
+.cursor {
+  top: 55%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
 
+  width: 600px;
+  height: 600px;
+  border: 2px solid white;
+  border-radius: 50%;
+  /* position absolute becuse through js we will modify the top and bottom 
+  position of this, the reference point obvioulsy will be viewport */
+
+  /* translate (-50%, -50%) will mouse "stay" inside a .cursor */
+
+  /* transform-origin: 100% 100%;
+  transition-property: background, transform;
+  z-index: 0;
+  background: transparent;
+  backdrop-filter: grayscale();
+ backdrop-filter: invert(100%); */
+  transition-property: background, transform;
+  background: transparent;
+  transition: all 0.4s linear;
+  z-index: 190;
+}
+
+.cursor-grow {
+  /* transform: scale(1.4);
+  transform: translate(-50%, -50%); */
+
+  backdrop-filter: grayscale();
+  backdrop-filter: invert(100%);
+  width: 580px;
+  height: 580px;
+}
+.cursor-grow--white {
+  /* transform: scale(1.4);
+    transform: translate(-50%, -50%); */
+  width: 380px;
+  height: 380px;
+  border: 4px solid white;
+}
+.none {
+  display: none;
+}
+.block {
+  display: block;
+}
+
+/* DESKTOP NAV: */
 #myMenu {
   position: fixed;
   z-index: 5;
@@ -36,6 +90,7 @@
   padding-left: 0;
   margin: 0;
 }
+
 #myMenu li {
   padding: 0.7rem 2rem;
   cursor: pointer;
@@ -78,243 +133,361 @@ li a {
   background-color: white;
 }
 
-/* sections: */
-
-.section .fp-auto-height {
-  /* background-size: cover; */
-  /* min-height: 100vh; */
-  /* padding: 1rem; */
+/* MOBILE NAV: */
+.toggle-button {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 3rem;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding-top: 0;
+  padding-bottom: 0;
+  vertical-align: middle;
+  margin: 1rem;
+  z-index: 1000;
+  display: none;
 }
 
-.section__content {
-  /* margin-top: 5rem; */
-  /* max-width: 1400px; */
-  /* width: 80vw; */
-  /* min-height: 100vh; */
+.toggle-button:focus {
+  outline: none;
 }
 
-.fp-is-overflow .fp-overflow.fp-auto-height,
-.fp-is-overflow .fp-overflow.fp-auto-height-responsive,
-.fp-is-overflow > .fp-overflow {
-  /* overflow-y: hidden; */
+.toggle-button__bar {
+  width: 100%;
+  height: 0.2rem;
+  background: white;
+  display: block;
+  margin: 0.6rem 0;
 }
 
-/* .fp-table {
+.mobile-nav {
+  transform: translateX(-100%);
+  position: fixed;
+  z-index: 302;
+  top: 0;
+  left: 0;
+  background: var(--green);
+  width: 80%;
+  height: 100vh;
+  transition: transform 300ms ease-out;
+}
+
+.mobile-nav__items {
+  width: 90%;
+  height: 100%;
+  list-style: none;
+  margin: 0 auto;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-} */
-/* section s1 - home page: */
-.s1 {
-  /* background: url("../imgs/wall.jpg"); */
-  /* background-size: cover;
-  background-position: center;
-  position: relative; */
 }
 
-.s1 h1 {
-  /* font-size: 4rem;
-  margin-bottom: 0;
-  padding-bottom: 0;
-  text-transform: uppercase; */
+.mobile-nav__item {
+  margin: 2rem 0;
 }
-.s1 h2 {
-  /* font-size: 1.5rem;
-  margin-top: 0.3rem;
-  font-weight: 100; */
-  /* font-style: italic; */
-}
-/* .s1__button {
-  margin-top: 3rem;
-  text-align: center;
-} */
 
-/* section s2 - portfolio: */
+.mobile-nav__item .link {
+  font-weight: 500;
+  /* font-family: "Courier"; */
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: #212428;
+}
+
+.mobile-nav__item .link:hover {
+  color: white;
+  text-decoration: underline;
+}
+
+.mobile-nav__item .link.current {
+  color: white;
+  text-decoration: underline;
+}
+.open {
+  /* display: block !important; */
+  opacity: 1 !important;
+  transform: translateY(0) !important;
+}
+
+/* SECTION 2 (PROJECTS), BACKGROUNDS FOR EVERY OTHER SLIDE: */
 .s2 {
   background: url('../imgs/road3.jpg');
   background-size: cover;
   background-position: bottom;
 }
-.slide .section__content {
-  /* display: flex; */
-  /* max-width: 82vw; */
-  /* width: 82vw; */
-  /* justify-content: center; */
-  /* align-items: center; */
-  /* flex-wrap: wrap; */
-}
-.slide__image {
-  /* flex-basis: 58.3333%;
-  flex-grow: 0;
-  max-width: 58.3333%;
-  overflow: hidden; */
-}
-.slide__image img {
-  /* width: 100%;
-  height: auto; */
-}
-.slide__text {
-  /* flex-basis: 41.6667%;
-  flex-grow: 0;
-  max-width: 41.6667%;
-  display: flex;
-  align-items: center;
-  padding-bottom: 0;
-  overflow: visible;
-  position: relative; */
-}
-.slide__text--content {
-  /* padding: 1.5rem;
-  width: 120%;
-  background-color: rgb(0, 0, 0, 0.7);
-  position: absolute;
-  right: 0;
-  z-index: 10;
-  box-shadow: rgb(0 0 0 / 20%) 0px 3px 5px -1px,
-    rgb(0 0 0 / 14%) 0px 6px 10px 0px, rgb(0 0 0 / 12%) 0px 1px 18px 0px; */
-}
-.slide__text--content h2 {
-  /* font-size: 1.7rem;
-  padding: 0;
-  margin: 0;
-  color: var(--green); */
-}
-.slide__text--content h4 {
-  /* font-size: 1.1rem;
-  margin-top: 0.3rem;
-  margin-bottom: 0.2rem;
-  text-align: justify;
-  font-weight: 300; */
-}
-.slide__text--content h4 a {
-  /* text-decoration: none; */
-}
-.slide__text--content h6 {
-  /* font-size: 0.8rem;
-  text-align: right;
-  margin-top: 0.7rem;
-  margin-bottom: .7rem; */
-}
+
 .ss0 {
   background-color: rgb(30, 30, 40);
-}
-
-.ss1 {
 }
 
 .ss2 {
   background-color: rgb(30, 30, 40);
 }
-.ss3 {
-}
+
 .ss4 {
   background-color: rgb(30, 30, 40);
 }
-.ss5 {
-}
+
 .ss6 {
   background-color: rgb(30, 30, 40);
 }
-.ss7 {
+
+/* SECTION 2 (PROJECTS) TOOLTIP WHEN HOVERING OVER GITHUB 
+ICONS AND AN EYE ICON UNDER PROJECT DESCRIPTION: */
+.tooltips .tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+  margin-right: 3rem;
+  /* margin-left: 3rem; */
+  text-decoration: none;
 }
 
-/* section s3 - contact: */
+.tooltips .tooltip .tooltiptext {
+  display: none;
+  width: 9rem;
+  background-color: black;
+  color: black;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  background-color: white;
+  transition: all 3s linear;
+
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 20;
+  bottom: 200%;
+  left: 50%;
+  margin-left: -4.5rem;
+}
+.tooltips .tooltip .tooltiptext::after {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -10px;
+  border-width: 10px;
+  border-style: solid;
+  border-color: white transparent transparent transparent;
+}
+
+.tooltips .tooltip:hover .tooltiptext {
+  display: block;
+  opacity: 1;
+}
+
+.tooltips .tooltip i {
+  color: white;
+}
+
+/* SECTION 3 (CONTACT), SOCIAL MEDIA ICONS STYLING: */
+*:focus,
+*:active {
+  outline: none !important;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+
+.wrapper .icon {
+  position: relative;
+  background: #585f5b;
+  color: white;
+  border-radius: 50%;
+  padding: 10px;
+  margin: 10px;
+  width: 60px;
+  height: 60px;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+.wrapper .icon .fab {
+  transform: scale(1.2);
+}
+
+.wrapper .tooltip {
+  position: absolute;
+  top: 0;
+  font-size: 14px;
+  background: #ffffff;
+  color: #ffffff;
+  padding: 5px 18px;
+  border-radius: 5px;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.wrapper .tooltip::before {
+  position: absolute;
+  content: '';
+  height: 8px;
+  width: 8px;
+  background: #ffffff;
+  bottom: -3px;
+  left: 50%;
+  transform: translate(-50%) rotate(45deg);
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.wrapper .icon:hover .tooltip {
+  top: -30px;
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+.wrapper .icon:hover span,
+.wrapper .icon:hover .tooltip {
+  text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1);
+}
+
+.wrapper .facebook:hover,
+.wrapper .facebook:hover .tooltip,
+.wrapper .facebook:hover .tooltip::before {
+  background: #1877f2;
+  color: #ffffff;
+}
+
+.wrapper .twitter:hover,
+.wrapper .twitter:hover .tooltip,
+.wrapper .twitter:hover .tooltip::before {
+  background: #1da1f2;
+  color: #ffffff;
+}
+
+.wrapper .instagram:hover,
+.wrapper .instagram:hover .tooltip,
+.wrapper .instagram:hover .tooltip::before {
+  background: #e4405f;
+  color: #ffffff;
+}
+
+.wrapper .github:hover,
+.wrapper .github:hover .tooltip,
+.wrapper .github:hover .tooltip::before {
+  background: #333333;
+  color: #ffffff;
+}
+
+.wrapper .youtube:hover,
+.wrapper .youtube:hover .tooltip,
+.wrapper .youtube:hover .tooltip::before {
+  background: #cd201f;
+  color: #ffffff;
+}
+
+/* SECTION 3 (CONTACT) - CONTACT FORM: */
+
+/* cide below overwrites mozilla default styling for autofill
+but there are questions about other browsers, also its unclaer
+how that transition below works. Chrome makes it difficult to 
+overwrite color and background-color for its input fieals as 
+the are written with the important sign:
+https://css-tricks.com/snippets/css/change-autocomplete-styles-webkit-browsers/,
+https://developer.mozilla.org/en-US/docs/Web/CSS/:autofill */
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  border: 2px solid var(--red);
+  -webkit-text-fill-color: rgb(34, 32, 32);
+  background-color: #cacac0;
+  /* -webkit-box-shadow: 0 0 0px 1000px #2c2c29 inset; */
+  transition: background-color 5000s ease-in-out 0s;
+}
+
+.feedback-input {
+  color: rgb(34, 32, 32);
+  /* font-family: Helvetica, Arial, sans-serif; */
+  /* font-family: 'JetBrains Mono', monospace; */
+  font-weight: 500;
+  font-size: 18px;
+  border-radius: 5px;
+  line-height: 22px;
+  background-color: #cacac0;
+  border: 2px solid var(--red);
+  transition: all 0.3s;
+  padding: 13px;
+  margin-bottom: 15px;
+  width: 100%;
+  box-sizing: border-box;
+  outline: 0;
+}
+[type='email'] {
+  width: 49%;
+}
+.feedback-input--second {
+  float: right;
+}
+
+.feedback-input:focus {
+  color: rgb(34, 32, 32);
+  background-color: #cacac0;
+  border: 3px solid #7b1010;
+}
+
+textarea {
+  height: 50px;
+  line-height: 150%;
+  resize: vertical;
+}
+
+[type='submi'] {
+  /* font-family: 'Montserrat', Arial, Helvetica, sans-serif; */
+  width: 100%;
+  background: white;
+  border-radius: 5px;
+  border: 0;
+  cursor: pointer;
+  color: var(--red);
+  color: black;
+  font-size: 24px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  transition: all 0.3s;
+  margin-top: -4px;
+  font-weight: 600;
+  border: 3px solid var(--green);
+  width: 20%;
+  float: left;
+  font-size: 1rem;
+  text-transform: uppercase;
+}
+[type='submit']:hover {
+  color: #212428;
+  background: var(--green);
+}
+
+/* SECTION 3 (CONTACT), BACKGROUND IMAGE: */
 .s3 {
   background: url('../imgs/.jpg');
   background-size: cover;
 }
 
-.s3 .section__content {
-  /* display: flex;
-  flex-wrap: wrap; */
-}
-.contact {
-  /* flex: 65%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding-bottom: 3rem; */
-}
-.social {
-  /* flex: 30%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding-right: 1rem; */
-  /* padding-bottom: 5rem; */
-}
-.social__image {
-  /* width: 284px;
-  height: 186px;
-  overflow: hidden;
-  border-radius: 5px; */
-}
-
-.social__image img {
-  /* width: 100%;
-  height: 100%;
-  transition: all 1s linear; */
-}
-.social__image img:hover {
-  /* transform: scale(7.5); */
-}
-
-.s3 h1 {
-  /* text-align: center; */
-}
-.s3 h3 {
-  /* text-align: center; */
-  /* margin-bottom: 2rem;
-  font-size: 1.5rem;
-  font-weight: 400; */
-}
-.s3 h2 {
-  /* font-size: 1.2rem;
-  font-weight: 300;
-  margin-bottom: .5rem; */
-}
-.s3 ul {
-  /* float: left; */
-  /* padding-left: 0; */
-}
-.contact h2 i {
-  /* transform: scale(1.2);
-  margin-right: 1rem;
-  color: var(--green); */
-}
-.contact h2 i:hover {
-  /* color: white;
-  transform: scale(1.8); */
-}
-.s3 .button-docs {
-  /* pointer-events: none; */
-  /* text-align: center;
-  margin-bottom: 2rem; */
-}
-footer {
-  /* border-top: var(--green) 1px solid; */
-  /* padding: 0.5rem;
-  text-align: center; */
-  /* width: 100vw; */
-}
-.form__display {
-  /* display: block;
-  color: white;
-  width: 100%;
-  /* text-align: center; */
-  /* padding: 0.5rem;
-  margin-top: 2rem;
-  margin-bottom: 5px;
-  font-size: 1.2rem; */
-  /* font-style: italic;
-  border-radius: 5px; */
-  /* margin-bottom: 0.3rem; */
-  /* background-color: transparent; */
-}
-
-
-/* horizontal nav: */
+/* FULLPAGE NAVIGATION - HORIZONTAL NAV DOTS: */
 .fp-arrow.fp-controlArrow.fp-prev {
   left: 2rem;
   border-width: 38.5px 34px 38.5px 0;
@@ -324,67 +497,43 @@ footer {
   right: 4rem;
 }
 
-/* color of navigation dots: */
+/* FULLPAGE NAVIGATION - COLOR OF NAVIGATION DOTS: */
 #fp-nav ul li a span,
 .fp-slidesNav ul li a span {
   background-color: white;
 }
 
-/* dots at the bottom in portfolio page: */
+/* FULLPAGE NAVIGATION - POSITION OF THE NAVIGATION DOTS AT THE BOTTOM OF THE SLIDES: */
 .fp-slidesNav.fp-bottom {
   text-align: center;
 }
 
-.white-mode {
-  position: absolute;
-  top: 4rem;
-  right: 1rem;
-  cursor: pointer;
-}
-.white {
-  color: black;
-  background-color: rgb(75, 88, 96);
-}
 
-@media (max-width: 1200px) {
-  .white-mode {
-    /* position: absolute;
-    top: 2rem;
-    right: 4rem;
-    cursor: pointer; */
-  }
 
-  #myMenu {
-    display: none;
-  }
-  .social__image {
-    /* display: none; */
-  }
-  .s1 h1 {
-    /* font-size: 3.5rem; */
-  }
-
-  .slide__text {
-    /* flex: 1;
-    max-width: 100%;
-    background-color: rgb(0, 0, 0, 0.7); */
-  }
-  .slide__image {
-    /* display: none;
-    margin: 1rem; */
-  }
-  .slide__text--content {
-    /* background-color: transparent;
-    position: static; */
-  }
-  .section__content h6 {
-    /* text-align: center; */
-  }
+@media (max-width: 1030px) {
+  /* fullpage side nav arrows (not dots) */
   .fp-arrow.fp-controlArrow.fp-next {
     right: 4rem;
     display: none;
   }
   .fp-arrow.fp-controlArrow.fp-prev {
     display: none;
+  }
+  /* cursor ring not displaying on medium and small devices */
+  .cursor {
+    display: none;
+  }
+
+  /* main nav not showing on tablets and small devices*/
+  #myMenu {
+    display: none;
+  }
+
+  /* contact form input fields streching 100% */
+  [type='email'] {
+    width: 100%;
+  }
+  [type='submit'] {
+    width: 100%;
   }
 }
