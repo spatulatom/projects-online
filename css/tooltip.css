@@ -1,72 +1,46 @@
-
 .tooltips .tooltip {
-    position: relative;
-    display: inline-block;
-    border-bottom: 1px dotted black;
-    margin-right: 3rem;
-    /* margin-left: 3rem; */
-    text-decoration: none;
-    
-    }
-  
-    .tooltips .tooltip .tooltiptext {
-    display: none;
-    width: 9rem;
-    background-color: black;
-    color: black;
-    text-align: center;
-    border-radius: 6px;
-    padding: 5px 0;
-    background-color: white;
-    transition: all 3s linear;
-    
-    /* Position the tooltip */
-    position: absolute;
-    z-index: 20;
-    bottom: 200%;
-    left: 50%;
-    margin-left: -4.5rem;
-  }
-  .tooltips .tooltip .tooltiptext::after {
-    content: "";
-    position: absolute;
-    top: 100%;
-    left: 50%;
-    margin-left: -10px;
-    border-width: 10px;
-    border-style: solid;
-    border-color: white transparent transparent  transparent;
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+  margin-right: 3rem;
+  /* margin-left: 3rem; */
+  text-decoration: none;
+}
 
-  }
+.tooltips .tooltip .tooltiptext {
+  display: none;
+  width: 9rem;
+  background-color: black;
+  color: black;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  background-color: white;
+  transition: all 3s linear;
 
-  .tooltips .tooltip:hover .tooltiptext {
-    display: block;
-    opacity: 1;
-  }
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 20;
+  bottom: 200%;
+  left: 50%;
+  margin-left: -4.5rem;
+}
+.tooltips .tooltip .tooltiptext::after {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -10px;
+  border-width: 10px;
+  border-style: solid;
+  border-color: white transparent transparent transparent;
+}
 
-  .tooltips .tooltip i{
-    color: white;
-  }
-  .tooltips{
-    display: flex;
-    justify-content:end;
-  }
-  .tooltips a{
-    text-decoration: none;
-  }
-  @media(max-width:1200px){
-    .tooltips{
-        display: flex;
-        justify-content: space-around;
-    }
-    .tooltips .tooltip{
-        margin-right: 0;
-    }
-    
+.tooltips .tooltip:hover .tooltiptext {
+  display: block;
+  opacity: 1;
+}
 
-    .tooltips .tooltip:hover .tooltiptext {
-        display: none;
-      }
-
-      
-  }
+.tooltips .tooltip i {
+  color: white;
+}

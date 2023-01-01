@@ -333,37 +333,37 @@ footer {
 
 @media (max-width: 1200px) {
   .white-mode {
-    position: absolute;
+    /* position: absolute;
     top: 2rem;
     right: 4rem;
-    cursor: pointer;
+    cursor: pointer; */
   }
 
   #myMenu {
     display: none;
   }
   .social__image {
-    display: none;
+    /* display: none; */
   }
   .s1 h1 {
     /* font-size: 3.5rem; */
   }
 
   .slide__text {
-    flex: 1;
+    /* flex: 1;
     max-width: 100%;
-    background-color: rgb(0, 0, 0, 0.7);
+    background-color: rgb(0, 0, 0, 0.7); */
   }
   .slide__image {
-    display: none;
-    margin: 1rem;
+    /* display: none;
+    margin: 1rem; */
   }
   .slide__text--content {
-    background-color: transparent;
-    position: static;
+    /* background-color: transparent;
+    position: static; */
   }
   .section__content h6 {
-    text-align: center;
+    /* text-align: center; */
   }
   .fp-arrow.fp-controlArrow.fp-next {
     right: 4rem;
