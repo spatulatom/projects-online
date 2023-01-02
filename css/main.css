@@ -270,8 +270,8 @@ ICONS AND AN EYE ICON UNDER PROJECT DESCRIPTION: */
   position: absolute;
   top: 100%;
   left: 50%;
-  margin-left: -10px;
-  border-width: 10px;
+  margin-left: -14px;
+  border-width: 14px;
   border-style: solid;
   border-color: white transparent transparent transparent;
 }
