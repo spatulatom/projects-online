@@ -83,8 +83,8 @@
       <div class="section px-4 justify-center items-center s1">
         <div class="cursor"></div>
 
-        <h1 class="text-center lg:text-left text-5xl uppercase">Welcome.</h1>
-        <h2 class="text-center lg:text-left text-2xl mt-4 font-light">
+        <h1 class="text-center lg:text-left text-5xl uppercase bigger">Welcome.</h1>
+        <h2 class="text-center lg:text-left text-2xl mt-4 font-light bigger">
           web development, JavaScript, projects
         </h2>
 
@@ -96,6 +96,47 @@
       </div>
 
       <div class="section s2">
+        <!-- SLIDE NR 0 -->
+        <div class="slide ss0 justify-center items-center p-4">
+          <!-- there is another div in here added by fullpage and has probably set
+        responsive width, the class on it is .fp-overflow-->
+          <div
+            class="w-10/12 lg:w-2/5 flex flex-col justify-center items-center m-auto bg-black opacity-70 p-4"
+          >
+            <h2 class="text-3xl text-[#a3aca7] mb-1 bigger">This very website</h2>
+            <h4 class="text-base font-thin mb-2 text-justify bigger">
+              This website a project on HTML, CSS, Tailwind and vanilla
+              JavaScrit. Contact form on the bottom of the page is connected to
+              the backend server built with Node.js, Express.js, Mongoose and
+              MongoDB for storage; server is running on render.com; SengGrid API
+              is used for sending emails. Horizontal and vertical scrolling are
+              done with the help of fullpage.js library. See the links to the fontend
+              and the backend repositories on GitHub down below.
+            </h4>
+            <h4 class="w-full text-right text-xs mb-3 bigger">
+              Tailwind, vanilla JavaScript, Node.js,E xpress.js, MongoDB, fullpage.js
+            </h4>
+            <div class="tooltips flex justify-around w-full">
+              <a
+                href="https://github.com/spatulatom/projects-online#readme"
+                target="_blank"
+                class="tooltip"
+              >
+                <span><i class="fab fa-github fa-xl"></i></span>
+                <span class="tooltiptext">Frontend repo</span>
+              </a>
+              <a
+                href="https://github.com/spatulatom/my-porfolio-backend"
+                target="_blank"
+                class="tooltip"
+              >
+                <span><i class="fab fa-github fa-xl"></i></span>
+                <span class="tooltiptext">Backend repo</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
         <!-- SLIDE NR 1 -->
         <div class="slide ss1 justify-center items-center p-4">
           <!-- there is another div in here added by fullpage and has probably set
@@ -119,18 +160,18 @@
                 class="p-6 w-[120%] bg-black opacity-70 lg:absolute right-0 z-10"
               >
                 <h2 class="text-3xl text-[#a3aca7] mb-1">
-                  jokes manager (Next.js, Tailwind)
+                  jokes manager (Next.js, Tailwind, fullstack)
                 </h2>
                 <h4 class="text-base font-thin mb-2 text-justify">
                   Generate a joke and save it on your account. User login/create
                   account interface. User account managment options. It is a
-                  fullstack Next.j app. Static Site Generation (SSG),
-                  Incremental Static Regeneration (ISG) and Server Side
-                  Rendering (SSR) in use; NextAuth.js for authentication and
-                  authorisation (routes protection on the client and on the
-                  server side); MongoDB for data storage; React Context for
-                  global state managment used in user's notifications, Tailwind
-                  for styling.
+                  fullstack Next.j app with its backen located in pages/api
+                  folders. Static Site Generation (SSG), Incremental Static
+                  Regeneration (ISG) and Server Side Rendering (SSR) in use;
+                  NextAuth.js for authentication and authorisation (routes
+                  protection on the client and on the server side); MongoDB for
+                  data storage; React Context for global state managment used in
+                  user's notifications, Tailwind used for styling.
                 </h4>
                 <h6 class="text-right text-xs mb-3">
                   Next.js, NextAuth.js, Tailwind, MongoDB, Vercel
@@ -630,47 +671,6 @@
                   </a>
                 </div>
               </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- SLIDE NR 10 -->
-        <div class="slide ss10 justify-center items-center p-4">
-          <!-- there is another div in here added by fullpage and has probably set
-              responsive width, the class on it is .fp-overflow-->
-          <div
-            class="w-10/12 lg:w-2/5 flex flex-col justify-center items-center m-auto bg-black opacity-70 p-4"
-          >
-            <h2 class="text-3xl text-[#a3aca7] mb-1">this portfolio website</h2>
-            <h4 class="text-base font-thin mb-2 text-justify">
-              This website is also kind of a project on vanilla JavaScript, CSS and
-              Tailwind as far as the fronend goes. Contact form is connected to the backend server built with
-              Node and Express.js and it is deployed on render.com. SengGrid API
-              is used for sending emails. Horizontal and vertical scrolling are
-              done with the help of fullpage.js. See the links to the fontend
-              and the backend repositories on GitHub down below.
-            </h4>
-            <h4 class="w-full text-right text-xs mb-3">
-              Tailwind, vanilla JavaScript, Node.js,Express.js,
-              fullpage.js
-            </h4>
-            <div class="tooltips flex justify-around w-full">
-              <a
-                href="https://github.com/spatulatom/projects-online#readme"
-                target="_blank"
-                class="tooltip"
-              >
-                <span><i class="fab fa-github fa-xl"></i></span>
-                <span class="tooltiptext">Frontend repo</span>
-              </a>
-              <a
-                href="https://github.com/spatulatom/my-porfolio-backend"
-                target="_blank"
-                class="tooltip"
-              >
-                <span><i class="fab fa-github fa-xl"></i></span>
-                <span class="tooltiptext">Backend repo</span>
-              </a>
             </div>
           </div>
         </div>
