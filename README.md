@@ -10,7 +10,7 @@
     'projects-online' is a portfolio website, it consists of the frontend and the backend sections - this repository contains its frontend source code.
        <br />
        <br />
-    <a href="https://github.com/spatulatom/my-porfolio-backend"><strong>See also the backend source code 0f this website right here »</strong></a>
+    <a href="https://github.com/spatulatom/my-porfolio-backend"><strong>See also the backend source code of this website right here »</strong></a>
     <br />
     <br />
      <a href="https://spatulatom.github.io/projects-online/"><strong>View the deployed website »</strong></a>
@@ -41,8 +41,7 @@
 
 ### Built With
 
-Contact page of this project is using backend built wit Node and Express.js,
-SendGrid API is used for sending emails. GitHub repository of the backend is tored <a href="https://github.com/spatulatom/my-porfolio-backend"><strong>right here »</strong></a>
+
 
 - Tailwind,
 - JavaScript,
@@ -61,6 +60,10 @@ SendGrid API is used for sending emails. GitHub repository of the backend is tor
 - https://chrome.google.com/webstore/detail/pesticide-for-chrome-with/neonnmencpneifkhlmhmfhfiklgjmloi during development,
 - https://wave.webaim.org/ to check web accessibility,
 - https://balsamiq.com/ for wireframing.
+
+- Contact page of this project is using backend built wit Node and Express.js,
+SendGrid API is used for sending emails. The server is running on render.com. GitHub repository of the backend is stored <a href="https://github.com/spatulatom/my-porfolio-backend"><strong>right here »</strong></a>
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
