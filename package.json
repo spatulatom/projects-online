@@ -1,0 +1,24 @@
+{
+  "name": "projects-online",
+  "version": "1.0.0",
+  "description": "<a name=\"readme-top\"></a>",
+  "main": "tailwind.config.js",
+  "scripts": {
+    "watch": "tailwindcss -i ./input.css -o ./css/style.css --watch",
+    "build": "tailwindcss -i ./input.css -o ./css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/spatulatom/projects-online.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/spatulatom/projects-online/issues"
+  },
+  "homepage": "https://github.com/spatulatom/projects-online#readme",
+  "devDependencies": {
+    "tailwindcss": "^3.2.4"
+  }
+}
