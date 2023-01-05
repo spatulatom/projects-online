@@ -10,8 +10,8 @@ module.exports = {
         latoBold: 'LatoBold',
         latoReg: 'LatoReg',
       },
-      color: {
-        'blackish': 'rgb(0, 0, 0, 0.7)'
+      colors: {
+        blackish: 'rgb(0, 0, 0, 0.3)'
       },
 
       height: {

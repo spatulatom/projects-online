@@ -47,7 +47,7 @@ body {
  backdrop-filter: invert(100%); */
   transition-property: background, transform;
   background: transparent;
-  transition: all 0.4s linear;
+  transition: all .8s linear;
   z-index: 190;
 }
 
@@ -215,6 +215,7 @@ li a {
   background: url('../imgs/road3.jpg');
   background-size: cover;
   background-position: bottom;
+  background-color: rgb(0, 0, 0, 0.5);
 }
 
 .ss0 {
