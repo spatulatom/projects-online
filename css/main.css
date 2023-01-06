@@ -509,8 +509,8 @@ textarea {
 }
 
 /* FULLPAGE NAVIGATION - COLOR OF NAVIGATION DOTS: */
-#fp-nav ul li a span,
-.fp-slidesNav ul li a span {
+.dark #fp-nav ul li a span,
+.dark .fp-slidesNav ul li a span {
   background-color: white;
 }
 
