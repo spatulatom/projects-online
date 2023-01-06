@@ -22,6 +22,15 @@ body {
   --green: #a3aca7;
 }
 
+/* TOGGLE BUTTON - DARK/LIGHT MODE: */
+.toggle-checkbox:checked {
+  right: 0;
+  border-color: white;
+}
+.toggle-checkbox:checked + .toggle-label {
+  background-color: rgb(83, 82, 82);
+}
+
 /* GENERAL STYLING - CURSOR EFFECT AS A RING FOLLOWING THE MOUSE CURSOR: */
 .cursor {
   top: 55%;
@@ -47,7 +56,7 @@ body {
  backdrop-filter: invert(100%); */
   transition-property: background, transform;
   background: transparent;
-  transition: all .8s linear;
+  transition: all 0.8s linear;
   z-index: 190;
 }
 

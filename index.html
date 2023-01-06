@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="dark">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -45,7 +45,7 @@
     <!-- tailwind -->
     <link rel="stylesheet" href="css/style.css" />
   </head>
-  <body class=" dark:bg-main">
+  <body class="dark:bg-main">
     <ul id="myMenu">
       <li data-menuanchor="firstPage" class="active">
         <a href="#firstPage"><i class="fa-solid fa-house"></i>Home</a>
@@ -95,6 +95,21 @@
             >projects projects projects</a
           >
         </div>
+        <div
+          class="relative w-12 m-auto mt-8 align-middle select-none transition duration-200 ease-in"
+        >
+          <input
+            type="checkbox"
+            name="toggle"
+            id="toggle"
+            class="toggle-checkbox absolute block w-6 h-6 rounded-full bg-green-700 border-4 appearance-none cursor-pointer"
+          />
+          <label
+            for="toggle"
+            class="toggle-label block overflow-hidden h-6 rounded-full bg-gray-700 cursor-pointer"
+          ></label>
+        </div>
+        <label for="toggle" class="text-xs text-gray-700"></label>
       </div>
 
       <div class="section s2">
@@ -144,9 +159,7 @@
         </div>
 
         <!-- SLIDE NR 1 -->
-        <div
-          class="slide ss1 justify-center items-center p-4 pb-6 lg:pb-4"
-        >
+        <div class="slide ss1 justify-center items-center p-4 pb-6 lg:pb-4">
           <!-- there is another div in here added by fullpage and has probably set
           responsive width, the class on it is .fp-overflow-->
           <div
@@ -803,11 +816,11 @@
       referrerpolicy="no-referrer"
     ></script>
 
-      <script src="./scripts/contact-form.js">
-    </script>
+    <script src="./scripts/contact-form.js"></script>
 
     <script src="./scripts/coursor-effect.js"></script>
     <script src="./scripts/mobile-nav.js"></script>
+    <script src="./scripts/dark-mode.js"></script>
 
     <script type="text/javascript" src="fullpage.extensions.min.js"></script>
 
