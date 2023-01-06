@@ -1,5 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
+  // darkMode: 'class',
   // watch for any tailwind classes - *, in any html document
   content: ['./*.html'],
   theme: {
@@ -11,7 +12,8 @@ module.exports = {
         latoReg: 'LatoReg',
       },
       colors: {
-        blackish: 'rgb(0, 0, 0, 0.3)'
+        blackish: 'rgb(0, 0, 0, 0.3)',
+        main: 'rgb(30, 30, 40)'
       },
 
       height: {
