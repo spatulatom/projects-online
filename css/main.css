@@ -25,10 +25,12 @@ body {
 /* TOGGLE BUTTON - DARK/LIGHT MODE: */
 .toggle-checkbox:checked {
   right: 0;
-  border-color: white;
+  border-color: #7d8b83;
+  background-color: rgb(157, 210, 181);
 }
 .toggle-checkbox:checked + .toggle-label {
-  background-color: rgb(83, 82, 82);
+  background-color: rgb(195, 187, 187);
+  /* border: 4px solid #78a68a; */
 }
 
 /* GENERAL STYLING - CURSOR EFFECT AS A RING FOLLOWING THE MOUSE CURSOR: */
@@ -41,7 +43,7 @@ body {
 
   width: 600px;
   height: 600px;
-  border: 2px solid white;
+  /* border: 2px solid white; */
   border-radius: 50%;
   /* position absolute becuse through js we will modify the top and bottom 
   position of this, the reference point obvioulsy will be viewport */

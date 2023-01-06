@@ -13,7 +13,8 @@ module.exports = {
       },
       colors: {
         blackish: 'rgb(0, 0, 0, 0.3)',
-        main: 'rgb(30, 30, 40)'
+        main: 'rgb(30, 30, 40)',
+        greenish: '#6b706d'
       },
 
       height: {
