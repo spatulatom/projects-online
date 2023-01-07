@@ -11,6 +11,7 @@ document.getElementById('fullpage').addEventListener('click', function (e) {
   if (window.matchMedia('(prefers-color-scheme: light)').matches) {
     document.documentElement.classList.remove('dark');
   } else {
+    // comment
     document.documentElement.classList.add('dark');
   }
 });
