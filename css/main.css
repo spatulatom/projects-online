@@ -88,15 +88,14 @@ body {
   margin: 0;
 }
 
-#myMenu li {
+#myMenu li a {
+  display: inline-block;
   padding: 0.7rem 2rem;
   cursor: pointer;
-  margin-right: 2px;
+  margin-right: 1px;
   width: 33.333vw;
   text-align: center;
-  background-color: rgb(0, 0, 0, 0.5);
-}
-li a {
+  background-color: rgb(107, 112, 109, 0.5);
   color: white;
   text-decoration: none;
   text-transform: uppercase;
@@ -109,12 +108,9 @@ li a {
   transform: scale(0.9);
 }
 
-#myMenu li:hover {
-  background-color: white;
-}
-
 #myMenu li:hover a {
   color: black;
+  background-color: white;
 }
 #myMenu li:hover a i {
   color: black;
@@ -126,7 +122,7 @@ li a {
 #myMenu .active a i {
   color: black;
 }
-#myMenu .active {
+#myMenu .active a {
   background-color: white;
 }
 
