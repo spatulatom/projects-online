@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="dark">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -43,9 +43,9 @@
       rel="stylesheet"
     />
     <!-- tailwind -->
-    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/style.css" />
   </head>
-  <body>
+  <body id="body" class="dark:bg-customBlack bg-white">
     <ul id="myMenu">
       <li data-menuanchor="firstPage" class="active">
         <a href="#firstPage"><i class="fa-solid fa-house"></i>Home</a>
@@ -81,20 +81,41 @@
 
     <div id="fullpage">
       <div class="section px-4 justify-center items-center s1">
-        <div class="cursor"></div>
+        <div class="cursor border-2 dark:border-white border-customGreen"></div>
 
         <div class="bigger group">
-          <h1 class="text-center lg:text-left text-5xl uppercase">Welcome.</h1>
-          <h2 class="text-center lg:text-left text-2xl mt-4 font-light">
+          <h1
+            class="text-center lg:text-left text-5xl uppercase dark:text-white text-black"
+          >
+            Welcome.
+          </h1>
+          <h2
+            class="text-center lg:text-left text-2xl mt-4 font-light dark:text-white text-black"
+          >
             web development, JavaScript, projects
           </h2>
 
           <a
-            class="bg-[#a3aca7] block rounded w-10/12 m-auto lg:w-full text-lg mt-8 py-4 text-center tracking-wider uppercase text-white cursor-pointer bigger transition-all group-hover:bg-white group-hover:text-black"
+            class="dark:bg-customGreen bg-black group-hover:animate-bounce block rounded w-10/12 m-auto lg:w-full text-lg mt-8 py-4 text-center tracking-wider uppercase text-white cursor-pointer bigger transition-all duration-200 dark:group-hover:text-black"
             href="#secondPage"
             >projects projects projects</a
           >
         </div>
+        <!-- <div
+          class="relative w-12 m-auto mt-8 align-middle select-none transition duration-200 ease-in"
+        >
+          <input
+            type="checkbox"
+            name="toggle"
+            id="toggle"
+            class="toggle-checkbox absolute block w-6 h-6 rounded-full bg-customGreen border-4 border-white appearance-none cursor-pointer"
+          />
+          <label
+            for="toggle"
+            class="toggle-label block overflow-hidden h-6 rounded-full bg-gray-700 cursor-pointer"
+          ></label>
+        </div> -->
+        <label for="toggle" class="text-xs text-gray-700"></label>
       </div>
 
       <div class="section s2">
@@ -110,7 +131,7 @@
             </h2>
             <h4 class="text-base font-thin mb-2 text-justify bigger">
               This website a project on HTML, CSS, Tailwind and vanilla
-              JavaScript. A contact form in 'Contact' section is connected to
+              JavaScript. Contact form in 'Contact' section is connected to
               the backend server built with Node.js, Express.js and Mongoose;
               MongoDB is used for storage of form data; the server is running on
               render.com; SengGrid API is used for sending emails. Horizontal
@@ -800,10 +821,12 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
+
     <script src="./scripts/contact-form.js"></script>
 
     <script src="./scripts/coursor-effect.js"></script>
     <script src="./scripts/mobile-nav.js"></script>
+    <script src="./scripts/dark-mode.js"></script>
 
     <script type="text/javascript" src="fullpage.extensions.min.js"></script>
 

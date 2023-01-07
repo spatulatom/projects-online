@@ -1,9 +1,8 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: [
-    './pages/**/*.{js,ts,jsx,tsx}',
-    './components/**/*.{js,ts,jsx,tsx}',
-  ],
+  darkMode: 'class',
+  // watch for any tailwind classes - *, in any html document
+  content: ['./*.html'],
   theme: {
     extend: {
       fontFamily: {
@@ -12,8 +11,10 @@ module.exports = {
         latoBold: 'LatoBold',
         latoReg: 'LatoReg',
       },
-      color: {
-        'blackish': 'rgb(0, 0, 0, 0.7)'
+      colors: {
+        blackish: 'rgb(0, 0, 0, 0.3)',
+        customBlack: 'rgb(30, 30, 40)',
+        customGreen: '#6b706d'
       },
 
       height: {

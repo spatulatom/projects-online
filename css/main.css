@@ -16,11 +16,13 @@
   color: white;
 }
 body {
-  background: rgb(30, 30, 40);
+  /* background: rgb(30, 30, 40); */
 }
 :root {
   --green: #a3aca7;
 }
+
+/* TOGGLE BUTTON - DARK/LIGHT MODE: */
 
 /* GENERAL STYLING - CURSOR EFFECT AS A RING FOLLOWING THE MOUSE CURSOR: */
 .cursor {
@@ -32,7 +34,7 @@ body {
 
   width: 600px;
   height: 600px;
-  border: 2px solid white;
+  /* border: 2px solid white; */
   border-radius: 50%;
   /* position absolute becuse through js we will modify the top and bottom 
   position of this, the reference point obvioulsy will be viewport */
@@ -47,7 +49,7 @@ body {
  backdrop-filter: invert(100%); */
   transition-property: background, transform;
   background: transparent;
-  transition: all 0.4s linear;
+  transition: all 0.8s linear;
   z-index: 190;
 }
 
@@ -215,6 +217,7 @@ li a {
   background: url('../imgs/road3.jpg');
   background-size: cover;
   background-position: bottom;
+  background-color: rgb(0, 0, 0, 0.5);
 }
 
 .ss0 {
@@ -497,8 +500,8 @@ textarea {
 }
 
 /* FULLPAGE NAVIGATION - COLOR OF NAVIGATION DOTS: */
-#fp-nav ul li a span,
-.fp-slidesNav ul li a span {
+.dark #fp-nav ul li a span,
+.dark .fp-slidesNav ul li a span {
   background-color: white;
 }
 
