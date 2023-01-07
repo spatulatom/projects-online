@@ -6,10 +6,8 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        archivo: 'Archivo',
-        latoLight: 'LatoLight',
-        latoBold: 'LatoBold',
-        latoReg: 'LatoReg',
+        // archivo: 'Archivo',
+        
       },
       colors: {
         blackish: 'rgb(0, 0, 0, 0.3)',
