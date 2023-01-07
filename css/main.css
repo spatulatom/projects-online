@@ -23,15 +23,6 @@ body {
 }
 
 /* TOGGLE BUTTON - DARK/LIGHT MODE: */
-.toggle-checkbox:checked {
-  right: 0;
-  border-color: #7d8b83;
-  background-color: rgb(157, 210, 181);
-}
-.toggle-checkbox:checked + .toggle-label {
-  background-color: rgb(195, 187, 187);
-  /* border: 4px solid #78a68a; */
-}
 
 /* GENERAL STYLING - CURSOR EFFECT AS A RING FOLLOWING THE MOUSE CURSOR: */
 .cursor {
