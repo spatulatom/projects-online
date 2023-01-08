@@ -46,41 +46,46 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body id="body" class="dark:bg-customBlack bg-white">
-    <ul id="myMenu">
-      <li data-menuanchor="firstPage" class="active">
-        <a href="#firstPage"><i class="fa-solid fa-house"></i>Home</a>
-      </li>
-      <li data-menuanchor="secondPage">
-        <a href="#secondPage"><i class="fa fa-th"> </i>Projects</a>
-      </li>
-      <li data-menuanchor="fourthPage">
-        <a href="#fourthPage"><i class="fa fa-envelope"></i>Contact</a>
-      </li>
-    </ul>
-
-    <!-- mobile nav -->
-    <button class="toggle-button block lg:hidden">
-      <span class="toggle-button__bar"></span>
-      <span class="toggle-button__bar"></span>
-      <span class="toggle-button__bar"></span>
-    </button>
-
-    <nav class="mobile-nav">
-      <ul class="mobile-nav__items">
-        <li class="mobile-nav__item">
-          <a href="#firstPage" class="link current">Home</a>
+    <nav>
+      <ul id="myMenu">
+        <li data-menuanchor="firstPage" class="active">
+          <a href="#firstPage"><i class="fa-solid fa-house"></i>Home</a>
         </li>
-        <li class="mobile-nav__item">
-          <a href="#secondPage" class="link">Projects</a>
+        <li data-menuanchor="secondPage">
+          <a href="#secondPage"><i class="fa fa-th"> </i>Projects</a>
         </li>
-        <li class="mobile-nav__item">
-          <a href="#fourthPage" class="link">Contact</a>
+        <li data-menuanchor="fourthPage">
+          <a href="#fourthPage"><i class="fa fa-envelope"></i>Contact</a>
         </li>
       </ul>
+
+      <!-- Hamburger Button -->
+      <button
+        id="menu-btn"
+        class="z-30 fixed top-8 left-8 block lg:hidden focus:outline-none hamburger"
+      >
+        <span class="hamburger-top"></span>
+        <span class="hamburger-middle"></span>
+        <span class="hamburger-bottom"></span>
+      </button>
+
+      <div class="mobile-nav">
+        <ul class="mobile-nav__items">
+          <li class="mobile-nav__item">
+            <a href="#firstPage" class="link current">Home</a>
+          </li>
+          <li class="mobile-nav__item">
+            <a href="#secondPage" class="link">Projects</a>
+          </li>
+          <li class="mobile-nav__item">
+            <a href="#fourthPage" class="link">Contact</a>
+          </li>
+        </ul>
+      </div>
     </nav>
 
     <div id="fullpage">
-      <div class="section px-4 justify-center items-center s1">
+      <div class="section container px-4 m-auto justify-center items-center s1">
         <div class="cursor border-2 dark:border-white border-customGreen"></div>
 
         <div class="bigger group">
@@ -101,21 +106,6 @@
             >projects projects projects</a
           >
         </div>
-        <!-- <div
-          class="relative w-12 m-auto mt-8 align-middle select-none transition duration-200 ease-in"
-        >
-          <input
-            type="checkbox"
-            name="toggle"
-            id="toggle"
-            class="toggle-checkbox absolute block w-6 h-6 rounded-full bg-customGreen border-4 border-white appearance-none cursor-pointer"
-          />
-          <label
-            for="toggle"
-            class="toggle-label block overflow-hidden h-6 rounded-full bg-gray-700 cursor-pointer"
-          ></label>
-        </div> -->
-        <label for="toggle" class="text-xs text-gray-700"></label>
       </div>
 
       <div class="section s2">
@@ -131,8 +121,8 @@
             </h2>
             <h4 class="text-base font-thin mb-2 text-justify bigger">
               This website a project on HTML, CSS, Tailwind and vanilla
-              JavaScript. Contact form in 'Contact' section is connected to
-              the backend server built with Node.js, Express.js and Mongoose;
+              JavaScript. Contact form in 'Contact' section is connected to the
+              backend server built with Node.js, Express.js and Mongoose;
               MongoDB is used for storage of form data; the server is running on
               render.com; SengGrid API is used for sending emails. Horizontal
               and vertical scrolling are created with the help of fullpage.js
@@ -167,7 +157,7 @@
         <!-- SLIDE NR 1 -->
         <div class="slide ss1 justify-center items-center p-4 pb-6 lg:pb-4">
           <!-- there is another div in here added by fullpage and has probably set
-          responsive width, the class on it is .fp-overflow-->
+          responsive width set on it, the class on it is .fp-overflow-->
           <div
             class="flex flex-col lg:flex-row w-10/12 justify-center items-center m-auto"
           >
@@ -176,7 +166,7 @@
               target="_blank"
               class="hidden lg:block basis-7/12 grow-0 overflow-hidden shadow-2xl"
             >
-              <img class="w-full h-auto" src="imgs/bookmark.png" alt="" />
+              <img class="w-full h-full" src="imgs/bookmark.png" alt="" />
             </a>
 
             <div
@@ -231,14 +221,14 @@
           <!-- there is another div in here added by fullpage and has probably set
           responsive width, the class on it is .fp-overflow-->
           <div
-            class="flex flex-col lg:flex-row w-10/12 justify-center items-center m-auto"
+            class="flex flex-col lg:flex-row w-10/12 justify-center items-center m-auto cont"
           >
             <a
               href="https://e-fashion-dc7d0.web.app/"
               target="_blank"
               class="hidden lg:block basis-7/12 grow-0 overflow-hidden shadow-2xl"
             >
-              <img class="w-full h-auto" src="imgs/e-fashion4.png" alt="" />
+              <img class="w-full h-full" src="imgs/e-fashion4.png" alt="" />
             </a>
 
             <div
@@ -293,14 +283,14 @@
           <!-- there is another div in here added by fullpage and has probably set
           responsive width, the class on it is .fp-overflow-->
           <div
-            class="flex flex-col lg:flex-row w-10/12 justify-center items-center m-auto"
+            class="flex flex-col lg:flex-row w-10/12 justify-center items-center m-auto cont"
           >
             <a
               href="https://eventsbook-91260.web.app/allevents"
               target="_blank"
               class="hidden lg:block basis-7/12 grow-0 overflow-hidden shadow-2xl"
             >
-              <img class="w-full h-auto" src="imgs/ev1.png" alt="" />
+              <img class="w-full h-full" src="imgs/ev1.png" alt="" />
             </a>
 
             <div
@@ -355,14 +345,14 @@
           <!-- there is another div in here added by fullpage and has probably set
           responsive width, the class on it is .fp-overflow-->
           <div
-            class="flex flex-col lg:flex-row w-10/12 justify-center items-center m-auto"
+            class="flex flex-col lg:flex-row w-10/12 justify-center items-center m-auto cont"
           >
             <a
               href="https://react-next-js-webb-app.vercel.app/"
               target="_blank"
               class="hidden lg:block basis-7/12 grow-0 overflow-hidden shadow-2xl"
             >
-              <img class="w-full h-auto" src="imgs/california.png" alt="" />
+              <img class="w-full h-full" src="imgs/california.png" alt="" />
             </a>
 
             <div
@@ -418,14 +408,14 @@
           <!-- there is another div in here added by fullpage and has probably set
           responsive width, the class on it is .fp-overflow-->
           <div
-            class="flex flex-col lg:flex-row w-10/12 justify-center items-center m-auto"
+            class="flex flex-col lg:flex-row w-10/12 justify-center items-center m-auto cont"
           >
             <a
               href="https://spatulatom.github.io/todo-reactjs-redux/"
               target="_blank"
               class="hidden lg:block basis-7/12 grow-0 overflow-hidden shadow-2xl"
             >
-              <img class="w-full h-auto" src="imgs/td1.png" alt="" />
+              <img class="w-full h-full" src="imgs/td1.png" alt="" />
             </a>
 
             <div
@@ -477,14 +467,14 @@
           <!-- there is another div in here added by fullpage and has probably set
           responsive width, the class on it is .fp-overflow-->
           <div
-            class="flex flex-col lg:flex-row w-10/12 justify-center items-center m-auto"
+            class="flex flex-col lg:flex-row w-10/12 justify-center items-center m-auto cont"
           >
             <a
               href="https://spatulatom.github.io/todo-reactjs-typescript/"
               target="_blank"
               class="hidden lg:block basis-7/12 grow-0 overflow-hidden shadow-2xl"
             >
-              <img class="w-full h-auto" src="imgs/typescript.png" alt="" />
+              <img class="w-full h-full" src="imgs/typescript.png" alt="" />
             </a>
 
             <div
@@ -540,14 +530,14 @@
           <!-- there is another div in here added by fullpage and has probably set
             responsive width, the class on it is .fp-overflow-->
           <div
-            class="flex flex-col lg:flex-row w-10/12 justify-center items-center m-auto"
+            class="flex flex-col lg:flex-row w-10/12 justify-center items-center m-auto cont"
           >
             <a
               href="https://spatulatom.github.io/bootstrap-demo-website/"
               target="_blank"
               class="hidden lg:block basis-7/12 grow-0 overflow-hidden shadow-2xl"
             >
-              <img class="w-full h-auto" src="imgs/bootstrap1.png" alt="" />
+              <img class="w-full h-full" src="imgs/bootstrap1.png" alt="" />
             </a>
 
             <div
@@ -596,14 +586,14 @@
           <!-- there is another div in here added by fullpage and has probably set
           responsive width, the class on it is .fp-overflow-->
           <div
-            class="flex flex-col lg:flex-row w-10/12 justify-center items-center m-auto"
+            class="flex flex-col lg:flex-row w-10/12 justify-center items-center m-auto cont"
           >
             <a
               href="https://spatulatom.github.io/sass-project/"
               target="_blank"
               class="hidden lg:block basis-7/12 grow-0 overflow-hidden shadow-2xl"
             >
-              <img class="w-full h-auto" src="imgs/japan.png" alt="" />
+              <img class="w-full h-full" src="imgs/japan.png" alt="" />
             </a>
 
             <div
@@ -653,14 +643,14 @@
           <!-- there is another div in here added by fullpage and has probably set
             responsive width, the class on it is .fp-overflow-->
           <div
-            class="flex flex-col lg:flex-row w-10/12 justify-center items-center m-auto"
+            class="flex flex-col lg:flex-row w-10/12 justify-center items-center m-auto cont"
           >
             <a
               href="imgs/wordpress.png"
               target="_blank"
               class="hidden lg:block basis-7/12 grow-0 overflow-hidden shadow-2xl"
             >
-              <img class="w-full h-auto" src="imgs/wordpress.png" alt="" />
+              <img class="w-full h-full" src="imgs/wordpress.png" alt="" />
             </a>
 
             <div
