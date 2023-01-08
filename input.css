@@ -3,14 +3,158 @@
 @tailwind utilities;
 
 
+/* HAMBURGER MENU */
+
+.hamburger {
+  cursor: pointer;
+  width: 3rem;
+  height: 3rem;
+  transition: all 0.25s;
+  
+}
+
+.hamburger-top,
+.hamburger-middle,
+.hamburger-bottom {
+  content: '';
+  position: absolute;
+  width: 3rem;
+  height: 3px;
+  top: 0;
+  left: 0;
+  background: white;
+  transform: rotate(0);
+  transition: all 0.5s;
+}
+
+.hamburger-middle {
+  transform: translateY(10px);
+}
+
+.hamburger-bottom {
+  transform: translateY(20px);
+  background: white;
+}
+
+.open {
+  transform: rotate(90deg);
+  transform: translateY(0px);
+
+}
+
+.open .hamburger-top {
+  transform: rotate(45deg) translateY(6px) translateX(6px);
+  background-color: #fff;
+}
+
+.open .hamburger-middle {
+  display: none;
+}
+
+.open .hamburger-bottom {
+  transform: rotate(-45deg) translateY(6px) translateX(-6px);
+  background-color: #fff;
+}
+
+.mobile-nav {
+  transform: translateX(-100%);
+  position: fixed;
+  z-index: 28;
+  top: 0;
+  left: 0;
+  background: var(--green);
+  width: 80%;
+  height: 100vh;
+  transition: transform 300ms ease-out;
+}
+
+.mobile-nav__items {
+  width: 90%;
+  height: 100%;
+  list-style: none;
+  margin: 0 auto;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.mobile-nav__item {
+  margin: 2rem 0;
+}
+
+.mobile-nav__item .link {
+  font-weight: 500;
+  /* font-family: "Courier"; */
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: #212428;
+}
+
+.mobile-nav__item .link:hover {
+  color: white;
+  text-decoration: underline;
+}
+
+.mobile-nav__item .link.current {
+  color: white;
+  text-decoration: underline;
+}
+.show {
+  /* display: block !important; */
+  opacity: 1 !important;
+  transform: translateY(0) !important;
+}
 
 
-.toggle-checkbox:checked {
-    right: 0;
-    border-color: #7d8b83;
-    background-color: rgb(157, 210, 181);
-  }
-  .toggle-checkbox:checked + .toggle-label {
-    background-color: rgb(195, 187, 187);
-    /* border: 4px solid #78a68a; */
-  }
+
+  /* SECTION 2 (PROJECTS) TOOLTIP WHEN HOVERING OVER GITHUB 
+ICONS AND AN EYE ICON UNDER PROJECT DESCRIPTION: */
+.tooltips .tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+  margin-right: 3rem;
+  margin-left: 3rem;
+  text-decoration: none;
+}
+
+.tooltips .tooltip .tooltiptext {
+  display: none;
+  width: 9rem;
+  background-color: black;
+  color: black;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  background-color: white;
+  transition: all 3s linear;
+
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 20;
+  bottom: 200%;
+  left: 50%;
+  margin-left: -4.5rem;
+}
+.tooltips .tooltip .tooltiptext::after {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -14px;
+  border-width: 14px;
+  border-style: solid;
+  border-color: white transparent transparent transparent;
+}
+
+.tooltips .tooltip:hover .tooltiptext {
+  display: block;
+  opacity: 1;
+}
+
+.tooltips .tooltip i {
+  color: white;
+}
