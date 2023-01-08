@@ -11,7 +11,7 @@ module.exports = {
       colors: {
         blackish: 'rgb(0, 0, 0, 0.3)',
         customBlack: 'rgb(30, 30, 40)',
-        customGreen: '#6b706d',
+        customGreen: '#6B7069',
         cyan: 'hsl(180, 66%, 49%)',
         cyanLight: 'hsl(180, 66%, 69%)',
         darkViolet: 'hsl(257, 27%, 26%)',
@@ -26,6 +26,9 @@ module.exports = {
       spacing: {
         180: '32rem',
       },
+      width:{
+        '33vw': '33.333vw'
+      }
     },
   },
   plugins: [],

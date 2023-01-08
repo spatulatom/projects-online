@@ -364,6 +364,18 @@ textarea {
 }
 }
 
+/* FULLPAGE CLASS 'active' IS ADDED TO CURRENT MENU LINK */
+#myMenu .active a {
+  color: black;
+}
+#myMenu .active a i {
+  color: black;
+}
+#myMenu .active a {
+  background-color: white;
+}
+
+
 /* FULLPAGE NAVIGATION - HORIZONTAL NAV DOTS: */
 .fp-arrow.fp-controlArrow.fp-prev {
   left: 2rem;
