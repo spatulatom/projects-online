@@ -40,21 +40,41 @@
     <!-- tailwind -->
     <link rel="stylesheet" href="css/style.css" />
   </head>
-  <body id="body" class="dark:bg-customBlack bg-white">
+
+  <body id="body" class="dark:bg-customBlack bg-white text-white">
+    <!-- Nav Container -->
     <nav>
-      <ul id="myMenu" class="fixed z-10 flex justify-center w-screen">
+      <!-- Flex Container for Desktop Menu -->
+      <ul
+        id="myMenu"
+        class="fixed z-10 flex  w-screen"
+      >
         <li class="group" data-menuanchor="firstPage" class="active">
-          <a class="inline-block py-2 px-8 mr-[1px] w-33vw text-center bg-customGreen text-white no-underline uppercase text-base  group-hover:text-black group-hover:bg-white" href="#firstPage"><i class="mr-1 group-hover:text-black  fa-solid fa-house "></i>Home</a>
+          <a
+            class="inline-block bg-cyan px-12 py-3 mr-[1px] w-33vw text-center text-veryDarkViolet font-bold no-underline text-base group-hover:text-black group-hover:bg-white"
+            href="#firstPage"
+            ><i class="mr-1 group-hover:text-black fa-solid fa-house"></i
+            >Home</a
+          >
         </li>
         <li class="group" data-menuanchor="secondPage">
-          <a class="inline-block py-2 px-8 mr-[1px] w-33vw text-center bg-customGreen  text-white no-underline uppercase text-base group-hover:text-black group-hover:bg-white " href="#secondPage"><i class="mr-1 group-hover:text-black  fa fa-th"> </i>Projects</a>
+          <a
+            class="inline-block py-2 bg-cyan px-12 py-3 mr-[1px] w-33vw text-center text-veryDarkViolet font-bold no-underline text-base group-hover:text-black group-hover:bg-white"
+            href="#secondPage"
+            ><i class="mr-1 group-hover:text-black fa fa-th"> </i>Projects</a
+          >
         </li>
         <li class="group" data-menuanchor="fourthPage">
-          <a class="inline-block py-2 px-8 mr-[1px] w-33vw text-center bg-customGreen  text-white no-underline uppercase text-base group-hover:text-black group-hover:bg-white " href="#fourthPage"><i class="mr-1 group-hover:text-black  fa fa-envelope"></i>Contact</a>
+          <a
+            class="inline-block py-2 bg-cyan px-12 py-3 mr-[1px] w-33vw text-center text-veryDarkViolet font-bold no-underline text-base rounded-br-3xl group-hover:text-black group-hover:bg-white"
+            href="#fourthPage"
+            ><i class="mr-1 group-hover:text-black fa fa-envelope"></i
+            >Contact</a
+          >
         </li>
       </ul>
 
-      <!-- Hamburger Button -->
+      <!-- Hamburger Button for Mobile Menu-->
       <button
         id="menu-btn"
         class="z-30 fixed top-8 left-8 block lg:hidden focus:outline-none hamburger"
@@ -64,7 +84,8 @@
         <span class="hamburger-bottom"></span>
       </button>
 
-      <div class="mobile-nav bg-customGreen ">
+      <!-- Mobile Menu -->
+      <div class="mobile-nav bg-customGreen">
         <ul class="mobile-nav__items">
           <li class="mobile-nav__item">
             <a href="#firstPage" class="link current">Home</a>
@@ -79,30 +100,46 @@
       </div>
     </nav>
 
+    <!-- Div For Cursor Effect -->
+    <!-- <div class="cursor border-2 dark:border-white border-customGreen"></div> -->
+
+    <!-- Container All Fullpage.js Sections -->
     <div id="fullpage">
-      <div class="section container px-4 m-auto justify-center items-center s1">
-        <div class="cursor border-2 dark:border-white border-customGreen"></div>
+      <!-- Hero Section -->
+      <div id="hero" class="section">
+        <!-- Hero Container -->
+        <div class="container flex flex-col-reverse mx-auto p-12 lg:flex-row">
+          <!-- Content Container -->
+          <div
+            class="flex flex-col space-y-10 mb-44 lg:mt-16 lg:w-1/2 xl:mb-52"
+          >
+            <h1
+              class="text-5xl font-bold text-center lg:text-6xl lg:max-w-md lg:text-left"
+            >
+              Welcome.
+            </h1>
+            <p
+              class="text-2xl text-center text-gray-400 lg:max-w-md lg:text-left"
+            >
+              Web development, JavaScript, projects. The direction I am recently going is are Next.js web aps styled with Tailwind. This portfolio contains also many 'classic' React apps styled with CSS Modules.
+            </p>
+            <div class="mx-auto lg:mx-0">
+              <a
+                href="#secondPage"
+                class="py-5 px-10 text-2xl font-bold text-white bg-cyan rounded-full lg:py-4 hover:opacity-70"
+                >Get Started</a
+              >
+            </div>
+          </div>
 
-        <div class="bigger group">
-          <h1
-            class="text-center lg:text-left text-5xl uppercase dark:text-white text-black"
-          >
-            Welcome.
-          </h1>
-          <h2
-            class="text-center lg:text-left text-2xl mt-4 font-bold dark:text-white text-black"
-          >
-            web development, JavaScript, projects
-          </h2>
-
-          <a
-            class="dark:bg-customGreen bg-black group-hover:animate-bounce block rounded w-10/12 m-auto lg:w-full text-lg mt-8 py-4 text-center tracking-wider uppercase text-white cursor-pointer bigger transition-all duration-200 dark:group-hover:text-black"
-            href="#secondPage"
-            >projects projects projects</a
-          >
+          <!-- Image -->
+          <div class="mb-24 mx-auto md:w-180 lg:mb-0 lg:w-1/2">
+            <img src="imgs/illustration-working.svg" alt="" />
+          </div>
         </div>
       </div>
 
+   <!-- Slides Section -->
       <div class="section bg-road bg-cover bg-bottom s2">
         <!-- SLIDE NR 1 -->
         <div class="slide justify-center items-center p-4">
@@ -111,10 +148,10 @@
           <div
             class="w-10/12 lg:w-2/5 flex flex-col justify-center items-center m-auto bg-black opacity-70 p-4"
           >
-            <h2 class="text-3xl text-[#a3aca7] mb-1 bigger">
+            <h2 class="text-3xl text-customGreen mb-1 bigger">
               This very website
             </h2>
-            <h4 class="text-base font-thin mb-2 text-justify bigger">
+            <h4 class="text-base font-light mb-2 text-justify bigger">
               This website a project on HTML, CSS, Tailwind and vanilla
               JavaScript. Contact form in 'Contact' section is connected to the
               backend server built with Node.js, Express.js and Mongoose;
@@ -173,10 +210,10 @@
               <div
                 class="p-6 w-[120%] bg-black opacity-70 lg:absolute right-0 z-10"
               >
-                <h2 class="text-3xl text-[#a3aca7] mb-1 bigger">
+                <h2 class="text-3xl text-customGreen mb-1 bigger">
                   jokes manager (Next.js, Tailwind, fullstack)
                 </h2>
-                <h4 class="text-base font-thin mb-2 text-justify bigger">
+                <h4 class="text-base font-light mb-2 text-justify bigger">
                   Generate a joke and save it on your account. User login/create
                   account interface. User account managment options. It is a
                   fullstack Next.j app with the backend located in pages/api
@@ -235,10 +272,10 @@
               <div
                 class="p-6 w-[120%] bg-black opacity-70 lg:absolute right-0 z-10"
               >
-                <h2 class="text-3xl text-[#a3aca7] mb-1 bigger">
+                <h2 class="text-3xl text-customGreen mb-1 bigger">
                   e-fashion (MERN app)
                 </h2>
-                <h4 class="text-base font-thin mb-2 text-justify bigger">
+                <h4 class="text-base font-light mb-2 text-justify bigger">
                   A fullstack app, an online clothing store with user
                   authentication, sandbox PayPal payment, MongoDB and Amazon Web
                   Services used for storage .Page pagination. Filters to search
@@ -297,10 +334,10 @@
               <div
                 class="p-6 w-[120%] bg-black opacity-70 lg:absolute right-0 z-10"
               >
-                <h2 class="text-3xl text-[#a3aca7] mb-1 bigger">
+                <h2 class="text-3xl text-customGreen mb-1 bigger">
                   eventsbook (MERN app)
                 </h2>
-                <h4 class="text-base font-thin mb-2 text-justify bigger">
+                <h4 class="text-base font-light mb-2 text-justify bigger">
                   A fullstack app, a social media platform where users can log
                   in/create an account, upload photos/create posts (about
                   upcoming social events) and add likes and comments. Users can
@@ -359,10 +396,10 @@
               <div
                 class="p-6 w-[120%] bg-black opacity-70 lg:absolute right-0 z-10"
               >
-                <h2 class="text-3xl text-[#a3aca7] mb-1 bigger">
+                <h2 class="text-3xl text-customGreen mb-1 bigger">
                   california destinations (Next.js)
                 </h2>
-                <h4 class="text-base font-thin mb-2 text-justify bigger">
+                <h4 class="text-base font-light mb-2 text-justify bigger">
                   This project is a demo tourist website with a list of hotels
                   to pick from. It explores many Next.js features like how to
                   make pages and routes, how to link between them, how to use
@@ -422,10 +459,10 @@
               <div
                 class="p-6 w-[120%] bg-black opacity-70 lg:absolute right-0 z-10"
               >
-                <h2 class="text-3xl text-[#a3aca7] mb-1 bigger">
+                <h2 class="text-3xl text-customGreen mb-1 bigger">
                   a to-do list (Redux)
                 </h2>
-                <h4 class="text-base font-thin mb-2 text-justify bigger">
+                <h4 class="text-base font-light mb-2 text-justify bigger">
                   This project is a to-do list built with React and Redux
                   library. Tasks on the list can be marked as completed or they
                   can be deleted. The list can be sorted as follows: it can
@@ -481,10 +518,10 @@
               <div
                 class="p-6 w-[120%] bg-black opacity-70 lg:absolute right-0 z-10"
               >
-                <h2 class="text-3xl text-[#a3aca7] mb-1 bigger">
+                <h2 class="text-3xl text-customGreen mb-1 bigger">
                   a to-do list (TypeScript)
                 </h2>
-                <h4 class="text-base font-thin mb-2 text-justify bigger">
+                <h4 class="text-base font-light mb-2 text-justify bigger">
                   This TypeScript in React To-Do list allows us to add tasks to
                   our list and then delete them upon clicking on them. It
                   explores all different types with emphasis on generic ones.
@@ -544,10 +581,10 @@
               <div
                 class="p-6 w-[120%] bg-black opacity-70 lg:absolute right-0 z-10"
               >
-                <h2 class="text-3xl text-[#a3aca7] mb-1 bigger">
+                <h2 class="text-3xl text-customGreen mb-1 bigger">
                   adhoc (Bootstrap)
                 </h2>
-                <h4 class="text-base font-thin mb-2 text-justify bigger">
+                <h4 class="text-base font-light mb-2 text-justify bigger">
                   This project is using Bootstrap for creating a clear layout
                   and polished style of a demo commerce website. The website is
                   fully responsive with a dedicated mobile navbar that opens
@@ -600,10 +637,10 @@
               <div
                 class="p-6 w-[120%] bg-black opacity-70 lg:absolute right-0 z-10"
               >
-                <h2 class="text-3xl text-[#a3aca7] mb-1 bigger">
+                <h2 class="text-3xl text-customGreen mb-1 bigger">
                   visit japan (SASS)
                 </h2>
-                <h4 class="text-base font-thin mb-2 text-justify bigger">
+                <h4 class="text-base font-light mb-2 text-justify bigger">
                   This project is only a touch on SASS and an attempt to
                   familiarize with its concepts. Variables, lists, nestings,
                   mixins (include@), selectors, extend@, simple functions like
@@ -657,10 +694,10 @@
               <div
                 class="p-6 w-[120%] bg-black opacity-70 lg:absolute right-0 z-10"
               >
-                <h2 class="text-3xl text-[#a3aca7] mb-1 bigger">
+                <h2 class="text-3xl text-customGreen mb-1 bigger">
                   wedding invitations (Wordpress)
                 </h2>
-                <h4 class="text-base font-thin mb-2 text-justify bigger">
+                <h4 class="text-base font-light mb-2 text-justify bigger">
                   A wedding cards invitation website in WordPress with an
                   e-commerce plugging. Invitations can be sorted into many
                   categories. For each invitation, there is a quick view option
@@ -732,7 +769,6 @@
           </div>
 
           <div class="text-center lg:text-left">
-        
             <form class="form">
               <h2 class="text-4xl mb-4">WHERE I WORK</h2>
               <h3 class="text-lg uppercase p-2">
@@ -747,7 +783,6 @@
                 ></i>
                 email: elkom9393@gmail.com
               </h3>
-            
 
               <h2 class="form__feedback p-3 pt-6 italic text-xl text-[#a3aca7]">
                 I'd love your feedback:

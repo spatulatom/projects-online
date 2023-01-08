@@ -11,7 +11,8 @@ module.exports = {
       colors: {
         blackish: 'rgb(0, 0, 0, 0.3)',
         customBlack: 'rgb(30, 30, 40)',
-        customGreen: '#6B7069',
+        customGreen2: '#6B7069',
+        customGreen: 'cyan',
         cyan: 'hsl(180, 66%, 49%)',
         cyanLight: 'hsl(180, 66%, 69%)',
         darkViolet: 'hsl(257, 27%, 26%)',
@@ -27,7 +28,7 @@ module.exports = {
         180: '32rem',
       },
       width:{
-        '33vw': '33.333vw'
+        '33vw': '23.333vw'
       }
     },
   },

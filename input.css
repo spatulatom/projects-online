@@ -83,7 +83,7 @@
 
   .open .hamburger-bottom {
     transform: rotate(-45deg) translateY(6px) translateX(-6px);
-    background-color: #fff;
+    background-color: rgb(102, 155, 118);
   }}
 
   /* MOBILE MENU POPPING FROM THE LEFT SIDE */

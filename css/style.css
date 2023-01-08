@@ -588,7 +588,7 @@ video {
 
 .open .hamburger-bottom {
   transform: rotate(-45deg) translateY(6px) translateX(-6px);
-  background-color: #fff;
+  background-color: rgb(102, 155, 118);
 }
 
 input:-webkit-autofill,
@@ -682,12 +682,25 @@ textarea {
   margin: auto;
 }
 
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .mr-\[1px\] {
   margin-right: 1px;
 }
 
 .mr-1 {
   margin-right: 0.25rem;
+}
+
+.mb-44 {
+  margin-bottom: 11rem;
+}
+
+.mb-24 {
+  margin-bottom: 6rem;
 }
 
 .mt-4 {
@@ -742,12 +755,24 @@ textarea {
   height: 100%;
 }
 
+.h-16 {
+  height: 4rem;
+}
+
+.h-24 {
+  height: 6rem;
+}
+
+.h-40 {
+  height: 10rem;
+}
+
 .w-screen {
   width: 100vw;
 }
 
 .w-33vw {
-  width: 33.333vw;
+  width: 23.333vw;
 }
 
 .w-10\/12 {
@@ -818,12 +843,22 @@ textarea {
   gap: 2rem;
 }
 
+.space-y-10 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(2.5rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(2.5rem * var(--tw-space-y-reverse));
+}
+
 .overflow-hidden {
   overflow: hidden;
 }
 
 .overflow-visible {
   overflow: visible;
+}
+
+.rounded-full {
+  border-radius: 9999px;
 }
 
 .rounded {
@@ -834,8 +869,28 @@ textarea {
   border-radius: 0.375rem;
 }
 
+.rounded-br {
+  border-bottom-right-radius: 0.25rem;
+}
+
+.rounded-br-full {
+  border-bottom-right-radius: 9999px;
+}
+
+.rounded-br-2xl {
+  border-bottom-right-radius: 1rem;
+}
+
+.rounded-br-3xl {
+  border-bottom-right-radius: 1.5rem;
+}
+
 .border-2 {
   border-width: 2px;
+}
+
+.border {
+  border-width: 1px;
 }
 
 .border-t-2 {
@@ -844,7 +899,7 @@ textarea {
 
 .border-customGreen {
   --tw-border-opacity: 1;
-  border-color: rgb(107 112 105 / var(--tw-border-opacity));
+  border-color: rgb(0 255 255 / var(--tw-border-opacity));
 }
 
 .border-\[\#a3aca7\] {
@@ -859,7 +914,12 @@ textarea {
 
 .bg-customGreen {
   --tw-bg-opacity: 1;
-  background-color: rgb(107 112 105 / var(--tw-bg-opacity));
+  background-color: rgb(0 255 255 / var(--tw-bg-opacity));
+}
+
+.bg-cyan {
+  --tw-bg-opacity: 1;
+  background-color: hsl(180 66% 49% / var(--tw-bg-opacity));
 }
 
 .bg-black {
@@ -889,16 +949,16 @@ textarea {
   background-position: bottom;
 }
 
+.p-12 {
+  padding: 3rem;
+}
+
 .p-4 {
   padding: 1rem;
 }
 
 .p-6 {
   padding: 1.5rem;
-}
-
-.p-12 {
-  padding: 3rem;
 }
 
 .p-2 {
@@ -919,6 +979,16 @@ textarea {
   padding-right: 2rem;
 }
 
+.py-5 {
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+}
+
+.px-10 {
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+}
+
 .px-4 {
   padding-left: 1rem;
   padding-right: 1rem;
@@ -927,6 +997,21 @@ textarea {
 .py-4 {
   padding-top: 1rem;
   padding-bottom: 1rem;
+}
+
+.px-12 {
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+
+.py-8 {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.py-3 {
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
 }
 
 .pb-6 {
@@ -997,8 +1082,8 @@ textarea {
   font-weight: 700;
 }
 
-.font-thin {
-  font-weight: 100;
+.font-light {
+  font-weight: 300;
 }
 
 .uppercase {
@@ -1018,14 +1103,34 @@ textarea {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
+.text-gray-400 {
+  --tw-text-opacity: 1;
+  color: rgb(156 163 175 / var(--tw-text-opacity));
+}
+
 .text-black {
   --tw-text-opacity: 1;
   color: rgb(0 0 0 / var(--tw-text-opacity));
 }
 
+.text-customGreen {
+  --tw-text-opacity: 1;
+  color: rgb(0 255 255 / var(--tw-text-opacity));
+}
+
 .text-\[\#a3aca7\] {
   --tw-text-opacity: 1;
   color: rgb(163 172 167 / var(--tw-text-opacity));
+}
+
+.text-grayishViolet {
+  --tw-text-opacity: 1;
+  color: hsl(257 7% 63% / var(--tw-text-opacity));
+}
+
+.text-veryDarkViolet {
+  --tw-text-opacity: 1;
+  color: hsl(260 8% 14% / var(--tw-text-opacity));
 }
 
 .no-underline {
@@ -1408,6 +1513,10 @@ https://developer.mozilla.org/en-US/docs/Web/CSS/:autofill */
   color: rgb(0 0 0 / var(--tw-text-opacity));
 }
 
+.hover\:opacity-70:hover {
+  opacity: 0.7;
+}
+
 .focus\:outline-none:focus {
   outline: 2px solid transparent;
   outline-offset: 2px;
@@ -1451,7 +1560,7 @@ https://developer.mozilla.org/en-US/docs/Web/CSS/:autofill */
 
 .dark .dark\:bg-customGreen {
   --tw-bg-opacity: 1;
-  background-color: rgb(107 112 105 / var(--tw-bg-opacity));
+  background-color: rgb(0 255 255 / var(--tw-bg-opacity));
 }
 
 .dark .dark\:text-white {
@@ -1464,9 +1573,28 @@ https://developer.mozilla.org/en-US/docs/Web/CSS/:autofill */
   color: rgb(0 0 0 / var(--tw-text-opacity));
 }
 
+@media (min-width: 768px) {
+  .md\:w-180 {
+    width: 32rem;
+  }
+}
+
 @media (min-width: 1024px) {
   .lg\:absolute {
     position: absolute;
+  }
+
+  .lg\:mx-0 {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+
+  .lg\:mt-16 {
+    margin-top: 4rem;
+  }
+
+  .lg\:mb-0 {
+    margin-bottom: 0px;
   }
 
   .lg\:block {
@@ -1477,12 +1605,20 @@ https://developer.mozilla.org/en-US/docs/Web/CSS/:autofill */
     display: none;
   }
 
+  .lg\:w-1\/2 {
+    width: 50%;
+  }
+
   .lg\:w-full {
     width: 100%;
   }
 
   .lg\:w-2\/5 {
     width: 40%;
+  }
+
+  .lg\:max-w-md {
+    max-width: 28rem;
   }
 
   .lg\:max-w-\[41\.6667\%\] {
@@ -1501,11 +1637,27 @@ https://developer.mozilla.org/en-US/docs/Web/CSS/:autofill */
     justify-content: flex-end;
   }
 
+  .lg\:py-4 {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+
   .lg\:pb-4 {
     padding-bottom: 1rem;
   }
 
   .lg\:text-left {
     text-align: left;
+  }
+
+  .lg\:text-6xl {
+    font-size: 3.75rem;
+    line-height: 1;
+  }
+}
+
+@media (min-width: 1280px) {
+  .xl\:mb-52 {
+    margin-bottom: 13rem;
   }
 }
