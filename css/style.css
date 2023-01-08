@@ -920,11 +920,6 @@ video {
   color: rgb(55 65 81 / var(--tw-text-opacity));
 }
 
-.text-customGreen {
-  --tw-text-opacity: 1;
-  color: rgb(107 112 109 / var(--tw-text-opacity));
-}
-
 .text-\[\#a3aca7\] {
   --tw-text-opacity: 1;
   color: rgb(163 172 167 / var(--tw-text-opacity));
