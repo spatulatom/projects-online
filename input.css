@@ -94,7 +94,6 @@
     z-index: 28;
     top: 0;
     left: 0;
-    background: var(--green);
     width: 80%;
     height: 100vh;
     transition: transform 300ms ease-out;
