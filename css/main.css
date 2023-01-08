@@ -10,7 +10,7 @@
   padding: 0;
   margin: 0;
 
-  font-family: 'Figtree', sans-serif;
+  /* font-family: 'Figtree', sans-serif; */
   /* font-family: 'Iceland', cursive; 
   font-family: 'Share Tech Mono', monospace;  */
   color: white;
@@ -131,7 +131,7 @@ body {
 
 /* SECTION 2 (PROJECTS), BACKGROUNDS FOR EVERY OTHER SLIDE: */
 
-.s2 {
+/* .s2 {
   background: url('../imgs/road3.jpg');
   background-size: cover;
   background-position: bottom;
@@ -155,7 +155,7 @@ body {
 }
 .ss8 {
   background-color: rgb(30, 30, 40);
-}
+} */
 
 
 /* SECTION 3 (CONTACT), SOCIAL MEDIA ICONS STYLING: */
