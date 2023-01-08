@@ -1,7 +1,7 @@
-let toggleButton = document.querySelector('.toggle-button');
+let toggleButton = document.getElementById('menu-btn');
 let mobileNav = document.querySelector('.mobile-nav');
 let mobileNavItems = document.querySelectorAll('.mobile-nav__item a');
-let backdrop = document.querySelector('.backdrop');
+
 
 let mobileLinks = document.querySelectorAll('.link');
 
@@ -36,11 +36,14 @@ mobileLinks.forEach((link) => {
 // });
 
 toggleButton.addEventListener('click', function () {
-  mobileNav.classList.toggle('open');
+  toggleButton.classList.toggle('open')
+  mobileNav.classList.toggle('show');
+  
 });
 
 mobileNavItems.forEach((item) => {
   item.addEventListener('click', () => {
-    mobileNav.classList.remove('open');
+    mobileNav.classList.remove('show');
+    toggleButton.classList.toggle('open')
   });
 });
