@@ -87,7 +87,7 @@
       <!-- Hamburger Button for Mobile Menu-->
       <button
         id="menu-btn"
-        class="z-30 fixed top-8 left-8 block lg:hidden focus:outline-none hamburger"
+        class="z-30 fixed top-4 left-4 block lg:hidden focus:outline-none hamburger"
       >
         <span class="hamburger-top"></span>
         <span class="hamburger-middle"></span>
@@ -106,6 +106,27 @@
           <li class="mobile-nav__item">
             <a href="#fourthPage" class="link">Contact</a>
           </li>
+          <li class="font-bold mt-24">
+            Switch theme: 
+            
+          </li>
+          <li>
+            <div class="flex space-x-4 pt-8">
+              <i
+                id="light"
+                class="icon fa-regular fa-sun fa-xl cursor-pointer transition-all hover:text-cyan"
+              ></i>
+              <i
+                id="dark"
+                class="icon fa-solid fa-moon fa-xl cursor-pointer transition-all hover:text-cyan"
+              ></i>
+              <i
+                id="system"
+                class="icon fa-solid fa-desktop fa-xl cursor-pointer transition-all hover:text-cyan"
+              ></i>
+            </div>
+          </li>
+          
         </ul>
       </div>
     </nav>
@@ -115,25 +136,36 @@
       <!-- Hero Section -->
       <div id="hero" class="section">
         <!-- Icons For Light/Dark/System Modes -->
-        <div class="flex space-x-3 py-3 px-12 absolute z-40 top-4 right-0">
-       
-          <i
-            id="light"
-            class="icon fa-regular fa-sun fa-2xl cursor-pointer transition-all hover:text-cyan"
-          ></i>
-          <i
-            id="dark"
-            class="icon fa-solid fa-moon fa-2xl cursor-pointer transition-all hover:text-cyan"
-          ></i>
-          <i
-            id="system"
-            class="icon fa-solid fa-desktop fa-2xl cursor-pointer transition-all hover:text-cyan"
-          ></i>
+        <div class="flex absolute mr-8 z-40 top-4 right-0">
+          <div class="hidden lg:flex space-x-3 py-3 pr-16">
+            <i
+              id="light"
+              class="icon fa-regular fa-sun fa-xl cursor-pointer transition-all hover:text-cyan"
+            ></i>
+            <i
+              id="dark"
+              class="icon fa-solid fa-moon fa-xl cursor-pointer transition-all hover:text-cyan"
+            ></i>
+            <i
+              id="system"
+              class="icon fa-solid fa-desktop fa-xl cursor-pointer transition-all hover:text-cyan"
+            ></i>
+          </div>
+          <a
+            target="_blank"
+            href="https://github.com/spatulatom"
+            alt="github link"
+            ><i
+              class="fab fa-github fa-xl cursor-pointer transition-all hover:text-cyan"
+            ></i
+          ></a>
         </div>
         <!-- Div For Cursor Effect -->
         <!-- <div class="cursor border-2 dark:border-white border-customGreen"></div> -->
         <!-- Hero Container -->
-        <div class="container flex flex-col-reverse mx-auto p-12 lg:flex-row">
+        <div
+          class="container flex flex-col-reverse mx-auto p-12 lg:flex-row items-center"
+        >
           <!-- Content Container -->
           <div
             class="flex flex-col space-y-10 mb-44 lg:mt-16 lg:w-1/2 xl:mb-52"
