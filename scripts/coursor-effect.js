@@ -61,3 +61,16 @@ cursorOnModal.forEach((noDisplay) =>
     mouseCursor.classList.remove('none');
   })
 );
+
+// disposing of 'fancy' cursor when cursor on contact form
+let cursorOnForm = document.querySelector('form');
+
+cursorOnForm.addEventListener('mouseover', () => {
+    mouseCursor.classList.add('none');
+  })
+
+
+cursorOnForm.addEventListener('mouseleave', () => {
+    mouseCursor.classList.remove('none');
+  })
+

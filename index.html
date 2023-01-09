@@ -30,36 +30,48 @@
     <link rel="stylesheet" href="css/main.css" />
 
     <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Iceland&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Figtree:wght@300;400;500;600;700&family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Figtree:wght@300;400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
+
     <!-- tailwind -->
     <link rel="stylesheet" href="css/style.css" />
   </head>
-  <body id="body" class="dark:bg-customBlack bg-white">
+
+  <body id="body" class="dark:bg-customBlack bg-white text-white font-sans">
+    <!-- Nav Container -->
     <nav>
-      <ul id="myMenu">
-        <li data-menuanchor="firstPage" class="active">
-          <a href="#firstPage"><i class="fa-solid fa-house"></i>Home</a>
+      <!-- Flex Container for Desktop Menu -->
+      <ul id="myMenu" class="fixed z-10 flex w-screen">
+        <li class="group" data-menuanchor="firstPage" class="active">
+          <a
+            class="inline-block bg-cyan px-12 py-3 mr-[1px] w-33vw text-center text-customBlack font-bold no-underline text-base group-hover:text-black group-hover:bg-white"
+            href="#firstPage"
+            ><i class="mr-1 group-hover:text-black fa-solid fa-house"></i
+            >Home</a
+          >
         </li>
-        <li data-menuanchor="secondPage">
-          <a href="#secondPage"><i class="fa fa-th"> </i>Projects</a>
+        <li class="group" data-menuanchor="secondPage">
+          <a
+            class="inline-block bg-cyan px-12 py-3 mr-[1px] w-33vw text-center text-customBlack font-bold no-underline text-base group-hover:text-black group-hover:bg-white"
+            href="#secondPage"
+            ><i class="mr-1 group-hover:text-black fa fa-th"> </i>Projects</a
+          >
         </li>
-        <li data-menuanchor="fourthPage">
-          <a href="#fourthPage"><i class="fa fa-envelope"></i>Contact</a>
+        <li class="group" data-menuanchor="fourthPage">
+          <a
+            class="inline-block bg-cyan px-12 py-3 mr-[1px] w-33vw text-center text-customBlack font-bold no-underline text-base rounded-br-3xl group-hover:text-black group-hover:bg-white"
+            href="#fourthPage"
+            ><i class="mr-1 group-hover:text-black fa fa-envelope"></i
+            >Contact</a
+          >
         </li>
       </ul>
 
-      <!-- Hamburger Button -->
+      <!-- Hamburger Button for Mobile Menu-->
       <button
         id="menu-btn"
         class="z-30 fixed top-8 left-8 block lg:hidden focus:outline-none hamburger"
@@ -69,7 +81,8 @@
         <span class="hamburger-bottom"></span>
       </button>
 
-      <div class="mobile-nav">
+      <!-- Mobile Menu -->
+      <div class="mobile-nav bg-customBlack">
         <ul class="mobile-nav__items">
           <li class="mobile-nav__item">
             <a href="#firstPage" class="link current">Home</a>
@@ -84,43 +97,61 @@
       </div>
     </nav>
 
+    <!-- Container All Fullpage.js Sections -->
     <div id="fullpage">
-      <div class="section container px-4 m-auto justify-center items-center s1">
+      <!-- Hero Section -->
+      <div id="hero" class="section">
+        <!-- Div For Cursor Effect -->
         <div class="cursor border-2 dark:border-white border-customGreen"></div>
+        <!-- Hero Container -->
+        <div class="container flex flex-col-reverse mx-auto p-12 lg:flex-row">
+          <!-- Content Container -->
+          <div
+            class="flex flex-col space-y-10 mb-44 lg:mt-16 lg:w-1/2 xl:mb-52"
+          >
+            <h1
+              class="text-5xl font-bold text-center lg:text-6xl lg:max-w-md lg:text-left"
+            >
+              Welcome.
+            </h1>
+            <p
+              class="text-2xl text-center text-gray-400 lg:max-w-md lg:text-left"
+            >
+              Web development, JavaScript, projects. The direction I am recently
+              going are Next.js web apps styled with Tailwind CSS. This
+              portfolio also contains many 'classic' React.js apps styled with
+              CSS Modules.
+            </p>
+            <div class="mx-auto lg:mx-0">
+              <a
+                href="#secondPage"
+                class="py-5 px-10 text-2xl font-bold text-white bg-cyan rounded-full lg:py-4 transition-all hover:opacity-70"
+                >Get Started</a
+              >
+            </div>
+          </div>
 
-        <div class="bigger group">
-          <h1
-            class="text-center lg:text-left text-5xl uppercase dark:text-white text-black"
-          >
-            Welcome.
-          </h1>
-          <h2
-            class="text-center lg:text-left text-2xl mt-4 font-light dark:text-white text-black"
-          >
-            web development, JavaScript, projects
-          </h2>
-
-          <a
-            class="dark:bg-customGreen bg-black group-hover:animate-bounce block rounded w-10/12 m-auto lg:w-full text-lg mt-8 py-4 text-center tracking-wider uppercase text-white cursor-pointer bigger transition-all duration-200 dark:group-hover:text-black"
-            href="#secondPage"
-            >projects projects projects</a
-          >
+          <!-- Image -->
+          <div class="mb-24 mx-auto md:w-180 lg:mb-0 lg:w-1/2">
+            <img src="imgs/illustration-working.svg" alt="" />
+          </div>
         </div>
       </div>
 
-      <div class="section s2">
-        <!-- SLIDE NR 0 -->
-        <div class="slide ss0 justify-center items-center p-4">
+      <!-- Slides Section -->
+      <div class="section bg-road bg-cover bg-bottom s2">
+        <!-- SLIDE NR 1 -->
+        <div class="slide justify-center items-center p-4">
           <!-- there is another div in here added by fullpage and has probably set
         responsive width, the class on it is .fp-overflow-->
           <div
             class="w-10/12 lg:w-2/5 flex flex-col justify-center items-center m-auto bg-black opacity-70 p-4"
           >
-            <h2 class="text-3xl text-[#a3aca7] mb-1 bigger">
+            <h2 class="text-3xl text-customGreen mb-1 font-bold bigger">
               This very website
             </h2>
-            <h4 class="text-base font-thin mb-2 text-justify bigger">
-              This website a project on HTML, CSS, Tailwind and vanilla
+            <h4 class="text-base font-light mb-2 text-justify bigger">
+              This website a project on HTML, CSS, Tailwind CSS and vanilla
               JavaScript. Contact form in 'Contact' section is connected to the
               backend server built with Node.js, Express.js and Mongoose;
               MongoDB is used for storage of form data; the server is running on
@@ -130,7 +161,7 @@
               on GitHub down below.
             </h4>
             <h4 class="w-full text-right text-xs mb-3 bigger">
-              Tailwind, vanilla JavaScript, Node.js, Express.js, MongoDB,
+              Tailwind CSS, vanilla JavaScript, Node.js, Express.js, MongoDB,
               fullpage.js
             </h4>
             <div class="tooltips flex justify-around w-full">
@@ -154,8 +185,10 @@
           </div>
         </div>
 
-        <!-- SLIDE NR 1 -->
-        <div class="slide ss1 justify-center items-center p-4 pb-6 lg:pb-4">
+        <!-- SLIDE NR 2 -->
+        <div
+          class="slide justify-center bg-customBlack items-center p-4 pb-6 lg:pb-4"
+        >
           <!-- there is another div in here added by fullpage and has probably set
           responsive width set on it, the class on it is .fp-overflow-->
           <div
@@ -174,12 +207,12 @@
             >
               <!-- this wrapper div below is needed for the positioning of text over image -->
               <div
-                class="p-6 w-[120%] bg-black opacity-70 lg:absolute right-0 z-10"
+                class="p-6 w-[120%] bg-black opacity-70 r lg:absolute right-0 z-10"
               >
-                <h2 class="text-3xl text-[#a3aca7] mb-1 bigger">
+                <h2 class="text-3xl text-customGreen mb-1 font-bold bigger">
                   jokes manager (Next.js, Tailwind, fullstack)
                 </h2>
-                <h4 class="text-base font-thin mb-2 text-justify bigger">
+                <h4 class="text-base font-light mb-2 text-justify bigger">
                   Generate a joke and save it on your account. User login/create
                   account interface. User account managment options. It is a
                   fullstack Next.j app with the backend located in pages/api
@@ -188,10 +221,10 @@
                   NextAuth.js for authentication and authorisation (routes
                   protection on the client and on the server side); MongoDB for
                   data storage; React Context for 'global' state management,
-                  Tailwind is used for styling.
+                  Tailwind CSS is used for styling.
                 </h4>
                 <h6 class="text-right text-xs mb-3 bigger">
-                  Next.js, NextAuth.js, Tailwind, MongoDB, Vercel
+                  Next.js, NextAuth.js, Tailwind CSS, MongoDB, Vercel
                 </h6>
                 <div class="tooltips flex justify-around lg:justify-end">
                   <a
@@ -216,8 +249,8 @@
           </div>
         </div>
 
-        <!-- SLIDE NR 2 -->
-        <div class="slide ss2 justify-center items-center p-4">
+        <!-- SLIDE NR 3 -->
+        <div class="slide justify-center items-center p-4">
           <!-- there is another div in here added by fullpage and has probably set
           responsive width, the class on it is .fp-overflow-->
           <div
@@ -236,12 +269,12 @@
             >
               <!-- this wrapper div below is needed for the positioning of text over image -->
               <div
-                class="p-6 w-[120%] bg-black opacity-70 lg:absolute right-0 z-10"
+                class="p-6 w-[120%] bg-black opacity-70 r lg:absolute right-0 z-10"
               >
-                <h2 class="text-3xl text-[#a3aca7] mb-1 bigger">
+                <h2 class="text-3xl text-customGreen mb-1 font-bold bigger">
                   e-fashion (MERN app)
                 </h2>
-                <h4 class="text-base font-thin mb-2 text-justify bigger">
+                <h4 class="text-base font-light mb-2 text-justify bigger">
                   A fullstack app, an online clothing store with user
                   authentication, sandbox PayPal payment, MongoDB and Amazon Web
                   Services used for storage .Page pagination. Filters to search
@@ -278,8 +311,8 @@
           </div>
         </div>
 
-        <!-- SLIDE NR 3 -->
-        <div class="slide ss3 justify-center items-center p-4">
+        <!-- SLIDE NR 4 -->
+        <div class="slide justify-center bg-customBlack items-center p-4">
           <!-- there is another div in here added by fullpage and has probably set
           responsive width, the class on it is .fp-overflow-->
           <div
@@ -298,12 +331,12 @@
             >
               <!-- this wrapper div below is needed for the positioning of text over image -->
               <div
-                class="p-6 w-[120%] bg-black opacity-70 lg:absolute right-0 z-10"
+                class="p-6 w-[120%] bg-black opacity-70 r lg:absolute right-0 z-10"
               >
-                <h2 class="text-3xl text-[#a3aca7] mb-1 bigger">
+                <h2 class="text-3xl text-customGreen mb-1 font-bold bigger">
                   eventsbook (MERN app)
                 </h2>
-                <h4 class="text-base font-thin mb-2 text-justify bigger">
+                <h4 class="text-base font-light mb-2 text-justify bigger">
                   A fullstack app, a social media platform where users can log
                   in/create an account, upload photos/create posts (about
                   upcoming social events) and add likes and comments. Users can
@@ -340,8 +373,8 @@
           </div>
         </div>
 
-        <!-- SLIDE NR 4 -->
-        <div class="slide ss4 justify-center items-center p-4">
+        <!-- SLIDE NR 5 -->
+        <div class="slide justify-center items-center p-4">
           <!-- there is another div in here added by fullpage and has probably set
           responsive width, the class on it is .fp-overflow-->
           <div
@@ -360,12 +393,12 @@
             >
               <!-- this wrapper div below is needed for the positioning of text over image -->
               <div
-                class="p-6 w-[120%] bg-black opacity-70 lg:absolute right-0 z-10"
+                class="p-6 w-[120%] bg-black opacity-70 r lg:absolute right-0 z-10"
               >
-                <h2 class="text-3xl text-[#a3aca7] mb-1 bigger">
+                <h2 class="text-3xl text-customGreen mb-1 font-bold bigger">
                   california destinations (Next.js)
                 </h2>
-                <h4 class="text-base font-thin mb-2 text-justify bigger">
+                <h4 class="text-base font-light mb-2 text-justify bigger">
                   This project is a demo tourist website with a list of hotels
                   to pick from. It explores many Next.js features like how to
                   make pages and routes, how to link between them, how to use
@@ -403,8 +436,8 @@
           </div>
         </div>
 
-        <!-- SLIDE NR 5 -->
-        <div class="slide ss5 justify-center items-center p-4">
+        <!-- SLIDE NR 6 -->
+        <div class="slide justify-center bg-customBlack items-center p-4">
           <!-- there is another div in here added by fullpage and has probably set
           responsive width, the class on it is .fp-overflow-->
           <div
@@ -423,12 +456,12 @@
             >
               <!-- this wrapper div below is needed for the positioning of text over image -->
               <div
-                class="p-6 w-[120%] bg-black opacity-70 lg:absolute right-0 z-10"
+                class="p-6 w-[120%] bg-black opacity-70 r lg:absolute right-0 z-10"
               >
-                <h2 class="text-3xl text-[#a3aca7] mb-1 bigger">
+                <h2 class="text-3xl text-customGreen mb-1 font-bold bigger">
                   a to-do list (Redux)
                 </h2>
-                <h4 class="text-base font-thin mb-2 text-justify bigger">
+                <h4 class="text-base font-light mb-2 text-justify bigger">
                   This project is a to-do list built with React and Redux
                   library. Tasks on the list can be marked as completed or they
                   can be deleted. The list can be sorted as follows: it can
@@ -462,8 +495,8 @@
           </div>
         </div>
 
-        <!-- SLIDE NR 6 -->
-        <div class="slide ss6 justify-center items-center p-4">
+        <!-- SLIDE NR 7 -->
+        <div class="slide justify-center items-center p-4">
           <!-- there is another div in here added by fullpage and has probably set
           responsive width, the class on it is .fp-overflow-->
           <div
@@ -482,12 +515,12 @@
             >
               <!-- this wrapper div below is needed for the positioning of text over image -->
               <div
-                class="p-6 w-[120%] bg-black opacity-70 lg:absolute right-0 z-10"
+                class="p-6 w-[120%] bg-black opacity-70 r lg:absolute right-0 z-10"
               >
-                <h2 class="text-3xl text-[#a3aca7] mb-1 bigger">
+                <h2 class="text-3xl text-customGreen mb-1 font-bold bigger">
                   a to-do list (TypeScript)
                 </h2>
-                <h4 class="text-base font-thin mb-2 text-justify bigger">
+                <h4 class="text-base font-light mb-2 text-justify bigger">
                   This TypeScript in React To-Do list allows us to add tasks to
                   our list and then delete them upon clicking on them. It
                   explores all different types with emphasis on generic ones.
@@ -525,8 +558,8 @@
           </div>
         </div>
 
-        <!-- SLIDE NR 7 -->
-        <div class="slide ss7 justify-center items-center p-4">
+        <!-- SLIDE NR 8-->
+        <div class="slide justify-center bg-customBlack items-center p-4">
           <!-- there is another div in here added by fullpage and has probably set
             responsive width, the class on it is .fp-overflow-->
           <div
@@ -545,12 +578,12 @@
             >
               <!-- this wrapper div below is needed for the positioning of text over image -->
               <div
-                class="p-6 w-[120%] bg-black opacity-70 lg:absolute right-0 z-10"
+                class="p-6 w-[120%] bg-black opacity-70 r lg:absolute right-0 z-10"
               >
-                <h2 class="text-3xl text-[#a3aca7] mb-1 bigger">
+                <h2 class="text-3xl text-customGreen mb-1 font-bold bigger">
                   adhoc (Bootstrap)
                 </h2>
-                <h4 class="text-base font-thin mb-2 text-justify bigger">
+                <h4 class="text-base font-light mb-2 text-justify bigger">
                   This project is using Bootstrap for creating a clear layout
                   and polished style of a demo commerce website. The website is
                   fully responsive with a dedicated mobile navbar that opens
@@ -581,8 +614,8 @@
           </div>
         </div>
 
-        <!-- SLIDE NR 8 -->
-        <div class="slide ss8 justify-center items-center p-4">
+        <!-- SLIDE NR 9 -->
+        <div class="slide justify-center items-center p-4">
           <!-- there is another div in here added by fullpage and has probably set
           responsive width, the class on it is .fp-overflow-->
           <div
@@ -601,12 +634,12 @@
             >
               <!-- this wrapper div below is needed for the positioning of text over image -->
               <div
-                class="p-6 w-[120%] bg-black opacity-70 lg:absolute right-0 z-10"
+                class="p-6 w-[120%] bg-black opacity-70 r lg:absolute right-0 z-10"
               >
-                <h2 class="text-3xl text-[#a3aca7] mb-1 bigger">
+                <h2 class="text-3xl text-customGreen mb-1 font-bold bigger">
                   visit japan (SASS)
                 </h2>
-                <h4 class="text-base font-thin mb-2 text-justify bigger">
+                <h4 class="text-base font-light mb-2 text-justify bigger">
                   This project is only a touch on SASS and an attempt to
                   familiarize with its concepts. Variables, lists, nestings,
                   mixins (include@), selectors, extend@, simple functions like
@@ -638,8 +671,8 @@
           </div>
         </div>
 
-        <!-- SLIDE NR 9 -->
-        <div class="slide ss9 justify-center items-center p-4">
+        <!-- SLIDE NR 10 -->
+        <div class="slide justify-center bg-customBlack items-center p-4">
           <!-- there is another div in here added by fullpage and has probably set
             responsive width, the class on it is .fp-overflow-->
           <div
@@ -658,12 +691,12 @@
             >
               <!-- this wrapper div below is needed for the positioning of text over image -->
               <div
-                class="p-6 w-[120%] bg-black opacity-70 lg:absolute right-0 z-10"
+                class="p-6 w-[120%] bg-black opacity-70 r lg:absolute right-0 z-10"
               >
-                <h2 class="text-3xl text-[#a3aca7] mb-1 bigger">
+                <h2 class="text-3xl text-customGreen mb-1 font-bold bigger">
                   wedding invitations (Wordpress)
                 </h2>
-                <h4 class="text-base font-thin mb-2 text-justify bigger">
+                <h4 class="text-base font-light mb-2 text-justify bigger">
                   A wedding cards invitation website in WordPress with an
                   e-commerce plugging. Invitations can be sorted into many
                   categories. For each invitation, there is a quick view option
@@ -736,16 +769,16 @@
 
           <div class="text-center lg:text-left">
             <form class="form">
-              <h2 class="text-4xl mb-4">WHERE I WORK</h2>
-              <h3 class="text-lg uppercase p-2">
+              <h2 class="text-4xl font-bold mb-4 text-cyan">Where I work</h2>
+              <h3 class="text-lg p-2">
                 <i
-                  class="fa-solid fa-location-pin fa-xl mr-3 text-[#a3aca7] hover:text-white"
+                  class="fa-solid fa-location-pin mr-3 text-[#a3aca7] hover:text-white"
                 ></i
-                >Ireland, Europe
+                >Ireland
               </h3>
               <h3>
                 <i
-                  class="fa-solid fa-envelope fa-2xl text-[#a3aca7] hover:text-white mr-1"
+                  class="fa-solid fa-envelope fa-xl text-[#a3aca7] hover:text-white mr-1"
                 ></i>
                 email: elkom9393@gmail.com
               </h3>
@@ -786,11 +819,9 @@
               <button
                 type="submit"
                 value="Send Message"
-                class="group bg-[#a3aca7] w-1/3 p-3 rounded-md transition-all uppercase border-2 border-color-[#a3aca7] hover:text-black hover:bg-white"
+                class="px-10 py-5 w-fit mx-auto text-2xl font-bold text-white rounded-full bg-cyan hover:bg-cyanLlight md:text-base md:py-3 focus:outline-none"
               >
-                <i
-                  class="fa fa-paper-plane transition-all group-hover:text-black"
-                ></i>
+                <i class="fa fa-paper-plane"></i>
                 Send
               </button>
             </form>
