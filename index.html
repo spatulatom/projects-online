@@ -41,17 +41,14 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
 
-  <body id="body" class="dark:bg-customBlack bg-white text-white">
+  <body id="body" class="dark:bg-customBlack bg-white text-white font-sans">
     <!-- Nav Container -->
     <nav>
       <!-- Flex Container for Desktop Menu -->
-      <ul
-        id="myMenu"
-        class="fixed z-10 flex  w-screen"
-      >
+      <ul id="myMenu" class="fixed z-10 flex w-screen">
         <li class="group" data-menuanchor="firstPage" class="active">
           <a
-            class="inline-block bg-cyan px-12 py-3 mr-[1px] w-33vw text-center text-veryDarkViolet font-bold no-underline text-base group-hover:text-black group-hover:bg-white"
+            class="inline-block bg-cyan px-12 py-3 mr-[1px] w-33vw text-center text-customBlack font-bold no-underline text-base group-hover:text-black group-hover:bg-white"
             href="#firstPage"
             ><i class="mr-1 group-hover:text-black fa-solid fa-house"></i
             >Home</a
@@ -59,14 +56,14 @@
         </li>
         <li class="group" data-menuanchor="secondPage">
           <a
-            class="inline-block py-2 bg-cyan px-12 py-3 mr-[1px] w-33vw text-center text-veryDarkViolet font-bold no-underline text-base group-hover:text-black group-hover:bg-white"
+            class="inline-block bg-cyan px-12 py-3 mr-[1px] w-33vw text-center text-customBlack font-bold no-underline text-base group-hover:text-black group-hover:bg-white"
             href="#secondPage"
             ><i class="mr-1 group-hover:text-black fa fa-th"> </i>Projects</a
           >
         </li>
         <li class="group" data-menuanchor="fourthPage">
           <a
-            class="inline-block py-2 bg-cyan px-12 py-3 mr-[1px] w-33vw text-center text-veryDarkViolet font-bold no-underline text-base rounded-br-3xl group-hover:text-black group-hover:bg-white"
+            class="inline-block bg-cyan px-12 py-3 mr-[1px] w-33vw text-center text-customBlack font-bold no-underline text-base rounded-br-3xl group-hover:text-black group-hover:bg-white"
             href="#fourthPage"
             ><i class="mr-1 group-hover:text-black fa fa-envelope"></i
             >Contact</a
@@ -85,7 +82,7 @@
       </button>
 
       <!-- Mobile Menu -->
-      <div class="mobile-nav bg-customGreen">
+      <div class="mobile-nav bg-customBlack">
         <ul class="mobile-nav__items">
           <li class="mobile-nav__item">
             <a href="#firstPage" class="link current">Home</a>
@@ -121,12 +118,15 @@
             <p
               class="text-2xl text-center text-gray-400 lg:max-w-md lg:text-left"
             >
-              Web development, JavaScript, projects. The direction I am recently going is are Next.js web aps styled with Tailwind. This portfolio contains also many 'classic' React apps styled with CSS Modules.
+              Web development, JavaScript, projects. The direction I am recently
+              going are Next.js web apps styled with Tailwind CSS. This portfolio
+              also contains many 'classic' React.js apps styled with CSS
+              Modules.
             </p>
             <div class="mx-auto lg:mx-0">
               <a
                 href="#secondPage"
-                class="py-5 px-10 text-2xl font-bold text-white bg-cyan rounded-full lg:py-4 hover:opacity-70"
+                class="py-5 px-10 text-2xl font-bold text-white bg-cyan rounded-full lg:py-4 transition-all hover:opacity-70"
                 >Get Started</a
               >
             </div>
@@ -139,7 +139,7 @@
         </div>
       </div>
 
-   <!-- Slides Section -->
+      <!-- Slides Section -->
       <div class="section bg-road bg-cover bg-bottom s2">
         <!-- SLIDE NR 1 -->
         <div class="slide justify-center items-center p-4">
@@ -148,11 +148,11 @@
           <div
             class="w-10/12 lg:w-2/5 flex flex-col justify-center items-center m-auto bg-black opacity-70 p-4"
           >
-            <h2 class="text-3xl text-customGreen mb-1 bigger">
+            <h2 class="text-3xl text-customGreen mb-1 font-bold bigger">
               This very website
             </h2>
             <h4 class="text-base font-light mb-2 text-justify bigger">
-              This website a project on HTML, CSS, Tailwind and vanilla
+              This website a project on HTML, CSS, Tailwind CSS and vanilla
               JavaScript. Contact form in 'Contact' section is connected to the
               backend server built with Node.js, Express.js and Mongoose;
               MongoDB is used for storage of form data; the server is running on
@@ -162,7 +162,7 @@
               on GitHub down below.
             </h4>
             <h4 class="w-full text-right text-xs mb-3 bigger">
-              Tailwind, vanilla JavaScript, Node.js, Express.js, MongoDB,
+              Tailwind CSS, vanilla JavaScript, Node.js, Express.js, MongoDB,
               fullpage.js
             </h4>
             <div class="tooltips flex justify-around w-full">
@@ -208,9 +208,9 @@
             >
               <!-- this wrapper div below is needed for the positioning of text over image -->
               <div
-                class="p-6 w-[120%] bg-black opacity-70 lg:absolute right-0 z-10"
+                class="p-6 w-[120%] bg-black opacity-70 r lg:absolute right-0 z-10"
               >
-                <h2 class="text-3xl text-customGreen mb-1 bigger">
+                <h2 class="text-3xl text-customGreen mb-1 font-bold bigger">
                   jokes manager (Next.js, Tailwind, fullstack)
                 </h2>
                 <h4 class="text-base font-light mb-2 text-justify bigger">
@@ -222,10 +222,10 @@
                   NextAuth.js for authentication and authorisation (routes
                   protection on the client and on the server side); MongoDB for
                   data storage; React Context for 'global' state management,
-                  Tailwind is used for styling.
+                  Tailwind CSS is used for styling.
                 </h4>
                 <h6 class="text-right text-xs mb-3 bigger">
-                  Next.js, NextAuth.js, Tailwind, MongoDB, Vercel
+                  Next.js, NextAuth.js, Tailwind CSS, MongoDB, Vercel
                 </h6>
                 <div class="tooltips flex justify-around lg:justify-end">
                   <a
@@ -270,9 +270,9 @@
             >
               <!-- this wrapper div below is needed for the positioning of text over image -->
               <div
-                class="p-6 w-[120%] bg-black opacity-70 lg:absolute right-0 z-10"
+                class="p-6 w-[120%] bg-black opacity-70 r lg:absolute right-0 z-10"
               >
-                <h2 class="text-3xl text-customGreen mb-1 bigger">
+                <h2 class="text-3xl text-customGreen mb-1 font-bold bigger">
                   e-fashion (MERN app)
                 </h2>
                 <h4 class="text-base font-light mb-2 text-justify bigger">
@@ -332,9 +332,9 @@
             >
               <!-- this wrapper div below is needed for the positioning of text over image -->
               <div
-                class="p-6 w-[120%] bg-black opacity-70 lg:absolute right-0 z-10"
+                class="p-6 w-[120%] bg-black opacity-70 r lg:absolute right-0 z-10"
               >
-                <h2 class="text-3xl text-customGreen mb-1 bigger">
+                <h2 class="text-3xl text-customGreen mb-1 font-bold bigger">
                   eventsbook (MERN app)
                 </h2>
                 <h4 class="text-base font-light mb-2 text-justify bigger">
@@ -394,9 +394,9 @@
             >
               <!-- this wrapper div below is needed for the positioning of text over image -->
               <div
-                class="p-6 w-[120%] bg-black opacity-70 lg:absolute right-0 z-10"
+                class="p-6 w-[120%] bg-black opacity-70 r lg:absolute right-0 z-10"
               >
-                <h2 class="text-3xl text-customGreen mb-1 bigger">
+                <h2 class="text-3xl text-customGreen mb-1 font-bold bigger">
                   california destinations (Next.js)
                 </h2>
                 <h4 class="text-base font-light mb-2 text-justify bigger">
@@ -457,9 +457,9 @@
             >
               <!-- this wrapper div below is needed for the positioning of text over image -->
               <div
-                class="p-6 w-[120%] bg-black opacity-70 lg:absolute right-0 z-10"
+                class="p-6 w-[120%] bg-black opacity-70 r lg:absolute right-0 z-10"
               >
-                <h2 class="text-3xl text-customGreen mb-1 bigger">
+                <h2 class="text-3xl text-customGreen mb-1 font-bold bigger">
                   a to-do list (Redux)
                 </h2>
                 <h4 class="text-base font-light mb-2 text-justify bigger">
@@ -516,9 +516,9 @@
             >
               <!-- this wrapper div below is needed for the positioning of text over image -->
               <div
-                class="p-6 w-[120%] bg-black opacity-70 lg:absolute right-0 z-10"
+                class="p-6 w-[120%] bg-black opacity-70 r lg:absolute right-0 z-10"
               >
-                <h2 class="text-3xl text-customGreen mb-1 bigger">
+                <h2 class="text-3xl text-customGreen mb-1 font-bold bigger">
                   a to-do list (TypeScript)
                 </h2>
                 <h4 class="text-base font-light mb-2 text-justify bigger">
@@ -579,9 +579,9 @@
             >
               <!-- this wrapper div below is needed for the positioning of text over image -->
               <div
-                class="p-6 w-[120%] bg-black opacity-70 lg:absolute right-0 z-10"
+                class="p-6 w-[120%] bg-black opacity-70 r lg:absolute right-0 z-10"
               >
-                <h2 class="text-3xl text-customGreen mb-1 bigger">
+                <h2 class="text-3xl text-customGreen mb-1 font-bold bigger">
                   adhoc (Bootstrap)
                 </h2>
                 <h4 class="text-base font-light mb-2 text-justify bigger">
@@ -635,9 +635,9 @@
             >
               <!-- this wrapper div below is needed for the positioning of text over image -->
               <div
-                class="p-6 w-[120%] bg-black opacity-70 lg:absolute right-0 z-10"
+                class="p-6 w-[120%] bg-black opacity-70 r lg:absolute right-0 z-10"
               >
-                <h2 class="text-3xl text-customGreen mb-1 bigger">
+                <h2 class="text-3xl text-customGreen mb-1 font-bold bigger">
                   visit japan (SASS)
                 </h2>
                 <h4 class="text-base font-light mb-2 text-justify bigger">
@@ -692,9 +692,9 @@
             >
               <!-- this wrapper div below is needed for the positioning of text over image -->
               <div
-                class="p-6 w-[120%] bg-black opacity-70 lg:absolute right-0 z-10"
+                class="p-6 w-[120%] bg-black opacity-70 r lg:absolute right-0 z-10"
               >
-                <h2 class="text-3xl text-customGreen mb-1 bigger">
+                <h2 class="text-3xl text-customGreen mb-1 font-bold bigger">
                   wedding invitations (Wordpress)
                 </h2>
                 <h4 class="text-base font-light mb-2 text-justify bigger">
@@ -770,16 +770,16 @@
 
           <div class="text-center lg:text-left">
             <form class="form">
-              <h2 class="text-4xl mb-4">WHERE I WORK</h2>
-              <h3 class="text-lg uppercase p-2">
+              <h2 class="text-4xl font-bold mb-4 text-cyan">Where I work</h2>
+              <h3 class="text-lg p-2">
                 <i
-                  class="fa-solid fa-location-pin fa-xl mr-3 text-[#a3aca7] hover:text-white"
+                  class="fa-solid fa-location-pin mr-3 text-[#a3aca7] hover:text-white"
                 ></i
-                >Ireland, Europe
+                >Ireland
               </h3>
               <h3>
                 <i
-                  class="fa-solid fa-envelope fa-2xl text-[#a3aca7] hover:text-white mr-1"
+                  class="fa-solid fa-envelope fa-xl text-[#a3aca7] hover:text-white mr-1"
                 ></i>
                 email: elkom9393@gmail.com
               </h3>
@@ -820,10 +820,10 @@
               <button
                 type="submit"
                 value="Send Message"
-                class="group bg-[#a3aca7] w-1/3 p-3 rounded-md transition-all uppercase border-2 border-color-[#a3aca7] hover:text-black hover:bg-white"
+                class="px-10 py-5 w-fit mx-auto text-2xl font-bold text-white rounded-full bg-cyan hover:bg-cyanLlight md:text-base md:py-3 focus:outline-none"
               >
                 <i
-                  class="fa fa-paper-plane transition-all group-hover:text-black"
+                  class="fa fa-paper-plane"
                 ></i>
                 Send
               </button>

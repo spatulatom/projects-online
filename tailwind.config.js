@@ -14,7 +14,6 @@ module.exports = {
         customGreen2: '#6B7069',
         customGreen: 'cyan',
         cyan: 'hsl(180, 66%, 49%)',
-        cyanLight: 'hsl(180, 66%, 69%)',
         darkViolet: 'hsl(257, 27%, 26%)',
         red: 'hsl(0, 87%, 67%)',
         grayishViolet: 'hsl(257, 7%, 63%)',
