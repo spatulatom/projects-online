@@ -48,7 +48,7 @@
       <ul id="myMenu" class="fixed z-10 flex w-screen">
         <li class="group" data-menuanchor="firstPage" class="active">
           <a
-            class="inline-block bg-white opacity-80 px-12 py-3 mr-[1px] w-20vw  text-center text-customBlack font-bold no-underline text-base group-hover:text-black group-hover:bg-cyan"
+            class="inline-block bg-white opacity-80 px-12 py-3 mr-[1px] w-20vw text-center text-customBlack font-bold no-underline text-base group-hover:text-black group-hover:bg-cyan"
             href="#firstPage"
             ><i class="mr-1 group-hover:text-black fa-solid fa-house"></i
             >Home</a
@@ -56,14 +56,14 @@
         </li>
         <li class="group" data-menuanchor="secondPage">
           <a
-            class="inline-block bg-white opacity-80 px-12 py-3 mr-[1px] w-20vw  text-center text-customBlack font-bold no-underline text-base group-hover:text-black group-hover:bg-cyan"
+            class="inline-block bg-white opacity-80 px-12 py-3 mr-[1px] w-20vw text-center text-customBlack font-bold no-underline text-base group-hover:text-black group-hover:bg-cyan"
             href="#secondPage"
             ><i class="mr-1 group-hover:text-black fa fa-th"> </i>Projects</a
           >
         </li>
         <li class="group" data-menuanchor="fourthPage">
           <a
-            class="inline-block bg-white opacity-80 px-12 py-3 mr-[1px] w-20vw  text-center text-customBlack font-bold no-underline text-base rounded-br-3xl group-hover:text-black group-hover:bg-cyan"
+            class="inline-block bg-white opacity-80 px-12 py-3 mr-[1px] w-20vw text-center text-customBlack font-bold no-underline text-base rounded-br-3xl group-hover:text-black group-hover:bg-cyan"
             href="#fourthPage"
             ><i class="mr-1 group-hover:text-black fa fa-envelope"></i
             >Contact</a
@@ -101,8 +101,23 @@
     <div id="fullpage">
       <!-- Hero Section -->
       <div id="hero" class="section">
+        <!-- Icons For Light/Dark/System Modes -->
+        <div class="flex space-x-3 py-2 px-12 absolute z-40 top-4 right-0">
+          <i
+            id="light"
+            class="fa-regular fa-sun fa-2xl cursor-pointer transition-all hover:text-cyan"
+          ></i>
+          <i
+            id="dark"
+            class="fa-regular fa-moon fa-2xl cursor-pointer transition-all hover:text-cyan"
+          ></i>
+          <i
+            id="system"
+            class="fa-solid fa-desktop fa-2xl cursor-pointer transition-all hover:text-cyan"
+          ></i>
+        </div>
         <!-- Div For Cursor Effect -->
-        <div class="cursor border-2 dark:border-white border-customGreen"></div>
+        <!-- <div class="cursor border-2 dark:border-white border-customGreen"></div> -->
         <!-- Hero Container -->
         <div class="container flex flex-col-reverse mx-auto p-12 lg:flex-row">
           <!-- Content Container -->
