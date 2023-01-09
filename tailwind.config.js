@@ -27,7 +27,7 @@ module.exports = {
         180: '32rem',
       },
       width:{
-        '33vw': '23.333vw'
+        '20vw': '20vw'
       }
     },
   },

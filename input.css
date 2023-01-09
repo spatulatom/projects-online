@@ -375,7 +375,7 @@ https://developer.mozilla.org/en-US/docs/Web/CSS/:autofill */
   color: black;
 }
 #myMenu .active a {
-  background-color: white;
+  background-color: hsl(180, 66%, 49%);
 }
 
 /* FULLPAGE NAVIGATION - HORIZONTAL NAV DOTS: */
