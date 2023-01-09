@@ -39,6 +39,19 @@
 
     <!-- tailwind -->
     <link rel="stylesheet" href="css/style.css" />
+    <script>
+      // https://www.freecodecamp.org/news/how-to-build-a-dark-mode-switcher-with-tailwind-css-and-flowbite
+      // It's best to inline this part in `head` to avoid FOUC (flash of unstyled content) when changing pages or themes
+      if (
+        localStorage.getItem('color-theme') === 'dark' ||
+        (!('color-theme' in localStorage) &&
+          window.matchMedia('(prefers-color-scheme: dark)').matches)
+      ) {
+        document.documentElement.classList.add('dark');
+      } else {
+        document.documentElement.classList.remove('dark');
+      }
+    </script>
   </head>
 
   <body id="body" class="dark:bg-customBlack bg-white text-white font-sans">
@@ -102,18 +115,19 @@
       <!-- Hero Section -->
       <div id="hero" class="section">
         <!-- Icons For Light/Dark/System Modes -->
-        <div class="flex space-x-3 py-2 px-12 absolute z-40 top-4 right-0">
+        <div class="flex space-x-3 py-3 px-12 absolute z-40 top-4 right-0">
+       
           <i
             id="light"
-            class="fa-regular fa-sun fa-2xl cursor-pointer transition-all hover:text-cyan"
+            class="icon fa-regular fa-sun fa-2xl cursor-pointer transition-all hover:text-cyan"
           ></i>
           <i
             id="dark"
-            class="fa-regular fa-moon fa-2xl cursor-pointer transition-all hover:text-cyan"
+            class="icon fa-solid fa-moon fa-2xl cursor-pointer transition-all hover:text-cyan"
           ></i>
           <i
             id="system"
-            class="fa-solid fa-desktop fa-2xl cursor-pointer transition-all hover:text-cyan"
+            class="icon fa-solid fa-desktop fa-2xl cursor-pointer transition-all hover:text-cyan"
           ></i>
         </div>
         <!-- Div For Cursor Effect -->
