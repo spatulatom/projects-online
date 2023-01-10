@@ -11,8 +11,6 @@ module.exports = {
       colors: {
         blackish: 'rgb(0, 0, 0, 0.3)',
         customBlack: 'rgb(30, 30, 40)',
-        customGreen2: '#6B7069',
-        customGreen: 'cyan',
         cyan: 'hsl(180, 66%, 49%)',
         darkViolet: 'hsl(257, 27%, 26%)',
         red: 'hsl(0, 87%, 67%)',
@@ -22,6 +20,7 @@ module.exports = {
       },
       backgroundImage: {
         road: "url('../imgs/road3.jpg')",
+        view: "url('../imgs/view.jpg')"
       },
       spacing: {
         180: '32rem',

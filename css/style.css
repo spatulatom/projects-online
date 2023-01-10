@@ -894,11 +894,6 @@ textarea {
   border-top-width: 2px;
 }
 
-.border-customGreen {
-  --tw-border-opacity: 1;
-  border-color: rgb(0 255 255 / var(--tw-border-opacity));
-}
-
 .border-gray-400 {
   --tw-border-opacity: 1;
   border-color: rgb(156 163 175 / var(--tw-border-opacity));
@@ -924,6 +919,10 @@ textarea {
   background-color: hsl(180 66% 49% / var(--tw-bg-opacity));
 }
 
+.bg-view {
+  background-image: url('../imgs/view.jpg');
+}
+
 .bg-cover {
   background-size: cover;
 }
@@ -938,6 +937,10 @@ textarea {
 
 .p-12 {
   padding: 3rem;
+}
+
+.p-8 {
+  padding: 2rem;
 }
 
 .p-6 {
@@ -974,10 +977,6 @@ textarea {
 
 .pr-16 {
   padding-right: 4rem;
-}
-
-.pb-6 {
-  padding-bottom: 1.5rem;
 }
 
 .pt-20 {
@@ -1044,6 +1043,11 @@ textarea {
   line-height: 1.75rem;
 }
 
+.text-sm {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
 .font-bold {
   font-weight: 700;
 }
@@ -1073,11 +1077,6 @@ textarea {
 .text-gray-400 {
   --tw-text-opacity: 1;
   color: rgb(156 163 175 / var(--tw-text-opacity));
-}
-
-.text-customGreen {
-  --tw-text-opacity: 1;
-  color: rgb(0 255 255 / var(--tw-text-opacity));
 }
 
 .text-cyan {
@@ -1269,6 +1268,8 @@ the are written with the important sign:
 https://css-tricks.com/snippets/css/change-autocomplete-styles-webkit-browsers/,
 https://developer.mozilla.org/en-US/docs/Web/CSS/:autofill */
 
+/* FULLPAGE CONTAINER OF INDIVIDUAL SLIDES */
+
 /* FULLPAGE CLASS 'active' IS ADDED TO the CURRENT MENU LINK
 SO IT CAN BE STYLED */
 
@@ -1290,12 +1291,12 @@ SO IT CAN BE STYLED */
   left: 2rem;
   border-width: 38.5px 34px 38.5px 0;
   bottom: 3%;
-  border-color: transparent black;
+  border-color: transparent hsl(260, 8%, 14%);
 }
 
 .fp-arrow.fp-controlArrow.fp-next {
   right: 4rem;
-  border-color: transparent black;
+  border-color: transparent hsl(260, 8%, 14%);
 }
 
 .dark .fp-arrow.fp-controlArrow.fp-prev {
@@ -1311,6 +1312,11 @@ SO IT CAN BE STYLED */
 }
 
 /* FULLPAGE NAVIGATION DOTS- COLOR OF NAVIGATION DOTS: */
+
+#fp-nav ul li a span,
+.fp-slidesNav ul li a span {
+  background-color: hsl(180, 66%, 49%);
+}
 
 .dark #fp-nav ul li a span,
 .dark .fp-slidesNav ul li a span {
@@ -1399,10 +1405,6 @@ SO IT CAN BE STYLED */
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
-.dark .dark\:bg-road {
-  background-image: url('../imgs/road3.jpg');
-}
-
 @media (min-width: 768px) {
   .md\:w-180 {
     width: 32rem;
@@ -1435,6 +1437,10 @@ SO IT CAN BE STYLED */
 
   .lg\:mb-0 {
     margin-bottom: 0px;
+  }
+
+  .lg\:mb-3 {
+    margin-bottom: 0.75rem;
   }
 
   .lg\:block {
@@ -1477,12 +1483,12 @@ SO IT CAN BE STYLED */
     justify-content: flex-end;
   }
 
-  .lg\:py-4 {
-    padding-top: 1rem;
-    padding-bottom: 1rem;
+  .lg\:p-8 {
+    padding: 2rem;
   }
 
-  .lg\:pb-4 {
+  .lg\:py-4 {
+    padding-top: 1rem;
     padding-bottom: 1rem;
   }
 
@@ -1490,9 +1496,33 @@ SO IT CAN BE STYLED */
     text-align: left;
   }
 
+  .lg\:text-right {
+    text-align: right;
+  }
+
   .lg\:text-6xl {
     font-size: 3.75rem;
     line-height: 1;
+  }
+
+  .lg\:text-3xl {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+  }
+
+  .lg\:text-base {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+
+  .lg\:text-xs {
+    font-size: 0.75rem;
+    line-height: 1rem;
+  }
+
+  .lg\:text-2xl {
+    font-size: 1.5rem;
+    line-height: 2rem;
   }
 }
 
