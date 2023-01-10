@@ -52,7 +52,7 @@
     height: 3px;
     top: 0;
     left: 0;
-    background: white;
+    /* background: white; */
     transform: rotate(0);
     transition: all 0.5s;
   }
@@ -63,7 +63,7 @@
 
   .hamburger-bottom {
     transform: translateY(20px);
-    background: white;
+    /* background: white; */
   }
 
   .open {

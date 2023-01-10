@@ -3,7 +3,6 @@ let mobileNav = document.querySelector('.mobile-nav');
 let mobileNavItems = document.querySelectorAll('.mobile-nav__item a');
 let themeIcons = document.querySelectorAll('.icon');
 
-
 let mobileLinks = document.querySelectorAll('.link');
 
 //  so basically click eventlisteners are added to all links
@@ -37,20 +36,20 @@ mobileLinks.forEach((link) => {
 // });
 
 toggleButton.addEventListener('click', function () {
-  toggleButton.classList.toggle('open')
+  toggleButton.classList.toggle('open');
   mobileNav.classList.toggle('show');
-  
 });
 
 mobileNavItems.forEach((item) => {
   item.addEventListener('click', () => {
     mobileNav.classList.remove('show');
-    toggleButton.classList.toggle('open')
+    toggleButton.classList.toggle('open');
   });
 });
+
 themeIcons.forEach((item) => {
   item.addEventListener('click', () => {
     mobileNav.classList.remove('show');
-    toggleButton.classList.toggle('open')
+    toggleButton.classList.toggle('open');
   });
 });
