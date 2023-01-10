@@ -193,7 +193,6 @@ ICONS AND AN EYE ICON UNDER PROJECT DESCRIPTION: */
   }
 }
 
-
 /* SECTION 3 (CONTACT) - CONTACT FORM: */
 
 /* cide below overwrites mozilla default styling for autofill
@@ -277,11 +276,11 @@ SO IT CAN BE STYLED */
   left: 2rem;
   border-width: 38.5px 34px 38.5px 0;
   bottom: 3%;
-  border-color: transparent hsl(260, 8%, 14%);
+  border-color: transparent hsl(257, 27%, 26%);
 }
 .fp-arrow.fp-controlArrow.fp-next {
   right: 4rem;
-  border-color: transparent hsl(260, 8%, 14%);
+  border-color: transparent hsl(257, 27%, 26%);
 }
 .dark .fp-arrow.fp-controlArrow.fp-prev {
   left: 2rem;
@@ -296,7 +295,7 @@ SO IT CAN BE STYLED */
 }
 
 /* FULLPAGE NAVIGATION DOTS- COLOR OF NAVIGATION DOTS: */
- #fp-nav ul li a span,
+#fp-nav ul li a span,
 .fp-slidesNav ul li a span {
   background-color: hsl(180, 66%, 49%);
 }
@@ -333,5 +332,4 @@ SO IT CAN BE STYLED */
   [type='email'] {
     width: 100%;
   }
-
 }

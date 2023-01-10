@@ -792,10 +792,6 @@ textarea {
   width: fit-content;
 }
 
-.max-w-full {
-  max-width: 100%;
-}
-
 .grow-0 {
   flex-grow: 0;
 }
@@ -919,6 +915,30 @@ textarea {
   background-color: hsl(180 66% 49% / var(--tw-bg-opacity));
 }
 
+.bg-gray-200 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(229 231 235 / var(--tw-bg-opacity));
+}
+
+.bg-darkViolet {
+  --tw-bg-opacity: 1;
+  background-color: hsl(257 27% 26% / var(--tw-bg-opacity));
+}
+
+.bg-veryDarkViolet {
+  --tw-bg-opacity: 1;
+  background-color: hsl(260 8% 14% / var(--tw-bg-opacity));
+}
+
+.bg-inherit {
+  background-color: inherit;
+}
+
+.bg-gray-100 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(243 244 246 / var(--tw-bg-opacity));
+}
+
 .bg-view {
   background-image: url('../imgs/view.jpg');
 }
@@ -1018,9 +1038,9 @@ textarea {
   line-height: 2rem;
 }
 
-.text-3xl {
-  font-size: 1.875rem;
-  line-height: 2.25rem;
+.text-sm {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
 }
 
 .text-xs {
@@ -1041,11 +1061,6 @@ textarea {
 .text-xl {
   font-size: 1.25rem;
   line-height: 1.75rem;
-}
-
-.text-sm {
-  font-size: 0.875rem;
-  line-height: 1.25rem;
 }
 
 .font-bold {
@@ -1097,10 +1112,6 @@ textarea {
   opacity: 0.8;
 }
 
-.opacity-70 {
-  opacity: 0.7;
-}
-
 .shadow-2xl {
   --tw-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
   --tw-shadow-colored: 0 25px 50px -12px var(--tw-shadow-color);
@@ -1111,6 +1122,10 @@ textarea {
   transition-property: all;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
+}
+
+.duration-1000 {
+  transition-duration: 1000ms;
 }
 
 .tooltips .tooltip {
@@ -1291,12 +1306,12 @@ SO IT CAN BE STYLED */
   left: 2rem;
   border-width: 38.5px 34px 38.5px 0;
   bottom: 3%;
-  border-color: transparent hsl(260, 8%, 14%);
+  border-color: transparent hsl(257, 27%, 26%);
 }
 
 .fp-arrow.fp-controlArrow.fp-next {
   right: 4rem;
-  border-color: transparent hsl(260, 8%, 14%);
+  border-color: transparent hsl(257, 27%, 26%);
 }
 
 .dark .fp-arrow.fp-controlArrow.fp-prev {
@@ -1405,6 +1420,20 @@ SO IT CAN BE STYLED */
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
+.dark .dark\:bg-veryDarkViolet {
+  --tw-bg-opacity: 1;
+  background-color: hsl(260 8% 14% / var(--tw-bg-opacity));
+}
+
+.dark .dark\:text-white {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.dark .dark\:opacity-80 {
+  opacity: 0.8;
+}
+
 @media (min-width: 768px) {
   .md\:w-180 {
     width: 32rem;
@@ -1483,10 +1512,6 @@ SO IT CAN BE STYLED */
     justify-content: flex-end;
   }
 
-  .lg\:p-8 {
-    padding: 2rem;
-  }
-
   .lg\:py-4 {
     padding-top: 1rem;
     padding-bottom: 1rem;
@@ -1496,33 +1521,19 @@ SO IT CAN BE STYLED */
     text-align: left;
   }
 
-  .lg\:text-right {
-    text-align: right;
-  }
-
   .lg\:text-6xl {
     font-size: 3.75rem;
     line-height: 1;
   }
 
-  .lg\:text-3xl {
-    font-size: 1.875rem;
-    line-height: 2.25rem;
+  .lg\:text-2xl {
+    font-size: 1.5rem;
+    line-height: 2rem;
   }
 
   .lg\:text-base {
     font-size: 1rem;
     line-height: 1.5rem;
-  }
-
-  .lg\:text-xs {
-    font-size: 0.75rem;
-    line-height: 1rem;
-  }
-
-  .lg\:text-2xl {
-    font-size: 1.5rem;
-    line-height: 2rem;
   }
 }
 
