@@ -379,13 +379,25 @@ https://developer.mozilla.org/en-US/docs/Web/CSS/:autofill */
 }
 
 /* FULLPAGE NAVIGATION - HORIZONTAL NAV DOTS: */
-.fp-arrow.fp-controlArrow.fp-prev {
+.dark .fp-arrow.fp-controlArrow.fp-prev {
   left: 2rem;
   border-width: 38.5px 34px 38.5px 0;
   bottom: 3%;
+  border-color: white;
+}
+.dark .fp-arrow.fp-controlArrow.fp-next {
+  right: 4rem;
+  border-color: white;
+}
+.fp-arrow.fp-controlArrow.fp-prev {
+  left: 2rem;
+  /* border-width: 38.5px 34px 38.5px 0; */
+  bottom: 3%;
+  border-color: black;
 }
 .fp-arrow.fp-controlArrow.fp-next {
   right: 4rem;
+  border-color: black;
 }
 
 /* FULLPAGE NAVIGATION - COLOR OF NAVIGATION DOTS: */

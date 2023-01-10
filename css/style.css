@@ -674,22 +674,6 @@ textarea {
   right: 0px;
 }
 
-.top-full {
-  top: 100%;
-}
-
-.top-2 {
-  top: 0.5rem;
-}
-
-.left-1\/2 {
-  left: 50%;
-}
-
-.right-full {
-  right: 100%;
-}
-
 .z-10 {
   z-index: 10;
 }
@@ -704,10 +688,6 @@ textarea {
 
 .m-auto {
   margin: auto;
-}
-
-.m-0 {
-  margin: 0px;
 }
 
 .mx-auto {
@@ -751,8 +731,8 @@ textarea {
   margin-bottom: 0.75rem;
 }
 
-.mt-6 {
-  margin-top: 1.5rem;
+.mt-8 {
+  margin-top: 2rem;
 }
 
 .mb-4 {
@@ -761,10 +741,6 @@ textarea {
 
 .mr-3 {
   margin-right: 0.75rem;
-}
-
-.mt-8 {
-  margin-top: 2rem;
 }
 
 .block {
@@ -864,18 +840,14 @@ textarea {
   justify-content: space-around;
 }
 
-.justify-evenly {
-  justify-content: space-evenly;
-}
-
 .gap-8 {
   gap: 2rem;
 }
 
-.space-x-4 > :not([hidden]) ~ :not([hidden]) {
+.space-x-6 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-x-reverse: 0;
-  margin-right: calc(1rem * var(--tw-space-x-reverse));
-  margin-left: calc(1rem * calc(1 - var(--tw-space-x-reverse)));
+  margin-right: calc(1.5rem * var(--tw-space-x-reverse));
+  margin-left: calc(1.5rem * calc(1 - var(--tw-space-x-reverse)));
 }
 
 .space-x-3 > :not([hidden]) ~ :not([hidden]) {
@@ -890,18 +862,6 @@ textarea {
   margin-bottom: calc(2.5rem * var(--tw-space-y-reverse));
 }
 
-.space-x-6 > :not([hidden]) ~ :not([hidden]) {
-  --tw-space-x-reverse: 0;
-  margin-right: calc(1.5rem * var(--tw-space-x-reverse));
-  margin-left: calc(1.5rem * calc(1 - var(--tw-space-x-reverse)));
-}
-
-.space-x-5 > :not([hidden]) ~ :not([hidden]) {
-  --tw-space-x-reverse: 0;
-  margin-right: calc(1.25rem * var(--tw-space-x-reverse));
-  margin-left: calc(1.25rem * calc(1 - var(--tw-space-x-reverse)));
-}
-
 .overflow-hidden {
   overflow: hidden;
 }
@@ -912,6 +872,10 @@ textarea {
 
 .rounded-full {
   border-radius: 9999px;
+}
+
+.rounded-lg {
+  border-radius: 0.5rem;
 }
 
 .rounded-md {
@@ -935,9 +899,9 @@ textarea {
   border-color: rgb(0 255 255 / var(--tw-border-opacity));
 }
 
-.border-\[\#a3aca7\] {
+.border-gray-400 {
   --tw-border-opacity: 1;
-  border-color: rgb(163 172 167 / var(--tw-border-opacity));
+  border-color: rgb(156 163 175 / var(--tw-border-opacity));
 }
 
 .bg-white {
@@ -960,10 +924,6 @@ textarea {
   background-color: hsl(180 66% 49% / var(--tw-bg-opacity));
 }
 
-.bg-road {
-  background-image: url('../imgs/road3.jpg');
-}
-
 .bg-cover {
   background-size: cover;
 }
@@ -972,28 +932,20 @@ textarea {
   background-position: bottom;
 }
 
-.p-12 {
-  padding: 3rem;
-}
-
 .p-4 {
   padding: 1rem;
+}
+
+.p-12 {
+  padding: 3rem;
 }
 
 .p-6 {
   padding: 1.5rem;
 }
 
-.p-2 {
-  padding: 0.5rem;
-}
-
 .p-3 {
   padding: 0.75rem;
-}
-
-.p-0 {
-  padding: 0px;
 }
 
 .px-12 {
@@ -1138,11 +1090,6 @@ textarea {
   color: rgb(163 172 167 / var(--tw-text-opacity));
 }
 
-.text-black {
-  --tw-text-opacity: 1;
-  color: rgb(0 0 0 / var(--tw-text-opacity));
-}
-
 .no-underline {
   text-decoration-line: none;
 }
@@ -1163,20 +1110,6 @@ textarea {
 
 .transition-all {
   transition-property: all;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 150ms;
-}
-
-.transition {
-  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
-  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
-  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 150ms;
-}
-
-.transition-colors {
-  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
 }
@@ -1463,14 +1396,28 @@ https://developer.mozilla.org/en-US/docs/Web/CSS/:autofill */
 
 /* FULLPAGE NAVIGATION - HORIZONTAL NAV DOTS: */
 
-.fp-arrow.fp-controlArrow.fp-prev {
+.dark .fp-arrow.fp-controlArrow.fp-prev {
   left: 2rem;
   border-width: 38.5px 34px 38.5px 0;
   bottom: 3%;
+  border-color: white;
+}
+
+.dark .fp-arrow.fp-controlArrow.fp-next {
+  right: 4rem;
+  border-color: white;
+}
+
+.fp-arrow.fp-controlArrow.fp-prev {
+  left: 2rem;
+  /* border-width: 38.5px 34px 38.5px 0; */
+  bottom: 3%;
+  border-color: black;
 }
 
 .fp-arrow.fp-controlArrow.fp-next {
   right: 4rem;
+  border-color: black;
 }
 
 /* FULLPAGE NAVIGATION - COLOR OF NAVIGATION DOTS: */
@@ -1532,11 +1479,6 @@ https://developer.mozilla.org/en-US/docs/Web/CSS/:autofill */
   color: hsl(180 66% 49% / var(--tw-text-opacity));
 }
 
-.hover\:text-white:hover {
-  --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
 .hover\:opacity-70:hover {
   opacity: 0.7;
 }
@@ -1569,6 +1511,10 @@ https://developer.mozilla.org/en-US/docs/Web/CSS/:autofill */
 .dark .dark\:bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.dark .dark\:bg-road {
+  background-image: url('../imgs/road3.jpg');
 }
 
 @media (min-width: 768px) {

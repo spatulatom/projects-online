@@ -6,7 +6,7 @@ const darkMobile = document.getElementById('dark-mobile');
 const systemMobile = document.getElementById('system-mobile');
 
 // When setting up modes that are hybrid between opertaing system and
-// button clicking :
+// button clicking (more in 'Fylo' project) :
 // 1.Check System Mode + add to <html class="dark"> or <html> no class for
 // the light mode and this is done
 // with: document.documentElement.classList.add/remove('dark') - this is
@@ -42,6 +42,32 @@ if (!('color-theme' in localStorage)) {
     }
   }
 }
+// listen for OS theme changes (user changes their preference
+// while using your app)
+// while the website is already loaded
+window
+  .matchMedia('(prefers-color-scheme: dark)')
+  .addEventListener('change', ({ matches }) => {
+    lightIcon.classList.remove('text-cyan');
+    darkIcon.classList.remove('text-cyan');
+    systemIcon.classList.add('text-cyan');
+    // mobile nav
+    lightMobile.classList.remove('text-cyan');
+    darkMobile.classList.remove('text-cyan');
+    systemMobile.classList.add('text-cyan');
+
+    if (matches) {
+      localStorage.setItem('color-theme', 'dark');
+      localStorage.setItem('mode-system', 'system');
+      document.documentElement.classList.add('dark');
+      console.log('change to dark mode!');
+    } else {
+      console.log('change to light mode!');
+      localStorage.setItem('color-theme', 'light');
+      localStorage.setItem('mode-system', 'system');
+      document.documentElement.classList.remove('dark');
+    }
+  });
 
 // 3. Listen for the click, set up: html class to 'dark' or remove the class +
 // set up color of the icons + set up localStorage
