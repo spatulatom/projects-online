@@ -61,7 +61,7 @@
     <!-- Nav Container -->
     <nav>
       <!-- Flex Container for Desktop Menu -->
-      <ul id="myMenu" class="fixed z-10 flex w-screen ">
+      <ul id="myMenu" class="hidden fixed z-10 lg:flex w-screen">
         <li class="group" data-menuanchor="firstPage" class="active">
           <a
             class="inline-block bg-white px-12 py-4 w-20vw text-center text-grayishViolet font-bold no-underline text-base group-hover:text-veryDarkViolet"
@@ -88,32 +88,33 @@
 
         <!-- Theme Icons -->
         <li>
-        <div class="flex justify-between py-4 w-20vw">
-          <div class="hidden lg:flex space-x-3 py-3">
-            <i
-              id="light"
-              class="icon fa-regular fa-sun fa-xl cursor-pointer text-grayishViolet transition-all hover:text-cyan"
-            >
-            </i>
+          <!-- Theme Icons Container -->
+          <div class="flex justify-end space-x-16 p-4 px-12 w-20vw">
+            <div class="hidden lg:flex space-x-3 py-3">
+              <i
+                id="light"
+                class="icon fa-regular fa-sun fa-xl cursor-pointer text-grayishViolet transition-all hover:text-cyan"
+              >
+              </i>
 
-            <i
-              id="dark"
-              class="icon fa-solid fa-moon fa-xl cursor-pointer text-grayishViolet transition-all hover:text-cyan"
-            ></i>
-            <i
-              id="system"
-              class="icon fa-solid fa-desktop fa-xl cursor-pointer text-grayishViolet transition-all hover:text-cyan"
-            ></i>
+              <i
+                id="dark"
+                class="icon fa-solid fa-moon fa-xl cursor-pointer text-grayishViolet transition-all hover:text-cyan"
+              ></i>
+              <i
+                id="system"
+                class="icon fa-solid fa-desktop fa-xl cursor-pointer text-grayishViolet transition-all hover:text-cyan"
+              ></i>
+            </div>
+            <a
+              target="_blank"
+              href="https://github.com/spatulatom"
+              alt="github link"
+              ><i
+                class="fab fa-github fa-xl cursor-pointer text-grayishViolet transition-all hover:text-cyan"
+              ></i
+            ></a>
           </div>
-          <a
-            target="_blank"
-            href="https://github.com/spatulatom"
-            alt="github link"
-            ><i
-              class="fab fa-github fa-xl cursor-pointer text-grayishViolet transition-all hover:text-cyan"
-            ></i
-          ></a>
-        </div>
         </li>
       </ul>
 
@@ -122,40 +123,57 @@
         id="menu-btn"
         class="z-30 fixed top-4 left-4 block lg:hidden focus:outline-none hamburger"
       >
-        <span class="hamburger-top bg-black dark:bg-white"></span>
-        <span class="hamburger-middle bg-black dark:bg-white"></span>
-        <span class="hamburger-bottom bg-black dark:bg-white"></span>
+        <span class="hamburger-top bg-cyan"></span>
+        <span class="hamburger-middle bg-cyan"></span>
+        <span class="hamburger-bottom bg-cyan"></span>
       </button>
 
       <!-- Mobile Menu -->
-      <div class="mobile-nav bg-customBlack">
+      <div class="mobile-nav bg-white dark:bg-customBlack">
         <ul class="flex flex-col p-4 justify-center items-center h-full">
-          <li class="mobile-nav__item">
+          <li class="mobile-nav__item text-grayishViolet dark:text-white">
             <a href="#firstPage" class="link current">Home</a>
           </li>
-          <li class="mobile-nav__item">
+          <li class="mobile-nav__item text-grayishViolet dark:text-white">
             <a href="#secondPage" class="link">Projects</a>
           </li>
-          <li class="mobile-nav__item">
+          <li class="mobile-nav__item text-grayishViolet dark:text-white">
             <a href="#fourthPage" class="link">Contact</a>
           </li>
-          <li class="font-bold mt-24">Switch theme:</li>
+          <li class="font-bold text-grayishViolet mt-2 pt-8 border-t-2 border-grayishViolet">Switch theme:</li>
           <li>
             <div class="flex space-x-6 pt-8">
               <i
                 id="light-mobile"
-                class="icon fa-regular fa-sun fa-xl cursor-pointer transition-all hover:text-cyan"
+                class="icon fa-regular fa-sun fa-2xl  text-grayishViolet cursor-pointer transition-all hover:text-cyan"
               ></i>
               <i
                 id="dark-mobile"
-                class="icon fa-solid fa-moon fa-xl cursor-pointer transition-all hover:text-cyan"
+                class="icon fa-solid fa-moon fa-2xl  text-grayishViolet cursor-pointer transition-all hover:text-cyan"
               ></i>
               <i
                 id="system-mobile"
-                class="icon fa-solid fa-tablet-screen-button fa-xl cursor-pointer transition-all hover:text-cyan"
+                class="icon fa-solid fa-tablet-screen-button fa-2xl  text-grayishViolet cursor-pointer transition-all hover:text-cyan"
               ></i>
             </div>
           </li>
+          <li class="absolute bottom-6">
+            
+            <!-- Social Icons -->
+            <ul class="mt-8 flex space-x-6">
+              <a
+                target="_blank"
+                href="https://github.com/spatulatom"
+                alt="github link"
+              >
+                <i
+                  class="fab fa-github text-grayishViolet fa-xl transition-all hover:text-cyan"
+                ></i>
+              </a>
+            
+            </ul>
+          </li>
+
         </ul>
       </div>
     </nav>
