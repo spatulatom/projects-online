@@ -695,10 +695,6 @@ textarea {
   margin-right: auto;
 }
 
-.mr-\[1px\] {
-  margin-right: 1px;
-}
-
 .mr-1 {
   margin-right: 0.25rem;
 }
@@ -772,7 +768,7 @@ textarea {
 }
 
 .w-20vw {
-  width: 20vw;
+  width: 25vw;
 }
 
 .w-10\/12 {
@@ -832,6 +828,10 @@ textarea {
   justify-content: center;
 }
 
+.justify-between {
+  justify-content: space-between;
+}
+
 .justify-around {
   justify-content: space-around;
 }
@@ -840,16 +840,16 @@ textarea {
   gap: 2rem;
 }
 
-.space-x-6 > :not([hidden]) ~ :not([hidden]) {
-  --tw-space-x-reverse: 0;
-  margin-right: calc(1.5rem * var(--tw-space-x-reverse));
-  margin-left: calc(1.5rem * calc(1 - var(--tw-space-x-reverse)));
-}
-
 .space-x-3 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-x-reverse: 0;
   margin-right: calc(0.75rem * var(--tw-space-x-reverse));
   margin-left: calc(0.75rem * calc(1 - var(--tw-space-x-reverse)));
+}
+
+.space-x-6 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-x-reverse: 0;
+  margin-right: calc(1.5rem * var(--tw-space-x-reverse));
+  margin-left: calc(1.5rem * calc(1 - var(--tw-space-x-reverse)));
 }
 
 .space-y-10 > :not([hidden]) ~ :not([hidden]) {
@@ -925,15 +925,6 @@ textarea {
   background-color: hsl(257 27% 26% / var(--tw-bg-opacity));
 }
 
-.bg-veryDarkViolet {
-  --tw-bg-opacity: 1;
-  background-color: hsl(260 8% 14% / var(--tw-bg-opacity));
-}
-
-.bg-inherit {
-  background-color: inherit;
-}
-
 .bg-gray-100 {
   --tw-bg-opacity: 1;
   background-color: rgb(243 244 246 / var(--tw-bg-opacity));
@@ -976,6 +967,11 @@ textarea {
   padding-right: 3rem;
 }
 
+.py-4 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
 .py-3 {
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
@@ -991,12 +987,12 @@ textarea {
   padding-right: 2.5rem;
 }
 
-.pt-8 {
-  padding-top: 2rem;
-}
-
 .pr-16 {
   padding-right: 4rem;
+}
+
+.pt-8 {
+  padding-top: 2rem;
 }
 
 .pt-20 {
@@ -1079,19 +1075,19 @@ textarea {
   font-style: italic;
 }
 
-.text-white {
+.text-grayishViolet {
   --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
-.text-customBlack {
-  --tw-text-opacity: 1;
-  color: rgb(30 30 40 / var(--tw-text-opacity));
+  color: hsl(257 7% 63% / var(--tw-text-opacity));
 }
 
 .text-gray-400 {
   --tw-text-opacity: 1;
   color: rgb(156 163 175 / var(--tw-text-opacity));
+}
+
+.text-white {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 .text-cyan {
@@ -1106,10 +1102,6 @@ textarea {
 
 .no-underline {
   text-decoration-line: none;
-}
-
-.opacity-80 {
-  opacity: 0.8;
 }
 
 .shadow-2xl {
@@ -1289,15 +1281,13 @@ https://developer.mozilla.org/en-US/docs/Web/CSS/:autofill */
 SO IT CAN BE STYLED */
 
 #myMenu .active a {
-  color: black;
+  color: hsl(260, 8%, 14%);
+  background-color: hsl(180, 66%, 49%);
+  border-color: hsl(180, 66%, 49%);
 }
 
 #myMenu .active a i {
-  color: black;
-}
-
-#myMenu .active a {
-  background-color: hsl(180, 66%, 49%);
+  color: hsl(260, 8%, 14%);
 }
 
 /* FULLPAGE NAVIGATION ARROWS: */
@@ -1395,9 +1385,9 @@ SO IT CAN BE STYLED */
   outline-offset: 2px;
 }
 
-.group:hover .group-hover\:bg-cyan {
-  --tw-bg-opacity: 1;
-  background-color: hsl(180 66% 49% / var(--tw-bg-opacity));
+.group:hover .group-hover\:text-veryDarkViolet {
+  --tw-text-opacity: 1;
+  color: hsl(260 8% 14% / var(--tw-text-opacity));
 }
 
 .group:hover .group-hover\:text-black {
@@ -1428,10 +1418,6 @@ SO IT CAN BE STYLED */
 .dark .dark\:text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
-.dark .dark\:opacity-80 {
-  opacity: 0.8;
 }
 
 @media (min-width: 768px) {
