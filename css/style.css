@@ -905,6 +905,11 @@ textarea {
   background-color: rgb(30 30 40 / var(--tw-bg-opacity));
 }
 
+.bg-gray-200 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(229 231 235 / var(--tw-bg-opacity));
+}
+
 .bg-wall {
   background-image: url('../imgs/wall.jpg');
 }
@@ -1031,6 +1036,10 @@ textarea {
 
 .font-light {
   font-weight: 300;
+}
+
+.font-normal {
+  font-weight: 400;
 }
 
 .uppercase {
@@ -1469,6 +1478,11 @@ SO IT CAN BE STYLED */
   .lg\:text-base {
     font-size: 1rem;
     line-height: 1.5rem;
+  }
+
+  .lg\:text-sm {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
   }
 }
 
