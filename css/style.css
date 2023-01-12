@@ -727,14 +727,6 @@ textarea {
   margin-bottom: 1rem;
 }
 
-.mr-3 {
-  margin-right: 0.75rem;
-}
-
-.mr-1 {
-  margin-right: 0.25rem;
-}
-
 .block {
   display: block;
 }
@@ -876,54 +868,21 @@ textarea {
   border-radius: 0.5rem;
 }
 
-.rounded-md {
-  border-radius: 0.375rem;
-}
-
 .rounded-br-3xl {
   border-bottom-right-radius: 1.5rem;
-}
-
-.border {
-  border-width: 1px;
-}
-
-.border-2 {
-  border-width: 2px;
 }
 
 .border-t-2 {
   border-top-width: 2px;
 }
 
-.border-t {
-  border-top-width: 1px;
-}
-
-.border-b {
-  border-bottom-width: 1px;
-}
-
 .border-b-2 {
   border-bottom-width: 2px;
-}
-
-.border-t-4 {
-  border-top-width: 4px;
-}
-
-.border-b-4 {
-  border-bottom-width: 4px;
 }
 
 .border-grayishViolet {
   --tw-border-opacity: 1;
   border-color: hsl(257 7% 63% / var(--tw-border-opacity));
-}
-
-.border-gray-400 {
-  --tw-border-opacity: 1;
-  border-color: rgb(156 163 175 / var(--tw-border-opacity));
 }
 
 .bg-white {
@@ -946,8 +905,8 @@ textarea {
   background-color: rgb(30 30 40 / var(--tw-bg-opacity));
 }
 
-.bg-view {
-  background-image: url('../imgs/view.jpg');
+.bg-wall {
+  background-image: url('../imgs/wall.jpg');
 }
 
 .bg-cover {
@@ -1126,10 +1085,6 @@ textarea {
   transition-property: all;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
-}
-
-.duration-1000 {
-  transition-duration: 1000ms;
 }
 
 .tooltips .tooltip {
@@ -1316,12 +1271,12 @@ SO IT CAN BE STYLED */
   left: 2rem;
   border-width: 38.5px 34px 38.5px 0;
   bottom: 3%;
-  border-color: transparent  hsl(180, 66%, 49%);
+  border-color: transparent  hsl(257, 7%, 63%);
 }
 
 .fp-arrow.fp-controlArrow.fp-next {
   right: 4rem;
-  border-color: transparent  hsl(180, 66%, 49%);
+  border-color: transparent  hsl(257, 7%, 63%);
 }
 
 .dark .fp-arrow.fp-controlArrow.fp-prev {
@@ -1340,7 +1295,7 @@ SO IT CAN BE STYLED */
 
 #fp-nav ul li a span,
 .fp-slidesNav ul li a span {
-  background-color: hsl(260, 8%, 14%);
+  background-color:  hsl(180, 66%, 49%);
 }
 
 .dark #fp-nav ul li a span,
@@ -1373,12 +1328,6 @@ SO IT CAN BE STYLED */
   [type='email'] {
     width: 100%;
   }
-}
-
-.hover\:scale-150:hover {
-  --tw-scale-x: 1.5;
-  --tw-scale-y: 1.5;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
 .hover\:text-cyan:hover {
@@ -1492,18 +1441,6 @@ SO IT CAN BE STYLED */
 
   .lg\:justify-end {
     justify-content: flex-end;
-  }
-
-  .lg\:border {
-    border-width: 1px;
-  }
-
-  .lg\:border-b-0 {
-    border-bottom-width: 0px;
-  }
-
-  .lg\:border-t {
-    border-top-width: 1px;
   }
 
   .lg\:border-t-0 {

@@ -20,7 +20,8 @@ module.exports = {
       },
       backgroundImage: {
         road: "url('../imgs/road3.jpg')",
-        view: "url('../imgs/view.jpg')"
+        view: "url('../imgs/view.jpg')",
+        wall: "url('../imgs/wall.jpg')"
       },
       spacing: {
         180: '32rem',

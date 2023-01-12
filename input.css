@@ -283,11 +283,11 @@ SO IT CAN BE STYLED */
   left: 2rem;
   border-width: 38.5px 34px 38.5px 0;
   bottom: 3%;
-  border-color: transparent  hsl(180, 66%, 49%);
+  border-color: transparent  hsl(257, 7%, 63%);
 }
 .fp-arrow.fp-controlArrow.fp-next {
   right: 4rem;
-  border-color: transparent  hsl(180, 66%, 49%);
+  border-color: transparent  hsl(257, 7%, 63%);
 }
 .dark .fp-arrow.fp-controlArrow.fp-prev {
   left: 2rem;
@@ -304,7 +304,7 @@ SO IT CAN BE STYLED */
 /* FULLPAGE NAVIGATION DOTS- COLOR OF NAVIGATION DOTS: */
 #fp-nav ul li a span,
 .fp-slidesNav ul li a span {
-  background-color: hsl(260, 8%, 14%);
+  background-color:  hsl(180, 66%, 49%);
 }
 .dark #fp-nav ul li a span,
 .dark .fp-slidesNav ul li a span {
