@@ -135,6 +135,7 @@
   color: hsl(180, 66%, 49%);
   text-decoration: underline;
 }
+
 .show {
   /* display: block !important; */
   opacity: 1;
@@ -147,7 +148,6 @@ ICONS AND AN EYE ICON UNDER PROJECT DESCRIPTION: */
   .tooltips .tooltip {
     position: relative;
     display: inline-block;
-    border-bottom: 1px dotted black;
     margin-right: 3rem;
     margin-left: 3rem;
     text-decoration: none;
@@ -261,6 +261,15 @@ https://developer.mozilla.org/en-US/docs/Web/CSS/:autofill */
 SO IT CAN BE STYLED */
 #myMenu .active a {
   color: hsl(260, 8%, 14%);
+  background-color: white;
+  border-color: hsl(180, 66%, 49%);
+}
+#myMenu .active a i {
+  color: hsl(260, 8%, 14%);
+}
+
+.dark #myMenu .active a {
+  color: hsl(260, 8%, 14%);
   background-color: hsl(180, 66%, 49%);
   border-color: hsl(180, 66%, 49%);
 }
@@ -274,11 +283,11 @@ SO IT CAN BE STYLED */
   left: 2rem;
   border-width: 38.5px 34px 38.5px 0;
   bottom: 3%;
-  border-color: transparent hsl(257, 27%, 26%);
+  border-color: transparent  hsl(180, 66%, 49%);
 }
 .fp-arrow.fp-controlArrow.fp-next {
   right: 4rem;
-  border-color: transparent hsl(257, 27%, 26%);
+  border-color: transparent  hsl(180, 66%, 49%);
 }
 .dark .fp-arrow.fp-controlArrow.fp-prev {
   left: 2rem;
@@ -295,7 +304,7 @@ SO IT CAN BE STYLED */
 /* FULLPAGE NAVIGATION DOTS- COLOR OF NAVIGATION DOTS: */
 #fp-nav ul li a span,
 .fp-slidesNav ul li a span {
-  background-color: hsl(180, 66%, 49%);
+  background-color: hsl(260, 8%, 14%);
 }
 .dark #fp-nav ul li a span,
 .dark .fp-slidesNav ul li a span {
