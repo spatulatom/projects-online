@@ -899,7 +899,7 @@ textarea {
 
 .bg-darkViolet {
   --tw-bg-opacity: 1;
-  background-color: hsl(257 27% 26% / var(--tw-bg-opacity));
+  background-color: hsl(180 66% 49% / var(--tw-bg-opacity));
 }
 
 .bg-cyan {
@@ -915,6 +915,11 @@ textarea {
 .bg-customBlack {
   --tw-bg-opacity: 1;
   background-color: rgb(30 30 40 / var(--tw-bg-opacity));
+}
+
+.bg-gray-100 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(243 244 246 / var(--tw-bg-opacity));
 }
 
 .bg-keboardWhite {
@@ -954,9 +959,9 @@ textarea {
   padding-right: 3rem;
 }
 
-.py-4 {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
+.py-3 {
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
 }
 
 .py-5 {
@@ -969,9 +974,9 @@ textarea {
   padding-right: 2.5rem;
 }
 
-.py-3 {
-  padding-top: 0.75rem;
-  padding-bottom: 0.75rem;
+.py-4 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 
 .pt-8 {
@@ -1000,11 +1005,6 @@ textarea {
 
 .font-sans {
   font-family: Poppins, sans-serif;
-}
-
-.text-lg {
-  font-size: 1.125rem;
-  line-height: 1.75rem;
 }
 
 .text-5xl {
@@ -1037,6 +1037,10 @@ textarea {
   line-height: 1.75rem;
 }
 
+.font-medium {
+  font-weight: 500;
+}
+
 .font-bold {
   font-weight: 700;
 }
@@ -1049,10 +1053,6 @@ textarea {
   font-weight: 400;
 }
 
-.font-medium {
-  font-weight: 500;
-}
-
 .uppercase {
   text-transform: uppercase;
 }
@@ -1061,9 +1061,9 @@ textarea {
   font-style: italic;
 }
 
-.text-white {
+.text-grayishViolet {
   --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity));
+  color: hsl(257 7% 63% / var(--tw-text-opacity));
 }
 
 .text-gray-500 {
@@ -1071,14 +1071,14 @@ textarea {
   color: rgb(107 114 128 / var(--tw-text-opacity));
 }
 
-.text-grayishViolet {
-  --tw-text-opacity: 1;
-  color: hsl(257 7% 63% / var(--tw-text-opacity));
-}
-
 .text-gray-400 {
   --tw-text-opacity: 1;
   color: rgb(156 163 175 / var(--tw-text-opacity));
+}
+
+.text-darkViolet {
+  --tw-text-opacity: 1;
+  color: hsl(180 66% 49% / var(--tw-text-opacity));
 }
 
 .text-cyan {
@@ -1086,19 +1086,14 @@ textarea {
   color: hsl(180 66% 49% / var(--tw-text-opacity));
 }
 
+.text-white {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
 .text-\[\#a3aca7\] {
   --tw-text-opacity: 1;
   color: rgb(163 172 167 / var(--tw-text-opacity));
-}
-
-.text-gray-300 {
-  --tw-text-opacity: 1;
-  color: rgb(209 213 219 / var(--tw-text-opacity));
-}
-
-.text-darkViolet {
-  --tw-text-opacity: 1;
-  color: hsl(257 27% 26% / var(--tw-text-opacity));
 }
 
 .no-underline {
@@ -1350,11 +1345,6 @@ SO IT CAN BE STYLED */
   }
 }
 
-.hover\:text-cyan:hover {
-  --tw-text-opacity: 1;
-  color: hsl(180 66% 49% / var(--tw-text-opacity));
-}
-
 .hover\:text-white:hover {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
@@ -1362,17 +1352,12 @@ SO IT CAN BE STYLED */
 
 .hover\:text-darkViolet:hover {
   --tw-text-opacity: 1;
-  color: hsl(257 27% 26% / var(--tw-text-opacity));
+  color: hsl(180 66% 49% / var(--tw-text-opacity));
 }
 
-.hover\:text-violet-500:hover {
+.hover\:text-cyan:hover {
   --tw-text-opacity: 1;
-  color: rgb(139 92 246 / var(--tw-text-opacity));
-}
-
-.hover\:text-violet-700:hover {
-  --tw-text-opacity: 1;
-  color: rgb(109 40 217 / var(--tw-text-opacity));
+  color: hsl(180 66% 49% / var(--tw-text-opacity));
 }
 
 .hover\:opacity-70:hover {
@@ -1382,11 +1367,6 @@ SO IT CAN BE STYLED */
 .focus\:outline-none:focus {
   outline: 2px solid transparent;
   outline-offset: 2px;
-}
-
-.group:hover .group-hover\:text-veryDarkViolet {
-  --tw-text-opacity: 1;
-  color: hsl(260 8% 14% / var(--tw-text-opacity));
 }
 
 .dark .dark\:bg-customBlack {
@@ -1418,19 +1398,14 @@ SO IT CAN BE STYLED */
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
-.dark .dark\:text-gray-500 {
+.dark .dark\:text-cyan {
   --tw-text-opacity: 1;
-  color: rgb(107 114 128 / var(--tw-text-opacity));
+  color: hsl(180 66% 49% / var(--tw-text-opacity));
 }
 
 .dark .dark\:text-grayishViolet {
   --tw-text-opacity: 1;
   color: hsl(257 7% 63% / var(--tw-text-opacity));
-}
-
-.dark .dark\:text-cyan {
-  --tw-text-opacity: 1;
-  color: hsl(180 66% 49% / var(--tw-text-opacity));
 }
 
 .dark .dark\:opacity-80 {
