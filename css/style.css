@@ -935,6 +935,10 @@ textarea {
   border-bottom-width: 2px;
 }
 
+.border-t-0 {
+  border-top-width: 0px;
+}
+
 .border-grayishViolet {
   --tw-border-opacity: 1;
   border-color: hsl(257 7% 63% / var(--tw-border-opacity));
@@ -1539,6 +1543,14 @@ a.lol{
 
   .lg\:border-t-0 {
     border-top-width: 0px;
+  }
+
+  .lg\:border-t {
+    border-top-width: 1px;
+  }
+
+  .lg\:border-t-2 {
+    border-top-width: 2px;
   }
 
   .lg\:text-left {
