@@ -776,10 +776,6 @@ textarea {
   width: 58.333333%;
 }
 
-.w-5\/12 {
-  width: 41.666667%;
-}
-
 .w-\[120\%\] {
   width: 120%;
 }
@@ -793,20 +789,12 @@ textarea {
   width: fit-content;
 }
 
-.w-5\/6 {
-  width: 83.333333%;
+.max-w-screen-md {
+  max-width: 768px;
 }
 
-.w-4 {
-  width: 1rem;
-}
-
-.w-4\/6 {
-  width: 66.666667%;
-}
-
-.w-7 {
-  width: 1.75rem;
+.max-w-screen-xl {
+  max-width: 1280px;
 }
 
 .grow-0 {
@@ -947,8 +935,8 @@ textarea {
   background-color: rgb(30 30 40 / var(--tw-bg-opacity));
 }
 
-.bg-bwall {
-  background-image: url('../imgs/bg-wall.jpg');
+.bg-keboardWhite {
+  background-image: url('../imgs/keyboard-white.jpg');
 }
 
 .bg-cover {
@@ -967,12 +955,12 @@ textarea {
   padding: 3rem;
 }
 
-.p-8 {
-  padding: 2rem;
-}
-
 .p-6 {
   padding: 1.5rem;
+}
+
+.p-8 {
+  padding: 2rem;
 }
 
 .p-3 {
@@ -1007,6 +995,16 @@ textarea {
 .py-5 {
   padding-top: 1.25rem;
   padding-bottom: 1.25rem;
+}
+
+.py-12 {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.px-14 {
+  padding-left: 3.5rem;
+  padding-right: 3.5rem;
 }
 
 .pt-8 {
@@ -1410,6 +1408,10 @@ SO IT CAN BE STYLED */
   background-color: hsl(260 8% 14% / var(--tw-bg-opacity));
 }
 
+.dark .dark\:bg-keyboardDark {
+  background-image: url('../imgs/keyboard-dark.png');
+}
+
 .dark .dark\:text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
@@ -1485,6 +1487,10 @@ SO IT CAN BE STYLED */
     max-width: 41.6667%;
   }
 
+  .lg\:max-w-screen-xl {
+    max-width: 1280px;
+  }
+
   .lg\:grow-0 {
     flex-grow: 0;
   }
@@ -1533,5 +1539,9 @@ SO IT CAN BE STYLED */
 @media (min-width: 1280px) {
   .xl\:mb-52 {
     margin-bottom: 13rem;
+  }
+
+  .xl\:w-full {
+    width: 100%;
   }
 }

@@ -22,7 +22,8 @@ module.exports = {
         road: "url('../imgs/road3.jpg')",
         view: "url('../imgs/view.jpg')",
         wall: "url('../imgs/wall.jpg')",
-        bwall: "url('../imgs/bg-wall.jpg')"
+        keboardWhite: "url('../imgs/keyboard-white.jpg')",
+        keyboardDark: "url('../imgs/keyboard-dark.png')"
       },
       spacing: {
         180: '32rem',
