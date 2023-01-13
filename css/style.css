@@ -789,14 +789,6 @@ textarea {
   width: fit-content;
 }
 
-.max-w-screen-md {
-  max-width: 768px;
-}
-
-.max-w-screen-xl {
-  max-width: 1280px;
-}
-
 .grow-0 {
   flex-grow: 0;
 }
@@ -915,6 +907,11 @@ textarea {
   background-color: rgb(229 231 235 / var(--tw-bg-opacity));
 }
 
+.bg-darkViolet {
+  --tw-bg-opacity: 1;
+  background-color: hsl(257 27% 26% / var(--tw-bg-opacity));
+}
+
 .bg-cyan {
   --tw-bg-opacity: 1;
   background-color: hsl(180 66% 49% / var(--tw-bg-opacity));
@@ -923,11 +920,6 @@ textarea {
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
-}
-
-.bg-darkViolet {
-  --tw-bg-opacity: 1;
-  background-color: hsl(257 27% 26% / var(--tw-bg-opacity));
 }
 
 .bg-customBlack {
@@ -982,11 +974,6 @@ textarea {
   padding-bottom: 0.75rem;
 }
 
-.py-6 {
-  padding-top: 1.5rem;
-  padding-bottom: 1.5rem;
-}
-
 .px-10 {
   padding-left: 2.5rem;
   padding-right: 2.5rem;
@@ -995,16 +982,6 @@ textarea {
 .py-5 {
   padding-top: 1.25rem;
   padding-bottom: 1.25rem;
-}
-
-.py-12 {
-  padding-top: 3rem;
-  padding-bottom: 3rem;
-}
-
-.px-14 {
-  padding-left: 3.5rem;
-  padding-right: 3.5rem;
 }
 
 .pt-8 {
@@ -1074,12 +1051,12 @@ textarea {
   font-weight: 700;
 }
 
-.font-normal {
-  font-weight: 400;
-}
-
 .font-light {
   font-weight: 300;
+}
+
+.font-normal {
+  font-weight: 400;
 }
 
 .uppercase {
@@ -1088,6 +1065,11 @@ textarea {
 
 .italic {
   font-style: italic;
+}
+
+.text-white {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 .text-gray-500 {
@@ -1103,11 +1085,6 @@ textarea {
 .text-gray-400 {
   --tw-text-opacity: 1;
   color: rgb(156 163 175 / var(--tw-text-opacity));
-}
-
-.text-white {
-  --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 .text-cyan {
@@ -1295,7 +1272,7 @@ https://developer.mozilla.org/en-US/docs/Web/CSS/:autofill */
 SO IT CAN BE STYLED */
 
 #myMenu .active a {
-  color: hsl(260, 8%, 14%);
+  color: rgb(107 114 128);
   background-color: white;
 }
 
@@ -1310,12 +1287,12 @@ SO IT CAN BE STYLED */
   left: 2rem;
   border-width: 38.5px 34px 38.5px 0;
   bottom: 3%;
-  border-color: transparent hsl(257, 7%, 63%);
+  border-color: transparent rgb(107 114 128);
 }
 
 .fp-arrow.fp-controlArrow.fp-next {
   right: 4rem;
-  border-color: transparent hsl(257, 7%, 63%);
+  border-color: transparent rgb(107 114 128);
 }
 
 .dark .fp-arrow.fp-controlArrow.fp-prev {
@@ -1334,7 +1311,7 @@ SO IT CAN BE STYLED */
 
 #fp-nav ul li a span,
 .fp-slidesNav ul li a span {
-  background-color: hsl(180, 66%, 49%);
+  background-color: rgb(107 114 128);
 }
 
 .dark #fp-nav ul li a span,
@@ -1417,6 +1394,16 @@ SO IT CAN BE STYLED */
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
+.dark .dark\:text-grayishViolet {
+  --tw-text-opacity: 1;
+  color: hsl(257 7% 63% / var(--tw-text-opacity));
+}
+
+.dark .dark\:text-gray-500 {
+  --tw-text-opacity: 1;
+  color: rgb(107 114 128 / var(--tw-text-opacity));
+}
+
 .dark .dark\:opacity-80 {
   opacity: 0.8;
 }
@@ -1459,6 +1446,10 @@ SO IT CAN BE STYLED */
     display: block;
   }
 
+  .lg\:inline-block {
+    display: inline-block;
+  }
+
   .lg\:flex {
     display: flex;
   }
@@ -1487,10 +1478,6 @@ SO IT CAN BE STYLED */
     max-width: 41.6667%;
   }
 
-  .lg\:max-w-screen-xl {
-    max-width: 1280px;
-  }
-
   .lg\:grow-0 {
     flex-grow: 0;
   }
@@ -1511,6 +1498,11 @@ SO IT CAN BE STYLED */
     border-top-width: 0px;
   }
 
+  .lg\:px-14 {
+    padding-left: 3.5rem;
+    padding-right: 3.5rem;
+  }
+
   .lg\:text-left {
     text-align: left;
   }
@@ -1529,19 +1521,10 @@ SO IT CAN BE STYLED */
     font-size: 1rem;
     line-height: 1.5rem;
   }
-
-  .lg\:text-sm {
-    font-size: 0.875rem;
-    line-height: 1.25rem;
-  }
 }
 
 @media (min-width: 1280px) {
   .xl\:mb-52 {
     margin-bottom: 13rem;
-  }
-
-  .xl\:w-full {
-    width: 100%;
   }
 }
