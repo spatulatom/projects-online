@@ -56,7 +56,7 @@
 
   <body
     id="body"
-    class="dark:bg-customBlack bg-white dark:text-white font-sans"
+    class="dark:bg-customBlack bg-gray-200 dark:text-white font-sans"
   >
     <!-- Nav Container -->
     <nav>
@@ -78,7 +78,7 @@
         </li>
         <li class="group" data-menuanchor="fourthPage">
           <a
-            class="inline-block bg-cyan dark:bg-white px-12 py-4 w-20vw text-center text-gray-500 font-bold no-underline text-lg rounded-br-3xl group-hover:text-veryDarkViolet"
+            class="inline-block bg-cyan dark:bg-white px-12 py-4 w-20vw text-center rounded-br-3xl text-gray-500 font-bold no-underline text-lg group-hover:text-veryDarkViolet"
             href="#fourthPage"
             >Contact</a
           >
@@ -180,7 +180,7 @@
     <!-- Container All Fullpage.js Sections -->
     <div id="fullpage">
       <!-- Hero Section -->
-      <div id="hero" class="section">
+      <div id="hero" class="section bg-gray-200 dark:bg-customBlack">
         <!-- Hero Container -->
         <div
           class="container flex flex-col-reverse mx-auto p-12 lg:flex-row items-center"
@@ -190,7 +190,7 @@
             class="flex flex-col space-y-10 mb-44 lg:mt-16 lg:w-1/2 xl:mb-52"
           >
             <h1
-              class="text-5xl font-bold text-center lg:text-6xl lg:max-w-md lg:text-left"
+              class="text-5xl dark:text-white font-bold text-center lg:text-6xl lg:max-w-md lg:text-left"
             >
               Welcome.
             </h1>
@@ -202,10 +202,10 @@
               portfolio also contains many 'classic' React.js apps styled with
               CSS Modules.
             </p>
-            <div class="mx-auto lg:mx-0">
+            <div class="mx-0 lg:mx-0">
               <a
                 href="#"
-                class="py-5 px-10 text-2xl font-bold text-white bg-cyan rounded-full lg:py-4 hover:opacity-70"
+                class="py-6 px-10 lg: inline-block w-full lg:w-4/6 text-center bg-darkViolet text-2xl font-bold text-white dark:bg-cyan rounded-full hover:opacity-70"
                 >Get Started</a
               >
             </div>
@@ -216,12 +216,14 @@
             <img src="imgs/illustration-working.svg" alt="" />
           </div>
         </div>
+        
       </div>
 
       <!-- Slides Section -->
-      <div class="section bg-wall bg-cover bg-bottom">
+      <div class="section bg-bwall bg-cover bg-bottom">
         <!-- SLIDE NR 1 -->
-        <div class="slide justify-center bg-gray-200 items-center p-8">
+        <div class="slide justify-center items-center p-8">
+          
           <!-- there is another div in here added by fullpage and has probably set
           responsive width set on it and set fixed height so if items 
           inside are higher than that height - which is probably one page
@@ -881,7 +883,7 @@
       <div class="section">
         <!-- ther is a div in here added by fullpage.js with display-block proprty -->
         <div
-          class="container m-auto p-12 pt-20 flex flex-col gap-8 lg:flex-row justify-start items-center border-t-2 border-b-2"
+          class="container m-auto p-12 pt-20 flex flex-col gap-8 lg:flex-row justify-start items-center border-grayishViolet border-t-2 border-b-2"
         >
           <div class="flex flex-col p-4 basis-2/5 justify-center items-center">
             <h2 class="text-4xl font-bold mb-4 text-cyan">You can find me on:</h2>
@@ -910,7 +912,7 @@
           </div>
 
           <!-- Container for Form -->
-          <div class="text-center lg:text-left border-t-2 lg:border-t-0">
+          <div class="text-center lg:text-left border-t-2 border-grayishViolet lg:border-t-0">
             <form class="form">
            
 

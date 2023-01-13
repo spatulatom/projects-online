@@ -301,6 +301,12 @@ SO IT CAN BE STYLED */
   border-color: transparent white;
 }
 
+a.lol{
+  /* display: block; */
+  /* min-width: 100%; */
+  background-color: #7b1010;
+}
+
 /* FULLPAGE NAVIGATION DOTS- COLOR OF NAVIGATION DOTS: */
 #fp-nav ul li a span,
 .fp-slidesNav ul li a span {
