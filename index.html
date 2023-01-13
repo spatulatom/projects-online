@@ -64,21 +64,21 @@
       <ul id="myMenu" class="hidden fixed z-10 lg:flex w-screen">
         <li class="group" data-menuanchor="firstPage" class="active">
           <a
-            class="inline-block bg-darkViolet dark:bg-white px-12 py-3 w-20vw text-center dark:text-grayishViolet font-medium no-underline text-l hover:text-white dark:hover:text-veryDarkViolet"
+            class="inline-block bg-darkViolet dark:bg-white px-12 py-3 w-20vw text-center dark:text-grayishViolet font-medium no-underline dark:hover:bg-cyan transition-all hover:bg-white hover:text-grayishViolet dark:hover:text-veryDarkViolet"
             href="#firstPage"
             >Home</a
           >
         </li>
         <li class="group" data-menuanchor="secondPage">
           <a
-            class="inline-block bg-darkViolet dark:bg-white px-12 py-3 w-20vw text-center dark:text-grayishViolet font-medium no-underline text-l hover:text-white dark:hover:text-veryDarkViolet"
+            class="inline-block bg-darkViolet dark:bg-white px-12 py-3 w-20vw text-center dark:text-grayishViolet font-medium no-underline dark:hover:bg-cyan transition-all hover:bg-white hover:text-grayishViolet dark:hover:text-veryDarkViolet"
             href="#secondPage"
             >Projects</a
           >
         </li>
         <li class="group" data-menuanchor="fourthPage">
           <a
-            class="inline-block bg-darkViolet dark:bg-white px-12 py-3 w-20vw text-center rounded-br-3xl dark:text-grayishViolet font-medium no-underline text-l hover:text-white dark:hover:text-veryDarkViolet"
+            class="inline-block bg-darkViolet dark:bg-white px-12 py-3 w-20vw text-center rounded-br-3xl dark:text-grayishViolet font-medium no-underline dark:hover:bg-cyan transition-all hover:bg-white hover:text-grayishViolet dark:hover:text-veryDarkViolet"
             href="#fourthPage"
             >Contact</a
           >
@@ -91,17 +91,17 @@
             <div class="hidden lg:flex space-x-3 py-3">
               <i
                 id="light"
-                class="fa-solid fa-sun fa-xl cursor-pointer text-gray-500  transition-all hover:text-dar"
+                class="fa-solid fa-sun fa-xl cursor-pointer text-gray-500 transition-all hover:text-dar"
               >
               </i>
 
               <i
                 id="dark"
-                class="fa-solid fa-moon fa-xl cursor-pointer text-gray-500  transition-all hover:text-cyan"
+                class="fa-solid fa-moon fa-xl cursor-pointer text-gray-500 transition-all hover:text-cyan"
               ></i>
               <i
                 id="system"
-                class="fa-solid fa-desktop fa-xl cursor-pointer text-gray-500  transition-all hover:text-cyan"
+                class="fa-solid fa-desktop fa-xl cursor-pointer text-gray-500 transition-all hover:text-cyan"
               ></i>
             </div>
             <a
@@ -109,7 +109,7 @@
               href="https://github.com/spatulatom"
               alt="github link"
               ><i
-                class="fab fa-github fa-xl cursor-pointer text-gray-500 transition-all hover:text-cyan"
+                class="fab fa-github fa-xl cursor-pointer dark:text-gray-500 text-veryDarkViolet transition-all hover:text-cyan"
               ></i
             ></a>
           </div>
@@ -216,14 +216,14 @@
             <img src="imgs/illustration-working.svg" alt="" />
           </div>
         </div>
-        
       </div>
 
       <!-- Slides Section -->
-      <div class="section bg-keboardWhite dark:bg-keyboardDark bg-cover bg-bottom">
+      <div
+        class="section bg-keboardWhite dark:bg-keyboardDark bg-cover bg-bottom"
+      >
         <!-- SLIDE NR 1 -->
         <div class="slide flex justify-center items-center p-12">
-          
           <!-- there is another div in here added by fullpage and has probably set
           responsive width set on it and set fixed height so if items 
           inside are higher than that height - which is probably one page
@@ -240,7 +240,7 @@
             </a>
 
             <div
-              class=" w-full lg:w-5/12 flex items-center relative overflow-visible"
+              class="w-full lg:w-5/12 flex items-center relative overflow-visible"
             >
               <!-- this wrapper div below is needed for the positioning of text over image -->
               <div
@@ -259,7 +259,9 @@
                   necessitatibus porro accusamus ea nostrum iure quaerat
                   eligendi magni vero assumenda consequuntur hic officiis.
                 </h4>
-                <h6 class="text-darkViolet dark:text-cyan text-right text-xs font-normal mb-3 bigger">
+                <h6
+                  class="text-darkViolet dark:text-cyan text-right text-xs font-normal mb-3 bigger"
+                >
                   Next.js, NextAuth.js, Tailwind CSS, MongoDB, Vercel
                 </h6>
                 <div class="tooltips flex justify-around lg:justify-end">
@@ -354,9 +356,7 @@
         </div>
 
         <!-- SLIDE NR 3 -->
-        <div
-          class="slide justify-center items-center p-8"
-        >
+        <div class="slide justify-center items-center p-8">
           <!-- there is another div in here added by fullpage and has probably set
           responsive width, the class on it is .fp-overflow-->
           <div
@@ -488,9 +488,7 @@
         </div>
 
         <!-- SLIDE NR 5 -->
-        <div
-          class="slide justify-center items-center p-8"
-        >
+        <div class="slide justify-center items-center p-8">
           <!-- there is another div in here added by fullpage and has probably set
           responsive width, the class on it is .fp-overflow-->
           <div
@@ -620,9 +618,7 @@
         </div>
 
         <!-- SLIDE NR 7 -->
-        <div
-          class="slide justify-center items-center p-8"
-        >
+        <div class="slide justify-center items-center p-8">
           <!-- there is another div in here added by fullpage and has probably set
           responsive width, the class on it is .fp-overflow-->
           <div
@@ -751,9 +747,7 @@
         </div>
 
         <!-- SLIDE NR 9 -->
-        <div
-          class="slide justify-center items-center p-8"
-        >
+        <div class="slide justify-center items-center p-8">
           <!-- there is another div in here added by fullpage and has probably set
           responsive width, the class on it is .fp-overflow-->
           <div
@@ -886,7 +880,11 @@
           class="container m-auto p-12 pt-20 flex flex-col gap-8 lg:flex-row justify-start items-center border-grayishViolet lg:border-t-2 border-t-0 border-b-2"
         >
           <div class="flex flex-col p-4 basis-2/5 justify-center items-center">
-            <h2 class="text-4xl font-medium mb-4 text-darkViolet dark:text-cyan">You can find me on:</h2>
+            <h2
+              class="text-4xl font-medium mb-4 text-darkViolet dark:text-cyan"
+            >
+              You can find me on:
+            </h2>
 
             <!-- Social Icons -->
             <ul class="mt-8 flex space-x-6">
@@ -896,7 +894,7 @@
                 alt="github link"
               >
                 <i
-                  class="fab fa-github fa-2xl text-gray-500 dark:text-grayishViolet  transition-all hover:text-cyan"
+                  class="fab fa-github fa-2xl text-gray-500 dark:text-grayishViolet transition-all hover:text-cyan"
                 ></i>
               </a>
               <a
@@ -905,17 +903,17 @@
                 alt="github link"
               >
                 <i
-                  class="fab fa-linkedin fa-2xl text-gray-500 dark:text-grayishViolet  transition-all hover:text-cyan"
+                  class="fab fa-linkedin fa-2xl text-gray-500 dark:text-grayishViolet transition-all hover:text-cyan"
                 ></i>
               </a>
             </ul>
           </div>
 
           <!-- Container for Form -->
-          <div class="text-center lg:text-left border-t-2 border-grayishViolet lg:border-t-0">
+          <div
+            class="text-center lg:text-left border-t-2 border-grayishViolet lg:border-t-0"
+          >
             <form class="form">
-           
-
               <h2 class="form__feedback p-3 pt-6 italic text-xl text-gray-400">
                 I'd love your feedback:
               </h2>
@@ -961,9 +959,7 @@
           </div>
         </div>
 
-        <footer
-          class="p-4 flex justify-center items-center text-[#a3aca7]"
-        >
+        <footer class="p-4 flex justify-center items-center text-[#a3aca7]">
           <h4 class="text-gray-400 uppercase">&copy projects 2022</h4>
         </footer>
       </div>

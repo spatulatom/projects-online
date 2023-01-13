@@ -892,9 +892,9 @@ textarea {
   border-color: hsl(257 7% 63% / var(--tw-border-opacity));
 }
 
-.bg-gray-200 {
+.bg-gray-100 {
   --tw-bg-opacity: 1;
-  background-color: rgb(229 231 235 / var(--tw-bg-opacity));
+  background-color: rgb(243 244 246 / var(--tw-bg-opacity));
 }
 
 .bg-darkViolet {
@@ -912,14 +912,19 @@ textarea {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
+.bg-gray-200 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(229 231 235 / var(--tw-bg-opacity));
+}
+
 .bg-customBlack {
   --tw-bg-opacity: 1;
   background-color: rgb(30 30 40 / var(--tw-bg-opacity));
 }
 
-.bg-gray-100 {
+.bg-gray-300 {
   --tw-bg-opacity: 1;
-  background-color: rgb(243 244 246 / var(--tw-bg-opacity));
+  background-color: rgb(209 213 219 / var(--tw-bg-opacity));
 }
 
 .bg-keboardWhite {
@@ -1061,14 +1066,14 @@ textarea {
   font-style: italic;
 }
 
-.text-grayishViolet {
-  --tw-text-opacity: 1;
-  color: hsl(257 7% 63% / var(--tw-text-opacity));
-}
-
 .text-gray-500 {
   --tw-text-opacity: 1;
   color: rgb(107 114 128 / var(--tw-text-opacity));
+}
+
+.text-grayishViolet {
+  --tw-text-opacity: 1;
+  color: hsl(257 7% 63% / var(--tw-text-opacity));
 }
 
 .text-gray-400 {
@@ -1094,6 +1099,11 @@ textarea {
 .text-\[\#a3aca7\] {
   --tw-text-opacity: 1;
   color: rgb(163 172 167 / var(--tw-text-opacity));
+}
+
+.text-veryDarkViolet {
+  --tw-text-opacity: 1;
+  color: hsl(260 8% 14% / var(--tw-text-opacity));
 }
 
 .no-underline {
@@ -1345,19 +1355,24 @@ SO IT CAN BE STYLED */
   }
 }
 
+.hover\:bg-white:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
 .hover\:text-white:hover {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
-.hover\:text-darkViolet:hover {
+.hover\:text-cyan:hover {
   --tw-text-opacity: 1;
   color: hsl(180 66% 49% / var(--tw-text-opacity));
 }
 
-.hover\:text-cyan:hover {
+.hover\:text-grayishViolet:hover {
   --tw-text-opacity: 1;
-  color: hsl(180 66% 49% / var(--tw-text-opacity));
+  color: hsl(257 7% 63% / var(--tw-text-opacity));
 }
 
 .hover\:opacity-70:hover {
@@ -1398,18 +1413,28 @@ SO IT CAN BE STYLED */
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
-.dark .dark\:text-cyan {
-  --tw-text-opacity: 1;
-  color: hsl(180 66% 49% / var(--tw-text-opacity));
-}
-
 .dark .dark\:text-grayishViolet {
   --tw-text-opacity: 1;
   color: hsl(257 7% 63% / var(--tw-text-opacity));
 }
 
+.dark .dark\:text-cyan {
+  --tw-text-opacity: 1;
+  color: hsl(180 66% 49% / var(--tw-text-opacity));
+}
+
+.dark .dark\:text-gray-500 {
+  --tw-text-opacity: 1;
+  color: rgb(107 114 128 / var(--tw-text-opacity));
+}
+
 .dark .dark\:opacity-80 {
   opacity: 0.8;
+}
+
+.dark .dark\:hover\:bg-cyan:hover {
+  --tw-bg-opacity: 1;
+  background-color: hsl(180 66% 49% / var(--tw-bg-opacity));
 }
 
 .dark .dark\:hover\:text-veryDarkViolet:hover {
