@@ -695,11 +695,6 @@ textarea {
   margin-right: auto;
 }
 
-.mx-0 {
-  margin-left: 0px;
-  margin-right: 0px;
-}
-
 .mt-2 {
   margin-top: 0.5rem;
 }
@@ -768,12 +763,12 @@ textarea {
   width: 15vw;
 }
 
-.w-full {
-  width: 100%;
-}
-
 .w-7\/12 {
   width: 58.333333%;
+}
+
+.w-full {
+  width: 100%;
 }
 
 .w-\[120\%\] {
@@ -782,11 +777,6 @@ textarea {
 
 .w-10\/12 {
   width: 83.333333%;
-}
-
-.w-fit {
-  width: -moz-fit-content;
-  width: fit-content;
 }
 
 .grow-0 {
@@ -969,9 +959,9 @@ textarea {
   padding-bottom: 1rem;
 }
 
-.py-3 {
-  padding-top: 0.75rem;
-  padding-bottom: 0.75rem;
+.py-5 {
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
 }
 
 .px-10 {
@@ -979,9 +969,9 @@ textarea {
   padding-right: 2.5rem;
 }
 
-.py-5 {
-  padding-top: 1.25rem;
-  padding-bottom: 1.25rem;
+.py-3 {
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
 }
 
 .pt-8 {
@@ -1059,6 +1049,10 @@ textarea {
   font-weight: 400;
 }
 
+.font-medium {
+  font-weight: 500;
+}
+
 .uppercase {
   text-transform: uppercase;
 }
@@ -1095,6 +1089,16 @@ textarea {
 .text-\[\#a3aca7\] {
   --tw-text-opacity: 1;
   color: rgb(163 172 167 / var(--tw-text-opacity));
+}
+
+.text-gray-300 {
+  --tw-text-opacity: 1;
+  color: rgb(209 213 219 / var(--tw-text-opacity));
+}
+
+.text-darkViolet {
+  --tw-text-opacity: 1;
+  color: hsl(257 27% 26% / var(--tw-text-opacity));
 }
 
 .no-underline {
@@ -1351,6 +1355,26 @@ SO IT CAN BE STYLED */
   color: hsl(180 66% 49% / var(--tw-text-opacity));
 }
 
+.hover\:text-white:hover {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.hover\:text-darkViolet:hover {
+  --tw-text-opacity: 1;
+  color: hsl(257 27% 26% / var(--tw-text-opacity));
+}
+
+.hover\:text-violet-500:hover {
+  --tw-text-opacity: 1;
+  color: rgb(139 92 246 / var(--tw-text-opacity));
+}
+
+.hover\:text-violet-700:hover {
+  --tw-text-opacity: 1;
+  color: rgb(109 40 217 / var(--tw-text-opacity));
+}
+
 .hover\:opacity-70:hover {
   opacity: 0.7;
 }
@@ -1394,28 +1418,33 @@ SO IT CAN BE STYLED */
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
+.dark .dark\:text-gray-500 {
+  --tw-text-opacity: 1;
+  color: rgb(107 114 128 / var(--tw-text-opacity));
+}
+
 .dark .dark\:text-grayishViolet {
   --tw-text-opacity: 1;
   color: hsl(257 7% 63% / var(--tw-text-opacity));
 }
 
-.dark .dark\:text-gray-500 {
+.dark .dark\:text-cyan {
   --tw-text-opacity: 1;
-  color: rgb(107 114 128 / var(--tw-text-opacity));
+  color: hsl(180 66% 49% / var(--tw-text-opacity));
 }
 
 .dark .dark\:opacity-80 {
   opacity: 0.8;
 }
 
+.dark .dark\:hover\:text-veryDarkViolet:hover {
+  --tw-text-opacity: 1;
+  color: hsl(260 8% 14% / var(--tw-text-opacity));
+}
+
 @media (min-width: 768px) {
   .md\:w-180 {
     width: 32rem;
-  }
-
-  .md\:py-3 {
-    padding-top: 0.75rem;
-    padding-bottom: 0.75rem;
   }
 
   .md\:text-base {
@@ -1446,10 +1475,6 @@ SO IT CAN BE STYLED */
     display: block;
   }
 
-  .lg\:inline-block {
-    display: inline-block;
-  }
-
   .lg\:flex {
     display: flex;
   }
@@ -1460,10 +1485,6 @@ SO IT CAN BE STYLED */
 
   .lg\:w-1\/2 {
     width: 50%;
-  }
-
-  .lg\:w-4\/6 {
-    width: 66.666667%;
   }
 
   .lg\:w-5\/12 {
@@ -1496,6 +1517,11 @@ SO IT CAN BE STYLED */
 
   .lg\:border-t-0 {
     border-top-width: 0px;
+  }
+
+  .lg\:py-4 {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
   }
 
   .lg\:px-14 {

@@ -37,7 +37,7 @@ if (!('color-theme' in localStorage)) {
       systemIcon.classList.add('text-cyan');
       systemMobile.classList.add('text-cyan');
     } else {
-      lightIcon.classList.add('text-cyan');
+      lightIcon.classList.add('text-darkViolet');
       lightMobile.classList.add('text-cyan');
     }
   }
@@ -48,11 +48,11 @@ if (!('color-theme' in localStorage)) {
 window
   .matchMedia('(prefers-color-scheme: dark)')
   .addEventListener('change', ({ matches }) => {
-    lightIcon.classList.remove('text-cyan');
+    lightIcon.classList.remove('text-darkViolet');
     darkIcon.classList.remove('text-cyan');
     systemIcon.classList.add('text-cyan');
     // mobile nav
-    lightMobile.classList.remove('text-cyan');
+    lightMobile.classList.remove('text-darkViolet');
     darkMobile.classList.remove('text-cyan');
     systemMobile.classList.add('text-cyan');
 
@@ -81,7 +81,7 @@ lightMobile.addEventListener('click', lightMode);
 systemMobile.addEventListener('click', systemMode);
 
 function darkMode() {
-  lightIcon.classList.remove('text-cyan');
+  lightIcon.classList.remove('text-darkViolet');
   systemIcon.classList.remove('text-cyan');
   darkIcon.classList.add('text-cyan');
   // mobile nav
@@ -95,7 +95,7 @@ function darkMode() {
 function lightMode() {
   darkIcon.classList.remove('text-cyan');
   systemIcon.classList.remove('text-cyan');
-  lightIcon.classList.add('text-cyan');
+  lightIcon.classList.add('text-darkViolet');
   // mobile nav
   darkMobile.classList.remove('text-cyan');
   systemMobile.classList.remove('text-cyan');
@@ -105,7 +105,7 @@ function lightMode() {
   localStorage.removeItem('mode-system');
 }
 function systemMode() {
-  lightIcon.classList.remove('text-cyan');
+  lightIcon.classList.remove('text-darkViolet');
   darkIcon.classList.remove('text-cyan');
   systemIcon.classList.add('text-cyan');
   // mobile nav
