@@ -193,8 +193,7 @@ ICONS AND AN EYE ICON UNDER PROJECT DESCRIPTION: */
 }
 
 /* SECTION 3 (CONTACT) - CONTACT FORM: */
-
-/* cide below overwrites mozilla default styling for autofill
+/* code below overwrites mozilla default styling for autofill
 but there are questions about other browsers. Chrome makes it difficult to 
 overwrite color and background-color for its input fiealds as 
 the are written with the important sign:
