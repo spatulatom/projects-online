@@ -763,6 +763,10 @@ textarea {
   width: 15vw;
 }
 
+.w-10\/12 {
+  width: 83.333333%;
+}
+
 .w-full {
   width: 100%;
 }
@@ -771,8 +775,20 @@ textarea {
   width: 120%;
 }
 
+.w-7\/12 {
+  width: 58.333333%;
+}
+
+.grow-0 {
+  flex-grow: 0;
+}
+
 .basis-7\/12 {
   flex-basis: 58.333333%;
+}
+
+.basis-5\/12 {
+  flex-basis: 41.666667%;
 }
 
 .basis-2\/5 {
@@ -901,6 +917,11 @@ textarea {
   background-color: rgb(229 231 235 / var(--tw-bg-opacity));
 }
 
+.bg-customBlack {
+  --tw-bg-opacity: 1;
+  background-color: rgb(30 30 40 / var(--tw-bg-opacity));
+}
+
 .bg-keboardWhite {
   background-image: url('../imgs/keyboard-white.jpg');
 }
@@ -923,6 +944,10 @@ textarea {
 
 .p-6 {
   padding: 1.5rem;
+}
+
+.p-8 {
+  padding: 2rem;
 }
 
 .p-3 {
@@ -1057,6 +1082,11 @@ textarea {
 }
 
 .text-darkViolet {
+  --tw-text-opacity: 1;
+  color: hsl(180 66% 49% / var(--tw-text-opacity));
+}
+
+.text-cyan {
   --tw-text-opacity: 1;
   color: hsl(180 66% 49% / var(--tw-text-opacity));
 }
@@ -1452,8 +1482,20 @@ SO IT CAN BE STYLED */
     width: 50%;
   }
 
+  .lg\:w-5\/12 {
+    width: 41.666667%;
+  }
+
   .lg\:max-w-md {
     max-width: 28rem;
+  }
+
+  .lg\:max-w-\[41\.6667\%\] {
+    max-width: 41.6667%;
+  }
+
+  .lg\:grow-0 {
+    flex-grow: 0;
   }
 
   .lg\:basis-5\/12 {
