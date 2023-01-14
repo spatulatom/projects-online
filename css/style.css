@@ -763,10 +763,6 @@ textarea {
   width: 15vw;
 }
 
-.w-7\/12 {
-  width: 58.333333%;
-}
-
 .w-full {
   width: 100%;
 }
@@ -775,8 +771,16 @@ textarea {
   width: 120%;
 }
 
+.w-7\/12 {
+  width: 58.333333%;
+}
+
 .w-10\/12 {
   width: 83.333333%;
+}
+
+.w-10 {
+  width: 2.5rem;
 }
 
 .grow-0 {
@@ -1496,6 +1500,10 @@ SO IT CAN BE STYLED */
 
   .lg\:grow-0 {
     flex-grow: 0;
+  }
+
+  .lg\:basis-5\/12 {
+    flex-basis: 41.666667%;
   }
 
   .lg\:flex-row {
