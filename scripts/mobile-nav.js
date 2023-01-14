@@ -5,10 +5,9 @@ let themeIcons = document.querySelectorAll('.icon');
 
 let mobileLinks = document.querySelectorAll('.link');
 
-//  so basically click eventlisteners are added to all links
-// then when link is clicked first we check for ANY
-// link that has 'current' class and we remove that class,
-// secondly we add 'current' class to link that has been clicked
+// ADDING STYLING TO CLICKED LINK
+// remove class 'current' from link that has it (this class is 
+// styled differently) and add that class to te link that has just bee clicked
 mobileLinks.forEach((link) => {
   console.log(mobileLinks, 'mobilelinks');
   link.addEventListener('click', () => {
@@ -22,31 +21,22 @@ mobileLinks.forEach((link) => {
   });
 });
 
-// logic for mobile nav:
-// toggleButton.addEventListener('click', function () {
-//   let item = document.querySelector('.open');
-//   console.log('item', item);
-//   if (item !== null) {
-//     console.log('nnnnn');
-//     mobileNav.classList.remove('open');
-//     console.log('nnndddnn');
-//   } else {
-//     mobileNav.classList.add('open');
-//   }
-// });
 
+// CHANGING HAMBURGER ICON STYLING DEPENDING ON A CLICK ON IT + SHOWING MOBILE MENU
 toggleButton.addEventListener('click', function () {
   toggleButton.classList.toggle('open');
   mobileNav.classList.toggle('show');
 });
 
+// CHANGING HAMBURGER ICON STYLING + CLOSING MENU UPON CLICKING ON NAV LINKS
 mobileNavItems.forEach((item) => {
   item.addEventListener('click', () => {
     mobileNav.classList.remove('show');
     toggleButton.classList.toggle('open');
   });
 });
-
+ 
+// CHANGING HAMBURGER ICON STYLING + CLOSING MOBILE MENU UPON CLICKING ON DARK/WHITE MODE ICONS
 themeIcons.forEach((item) => {
   item.addEventListener('click', () => {
     mobileNav.classList.remove('show');

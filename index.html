@@ -178,11 +178,10 @@
       </div>
     </nav>
 
-    <!-- Container All Fullpage.js Sections -->
+    <!-- Container For All Pages -->
     <div id="fullpage">
-      <!-- Hero Section -->
+      <!-- First Page-->
       <div id="hero" class="section bg-gray-200 dark:bg-customBlack">
-        <!-- Hero Container -->
         <div
           class="container flex flex-col-reverse mx-auto p-12 lg:flex-row items-center"
         >
@@ -219,7 +218,7 @@
         </div>
       </div>
 
-      <!-- Slides Section -->
+      <!-- Second Page - PROJECTS-->
       <div
         class="section bg-keboardWhite dark:bg-keyboardDark bg-cover bg-bottom"
       >
@@ -875,6 +874,7 @@
         </div>
       </div>
 
+      <!-- Third Page - CONTACT -->
       <div class="section">
         <!-- ther is a div in here added by fullpage.js with display-block proprty -->
         <div
@@ -940,7 +940,6 @@
                 placeholder="Confirm email"
                 required
               />
-              <!-- <input name="subject" type="text" class="feedback-input" placeholder="Subject" required/> -->
               <textarea
                 name="text"
                 class="feedback-input"
@@ -959,13 +958,14 @@
             </form>
           </div>
         </div>
-
-        <footer class="p-4 flex justify-center items-center text-[#a3aca7]">
+        <!-- Footer -->
+        <div class="p-4 flex justify-center items-center text-[#a3aca7]">
           <h4 class="text-gray-400 uppercase">&copy projects 2022</h4>
-        </footer>
+        </div>
       </div>
     </div>
 
+    <!-- Script For Fullpage.js -->
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.11/fullpage.min.js"
       integrity="sha512-ojnoeSkK5NDwnuW5S0ZnddobHez8Bx1yVa3RE+Cd0fGEuY/NEd4sgVF/CJ6eDtnOeLZLbTJpNFrCkUYbHS2hRA=="
@@ -973,14 +973,14 @@
       referrerpolicy="no-referrer"
     ></script>
 
+    <!-- Scripts -->
     <script src="./scripts/contact-form.js"></script>
-
     <script src="./scripts/coursor-effect.js"></script>
     <script src="./scripts/mobile-nav.js"></script>
     <script src="./scripts/dark-mode.js"></script>
 
+    <!-- More scripts For Fullpage.js -->
     <script type="text/javascript" src="fullpage.extensions.min.js"></script>
-
     <script>
       new fullpage('#fullpage', {
         autoScrolling: false,

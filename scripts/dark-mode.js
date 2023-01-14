@@ -5,10 +5,11 @@ const lightMobile = document.getElementById('light-mobile');
 const darkMobile = document.getElementById('dark-mobile');
 const systemMobile = document.getElementById('system-mobile');
 
+// LOGIC BEHIND DARK/WHITE MODES + SYTEM OS MODE in Tailwind CSS
 // When setting up modes that are hybrid between opertaing system and
-// button clicking (more in 'Fylo' project) :
+// button clicking:
 // 1.Check System Mode + add to <html class="dark"> or <html> no class for
-// the light mode and this is done
+// the light mode - THIS IS DONE IN INDEX.HTML IN  <script> SECTION
 // with: document.documentElement.classList.add/remove('dark') - this is
 // done by the first set of code in the <heade> in index.html file
 // 2. Based on that set up the color of the icons.
@@ -70,7 +71,7 @@ window
   });
 
 // 3. Listen for the click, set up: html class to 'dark' or remove the class +
-// set up color of the icons + set up localStorage
+// SET UP COLOR OF THE ICONS WHEN MAUALLY SWITCHED + SAVE MODE IN LOCALSTORAGE
 
 darkIcon.addEventListener('click', darkMode);
 lightIcon.addEventListener('click', lightMode);

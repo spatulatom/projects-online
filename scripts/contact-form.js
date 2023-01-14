@@ -3,7 +3,6 @@ const results = document.querySelector('.form__feedback');
 
 const handleFormSubmit = async (event) => {
   event.preventDefault();
-  // console.log('form', form);
   console.log('results', results);
 
   const data = new FormData(event.target);
