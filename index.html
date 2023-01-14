@@ -39,9 +39,10 @@
 
     <!-- tailwind -->
     <link rel="stylesheet" href="css/style.css" />
+
+    <!-- Dark/Light Mode JavaScript -->
+    <!-- It's best to inline this part in `head` to avoid FOUC (flash of unstyled content) when changing pages or themes -->
     <script>
-      // https://www.freecodecamp.org/news/how-to-build-a-dark-mode-switcher-with-tailwind-css-and-flowbite
-      // It's best to inline this part in `head` to avoid FOUC (flash of unstyled content) when changing pages or themes
       if (
         localStorage.getItem('color-theme') === 'dark' ||
         (!('color-theme' in localStorage) &&
@@ -84,9 +85,8 @@
           >
         </li>
 
-        <!-- Theme Icons + GitHub Icon -->
+        <!-- Dark/White Icons Desktop + GitHub Icon -->
         <li class="absolute right-0">
-          <!-- Theme Icons Container -->
           <div class="flex justify-end space-x-16 p-4 px-12 w-20vw">
             <div class="hidden lg:flex space-x-3 py-3">
               <i
@@ -126,7 +126,7 @@
         <span class="hamburger-bottom bg-cyan"></span>
       </button>
 
-      <!-- Mobile Menu -->
+      <!-- Flex Container Fot Mobile Menu -->
       <div class="mobile-nav bg-white dark:bg-customBlack">
         <ul class="flex flex-col p-4 justify-center items-center h-full">
           <li class="mobile-nav__item text-grayishViolet dark:text-white">
@@ -138,6 +138,7 @@
           <li class="mobile-nav__item text-grayishViolet dark:text-white">
             <a href="#fourthPage" class="link">Contact</a>
           </li>
+          <!-- Dark/White Mobile -->
           <li
             class="font-bold text-grayishViolet mt-2 pt-8 border-t-2 border-grayishViolet"
           >
@@ -160,7 +161,7 @@
             </div>
           </li>
           <li class="absolute bottom-6">
-            <!-- Social Icons -->
+            <!-- Social Icons Mobile-->
             <ul class="mt-8 flex space-x-6">
               <a
                 target="_blank"
