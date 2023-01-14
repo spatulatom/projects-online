@@ -763,16 +763,16 @@ textarea {
   width: 15vw;
 }
 
-.w-10\/12 {
-  width: 83.333333%;
-}
-
 .w-full {
   width: 100%;
 }
 
 .w-\[120\%\] {
   width: 120%;
+}
+
+.w-10\/12 {
+  width: 83.333333%;
 }
 
 .w-7\/12 {
@@ -787,12 +787,12 @@ textarea {
   flex-basis: 58.333333%;
 }
 
-.basis-5\/12 {
-  flex-basis: 41.666667%;
-}
-
 .basis-2\/5 {
   flex-basis: 40%;
+}
+
+.basis-5\/12 {
+  flex-basis: 41.666667%;
 }
 
 .cursor-pointer {
@@ -946,12 +946,12 @@ textarea {
   padding: 1.5rem;
 }
 
-.p-8 {
-  padding: 2rem;
-}
-
 .p-3 {
   padding: 0.75rem;
+}
+
+.p-8 {
+  padding: 2rem;
 }
 
 .px-12 {
@@ -1086,9 +1086,9 @@ textarea {
   color: hsl(180 66% 49% / var(--tw-text-opacity));
 }
 
-.text-cyan {
+.text-gray-600 {
   --tw-text-opacity: 1;
-  color: hsl(180 66% 49% / var(--tw-text-opacity));
+  color: rgb(75 85 99 / var(--tw-text-opacity));
 }
 
 .text-white {
@@ -1099,6 +1099,11 @@ textarea {
 .text-\[\#a3aca7\] {
   --tw-text-opacity: 1;
   color: rgb(163 172 167 / var(--tw-text-opacity));
+}
+
+.text-cyan {
+  --tw-text-opacity: 1;
+  color: hsl(180 66% 49% / var(--tw-text-opacity));
 }
 
 .no-underline {
@@ -1545,6 +1550,10 @@ SO IT CAN BE STYLED */
   .lg\:text-base {
     font-size: 1rem;
     line-height: 1.5rem;
+  }
+
+  .lg\:font-medium {
+    font-weight: 500;
   }
 }
 
