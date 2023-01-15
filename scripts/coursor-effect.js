@@ -12,49 +12,39 @@ function cursor(e) {
   mouseCursor.style.left = e.pageX + 'px';
 }
 
-// bigger cursor on hover over elements with class="bigger" (currently not in use)
-// let biggers = document.querySelectorAll('.bigger');
-
-biggers.forEach((bigger) => {
-  bigger.addEventListener('mouseover', () => {
-    mouseCursor.classList.add('cursor-grow');
-  });
-  bigger.addEventListener('mouseleave', () => {
-    mouseCursor.classList.remove('cursor-grow');
-  });
-});
 
 // cursor dissapearing on projects descriptions
 let projects = document.querySelectorAll('.cursor-effect-none');
-
 projects.forEach((project) => {
   project.addEventListener('mouseover', () => {
-    mouseCursor.classList.add('none');
+    mouseCursor.classList.add('opacity-0');
   });
   project.addEventListener('mouseleave', () => {
-    mouseCursor.classList.remove('none');
+    mouseCursor.classList.remove('opacity-0');
   });
 });
+
+// bigger cursor + filters on hover over elements with class="bigger" (currently not in use)
+// let biggers = document.querySelectorAll('.bigger');
+
+// biggers.forEach((bigger) => {
+//   bigger.addEventListener('mouseover', () => {
+//     mouseCursor.classList.add('cursor-grow');
+//   });
+//   bigger.addEventListener('mouseleave', () => {
+//     mouseCursor.classList.remove('cursor-grow');
+//   });
+// });
+
 
 // cursor bigger on some content (currently not in use)
 // let projectBoxes = document.querySelectorAll('.bigger--white');
 
-projectBoxes.forEach((bigger) => {
-  bigger.addEventListener('mouseover', () => {
-    mouseCursor.classList.add('cursor-grow--white');
-  });
-  bigger.addEventListener('mouseleave', () => {
-    mouseCursor.classList.remove('cursor-grow--white');
-  });
-});
-
-// disposing of 'fancy' cursor when cursor on contact form (currently off)
-// let cursorOnForm = document.querySelector('form');
-
-cursorOnForm.addEventListener('mouseover', () => {
-  mouseCursor.classList.add('none');
-});
-
-cursorOnForm.addEventListener('mouseleave', () => {
-  mouseCursor.classList.remove('none');
-});
+// projectBoxes.forEach((bigger) => {
+//   bigger.addEventListener('mouseover', () => {
+//     mouseCursor.classList.add('cursor-grow--white');
+//   });
+//   bigger.addEventListener('mouseleave', () => {
+//     mouseCursor.classList.remove('cursor-grow--white');
+//   });
+// });

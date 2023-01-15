@@ -1038,12 +1038,12 @@ textarea {
   font-weight: 700;
 }
 
-.font-medium {
-  font-weight: 500;
-}
-
 .font-normal {
   font-weight: 400;
+}
+
+.font-medium {
+  font-weight: 500;
 }
 
 .uppercase {
@@ -1096,6 +1096,10 @@ textarea {
 
 .no-underline {
   text-decoration-line: none;
+}
+
+.opacity-0 {
+  opacity: 0;
 }
 
 .shadow-2xl {
@@ -1166,12 +1170,12 @@ textarea {
   position: absolute;
   transform: translate(-50%, -50%);
   pointer-events: none;
-  width: 600px;
-  height: 600px;
+  width: 800px;
+  height: 800px;
   border-radius: 50%;
   transition-property: background, transform;
   background: transparent;
-  transition: all 2s linear;
+  transition: all 1s linear;
   z-index: 190;
 }
 
@@ -1188,10 +1192,6 @@ textarea {
   width: 380px;
   height: 380px;
   border: 4px solid white;
-}
-
-.none {
-  opacity: 0;
 }
 
 /* HAMBURGER MENU */
@@ -1370,10 +1370,6 @@ SO IT CAN BE STYLED */
 .focus\:outline-none:focus {
   outline: 2px solid transparent;
   outline-offset: 2px;
-}
-
-.dark .dark\:border-2 {
-  border-width: 2px;
 }
 
 .dark .dark\:border-white {

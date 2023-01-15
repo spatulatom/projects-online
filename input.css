@@ -10,12 +10,12 @@
   position: absolute;
   transform: translate(-50%, -50%);
   pointer-events: none;
-  width: 600px;
-  height: 600px;
+  width: 800px;
+  height: 800px;
   border-radius: 50%;
   transition-property: background, transform;
   background: transparent;
-  transition: all 2s linear;
+  transition: all 1s linear;
   z-index: 190;
 }
 .cursor-grow {
@@ -28,9 +28,6 @@
   width: 380px;
   height: 380px;
   border: 4px solid white;
-}
-.none {
-  opacity: 0;
 }
 
 /* HAMBURGER MENU */
