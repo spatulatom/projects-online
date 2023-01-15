@@ -926,12 +926,25 @@ textarea {
   background-color: rgb(229 231 235 / var(--tw-bg-opacity));
 }
 
+.bg-gray-400 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(156 163 175 / var(--tw-bg-opacity));
+}
+
+.bg-keyboardDark {
+  background-image: url('../imgs/keyboard-dark.png');
+}
+
 .bg-cover {
   background-size: cover;
 }
 
 .bg-bottom {
   background-position: bottom;
+}
+
+.bg-center {
+  background-position: center;
 }
 
 .p-4 {
