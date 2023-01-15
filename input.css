@@ -15,7 +15,7 @@
   border-radius: 50%;
   transition-property: background, transform;
   background: transparent;
-  transition: all 0.8s linear;
+  transition: all 2s linear;
   z-index: 190;
 }
 .cursor-grow {
@@ -38,8 +38,8 @@
 @layer components {
   .hamburger {
     cursor: pointer;
-    width: 3rem;
-    height: 3rem;
+    width: 2rem;
+    height: 2rem;
     transition: all 0.25s;
   }
 
@@ -48,11 +48,11 @@
   .hamburger-bottom {
     content: '';
     position: absolute;
-    width: 3rem;
+    width: 2rem;
     height: 3px;
     top: 0;
     left: 0;
-    background: white;
+    /* background: white; */
     transform: rotate(0);
     transition: all 0.5s;
   }
@@ -63,7 +63,7 @@
 
   .hamburger-bottom {
     transform: translateY(20px);
-    background: white;
+    /* background: white; */
   }
 
   .open {
@@ -73,7 +73,7 @@
 
   .open .hamburger-top {
     transform: rotate(45deg) translateY(6px) translateX(6px);
-    background-color: #fff;
+    background-color: hsl(180, 66%, 49%);
   }
 
   .open .hamburger-middle {
@@ -82,7 +82,7 @@
 
   .open .hamburger-bottom {
     transform: rotate(-45deg) translateY(6px) translateX(-6px);
-    background-color: white;
+    background-color: hsl(180, 66%, 49%);
   }
 }
 
@@ -124,7 +124,6 @@
   font-size: 1.5rem;
   font-weight: 700;
   text-decoration: none;
-  color: white;
 }
 
 .mobile-nav__item .link:hover {
@@ -136,6 +135,7 @@
   color: hsl(180, 66%, 49%);
   text-decoration: underline;
 }
+
 .show {
   /* display: block !important; */
   opacity: 1;
@@ -148,7 +148,6 @@ ICONS AND AN EYE ICON UNDER PROJECT DESCRIPTION: */
   .tooltips .tooltip {
     position: relative;
     display: inline-block;
-    border-bottom: 1px dotted black;
     margin-right: 3rem;
     margin-left: 3rem;
     text-decoration: none;
@@ -193,122 +192,10 @@ ICONS AND AN EYE ICON UNDER PROJECT DESCRIPTION: */
   }
 }
 
-/* SECTION 3 (CONTACT), SOCIAL MEDIA ICONS STYLING: */
-@layer utilities {
-  *:focus,
-  *:active {
-    outline: none !important;
-    -webkit-tap-highlight-color: transparent;
-  }
-
-  .wrapper {
-    display: flex;
-    justify-content: center;
-    list-style: none;
-  }
-
-  .wrapper .icon {
-    position: relative;
-    background: #585f5b;
-    color: white;
-    border-radius: 50%;
-    padding: 10px;
-    margin: 10px;
-    width: 60px;
-    height: 60px;
-    font-size: 18px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
-    cursor: pointer;
-    transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-  }
-  .wrapper .icon .fab {
-    transform: scale(1.2);
-  }
-
-  .wrapper .tooltip {
-    position: absolute;
-    top: 0;
-    font-size: 14px;
-    background: #ffffff;
-    color: #ffffff;
-    padding: 5px 18px;
-    border-radius: 5px;
-    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
-    opacity: 0;
-    pointer-events: none;
-    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-  }
-
-  .wrapper .tooltip::before {
-    position: absolute;
-    content: '';
-    height: 8px;
-    width: 8px;
-    background: #ffffff;
-    bottom: -3px;
-    left: 50%;
-    transform: translate(-50%) rotate(45deg);
-    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-  }
-
-  .wrapper .icon:hover .tooltip {
-    top: -30px;
-    opacity: 1;
-    visibility: visible;
-    pointer-events: auto;
-  }
-
-  .wrapper .icon:hover span,
-  .wrapper .icon:hover .tooltip {
-    text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1);
-  }
-
-  .wrapper .facebook:hover,
-  .wrapper .facebook:hover .tooltip,
-  .wrapper .facebook:hover .tooltip::before {
-    background: #1877f2;
-    color: #ffffff;
-  }
-
-  .wrapper .twitter:hover,
-  .wrapper .twitter:hover .tooltip,
-  .wrapper .twitter:hover .tooltip::before {
-    background: #1da1f2;
-    color: #ffffff;
-  }
-
-  .wrapper .instagram:hover,
-  .wrapper .instagram:hover .tooltip,
-  .wrapper .instagram:hover .tooltip::before {
-    background: #e4405f;
-    color: #ffffff;
-  }
-
-  .wrapper .github:hover,
-  .wrapper .github:hover .tooltip,
-  .wrapper .github:hover .tooltip::before {
-    background: #333333;
-    color: #ffffff;
-  }
-
-  .wrapper .youtube:hover,
-  .wrapper .youtube:hover .tooltip,
-  .wrapper .youtube:hover .tooltip::before {
-    background: #cd201f;
-    color: #ffffff;
-  }
-}
-
 /* SECTION 3 (CONTACT) - CONTACT FORM: */
-
-/* cide below overwrites mozilla default styling for autofill
-but there are questions about other browsers, also its unclaer
-how that transition below works. Chrome makes it difficult to 
-overwrite color and background-color for its input fieals as 
+/* code below overwrites mozilla default styling for autofill
+but there are questions about other browsers. Chrome makes it difficult to 
+overwrite color and background-color for its input fiealds as 
 the are written with the important sign:
 https://css-tricks.com/snippets/css/change-autocomplete-styles-webkit-browsers/,
 https://developer.mozilla.org/en-US/docs/Web/CSS/:autofill */
@@ -367,34 +254,55 @@ https://developer.mozilla.org/en-US/docs/Web/CSS/:autofill */
   }
 }
 
-/* FULLPAGE CLASS 'active' IS ADDED TO CURRENT MENU LINK */
+/* FULLPAGE CONTAINER OF INDIVIDUAL SLIDES */
+
+/* FULLPAGE CLASS 'active' IS ADDED TO the CURRENT MENU LINK
+SO IT CAN BE STYLED */
 #myMenu .active a {
-  color: black;
+  color: rgb(107 114 128);
+  background-color: white;
 }
-#myMenu .active a i {
-  color: black;
-}
-#myMenu .active a {
+
+.dark #myMenu .active a {
+  color: hsl(260, 8%, 14%);
   background-color: hsl(180, 66%, 49%);
 }
 
-/* FULLPAGE NAVIGATION - HORIZONTAL NAV DOTS: */
+/* FULLPAGE NAVIGATION ARROWS: */
+
 .fp-arrow.fp-controlArrow.fp-prev {
   left: 2rem;
   border-width: 38.5px 34px 38.5px 0;
   bottom: 3%;
+  border-color: transparent rgb(107 114 128);
 }
 .fp-arrow.fp-controlArrow.fp-next {
   right: 4rem;
+  border-color: transparent rgb(107 114 128);
+}
+.dark .fp-arrow.fp-controlArrow.fp-prev {
+  left: 2rem;
+  border-width: 38.5px 34px 38.5px 0;
+  bottom: 3%;
+  border-color: transparent white;
 }
 
-/* FULLPAGE NAVIGATION - COLOR OF NAVIGATION DOTS: */
+.dark .fp-arrow.fp-controlArrow.fp-next {
+  right: 4rem;
+  border-color: transparent white;
+}
+
+/* FULLPAGE NAVIGATION DOTS- COLOR OF NAVIGATION DOTS: */
+#fp-nav ul li a span,
+.fp-slidesNav ul li a span {
+  background-color: rgb(107 114 128);
+}
 .dark #fp-nav ul li a span,
 .dark .fp-slidesNav ul li a span {
   background-color: white;
 }
 
-/* FULLPAGE NAVIGATION - POSITION OF THE NAVIGATION DOTS AT THE BOTTOM OF THE SLIDES: */
+/* FULLPAGE NAVIGATION DOTS- POSITION OF THE NAVIGATION DOTS AT THE BOTTOM OF THE SLIDES: */
 .fp-slidesNav.fp-bottom {
   text-align: center;
 }
@@ -409,20 +317,9 @@ https://developer.mozilla.org/en-US/docs/Web/CSS/:autofill */
     display: none;
   }
   /* cursor ring not displaying on medium and small devices */
-  .cursor {
-    display: none;
-  }
-
-  /* main nav not showing on tablets and small devices*/
-  #myMenu {
-    display: none;
-  }
 
   /* contact form input fields streching 100% */
   [type='email'] {
     width: 100%;
   }
-  /* [type='submit'] {
-    width: 100%;
-  } */
 }

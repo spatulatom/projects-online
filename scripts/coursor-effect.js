@@ -1,18 +1,6 @@
 let mouseCursor = document.querySelector('.cursor');
-let navLinks = document.querySelectorAll('.nav-links li');
 
 window.addEventListener('mousemove', cursor);
-
-navLinks.forEach((link) => {
-  link.addEventListener('mouseover', () => {
-    mouseCursor.classList.add('link-grow');
-    link.classList.add('hovered-link');
-  });
-  link.addEventListener('mouseleave', () => {
-    mouseCursor.classList.remove('link-grow');
-    link.classList.remove('hovered-link');
-  });
-});
 
 function cursor(e) {
   console.log('cursor');
@@ -47,30 +35,13 @@ projectBoxes.forEach((bigger) => {
   });
 });
 
-// disposing of 'fancy' cursor when cursor on modals
-let cursorOnModal = document.querySelectorAll('.modal');
-
-cursorOnModal.forEach((noDisplay) =>
-  noDisplay.addEventListener('mouseover', () => {
-    mouseCursor.classList.add('none');
-  })
-);
-
-cursorOnModal.forEach((noDisplay) =>
-  noDisplay.addEventListener('mouseleave', () => {
-    mouseCursor.classList.remove('none');
-  })
-);
-
 // disposing of 'fancy' cursor when cursor on contact form
 let cursorOnForm = document.querySelector('form');
 
 cursorOnForm.addEventListener('mouseover', () => {
-    mouseCursor.classList.add('none');
-  })
-
+  mouseCursor.classList.add('none');
+});
 
 cursorOnForm.addEventListener('mouseleave', () => {
-    mouseCursor.classList.remove('none');
-  })
-
+  mouseCursor.classList.remove('none');
+});
