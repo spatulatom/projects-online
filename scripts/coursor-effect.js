@@ -24,6 +24,19 @@ biggers.forEach((bigger) => {
   });
 });
 
+// cursor dissapearing on projects descriptions
+let projects = document.querySelectorAll('.cursor-effect-none');
+
+projects.forEach((project) => {
+  project.addEventListener('mouseover', () => {
+    mouseCursor.classList.add('none');
+  });
+  project.addEventListener('mouseleave', () => {
+    mouseCursor.classList.remove('none');
+  });
+});
+
+// cursor bigger on some content (currently not in use)
 let projectBoxes = document.querySelectorAll('.bigger--white');
 
 projectBoxes.forEach((bigger) => {
@@ -35,8 +48,8 @@ projectBoxes.forEach((bigger) => {
   });
 });
 
-// disposing of 'fancy' cursor when cursor on contact form
-let cursorOnForm = document.querySelector('form');
+// disposing of 'fancy' cursor when cursor on contact form (currently off)
+// let cursorOnForm = document.querySelector('form');
 
 cursorOnForm.addEventListener('mouseover', () => {
   mouseCursor.classList.add('none');
