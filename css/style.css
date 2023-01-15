@@ -700,6 +700,10 @@ textarea {
   margin-right: auto;
 }
 
+.mr-\[1px\] {
+  margin-right: 1px;
+}
+
 .mt-2 {
   margin-top: 0.5rem;
 }
@@ -730,26 +734,6 @@ textarea {
 
 .mb-4 {
   margin-bottom: 1rem;
-}
-
-.mr-1 {
-  margin-right: 0.25rem;
-}
-
-.mr-\[\] {
-  margin-right: ;
-}
-
-.mr-\[1px\] {
-  margin-right: 1px;
-}
-
-.mr-\[10x\] {
-  margin-right: 10x;
-}
-
-.mr-\[1\] {
-  margin-right: 1;
 }
 
 .block {
@@ -884,6 +868,10 @@ textarea {
   border-bottom-right-radius: 1.5rem;
 }
 
+.border-4 {
+  border-width: 4px;
+}
+
 .border-t-2 {
   border-top-width: 2px;
 }
@@ -899,6 +887,11 @@ textarea {
 .border-grayishViolet {
   --tw-border-opacity: 1;
   border-color: hsl(257 7% 63% / var(--tw-border-opacity));
+}
+
+.border-cyan {
+  --tw-border-opacity: 1;
+  border-color: hsl(180 66% 49% / var(--tw-border-opacity));
 }
 
 .bg-gray-100 {
@@ -926,26 +919,12 @@ textarea {
   background-color: rgb(229 231 235 / var(--tw-bg-opacity));
 }
 
-.bg-gray-400 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(156 163 175 / var(--tw-bg-opacity));
-}
-
-.bg-gray-300 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(209 213 219 / var(--tw-bg-opacity));
-}
-
 .bg-keyboardDark {
   background-image: url('../imgs/keyboard-dark.png');
 }
 
 .bg-cover {
   background-size: cover;
-}
-
-.bg-bottom {
-  background-position: bottom;
 }
 
 .bg-center {
@@ -1051,24 +1030,20 @@ textarea {
   line-height: 1.75rem;
 }
 
-.font-medium {
-  font-weight: 500;
+.font-semibold {
+  font-weight: 600;
 }
 
 .font-bold {
   font-weight: 700;
 }
 
-.font-light {
-  font-weight: 300;
+.font-medium {
+  font-weight: 500;
 }
 
 .font-normal {
   font-weight: 400;
-}
-
-.font-semibold {
-  font-weight: 600;
 }
 
 .uppercase {
@@ -1084,29 +1059,19 @@ textarea {
   color: rgb(107 114 128 / var(--tw-text-opacity));
 }
 
-.text-veryDarkViolet {
-  --tw-text-opacity: 1;
-  color: hsl(260 8% 14% / var(--tw-text-opacity));
-}
-
 .text-grayishViolet {
   --tw-text-opacity: 1;
   color: hsl(257 7% 63% / var(--tw-text-opacity));
 }
 
-.text-cyan {
+.text-gray-400 {
   --tw-text-opacity: 1;
-  color: hsl(180 66% 49% / var(--tw-text-opacity));
+  color: rgb(156 163 175 / var(--tw-text-opacity));
 }
 
 .text-darkViolet {
   --tw-text-opacity: 1;
   color: hsl(180 66% 49% / var(--tw-text-opacity));
-}
-
-.text-gray-400 {
-  --tw-text-opacity: 1;
-  color: rgb(156 163 175 / var(--tw-text-opacity));
 }
 
 .text-gray-600 {
@@ -1124,14 +1089,9 @@ textarea {
   color: rgb(163 172 167 / var(--tw-text-opacity));
 }
 
-.text-red {
+.text-cyan {
   --tw-text-opacity: 1;
-  color: hsl(0 87% 67% / var(--tw-text-opacity));
-}
-
-.text-gray-700 {
-  --tw-text-opacity: 1;
-  color: rgb(55 65 81 / var(--tw-text-opacity));
+  color: hsl(180 66% 49% / var(--tw-text-opacity));
 }
 
 .no-underline {
@@ -1211,7 +1171,7 @@ textarea {
   border-radius: 50%;
   transition-property: background, transform;
   background: transparent;
-  transition: all 0.8s linear;
+  transition: all 2s linear;
   z-index: 190;
 }
 
@@ -1412,6 +1372,15 @@ SO IT CAN BE STYLED */
   outline-offset: 2px;
 }
 
+.dark .dark\:border-2 {
+  border-width: 2px;
+}
+
+.dark .dark\:border-white {
+  --tw-border-opacity: 1;
+  border-color: rgb(255 255 255 / var(--tw-border-opacity));
+}
+
 .dark .dark\:bg-customBlack {
   --tw-bg-opacity: 1;
   background-color: rgb(30 30 40 / var(--tw-bg-opacity));
@@ -1437,14 +1406,9 @@ SO IT CAN BE STYLED */
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
-.dark .dark\:text-grayishViolet {
+.dark .dark\:text-gray-700 {
   --tw-text-opacity: 1;
-  color: hsl(257 7% 63% / var(--tw-text-opacity));
-}
-
-.dark .dark\:text-gray-500 {
-  --tw-text-opacity: 1;
-  color: rgb(107 114 128 / var(--tw-text-opacity));
+  color: rgb(55 65 81 / var(--tw-text-opacity));
 }
 
 .dark .dark\:text-cyan {
@@ -1452,14 +1416,9 @@ SO IT CAN BE STYLED */
   color: hsl(180 66% 49% / var(--tw-text-opacity));
 }
 
-.dark .dark\:text-gray-600 {
+.dark .dark\:text-grayishViolet {
   --tw-text-opacity: 1;
-  color: rgb(75 85 99 / var(--tw-text-opacity));
-}
-
-.dark .dark\:text-gray-700 {
-  --tw-text-opacity: 1;
-  color: rgb(55 65 81 / var(--tw-text-opacity));
+  color: hsl(257 7% 63% / var(--tw-text-opacity));
 }
 
 .dark .dark\:opacity-80 {
@@ -1572,14 +1531,6 @@ SO IT CAN BE STYLED */
   .lg\:text-base {
     font-size: 1rem;
     line-height: 1.5rem;
-  }
-
-  .lg\:font-medium {
-    font-weight: 500;
-  }
-
-  .lg\:font-normal {
-    font-weight: 400;
   }
 }
 
