@@ -12,8 +12,8 @@ function cursor(e) {
   mouseCursor.style.left = e.pageX + 'px';
 }
 
-// bigger cursor on hover over elements with class="bigger"
-let biggers = document.querySelectorAll('.bigger');
+// bigger cursor on hover over elements with class="bigger" (currently not in use)
+// let biggers = document.querySelectorAll('.bigger');
 
 biggers.forEach((bigger) => {
   bigger.addEventListener('mouseover', () => {
@@ -37,7 +37,7 @@ projects.forEach((project) => {
 });
 
 // cursor bigger on some content (currently not in use)
-let projectBoxes = document.querySelectorAll('.bigger--white');
+// let projectBoxes = document.querySelectorAll('.bigger--white');
 
 projectBoxes.forEach((bigger) => {
   bigger.addEventListener('mouseover', () => {
