@@ -35,7 +35,7 @@
 
 - This website contains several ongoing and completed projects:
 
-![Product Name Screen Shot](imgs/projects.png)
+![Product Name Screen Shot](imgs/projects-online.png)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
