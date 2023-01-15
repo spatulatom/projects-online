@@ -65,21 +65,21 @@
       <ul id="myMenu" class="hidden fixed z-10 lg:flex w-screen">
         <li class="group" data-menuanchor="firstPage" class="active">
           <a
-            class="inline-block bg-darkViolet dark:bg-white px-12 py-3 w-20vw text-center dark:text-grayishViolet font-medium no-underline dark:hover:bg-cyan transition-all hover:bg-white hover:text-grayishViolet dark:hover:text-veryDarkViolet"
+            class="inline-block bg-darkViolet dark:bg-white px-12 py-3 w-20vw mr-[1px] dark:text-gray-700 text-center  font-semibold no-underline dark:hover:bg-cyan transition-all hover:bg-white hover:text-grayishViolet dark:hover:text-veryDarkViolet"
             href="#firstPage"
             >Home</a
           >
         </li>
         <li class="group" data-menuanchor="secondPage">
           <a
-            class="inline-block bg-darkViolet dark:bg-white px-12 py-3 w-20vw text-center dark:text-grayishViolet font-medium no-underline dark:hover:bg-cyan transition-all hover:bg-white hover:text-grayishViolet dark:hover:text-veryDarkViolet"
+            class="inline-block bg-darkViolet dark:bg-white px-12 py-3 w-20vw mr-[1px] dark:text-gray-700 text-center  font-semibold no-underline dark:hover:bg-cyan transition-all hover:bg-white hover:text-grayishViolet dark:hover:text-veryDarkViolet"
             href="#secondPage"
             >Projects</a
           >
         </li>
         <li class="group" data-menuanchor="fourthPage">
           <a
-            class="inline-block bg-darkViolet dark:bg-white px-12 py-3 w-20vw text-center rounded-br-3xl dark:text-grayishViolet font-medium no-underline dark:hover:bg-cyan transition-all hover:bg-white hover:text-grayishViolet dark:hover:text-veryDarkViolet"
+            class="inline-block bg-darkViolet dark:bg-white px-12 py-3 w-20vw mr-[1px] rounded-br-3xl dark:text-gray-700 text-center  font-semibold no-underline dark:hover:bg-cyan transition-all hover:bg-white hover:text-grayishViolet dark:hover:text-veryDarkViolet"
             href="#fourthPage"
             >Contact</a
           >
@@ -91,17 +91,17 @@
             <div class="hidden lg:flex space-x-3 py-3">
               <i
                 id="light"
-                class="fa-solid fa-sun fa-xl cursor-pointer text-gray-500 transition-all hover:text-dar"
+                class="fa-solid fa-sun fa-xl cursor-pointer transition-all hover:text-cyan text-gray-500"
               >
               </i>
 
               <i
                 id="dark"
-                class="fa-solid fa-moon fa-xl cursor-pointer text-gray-500 transition-all hover:text-cyan"
+                class="fa-solid fa-moon fa-xl cursor-pointer transition-all hover:text-cyan text-gray-500"
               ></i>
               <i
                 id="system"
-                class="fa-solid fa-desktop fa-xl cursor-pointer text-gray-500 transition-all hover:text-cyan"
+                class="fa-solid fa-desktop fa-xl cursor-pointer transition-all hover:text-cyan text-gray-500"
               ></i>
             </div>
             <a
@@ -148,15 +148,15 @@
             <div class="flex space-x-6 pt-8">
               <i
                 id="light-mobile"
-                class="icon fa-regular fa-sun fa-2xl text-grayishViolet cursor-pointer transition-all hover:text-cyan"
+                class="icon fa-regular fa-sun fa-2xl cursor-pointer text-grayishViolet transition-all hover:text-cyan"
               ></i>
               <i
                 id="dark-mobile"
-                class="icon fa-solid fa-moon fa-2xl text-grayishViolet cursor-pointer transition-all hover:text-cyan"
+                class="icon fa-solid fa-moon fa-2xl cursor-pointer text-grayishViolet transition-all hover:text-cyan"
               ></i>
               <i
                 id="system-mobile"
-                class="icon fa-solid fa-tablet-screen-button fa-2xl text-grayishViolet cursor-pointer transition-all hover:text-cyan"
+                class="icon fa-solid fa-tablet-screen-button fa-2xl cursor-pointer text-grayishViolet transition-all hover:text-cyan"
               ></i>
             </div>
           </li>
@@ -178,8 +178,8 @@
       </div>
     </nav>
 
-     <!-- Container For All Pages -->
-     <div id="fullpage">
+    <!-- Container For All Pages -->
+    <div id="fullpage">
       <!-- First Page - HOME -->
       <div class="section bg-gray-200 dark:bg-customBlack">
         <div
@@ -230,7 +230,7 @@
             class="flex flex-col lg:flex-row container lg:px-14 justify-center items-center m-auto"
           >
             <a
-              href="https://eventsbook-91260.web.app/allevents"
+              href="https://spatulatom.github.io/projects-online/"
               target="_blank"
               class="hidden lg:block basis-7/12 overflow-hidden shadow-2xl"
             >
@@ -247,19 +247,19 @@
                 <h2
                   class="lg:text-2xl text-darkViolet dark:text-cyan text-center mb-1 font-bold bigger"
                 >
-                  eventsbook (MERN app)
+                  This portfolio website
                 </h2>
                 <h4
                   class="text-sm lg:text-base text-gray-600 dark:text-white font-light mb-2 text-justify bigger"
                 >
-                  A fullstack app, a social media platform where users can log
-                  in/create an account, upload photos/create posts (about
-                  upcoming social events) and add likes and comments. Users can
-                  also tag their event's location on the map thanks to Google
-                  Maps Platform API or change their passwords with the use of
-                  the SendGrid API. User authentication with jwt token created
-                  on the backend, pictures and data stored respectively on
-                  Amazon Web Services and MongoDB.
+                This website a project on HTML, CSS, Tailwind CSS and vanilla
+                JavaScript. Contact form in 'Contact' section is connected to the
+                backend server built with Node.js, Express.js and Mongoose;
+                MongoDB is used for storage of form data; the server is running on
+                render.com; SengGrid API is used for sending emails. Horizontal
+                and vertical scrolling are created with the help of fullpage.js
+                library. See the links to the fontend and the backend repositories
+                on GitHub down below.
                 </h4>
                 <h6
                   class="text-darkViolet dark:text-cyan font-normal lg:font-medium text-right text-xs mb-3 bigger"
@@ -269,21 +269,14 @@
                 </h6>
                 <div class="tooltips flex justify-around lg:justify-end">
                   <a
-                    href="https://github.com/spatulatom/frontend-eventsbook#readme-top"
+                  href="https://github.com/spatulatom/projects-online#readme"
                     target="_blank"
                     class="tooltip"
                   >
                     <span><i class="fab fa-github fa-xl"></i></span>
                     <span class="tooltiptext">On GitHub</span>
                   </a>
-                  <a
-                    href="https://eventsbook-91260.web.app/allevents"
-                    target="_blank"
-                    class="tooltip"
-                  >
-                    <span><i class="fa-solid fa-eye fa-xl"></i></span>
-                    <span class="tooltiptext">Deployed Website</span>
-                  </a>
+                
                 </div>
               </div>
             </div>
@@ -996,7 +989,7 @@
     <script src="./scripts/contact-form.js"></script>
     <script src="./scripts/coursor-effect.js"></script>
     <script src="./scripts/mobile-nav.js"></script>
-    <script src="./scripts/dark-mode.js"></script>
+   
 
     <!-- More scripts For Fullpage.js -->
     <script type="text/javascript" src="fullpage.extensions.min.js"></script>
@@ -1015,5 +1008,6 @@
         // paddingBottom: '30px'
       });
     </script>
+     <script src="./scripts/dark-mode.js"></script>
   </body>
 </html>

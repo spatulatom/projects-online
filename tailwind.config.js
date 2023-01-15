@@ -1,8 +1,9 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   darkMode: 'class',
-  // watch for any tailwind classes - *, in any html document
-  content: ['./*.html'],
+  // https://tailwindcss.com/docs/content-configuration#pattern-recommendations
+  // if classes used in js files we need this config
+  content: ['./scripts/*.{html,js}', './index.html'],
   theme: {
     extend: {
       fontFamily: {
@@ -24,16 +25,15 @@ module.exports = {
         view: "url('../imgs/view.jpg')",
         wall: "url('../imgs/wall.jpg')",
         keboardWhite: "url('../imgs/keyboard-white.jpg')",
-        keyboardDark: "url('../imgs/keyboard-dark.png')"
+        keyboardDark: "url('../imgs/keyboard-dark.png')",
       },
       spacing: {
         180: '32rem',
       },
-      width:{
-        '20vw': '15vw'
-      }
+      width: {
+        '20vw': '15vw',
+      },
     },
   },
   plugins: [],
 };
-

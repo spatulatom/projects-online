@@ -577,6 +577,11 @@ video {
   /* background: white; */
 }
 
+.open {
+  transform: rotate(90deg);
+  transform: translateY(0px);
+}
+
 .open .hamburger-top {
   transform: rotate(45deg) translateY(6px) translateX(6px);
   background-color: hsl(180, 66%, 49%);
@@ -727,6 +732,26 @@ textarea {
   margin-bottom: 1rem;
 }
 
+.mr-1 {
+  margin-right: 0.25rem;
+}
+
+.mr-\[\] {
+  margin-right: ;
+}
+
+.mr-\[1px\] {
+  margin-right: 1px;
+}
+
+.mr-\[10x\] {
+  margin-right: 10x;
+}
+
+.mr-\[1\] {
+  margin-right: 1;
+}
+
 .block {
   display: block;
 }
@@ -771,28 +796,12 @@ textarea {
   width: 120%;
 }
 
-.w-10\/12 {
-  width: 83.333333%;
-}
-
-.w-7\/12 {
-  width: 58.333333%;
-}
-
-.grow-0 {
-  flex-grow: 0;
-}
-
 .basis-7\/12 {
   flex-basis: 58.333333%;
 }
 
 .basis-2\/5 {
   flex-basis: 40%;
-}
-
-.basis-5\/12 {
-  flex-basis: 41.666667%;
 }
 
 .cursor-pointer {
@@ -917,15 +926,6 @@ textarea {
   background-color: rgb(229 231 235 / var(--tw-bg-opacity));
 }
 
-.bg-customBlack {
-  --tw-bg-opacity: 1;
-  background-color: rgb(30 30 40 / var(--tw-bg-opacity));
-}
-
-.bg-keboardWhite {
-  background-image: url('../imgs/keyboard-white.jpg');
-}
-
 .bg-cover {
   background-size: cover;
 }
@@ -948,10 +948,6 @@ textarea {
 
 .p-3 {
   padding: 0.75rem;
-}
-
-.p-8 {
-  padding: 2rem;
 }
 
 .px-12 {
@@ -1053,6 +1049,10 @@ textarea {
   font-weight: 400;
 }
 
+.font-semibold {
+  font-weight: 600;
+}
+
 .uppercase {
   text-transform: uppercase;
 }
@@ -1076,14 +1076,19 @@ textarea {
   color: hsl(257 7% 63% / var(--tw-text-opacity));
 }
 
-.text-gray-400 {
+.text-cyan {
   --tw-text-opacity: 1;
-  color: rgb(156 163 175 / var(--tw-text-opacity));
+  color: hsl(180 66% 49% / var(--tw-text-opacity));
 }
 
 .text-darkViolet {
   --tw-text-opacity: 1;
   color: hsl(180 66% 49% / var(--tw-text-opacity));
+}
+
+.text-gray-400 {
+  --tw-text-opacity: 1;
+  color: rgb(156 163 175 / var(--tw-text-opacity));
 }
 
 .text-gray-600 {
@@ -1101,9 +1106,9 @@ textarea {
   color: rgb(163 172 167 / var(--tw-text-opacity));
 }
 
-.text-cyan {
+.text-red {
   --tw-text-opacity: 1;
-  color: hsl(180 66% 49% / var(--tw-text-opacity));
+  color: hsl(0 87% 67% / var(--tw-text-opacity));
 }
 
 .no-underline {
@@ -1404,10 +1409,6 @@ SO IT CAN BE STYLED */
   background-color: hsl(260 8% 14% / var(--tw-bg-opacity));
 }
 
-.dark .dark\:bg-keyboardDark {
-  background-image: url('../imgs/keyboard-dark.png');
-}
-
 .dark .dark\:text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
@@ -1426,6 +1427,16 @@ SO IT CAN BE STYLED */
 .dark .dark\:text-cyan {
   --tw-text-opacity: 1;
   color: hsl(180 66% 49% / var(--tw-text-opacity));
+}
+
+.dark .dark\:text-gray-600 {
+  --tw-text-opacity: 1;
+  color: rgb(75 85 99 / var(--tw-text-opacity));
+}
+
+.dark .dark\:text-gray-700 {
+  --tw-text-opacity: 1;
+  color: rgb(55 65 81 / var(--tw-text-opacity));
 }
 
 .dark .dark\:opacity-80 {
@@ -1487,20 +1498,8 @@ SO IT CAN BE STYLED */
     width: 50%;
   }
 
-  .lg\:w-5\/12 {
-    width: 41.666667%;
-  }
-
   .lg\:max-w-md {
     max-width: 28rem;
-  }
-
-  .lg\:max-w-\[41\.6667\%\] {
-    max-width: 41.6667%;
-  }
-
-  .lg\:grow-0 {
-    flex-grow: 0;
   }
 
   .lg\:basis-5\/12 {

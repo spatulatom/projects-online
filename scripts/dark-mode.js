@@ -18,6 +18,7 @@ const systemMobile = document.getElementById('system-mobile');
 
 // 2. SET UP THE COLOR OF THE ICONS DEPENDING ON FIRST LOAD AND REFRESH
 if (!('color-theme' in localStorage)) {
+  systemIcon.classList.remove('text-cyan');
   systemIcon.classList.add('text-cyan');
   systemMobile.classList.add('text-cyan');
 } else {
