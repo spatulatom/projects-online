@@ -931,6 +931,11 @@ textarea {
   background-color: rgb(156 163 175 / var(--tw-bg-opacity));
 }
 
+.bg-gray-300 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(209 213 219 / var(--tw-bg-opacity));
+}
+
 .bg-keyboardDark {
   background-image: url('../imgs/keyboard-dark.png');
 }
@@ -1122,6 +1127,11 @@ textarea {
 .text-red {
   --tw-text-opacity: 1;
   color: hsl(0 87% 67% / var(--tw-text-opacity));
+}
+
+.text-gray-700 {
+  --tw-text-opacity: 1;
+  color: rgb(55 65 81 / var(--tw-text-opacity));
 }
 
 .no-underline {
@@ -1566,6 +1576,10 @@ SO IT CAN BE STYLED */
 
   .lg\:font-medium {
     font-weight: 500;
+  }
+
+  .lg\:font-normal {
+    font-weight: 400;
   }
 }
 
