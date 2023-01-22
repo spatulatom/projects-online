@@ -679,8 +679,12 @@ textarea {
   left: 1rem;
 }
 
-.bottom-6 {
-  bottom: 1.5rem;
+.bottom-0 {
+  bottom: 0px;
+}
+
+.top-0 {
+  top: 0px;
 }
 
 .z-10 {
@@ -695,6 +699,10 @@ textarea {
   margin: auto;
 }
 
+.m-4 {
+  margin: 1rem;
+}
+
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
@@ -706,10 +714,6 @@ textarea {
 
 .mt-2 {
   margin-top: 0.5rem;
-}
-
-.mt-8 {
-  margin-top: 2rem;
 }
 
 .mb-44 {
@@ -734,6 +738,14 @@ textarea {
 
 .mb-4 {
   margin-bottom: 1rem;
+}
+
+.mt-8 {
+  margin-top: 2rem;
+}
+
+.mt-4 {
+  margin-top: 1rem;
 }
 
 .block {
@@ -762,6 +774,10 @@ textarea {
 
 .h-auto {
   height: auto;
+}
+
+.max-h-screen {
+  max-height: 100vh;
 }
 
 .w-screen {

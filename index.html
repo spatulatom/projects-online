@@ -127,7 +127,7 @@
       </button>
 
       <!-- Flex Container Fot Mobile Menu -->
-      <div class="mobile-nav bg-white dark:bg-customBlack h-screen">
+      <div class="mobile-nav bg-white dark:bg-customBlack max-h-screen">
         <ul class="flex flex-col p-4 justify-center items-center h-full">
           <li class="mobile-nav__item text-grayishViolet dark:text-white">
             <a href="#firstPage" class="link current">Home</a>
@@ -160,19 +160,17 @@
               ></i>
             </div>
           </li>
-          <li class="absolute bottom-6">
+          <li class="absolute top-0 m-4 right-0">
             <!-- Social Icons Mobile-->
-            <ul class="mt-8 flex space-x-6">
-              <a
-                target="_blank"
-                href="https://github.com/spatulatom"
-                alt="github link"
-              >
-                <i
-                  class="fab fa-github text-grayishViolet fa-xl transition-all hover:text-cyan"
-                ></i>
-              </a>
-            </ul>
+            <a
+              target="_blank"
+              href="https://github.com/spatulatom"
+              alt="github link"
+            >
+              <i
+                class="fab fa-github text-grayishViolet fa-2xl transition-all hover:text-cyan"
+              ></i>
+            </a>
           </li>
         </ul>
       </div>
@@ -183,7 +181,9 @@
       <!-- First Page - HOME -->
       <div class="section bg-gray-200 dark:bg-customBlack">
         <!-- Div For Cursor Effect -->
-        <div class="cursor hidden lg:block border-4 dark:border-white border-cyan"></div>
+        <div
+          class="cursor hidden lg:block border-4 dark:border-white border-cyan"
+        ></div>
         <div
           class="container flex flex-col-reverse mx-auto p-12 lg:flex-row items-center"
         >
@@ -234,7 +234,11 @@
               target="_blank"
               class="hidden lg:block basis-7/12 overflow-hidden shadow-2xl"
             >
-              <img class="w-screen h-auto" src="imgs/projects-online2.png" alt="" />
+              <img
+                class="w-screen h-auto"
+                src="imgs/projects-online2.png"
+                alt=""
+              />
             </a>
 
             <div
@@ -253,12 +257,12 @@
                   class="text-sm lg:text-base text-gray-600 dark:text-white font-normal mb-2 text-justify"
                 >
                   This website a project on HTML, CSS, Tailwind CSS and vanilla
-                  JavaScript. Also a contact form in 'Contact' section is connected to
-                  the backend server built with Node.js, Express.js and
-                  Mongoose; MongoDB is used for storage of form data; the server
-                  is running on render.com; SengGrid API is used for sending
-                  emails. Horizontal and vertical scrolling are created with the
-                  use of fullpage.js library. 
+                  JavaScript. Also a contact form in 'Contact' section is
+                  connected to the backend server built with Node.js, Express.js
+                  and Mongoose; MongoDB is used for storage of form data; the
+                  server is running on render.com; SengGrid API is used for
+                  sending emails. Horizontal and vertical scrolling are created
+                  with the use of fullpage.js library.
                 </h4>
                 <h6
                   class="text-darkViolet dark:text-cyan font-semibold text-right text-xs mb-3"
@@ -823,7 +827,6 @@
             </div>
           </div>
         </div>
-
       </div>
 
       <!-- Third Page - CONTACT -->
