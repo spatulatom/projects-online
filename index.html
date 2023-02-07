@@ -214,9 +214,9 @@
               class="text-2xl text-center text-gray-400 lg:max-w-lg lg:text-left"
             >
               Web development, JavaScript, projects. The direction I am heading
-              is Next.js web apps styled with Tailwind CSS, TypeScript
-              integration and Jest library unit testing. This portfolio also
-              contains many 'classic' React.js apps styled with CSS modules.
+              is Next.js web apps styled with Tailwind CSS and with TypeScript
+              integration. This portfolio also contains many 'classic' React.js
+              apps styled with CSS modules.
             </p>
             <div class="mx-auto lg:mx-0">
               <a
@@ -236,6 +236,79 @@
 
       <!-- Second Page - PROJECTS-->
       <div class="section bg-keyboardDark bg-cover bg-center">
+        <!-- SLIDE NR 1 -->
+        <div
+          class="slide bg-gray-200 dark:bg-customBlack flex justify-center items-center p-12"
+        >
+          <!-- there is another div in here added by fullpage and has probably set
+       responsive width, the class on it is .fp-overflow-->
+          <div
+            class="flex flex-col lg:flex-row container lg:px-14 justify-center items-center m-auto"
+          >
+            <a
+              href="https://spa-one-view.vercel.app/"
+              target="_blank"
+              class="hidden lg:block basis-7/12 overflow-hidden shadow-2xl"
+            >
+              <img class="w-screen h-auto" src="imgs/search.png" alt="" />
+            </a>
+
+            <div
+              class="lg:basis-5/12 w-full flex items-center relative overflow-visible cursor-effect-none"
+            >
+              <!-- this wrapper div below is needed for the positioning of text over image -->
+              <div
+                class="p-6 w-[120%] dark:opacity-80 bg-white dark:bg-veryDarkViolet lg:absolute right-0 rounded-lg z-10"
+              >
+                <h2
+                  class="lg:text-2xl text-darkViolet dark:text-cyan text-center mb-1 font-bold"
+                >
+                  search item (Next.js, TypeScript)
+                </h2>
+                <h4
+                  class="text-xs lg:text-base text-gray-600 dark:text-white font-normal mb-2 text-justify"
+                >
+                  Search Item is a SPA with just one view that uses API
+                  endpoint: https://reqres.in/api/products to display the
+                  paginated list of products. Text input at the top of the view allows the user to filter results
+                  by id. The input accept only numbers .Below this input user can see a
+                  table displaying the following items’ properties: id, name,
+                  and year. Additionally, the background colour of each row
+                  is taken from the colour property. After clicking on a
+                  row a modal is displayed and presents all item
+                  data. 
+                  Pagination and filtering are reflected in the address URL, so users
+                  can copy-paste the URL
+                  to another tab and this exact page will be displayed on
+                  the start.
+                </h4>
+                <h6
+                  class="text-darkViolet dark:text-cyan font-semibold text-right text-xs mb-3"
+                >
+                  Next.js, Context API TypeScript, Tailwind CSS
+                </h6>
+                <div class="tooltips flex justify-around lg:justify-end">
+                  <a
+                    href="https://github.com/spatulatom/spa-one-view#readme"
+                    target="_blank"
+                    class="tooltip"
+                  >
+                    <span><i class="fab fa-github fa-xl"></i></span>
+                    <span class="tooltiptext">On GitHub</span>
+                  </a>
+                  <a
+                    href="https://spa-one-view.vercel.app/"
+                    target="_blank"
+                    class="tooltip"
+                  >
+                    <span><i class="fa-solid fa-eye fa-xl"></i></span>
+                    <span class="tooltiptext">Deployed Website</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
         <!-- SLIDE NR 2 -->
         <div
           class="slide bg-gray-200 dark:bg-customBlack flex justify-center items-center p-12"
