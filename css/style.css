@@ -740,6 +740,18 @@ textarea {
   margin-left: 0.75rem;
 }
 
+.mb-14 {
+  margin-bottom: 3.5rem;
+}
+
+.mb-8 {
+  margin-bottom: 2rem;
+}
+
+.mb-20 {
+  margin-bottom: 5rem;
+}
+
 .block {
   display: block;
 }
@@ -1474,6 +1486,14 @@ SO IT CAN BE STYLED */
 
   .lg\:mb-0 {
     margin-bottom: 0px;
+  }
+
+  .lg\:mb-24 {
+    margin-bottom: 6rem;
+  }
+
+  .lg\:mb-44 {
+    margin-bottom: 11rem;
   }
 
   .lg\:block {
