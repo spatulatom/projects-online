@@ -679,10 +679,6 @@ textarea {
   left: 1rem;
 }
 
-.bottom-0 {
-  bottom: 0px;
-}
-
 .top-0 {
   top: 0px;
 }
@@ -695,12 +691,12 @@ textarea {
   z-index: 30;
 }
 
-.m-auto {
-  margin: auto;
-}
-
 .m-4 {
   margin: 1rem;
+}
+
+.m-auto {
+  margin: auto;
 }
 
 .mx-auto {
@@ -744,8 +740,8 @@ textarea {
   margin-top: 2rem;
 }
 
-.mt-4 {
-  margin-top: 1rem;
+.ml-3 {
+  margin-left: 0.75rem;
 }
 
 .block {
@@ -762,6 +758,10 @@ textarea {
 
 .flex {
   display: flex;
+}
+
+.table {
+  display: table;
 }
 
 .hidden {
@@ -955,12 +955,12 @@ textarea {
   padding: 3rem;
 }
 
-.p-6 {
-  padding: 1.5rem;
-}
-
 .p-3 {
   padding: 0.75rem;
+}
+
+.p-6 {
+  padding: 1.5rem;
 }
 
 .px-12 {
@@ -1021,6 +1021,11 @@ textarea {
   line-height: 1;
 }
 
+.text-xl {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
 .text-2xl {
   font-size: 1.5rem;
   line-height: 2rem;
@@ -1039,11 +1044,6 @@ textarea {
 .text-4xl {
   font-size: 2.25rem;
   line-height: 2.5rem;
-}
-
-.text-xl {
-  font-size: 1.25rem;
-  line-height: 1.75rem;
 }
 
 .font-semibold {
@@ -1080,11 +1080,6 @@ textarea {
   color: hsl(257 7% 63% / var(--tw-text-opacity));
 }
 
-.text-gray-400 {
-  --tw-text-opacity: 1;
-  color: rgb(156 163 175 / var(--tw-text-opacity));
-}
-
 .text-darkViolet {
   --tw-text-opacity: 1;
   color: hsl(180 66% 49% / var(--tw-text-opacity));
@@ -1093,6 +1088,11 @@ textarea {
 .text-gray-600 {
   --tw-text-opacity: 1;
   color: rgb(75 85 99 / var(--tw-text-opacity));
+}
+
+.text-gray-400 {
+  --tw-text-opacity: 1;
+  color: rgb(156 163 175 / var(--tw-text-opacity));
 }
 
 .text-white {
@@ -1122,6 +1122,10 @@ textarea {
   --tw-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
   --tw-shadow-colored: 0 25px 50px -12px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.filter {
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
 
 .transition-all {
@@ -1423,6 +1427,11 @@ SO IT CAN BE STYLED */
   color: rgb(55 65 81 / var(--tw-text-opacity));
 }
 
+.dark .dark\:text-emerald-500 {
+  --tw-text-opacity: 1;
+  color: rgb(16 185 129 / var(--tw-text-opacity));
+}
+
 .dark .dark\:text-cyan {
   --tw-text-opacity: 1;
   color: hsl(180 66% 49% / var(--tw-text-opacity));
@@ -1431,6 +1440,21 @@ SO IT CAN BE STYLED */
 .dark .dark\:text-grayishViolet {
   --tw-text-opacity: 1;
   color: hsl(257 7% 63% / var(--tw-text-opacity));
+}
+
+.dark .dark\:text-gray-200 {
+  --tw-text-opacity: 1;
+  color: rgb(229 231 235 / var(--tw-text-opacity));
+}
+
+.dark .dark\:text-gray-300 {
+  --tw-text-opacity: 1;
+  color: rgb(209 213 219 / var(--tw-text-opacity));
+}
+
+.dark .dark\:text-gray-400 {
+  --tw-text-opacity: 1;
+  color: rgb(156 163 175 / var(--tw-text-opacity));
 }
 
 .dark .dark\:opacity-80 {
@@ -1496,6 +1520,10 @@ SO IT CAN BE STYLED */
     max-width: 28rem;
   }
 
+  .lg\:max-w-lg {
+    max-width: 32rem;
+  }
+
   .lg\:basis-5\/12 {
     flex-basis: 41.666667%;
   }
@@ -1540,9 +1568,9 @@ SO IT CAN BE STYLED */
     line-height: 2rem;
   }
 
-  .lg\:text-base {
-    font-size: 1rem;
-    line-height: 1.5rem;
+  .lg\:text-xl {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
   }
 }
 
