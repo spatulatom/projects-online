@@ -712,12 +712,12 @@ textarea {
   margin-top: 0.5rem;
 }
 
-.mb-44 {
-  margin-bottom: 11rem;
+.mb-20 {
+  margin-bottom: 5rem;
 }
 
-.mb-24 {
-  margin-bottom: 6rem;
+.mb-8 {
+  margin-bottom: 2rem;
 }
 
 .mb-1 {
@@ -738,18 +738,6 @@ textarea {
 
 .ml-3 {
   margin-left: 0.75rem;
-}
-
-.mb-14 {
-  margin-bottom: 3.5rem;
-}
-
-.mb-8 {
-  margin-bottom: 2rem;
-}
-
-.mb-20 {
-  margin-bottom: 5rem;
 }
 
 .block {
@@ -886,6 +874,18 @@ textarea {
 
 .rounded-lg {
   border-radius: 0.5rem;
+}
+
+.rounded {
+  border-radius: 0.25rem;
+}
+
+.rounded-md {
+  border-radius: 0.375rem;
+}
+
+.rounded-xl {
+  border-radius: 0.75rem;
 }
 
 .rounded-br-3xl {
@@ -1480,20 +1480,16 @@ SO IT CAN BE STYLED */
     margin-right: 0px;
   }
 
+  .lg\:mb-44 {
+    margin-bottom: 11rem;
+  }
+
   .lg\:mt-16 {
     margin-top: 4rem;
   }
 
   .lg\:mb-0 {
     margin-bottom: 0px;
-  }
-
-  .lg\:mb-24 {
-    margin-bottom: 6rem;
-  }
-
-  .lg\:mb-44 {
-    margin-bottom: 11rem;
   }
 
   .lg\:block {
@@ -1573,5 +1569,15 @@ SO IT CAN BE STYLED */
 @media (min-width: 1280px) {
   .xl\:mb-52 {
     margin-bottom: 13rem;
+  }
+
+  .xl\:w-1\/2 {
+    width: 50%;
+  }
+}
+
+@media (min-width: 1536px) {
+  .\32xl\:w-1\/2 {
+    width: 50%;
   }
 }

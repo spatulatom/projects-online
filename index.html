@@ -213,13 +213,13 @@
             <p
               class="test-sm lg:text-xl text-center text-gray-500 dark:text-gray-400 lg:max-w-lg lg:text-left"
             >
-              My name is Tom and I am self-taught web developer. My projects are mostly Next.js web apps with TypeScript 
-              integration and styled with Tailwind CSS (some projects are also
-              unit tested with React Testing Library). This
-              portfolio also contains many 'classic' React.js apps styled
-              with CSS modules. Most of the them are fullstack endeavours with 
-              Node, MongoDB, Prisma, PostgreSQL and Cloudinary backends. 
- 
+              My name is Tom and I am self-taught web developer. My projects are
+              mostly Next.js web apps with TypeScript integration and styled
+              with Tailwind CSS (some projects are also unit tested with React
+              Testing Library). This portfolio also contains many 'classic'
+              React.js apps styled with CSS modules. Most of the them are
+              fullstack endeavours with Node, MongoDB, Prisma, PostgreSQL and
+              Cloudinary backends.
             </p>
             <div class="mx-auto lg:mx-0">
               <a
@@ -231,18 +231,78 @@
           </div>
 
           <!-- Image -->
-          <div class="mb-8 mx-auto md:w-180 lg:mb-0 lg:w-1/2 p-3">
-            <img src="imgs/me.jpg" alt="" />
+          <div class="mb-8 mx-auto md:w-180 lg:mb-0 p-3">
+            <img class="rounded-xl" src="imgs/me.jpg" alt="my profile pic" />
           </div>
         </div>
       </div>
 
       <!-- Second Page - PROJECTS-->
       <div class="section bg-keyboardDark bg-cover bg-center">
-        <!-- SLIDE NR 1 -->
+        <!-- SLIDE NR 0 -->
         <div
           class="slide bg-gray-200 dark:bg-customBlack flex justify-center items-center p-12"
         >
+          <!-- there is another div in here added by fullpage and has probably set
+        responsive width, the class on it is .fp-overflow-->
+          <div
+            class="flex flex-col lg:flex-row container lg:px-14 justify-center items-center m-auto"
+          >
+            <a
+              href="https://testing-next-13-beta-typescript-tailwind-prisma.vercel.app/"
+              target="_blank"
+              class="hidden lg:block basis-7/12 overflow-hidden shadow-2xl"
+            >
+              <img class="w-screen h-auto" src="imgs/search.png" alt="" />
+            </a>
+
+            <div
+              class="lg:basis-5/12 w-full flex items-center relative overflow-visible cursor-effect-none"
+            >
+              <!-- this wrapper div below is needed for the positioning of text over image -->
+              <div
+                class="p-6 w-[120%] dark:opacity-80 bg-white dark:bg-veryDarkViolet lg:absolute right-0 rounded-lg z-10"
+              >
+                <h2
+                  class="lg:text-2xl text-darkViolet dark:text-cyan text-center mb-1 font-bold"
+                >
+                  next 13 beta app
+                </h2>
+                <h4
+                  class="text-sm text-gray-600 dark:text-white font-normal mb-2 text-justify"
+                >
+                .
+                </h4>
+                <h6
+                  class="text-darkViolet dark:text-cyan font-semibold text-right text-xs mb-3"
+                >
+                  Next.js 13 beta, NextAuth.js, Prisma, PostgreSQL TypeScript, Tailwind CSS, React Testing
+                  Library
+                </h6>
+                <div class="tooltips flex justify-around lg:justify-end">
+                  <a
+                    href="https://github.com/spatulatom/testing-next-13-beta-typescript-tailwind-prisma#readme"
+                    target="_blank"
+                    class="tooltip"
+                  >
+                    <span><i class="fab fa-github fa-xl"></i></span>
+                    <span class="tooltiptext">On GitHub</span>
+                  </a>
+                  <a
+                    href="https://testing-next-13-beta-typescript-tailwind-prisma.vercel.app/"
+                    target="_blank"
+                    class="tooltip"
+                  >
+                    <span><i class="fa-solid fa-eye fa-xl"></i></span>
+                    <span class="tooltiptext">Deployed Website</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- SLIDE NR 1 -->
+        <div class="slide flex justify-center items-center p-12">
           <!-- there is another div in here added by fullpage and has probably set
        responsive width, the class on it is .fp-overflow-->
           <div
