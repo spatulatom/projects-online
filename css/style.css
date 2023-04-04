@@ -808,6 +808,14 @@ textarea {
   width: 120%;
 }
 
+.w-1 {
+  width: 0.25rem;
+}
+
+.w-1\/2 {
+  width: 50%;
+}
+
 .basis-7\/12 {
   flex-basis: 58.333333%;
 }
@@ -904,8 +912,39 @@ textarea {
   border-radius: 0.5rem;
 }
 
+.rounded {
+  border-radius: 0.25rem;
+}
+
+.rounded-none {
+  border-radius: 0px;
+}
+
+.rounded-r-full {
+  border-top-right-radius: 9999px;
+  border-bottom-right-radius: 9999px;
+}
+
+.rounded-r {
+  border-top-right-radius: 0.25rem;
+  border-bottom-right-radius: 0.25rem;
+}
+
+.rounded-b {
+  border-bottom-right-radius: 0.25rem;
+  border-bottom-left-radius: 0.25rem;
+}
+
 .rounded-br-3xl {
   border-bottom-right-radius: 1.5rem;
+}
+
+.rounded-br-full {
+  border-bottom-right-radius: 9999px;
+}
+
+.rounded-br-2xl {
+  border-bottom-right-radius: 1rem;
 }
 
 .border-4 {
@@ -1501,6 +1540,12 @@ SO IT CAN BE STYLED */
   color: hsl(260 8% 14% / var(--tw-text-opacity));
 }
 
+@media (min-width: 640px) {
+  .sm\:rounded-full {
+    border-radius: 9999px;
+  }
+}
+
 @media (min-width: 768px) {
   .md\:mt-4 {
     margin-top: 1rem;
@@ -1524,6 +1569,14 @@ SO IT CAN BE STYLED */
 
   .md\:w-180 {
     width: 32rem;
+  }
+
+  .md\:rounded-none {
+    border-radius: 0px;
+  }
+
+  .md\:rounded-br-3xl {
+    border-bottom-right-radius: 1.5rem;
   }
 
   .md\:pt-16 {
@@ -1624,6 +1677,11 @@ SO IT CAN BE STYLED */
   .lg\:px-14 {
     padding-left: 3.5rem;
     padding-right: 3.5rem;
+  }
+
+  .lg\:py-3 {
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
   }
 
   .lg\:text-left {
