@@ -683,10 +683,6 @@ textarea {
   top: 0px;
 }
 
-.bottom-0 {
-  bottom: 0px;
-}
-
 .z-10 {
   z-index: 10;
 }
@@ -744,18 +740,6 @@ textarea {
   margin-left: 0.75rem;
 }
 
-.mt-4 {
-  margin-top: 1rem;
-}
-
-.mt-10 {
-  margin-top: 2.5rem;
-}
-
-.mt-16 {
-  margin-top: 4rem;
-}
-
 .block {
   display: block;
 }
@@ -808,14 +792,6 @@ textarea {
   width: 120%;
 }
 
-.w-1 {
-  width: 0.25rem;
-}
-
-.w-1\/2 {
-  width: 50%;
-}
-
 .basis-7\/12 {
   flex-basis: 58.333333%;
 }
@@ -824,16 +800,8 @@ textarea {
   flex-basis: 40%;
 }
 
-.basis-5\/12 {
-  flex-basis: 41.666667%;
-}
-
 .cursor-pointer {
   cursor: pointer;
-}
-
-.flex-row {
-  flex-direction: row;
 }
 
 .flex-col {
@@ -912,39 +880,8 @@ textarea {
   border-radius: 0.5rem;
 }
 
-.rounded {
-  border-radius: 0.25rem;
-}
-
-.rounded-none {
-  border-radius: 0px;
-}
-
-.rounded-r-full {
-  border-top-right-radius: 9999px;
-  border-bottom-right-radius: 9999px;
-}
-
-.rounded-r {
-  border-top-right-radius: 0.25rem;
-  border-bottom-right-radius: 0.25rem;
-}
-
-.rounded-b {
-  border-bottom-right-radius: 0.25rem;
-  border-bottom-left-radius: 0.25rem;
-}
-
 .rounded-br-3xl {
   border-bottom-right-radius: 1.5rem;
-}
-
-.rounded-br-full {
-  border-bottom-right-radius: 9999px;
-}
-
-.rounded-br-2xl {
-  border-bottom-right-radius: 1rem;
 }
 
 .border-4 {
@@ -1051,13 +988,12 @@ textarea {
   padding-bottom: 1rem;
 }
 
-.px-14 {
-  padding-left: 3.5rem;
-  padding-right: 3.5rem;
-}
-
 .pt-8 {
   padding-top: 2rem;
+}
+
+.pl-2 {
+  padding-left: 0.5rem;
 }
 
 .pt-20 {
@@ -1066,18 +1002,6 @@ textarea {
 
 .pt-6 {
   padding-top: 1.5rem;
-}
-
-.pt-16 {
-  padding-top: 4rem;
-}
-
-.pt-4 {
-  padding-top: 1rem;
-}
-
-.text-left {
-  text-align: left;
 }
 
 .text-center {
@@ -1090,6 +1014,14 @@ textarea {
 
 .text-justify {
   text-align: justify;
+}
+
+.indent-3 {
+  text-indent: 0.75rem;
+}
+
+.indent-6 {
+  text-indent: 1.5rem;
 }
 
 .font-sans {
@@ -1111,6 +1043,11 @@ textarea {
   line-height: 1.25rem;
 }
 
+.text-lg {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+
 .text-xs {
   font-size: 0.75rem;
   line-height: 1rem;
@@ -1119,6 +1056,11 @@ textarea {
 .text-xl {
   font-size: 1.25rem;
   line-height: 1.75rem;
+}
+
+.text-base {
+  font-size: 1rem;
+  line-height: 1.5rem;
 }
 
 .font-semibold {
@@ -1163,11 +1105,6 @@ textarea {
 .text-gray-600 {
   --tw-text-opacity: 1;
   color: rgb(75 85 99 / var(--tw-text-opacity));
-}
-
-.text-red {
-  --tw-text-opacity: 1;
-  color: hsl(0 87% 67% / var(--tw-text-opacity));
 }
 
 .text-gray-400 {
@@ -1443,10 +1380,6 @@ SO IT CAN BE STYLED */
   }
 }
 
-.file\:flex::file-selector-button {
-  display: flex;
-}
-
 .hover\:bg-white:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
@@ -1540,66 +1473,14 @@ SO IT CAN BE STYLED */
   color: hsl(260 8% 14% / var(--tw-text-opacity));
 }
 
-@media (min-width: 640px) {
-  .sm\:rounded-full {
-    border-radius: 9999px;
-  }
-}
-
 @media (min-width: 768px) {
-  .md\:mt-4 {
-    margin-top: 1rem;
-  }
-
-  .md\:mt-10 {
-    margin-top: 2.5rem;
-  }
-
-  .md\:mt-16 {
-    margin-top: 4rem;
-  }
-
-  .md\:block {
-    display: block;
-  }
-
-  .md\:hidden {
-    display: none;
-  }
-
   .md\:w-180 {
     width: 32rem;
-  }
-
-  .md\:rounded-none {
-    border-radius: 0px;
-  }
-
-  .md\:rounded-br-3xl {
-    border-bottom-right-radius: 1.5rem;
-  }
-
-  .md\:pt-16 {
-    padding-top: 4rem;
-  }
-
-  .md\:text-left {
-    text-align: left;
-  }
-
-  .md\:text-xs {
-    font-size: 0.75rem;
-    line-height: 1rem;
   }
 
   .md\:text-base {
     font-size: 1rem;
     line-height: 1.5rem;
-  }
-
-  .md\:text-sm {
-    font-size: 0.875rem;
-    line-height: 1.25rem;
   }
 }
 
@@ -1679,11 +1560,6 @@ SO IT CAN BE STYLED */
     padding-right: 3.5rem;
   }
 
-  .lg\:py-3 {
-    padding-top: 0.75rem;
-    padding-bottom: 0.75rem;
-  }
-
   .lg\:text-left {
     text-align: left;
   }
@@ -1705,57 +1581,7 @@ SO IT CAN BE STYLED */
 }
 
 @media (min-width: 1280px) {
-  .xl\:absolute {
-    position: absolute;
-  }
-
   .xl\:mb-52 {
     margin-bottom: 13rem;
-  }
-
-  .xl\:block {
-    display: block;
-  }
-
-  .xl\:flex {
-    display: flex;
-  }
-
-  .xl\:hidden {
-    display: none;
-  }
-
-  .xl\:basis-5\/12 {
-    flex-basis: 41.666667%;
-  }
-
-  .xl\:flex-row {
-    flex-direction: row;
-  }
-
-  .xl\:justify-end {
-    justify-content: flex-end;
-  }
-
-  .xl\:border-t-2 {
-    border-top-width: 2px;
-  }
-
-  .xl\:border-t-0 {
-    border-top-width: 0px;
-  }
-
-  .xl\:px-14 {
-    padding-left: 3.5rem;
-    padding-right: 3.5rem;
-  }
-
-  .xl\:text-left {
-    text-align: left;
-  }
-
-  .xl\:text-2xl {
-    font-size: 1.5rem;
-    line-height: 2rem;
   }
 }
