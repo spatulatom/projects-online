@@ -992,10 +992,6 @@ textarea {
   padding-top: 2rem;
 }
 
-.pl-2 {
-  padding-left: 0.5rem;
-}
-
 .pt-20 {
   padding-top: 5rem;
 }
@@ -1016,16 +1012,17 @@ textarea {
   text-align: justify;
 }
 
-.indent-3 {
-  text-indent: 0.75rem;
-}
-
-.indent-6 {
-  text-indent: 1.5rem;
+.indent-20 {
+  text-indent: 5rem;
 }
 
 .font-sans {
   font-family: Poppins, sans-serif;
+}
+
+.text-sm {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
 }
 
 .text-5xl {
@@ -1033,14 +1030,14 @@ textarea {
   line-height: 1;
 }
 
+.text-base {
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
 .text-2xl {
   font-size: 1.5rem;
   line-height: 2rem;
-}
-
-.text-sm {
-  font-size: 0.875rem;
-  line-height: 1.25rem;
 }
 
 .text-lg {
@@ -1056,11 +1053,6 @@ textarea {
 .text-xl {
   font-size: 1.25rem;
   line-height: 1.75rem;
-}
-
-.text-base {
-  font-size: 1rem;
-  line-height: 1.5rem;
 }
 
 .font-semibold {
@@ -1577,6 +1569,11 @@ SO IT CAN BE STYLED */
   .lg\:text-2xl {
     font-size: 1.5rem;
     line-height: 2rem;
+  }
+
+  .lg\:text-base {
+    font-size: 1rem;
+    line-height: 1.5rem;
   }
 }
 
