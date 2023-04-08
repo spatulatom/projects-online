@@ -884,10 +884,6 @@ textarea {
   border-bottom-right-radius: 1.5rem;
 }
 
-.border-4 {
-  border-width: 4px;
-}
-
 .border-t-2 {
   border-top-width: 2px;
 }
@@ -1010,10 +1006,6 @@ textarea {
 
 .text-justify {
   text-align: justify;
-}
-
-.indent-20 {
-  text-indent: 5rem;
 }
 
 .font-sans {
@@ -1199,13 +1191,14 @@ textarea {
   position: absolute;
   transform: translate(-50%, -50%);
   pointer-events: none;
-  width: 800px;
-  height: 800px;
+  width: 600px;
+  height: 600px;
   border-radius: 50%;
   transition-property: background, transform;
   background: transparent;
-  transition: all 1s linear;
+  transition: all 1.2s linear;
   z-index: 190;
+  border-width: 2px;
 }
 
 .cursor-grow {
@@ -1556,24 +1549,19 @@ SO IT CAN BE STYLED */
     text-align: left;
   }
 
-  .lg\:text-6xl {
-    font-size: 3.75rem;
-    line-height: 1;
-  }
-
   .lg\:text-xl {
     font-size: 1.25rem;
     line-height: 1.75rem;
   }
 
+  .lg\:text-6xl {
+    font-size: 3.75rem;
+    line-height: 1;
+  }
+
   .lg\:text-2xl {
     font-size: 1.5rem;
     line-height: 2rem;
-  }
-
-  .lg\:text-base {
-    font-size: 1rem;
-    line-height: 1.5rem;
   }
 }
 
