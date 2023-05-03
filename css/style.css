@@ -1451,10 +1451,6 @@ SO IT CAN BE STYLED */
 }
 
 @media (min-width: 768px) {
-  .md\:block {
-    display: block;
-  }
-
   .md\:w-180 {
     width: 32rem;
   }
