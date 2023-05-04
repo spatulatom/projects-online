@@ -8,21 +8,31 @@
   top: 55%;
   left: 50%;
   position: absolute;
-  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
   pointer-events: none;
   width: 600px;
   height: 600px;
   border-radius: 50%;
+  -webkit-transition-property: background, -webkit-transform;
+  transition-property: background, -webkit-transform;
+  -o-transition-property: background, transform;
   transition-property: background, transform;
+  transition-property: background, transform, -webkit-transform;
   background: transparent;
+  -webkit-transition: all 1.2s linear;
+  -o-transition: all 1.2s linear;
   transition: all 1.2s linear;
   z-index: 190;
   border-width: 2px;
 
 }
 .cursor-grow {
-  backdrop-filter: grayscale();
-  backdrop-filter: invert(100%);
+  -webkit-backdrop-filter: grayscale();
+          backdrop-filter: grayscale();
+  -webkit-backdrop-filter: invert(100%);
+          backdrop-filter: invert(100%);
   width: 300px;
   height: 300px;
 }
@@ -39,6 +49,8 @@
     cursor: pointer;
     width: 2rem;
     height: 2rem;
+    -webkit-transition: all 0.25s;
+    -o-transition: all 0.25s;
     transition: all 0.25s;
   }
 
@@ -52,26 +64,40 @@
     top: 0;
     left: 0;
     /* background: white; */
-    transform: rotate(0);
+    -webkit-transform: rotate(0);
+        -ms-transform: rotate(0);
+            transform: rotate(0);
+    -webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
     transition: all 0.5s;
   }
 
   .hamburger-middle {
-    transform: translateY(10px);
+    -webkit-transform: translateY(10px);
+        -ms-transform: translateY(10px);
+            transform: translateY(10px);
   }
 
   .hamburger-bottom {
-    transform: translateY(20px);
+    -webkit-transform: translateY(20px);
+        -ms-transform: translateY(20px);
+            transform: translateY(20px);
     /* background: white; */
   }
 
   .open {
-    transform: rotate(90deg);
-    transform: translateY(0px);
+    -webkit-transform: rotate(90deg);
+        -ms-transform: rotate(90deg);
+            transform: rotate(90deg);
+    -webkit-transform: translateY(0px);
+        -ms-transform: translateY(0px);
+            transform: translateY(0px);
   }
 
   .open .hamburger-top {
-    transform: rotate(45deg) translateY(6px) translateX(6px);
+    -webkit-transform: rotate(45deg) translateY(6px) translateX(6px);
+        -ms-transform: rotate(45deg) translateY(6px) translateX(6px);
+            transform: rotate(45deg) translateY(6px) translateX(6px);
     background-color: hsl(180, 66%, 49%);
   }
 
@@ -80,7 +106,9 @@
   }
 
   .open .hamburger-bottom {
-    transform: rotate(-45deg) translateY(6px) translateX(-6px);
+    -webkit-transform: rotate(-45deg) translateY(6px) translateX(-6px);
+        -ms-transform: rotate(-45deg) translateY(6px) translateX(-6px);
+            transform: rotate(-45deg) translateY(6px) translateX(-6px);
     background-color: hsl(180, 66%, 49%);
   }
 }
@@ -88,14 +116,20 @@
 /* MOBILE MENU POPPING FROM THE LEFT SIDE */
 
 .mobile-nav {
-  transform: translateX(-100%);
+  -webkit-transform: translateX(-100%);
+      -ms-transform: translateX(-100%);
+          transform: translateX(-100%);
   position: fixed;
   z-index: 28;
   top: 0;
   left: 0;
   width: 70%;
   height: 100vh;
+  -webkit-transition: -webkit-transform 300ms ease-out;
+  transition: -webkit-transform 300ms ease-out;
+  -o-transition: transform 300ms ease-out;
   transition: transform 300ms ease-out;
+  transition: transform 300ms ease-out, -webkit-transform 300ms ease-out;
   border-right-style: solid;
   border-color: hsl(180, 66%, 49%);
   border-width: 2px;
@@ -108,10 +142,19 @@
   list-style: none;
   margin: 0 auto;
   padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .mobile-nav__item {
@@ -138,7 +181,9 @@
 .show {
   /* display: block !important; */
   opacity: 1;
-  transform: translateY(0);
+  -webkit-transform: translateY(0);
+      -ms-transform: translateY(0);
+          transform: translateY(0);
 }
 
 /* SECTION 2 (PROJECTS) TOOLTIP WHEN HOVERING OVER GITHUB 
@@ -160,6 +205,8 @@ ICONS AND AN EYE ICON UNDER PROJECT DESCRIPTION: */
     border-radius: 6px;
     padding: 5px 0;
     background-color: white;
+    -webkit-transition: all 3s linear;
+    -o-transition: all 3s linear;
     transition: all 3s linear;
     font-size: small;
     /* Position the tooltip */
@@ -213,6 +260,7 @@ https://developer.mozilla.org/en-US/docs/Web/CSS/:autofill */
     -webkit-text-fill-color: rgb(34, 32, 32);
     background-color: #cacac0;
     /* -webkit-box-shadow: 0 0 0px 1000px #2c2c29 inset; */
+    -webkit-transition: background-color 5000s ease-in-out 0s;
     transition: background-color 5000s ease-in-out 0s;
   }
 
@@ -226,11 +274,14 @@ https://developer.mozilla.org/en-US/docs/Web/CSS/:autofill */
     line-height: 22px;
     background-color: #cacac0;
     border: 2px solid var(--red);
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
     transition: all 0.3s;
     padding: 13px;
     margin-bottom: 15px;
     width: 100%;
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
     outline: 0;
   }
   [type='email'] {
