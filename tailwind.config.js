@@ -11,7 +11,8 @@ module.exports = {
       },
       colors: {
         blackish: 'rgb(0, 0, 0, 0.3)',
-        customBlack: 'rgb(30, 30, 40)',
+        // customBlack: 'rgb(30, 30, 40)',
+        customBlack: 'rgb(30, 30, 45)',
         cyan: 'hsl(180, 66%, 49%)',
         // darkViolet: 'hsl(257, 27%, 26%)',
         darkViolet: 'hsl(180, 66%, 49%)',

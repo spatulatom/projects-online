@@ -896,6 +896,10 @@ textarea {
   border-bottom-right-radius: 1.5rem;
 }
 
+.rounded-br-md {
+  border-bottom-right-radius: 0.375rem;
+}
+
 .border-t-2 {
   border-top-width: 2px;
 }
@@ -938,17 +942,8 @@ textarea {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
-.bg-gray-200 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(229 231 235 / var(--tw-bg-opacity));
-}
-
 .bg-keyboardDark {
   background-image: url('../imgs/keyboard-dark.png');
-}
-
-.bg-keboardWhite {
-  background-image: url('../imgs/keyboard-white.jpg');
 }
 
 .bg-cover {
@@ -1122,6 +1117,11 @@ textarea {
   color: hsl(180 66% 49% / var(--tw-text-opacity));
 }
 
+.text-customBlack {
+  --tw-text-opacity: 1;
+  color: rgb(30 30 45 / var(--tw-text-opacity));
+}
+
 .no-underline {
   text-decoration-line: none;
 }
@@ -1138,6 +1138,14 @@ textarea {
 
 .transition-all {
   transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.transition {
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
 }
@@ -1396,6 +1404,10 @@ SO IT CAN BE STYLED */
   opacity: 0.7;
 }
 
+.hover\:opacity-90:hover {
+  opacity: 0.9;
+}
+
 .focus\:outline-none:focus {
   outline: 2px solid transparent;
   outline-offset: 2px;
@@ -1408,7 +1420,7 @@ SO IT CAN BE STYLED */
 
 .dark .dark\:bg-customBlack {
   --tw-bg-opacity: 1;
-  background-color: rgb(30 30 40 / var(--tw-bg-opacity));
+  background-color: rgb(30 30 45 / var(--tw-bg-opacity));
 }
 
 .dark .dark\:bg-white {
@@ -1569,5 +1581,10 @@ SO IT CAN BE STYLED */
   .lg\:text-2xl {
     font-size: 1.5rem;
     line-height: 2rem;
+  }
+
+  .lg\:text-xl {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
   }
 }
