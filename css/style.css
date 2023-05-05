@@ -1465,6 +1465,11 @@ SO IT CAN BE STYLED */
   color: hsl(257 7% 63% / var(--tw-text-opacity));
 }
 
+.dark .dark\:text-gray-300 {
+  --tw-text-opacity: 1;
+  color: rgb(209 213 219 / var(--tw-text-opacity));
+}
+
 .dark .dark\:opacity-80 {
   opacity: 0.8;
 }
