@@ -20,6 +20,7 @@ module.exports = {
         grayishViolet: 'hsl(257, 7%, 63%)',
         veryDarkBlue: 'hsl(255, 11%, 22%)',
         veryDarkViolet: 'hsl(260, 8%, 14%) ',
+        whiteish: 'rgb(255, 255, 255, 0.9)'
       },
       backgroundImage: {
         road: "url('../imgs/road3.jpg')",
