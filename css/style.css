@@ -699,6 +699,10 @@ textarea {
   margin: auto;
 }
 
+.m-0 {
+  margin: 0px;
+}
+
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
@@ -812,6 +816,50 @@ textarea {
   width: 120%;
 }
 
+.w-\[140\%\] {
+  width: 140%;
+}
+
+.w-\[10\%\] {
+  width: 10%;
+}
+
+.w-\[150\%\] {
+  width: 150%;
+}
+
+.w-\[160\%\] {
+  width: 160%;
+}
+
+.w-\[180\%\] {
+  width: 180%;
+}
+
+.w-\[0\%\] {
+  width: 0%;
+}
+
+.w-\[20\%\] {
+  width: 20%;
+}
+
+.w-\[200\%\] {
+  width: 200%;
+}
+
+.w-\[100\%\] {
+  width: 100%;
+}
+
+.w-7 {
+  width: 1.75rem;
+}
+
+.w-7\/12 {
+  width: 58.333333%;
+}
+
 .basis-7\/12 {
   flex-basis: 58.333333%;
 }
@@ -820,8 +868,16 @@ textarea {
   flex-basis: 40%;
 }
 
+.basis-5\/12 {
+  flex-basis: 41.666667%;
+}
+
 .cursor-pointer {
   cursor: pointer;
+}
+
+.flex-row {
+  flex-direction: row;
 }
 
 .flex-col {
@@ -908,6 +964,10 @@ textarea {
   border-radius: 0.5rem;
 }
 
+.rounded {
+  border-radius: 0.25rem;
+}
+
 .rounded-br-md {
   border-bottom-right-radius: 0.375rem;
 }
@@ -980,6 +1040,10 @@ textarea {
 
 .p-6 {
   padding: 1.5rem;
+}
+
+.p-0 {
+  padding: 0px;
 }
 
 .px-12 {
@@ -1535,6 +1599,10 @@ SO IT CAN BE STYLED */
     width: 32rem;
   }
 
+  .md\:w-\[200\%\] {
+    width: 200%;
+  }
+
   .md\:text-base {
     font-size: 1rem;
     line-height: 1.5rem;
@@ -1544,6 +1612,10 @@ SO IT CAN BE STYLED */
 @media (min-width: 1024px) {
   .lg\:absolute {
     position: absolute;
+  }
+
+  .lg\:relative {
+    position: relative;
   }
 
   .lg\:mx-0 {
@@ -1581,6 +1653,26 @@ SO IT CAN BE STYLED */
 
   .lg\:w-1\/2 {
     width: 50%;
+  }
+
+  .lg\:w-\[200\%\] {
+    width: 200%;
+  }
+
+  .lg\:w-\[100\%\] {
+    width: 100%;
+  }
+
+  .lg\:w-\[10\%\] {
+    width: 10%;
+  }
+
+  .lg\:w-\[120\%\] {
+    width: 120%;
+  }
+
+  .lg\:w-\[140\%\] {
+    width: 140%;
   }
 
   .lg\:max-w-md {
@@ -1642,5 +1734,39 @@ SO IT CAN BE STYLED */
   .lg\:text-4xl {
     font-size: 2.25rem;
     line-height: 2.5rem;
+  }
+}
+
+@media (min-width: 1280px) {
+  .xl\:absolute {
+    position: absolute;
+  }
+
+  .xl\:block {
+    display: block;
+  }
+
+  .xl\:w-\[200\%\] {
+    width: 200%;
+  }
+
+  .xl\:w-\[100\%\] {
+    width: 100%;
+  }
+
+  .xl\:w-\[140\%\] {
+    width: 140%;
+  }
+
+  .xl\:w-5\/12 {
+    width: 41.666667%;
+  }
+
+  .xl\:basis-5\/12 {
+    flex-basis: 41.666667%;
+  }
+
+  .xl\:flex-row {
+    flex-direction: row;
   }
 }
