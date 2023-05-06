@@ -982,6 +982,10 @@ textarea {
   padding: 2.25rem;
 }
 
+.p-7 {
+  padding: 1.75rem;
+}
+
 .px-12 {
   padding-left: 3rem;
   padding-right: 3rem;
