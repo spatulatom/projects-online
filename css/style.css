@@ -978,6 +978,10 @@ textarea {
   padding: 1.5rem;
 }
 
+.p-9 {
+  padding: 2.25rem;
+}
+
 .px-12 {
   padding-left: 3rem;
   padding-right: 3rem;
