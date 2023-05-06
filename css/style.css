@@ -720,6 +720,14 @@ textarea {
   margin-bottom: 2rem;
 }
 
+.mt-4 {
+  margin-top: 1rem;
+}
+
+.ml-3 {
+  margin-left: 0.75rem;
+}
+
 .mb-1 {
   margin-bottom: 0.25rem;
 }
@@ -730,18 +738,6 @@ textarea {
 
 .mb-3 {
   margin-bottom: 0.75rem;
-}
-
-.mt-8 {
-  margin-top: 2rem;
-}
-
-.ml-3 {
-  margin-left: 0.75rem;
-}
-
-.mt-4 {
-  margin-top: 1rem;
 }
 
 .block {
@@ -776,6 +772,10 @@ textarea {
   height: auto;
 }
 
+.h-16 {
+  height: 4rem;
+}
+
 .max-h-screen {
   max-height: 100vh;
 }
@@ -800,12 +800,20 @@ textarea {
   width: 120%;
 }
 
-.basis-7\/12 {
-  flex-basis: 58.333333%;
+.w-1 {
+  width: 0.25rem;
+}
+
+.w-16 {
+  width: 4rem;
 }
 
 .basis-2\/5 {
   flex-basis: 40%;
+}
+
+.basis-7\/12 {
+  flex-basis: 58.333333%;
 }
 
 .cursor-pointer {
@@ -846,6 +854,10 @@ textarea {
 
 .gap-8 {
   gap: 2rem;
+}
+
+.gap-2 {
+  gap: 0.5rem;
 }
 
 .space-x-16 > :not([hidden]) ~ :not([hidden]) {
@@ -946,10 +958,6 @@ textarea {
   background-color: rgb(255, 255, 255, 0.9);
 }
 
-.bg-road {
-  background-image: url('../imgs/road3.jpg');
-}
-
 .bg-keyboardDark {
   background-image: url('../imgs/keyboard-dark.png');
 }
@@ -966,8 +974,8 @@ textarea {
   padding: 1rem;
 }
 
-.p-12 {
-  padding: 3rem;
+.p-7 {
+  padding: 1.75rem;
 }
 
 .p-8 {
@@ -978,16 +986,12 @@ textarea {
   padding: 0.75rem;
 }
 
+.p-12 {
+  padding: 3rem;
+}
+
 .p-6 {
   padding: 1.5rem;
-}
-
-.p-9 {
-  padding: 2.25rem;
-}
-
-.p-7 {
-  padding: 1.75rem;
 }
 
 .px-12 {
@@ -1024,6 +1028,14 @@ textarea {
 
 .pt-6 {
   padding-top: 1.5rem;
+}
+
+.pt-12 {
+  padding-top: 3rem;
+}
+
+.text-left {
+  text-align: left;
 }
 
 .text-center {
@@ -1138,6 +1150,16 @@ textarea {
 .text-cyan {
   --tw-text-opacity: 1;
   color: hsl(180 66% 49% / var(--tw-text-opacity));
+}
+
+.text-gray-700 {
+  --tw-text-opacity: 1;
+  color: rgb(55 65 81 / var(--tw-text-opacity));
+}
+
+.text-white {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 .no-underline {
@@ -1448,10 +1470,6 @@ SO IT CAN BE STYLED */
   background-color: hsl(260 8% 14% / var(--tw-bg-opacity));
 }
 
-.dark .dark\:p-8 {
-  padding: 2rem;
-}
-
 .dark .dark\:text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
@@ -1477,6 +1495,11 @@ SO IT CAN BE STYLED */
   color: hsl(257 7% 63% / var(--tw-text-opacity));
 }
 
+.dark .dark\:text-gray-600 {
+  --tw-text-opacity: 1;
+  color: rgb(75 85 99 / var(--tw-text-opacity));
+}
+
 .dark .dark\:opacity-80 {
   opacity: 0.8;
 }
@@ -1492,8 +1515,36 @@ SO IT CAN BE STYLED */
 }
 
 @media (min-width: 768px) {
+  .md\:block {
+    display: block;
+  }
+
+  .md\:flex {
+    display: flex;
+  }
+
+  .md\:hidden {
+    display: none;
+  }
+
   .md\:w-180 {
     width: 32rem;
+  }
+
+  .md\:flex-row {
+    flex-direction: row;
+  }
+
+  .md\:flex-row-reverse {
+    flex-direction: row-reverse;
+  }
+
+  .md\:gap-2 {
+    gap: 0.5rem;
+  }
+
+  .md\:pt-0 {
+    padding-top: 0px;
   }
 
   .md\:text-base {
@@ -1558,6 +1609,14 @@ SO IT CAN BE STYLED */
 
   .lg\:border-t-0 {
     border-top-width: 0px;
+  }
+
+  .lg\:p-20 {
+    padding: 5rem;
+  }
+
+  .lg\:p-12 {
+    padding: 3rem;
   }
 
   .lg\:px-14 {
