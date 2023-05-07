@@ -752,6 +752,10 @@ textarea {
   margin-top: 4rem;
 }
 
+.mb-0 {
+  margin-bottom: 0px;
+}
+
 .block {
   display: block;
 }
@@ -1098,6 +1102,10 @@ textarea {
 
 .pt-4 {
   padding-top: 1rem;
+}
+
+.pb-0 {
+  padding-bottom: 0px;
 }
 
 .text-center {
@@ -1631,6 +1639,16 @@ SO IT CAN BE STYLED */
   color: hsl(257 7% 63% / var(--tw-text-opacity));
 }
 
+.dark .dark\:text-gray-600 {
+  --tw-text-opacity: 1;
+  color: rgb(75 85 99 / var(--tw-text-opacity));
+}
+
+.dark .dark\:text-gray-200 {
+  --tw-text-opacity: 1;
+  color: rgb(229 231 235 / var(--tw-text-opacity));
+}
+
 .dark .dark\:opacity-80 {
   opacity: 0.8;
 }
@@ -1724,6 +1742,50 @@ SO IT CAN BE STYLED */
     font-size: 1rem;
     line-height: 1.5rem;
   }
+
+  .md\:dark .tooltips .tooltip {
+    position: relative;
+    display: inline-block;
+    margin-right: 3rem;
+    margin-left: 3rem;
+    text-decoration: none;
+  }
+
+  .md\:dark .tooltips .tooltip .tooltiptext {
+    display: none;
+    min-width: 9rem;
+    background-color: black;
+    color: black;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    background-color: white;
+    transition: all 3s linear;
+    font-size: small;
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 20;
+    bottom: 200%;
+    left: 50%;
+    margin-left: -4.5rem;
+    font-weight: 500;
+  }
+
+  .md\:dark .tooltips .tooltip .tooltiptext::after {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -14px;
+    border-width: 14px;
+    border-style: solid;
+    border-color: white transparent transparent transparent;
+  }
+
+  .dark .md\:dark\:bg-veryDarkBlue {
+    --tw-bg-opacity: 1;
+    background-color: hsl(255 11% 22% / var(--tw-bg-opacity));
+  }
 }
 
 @media (min-width: 1024px) {
@@ -1809,6 +1871,11 @@ SO IT CAN BE STYLED */
   .lg\:text-xl {
     font-size: 1.25rem;
     line-height: 1.75rem;
+  }
+
+  .dark .lg\:dark\:bg-veryDarkBlue {
+    --tw-bg-opacity: 1;
+    background-color: hsl(255 11% 22% / var(--tw-bg-opacity));
   }
 }
 
