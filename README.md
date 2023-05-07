@@ -10,7 +10,7 @@
     'projects-online' is a portfolio website. It consists of the frontend and the backend sections - this repository contains its frontend source code.
        <br />
            <br />
-     <a href="https://spatulatom.github.io/projects-online/"><strong>VIEW THE DEPLOYED WEBSITE ON GitHub pages »</strong></a>
+     <a href="https://spatulatom.github.io/projects-online/"><strong>VIEW THE DEPLOYED WEBSITE »</strong></a>
     <br />
        <br />
     <a href="https://github.com/spatulatom/my-porfolio-backend"><strong>See also the backend source code of this website right here »</strong></a>
@@ -24,7 +24,7 @@
 <details>
   <summary>Table of Contents</summary>
   <ol>
-    <li><a href="#about-the-project">About The Project</a></li>
+    <li><a href="#about-the-website">About The Website</a></li>
     <li><a href="#website-built-with">Website Built With</a></li>
     <li><a href="#acknowledgments">Acknowledgments</a></li>
   </ol>
@@ -32,9 +32,9 @@
 
 <!-- ABOUT THE PROJECT -->
 
-## About The Project
+## About The Website
 
-- This website contains links several ongoing and completed projects:
+- This website contains links to several ongoing and completed projects:
 
 ![Product Name Screen Shot](imgs/projects-online.png)
 
