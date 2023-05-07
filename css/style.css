@@ -1052,6 +1052,11 @@ textarea {
   padding-bottom: 1rem;
 }
 
+.px-4 {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
 .pt-8 {
   padding-top: 2rem;
 }
@@ -1118,6 +1123,10 @@ textarea {
 
 .pb-0 {
   padding-bottom: 0px;
+}
+
+.pb-4 {
+  padding-bottom: 1rem;
 }
 
 .text-center {
@@ -1597,6 +1606,10 @@ SO IT CAN BE STYLED */
   outline-offset: 2px;
 }
 
+.dark .dark\:border {
+  border-width: 1px;
+}
+
 .dark .dark\:border-white {
   --tw-border-opacity: 1;
   border-color: rgb(255 255 255 / var(--tw-border-opacity));
@@ -1629,6 +1642,11 @@ SO IT CAN BE STYLED */
 .dark .dark\:bg-veryDarkBlue {
   --tw-bg-opacity: 1;
   background-color: hsl(255 11% 22% / var(--tw-bg-opacity));
+}
+
+.dark .dark\:bg-grayishViolet {
+  --tw-bg-opacity: 1;
+  background-color: hsl(257 7% 63% / var(--tw-bg-opacity));
 }
 
 .dark .dark\:text-white {
