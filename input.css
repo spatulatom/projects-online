@@ -189,14 +189,14 @@
 /* SECTION 2 (PROJECTS) TOOLTIP WHEN HOVERING OVER GITHUB 
 ICONS AND AN EYE ICON UNDER PROJECT DESCRIPTION: */
 @layer utilities {
-  .tooltips .tooltip {
+.dark .tooltips .tooltip {
     position: relative;
     display: inline-block;
     margin-right: 3rem;
     margin-left: 3rem;
     text-decoration: none;
   }
-  .tooltips .tooltip .tooltiptext {
+.dark .tooltips .tooltip .tooltiptext {
     display: none;
     min-width: 9rem;
     background-color: black;
@@ -217,7 +217,7 @@ ICONS AND AN EYE ICON UNDER PROJECT DESCRIPTION: */
     margin-left: -4.5rem;
     font-weight: 500;
   }
-  .tooltips .tooltip .tooltiptext::after {
+ .dark .tooltips .tooltip .tooltiptext::after {
     content: '';
     position: absolute;
     top: 100%;
@@ -228,6 +228,47 @@ ICONS AND AN EYE ICON UNDER PROJECT DESCRIPTION: */
     border-color: white transparent transparent transparent;
   }
 
+  
+  .tooltips .tooltip {
+    position: relative;
+    display: inline-block;
+    margin-right: 3rem;
+    margin-left: 3rem;
+    text-decoration: none;
+  }
+  .tooltips .tooltip .tooltiptext {
+    display: none;
+    min-width: 9rem;
+    background-color: black;
+    color: white;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    background-color: gray;
+    -webkit-transition: all 3s linear;
+    -o-transition: all 3s linear;
+    transition: all 3s linear;
+    font-size: small;
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 20;
+    bottom: 200%;
+    left: 50%;
+    margin-left: -4.5rem;
+    font-weight: 500;
+  }
+  .tooltips .tooltip .tooltiptext::after {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -14px;
+    border-width: 14px;
+    border-style: solid;
+    border-color: gray transparent transparent transparent;
+  }
+
+
   .tooltips .tooltip:hover .tooltiptext {
     display: block;
     opacity: 1;
@@ -236,6 +277,9 @@ ICONS AND AN EYE ICON UNDER PROJECT DESCRIPTION: */
   .tooltips .tooltip i {
     /* color: white; */
   }
+
+
+  
 }
 
 /* SECTION 3 (CONTACT) - CONTACT FORM: */
