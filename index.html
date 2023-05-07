@@ -72,7 +72,7 @@
 
   <body
     id="body"
-    class="dark:bg-customBlack bg-gray-100 dark:text-white font-sans"
+    class="dark:bg-customBlack bg-gray-200 dark:text-white font-sans"
   >
     <!-- Nav Container -->
     <nav>
@@ -198,7 +198,7 @@
         <!-- Div For Cursor Effect -->
         <!-- <div class="cursor hidden lg:block dark:border-white border-cyan"></div> -->
         <div
-          class="container flex flex-col-reverse mx-auto p-7 lg:p-12 lg:flex-row items-center"
+          class="container flex flex-col-reverse mx-auto p-7 lg:p-20 lg:flex-row items-center"
         >
           <!-- Content Container -->
           <!-- <div
@@ -216,9 +216,9 @@
 
             <!-- name, my photo -->
             <div class="flex pt-20 md:pt-0 gap-4 items-center">
-              <div class="w-16 h-16">
+              <div class="w-20 h-20">
                 <img
-                  class="rounded-full w-full"
+                  class="rounded-full w-full "
                   src="imgs/me3.jpg"
                   loading="lazy"
                   width="100"
@@ -226,10 +226,10 @@
                 />
               </div>
               <div
-                class="text-gray-600 text-sm md:text-base font-medium dark:text-gray-300 flex flex-col"
+                class="text-gray-600  font-medium dark:text-gray-300 flex flex-col"
               >
                 Tomasz Sypula
-                <span>Updated: <span class="date"></span></span>
+                
               </div>
             </div>
             <!-- welcome section -->
@@ -243,6 +243,12 @@
             >
               Hello and Welcome.
             </h1>
+            <div
+            class="text-gray-600  font-medium dark:text-gray-300 flex flex-col"
+          >
+            
+            <span>Updated: <span class="date"></span></span>
+          </div>
 
             <p class="text-base lg:text-lg text-gray-560 dark:text-gray-300">
               My name is Tomasz. Two years ago I started developing simple web
@@ -274,8 +280,8 @@
                 for unit testing.</span
               >
               <span class="block"
-                >My portfolio below definitely does reflect that
-                <span class="text-cyan font-medium lowercase">
+                >My portfolio below does reflect that
+                <span class=" lowercase">
                   LEARNING JOURNEY</span
                 >
                 (projects are listed in descending order).</span
@@ -292,17 +298,17 @@
             <div class="mx-auto lg:mx-0">
               <a
                 href="#secondPage"
-                class="py-3 px-10 text-xl text-gray-600 uppercase font-semibold transition-all bg-darkViolet dark:bg-cyan rounded-md hover:text-white hover:opacity-90"
+                class="py-3 px-10 text-xl text-veryDarkViolet uppercase font-semibold transition-all bg-darkViolet dark:bg-cyan rounded-md hover:text-white hover:opacity-90"
                 >get started</a
               >
             </div>
           </div>
 
           <!-- Image -->
-          <div class="hidden lg:block mb-8 mx-auto md:w-180 lg:mb-0 p-3">
+          <div class="hidden lg:block pl-1 mb-8 mx-auto md:w-180 lg:mb-0 p-3">
             <img
-              class="hidden lg:block rounded-xl w-full"
-              src="imgs/road3(1).webp"
+              class="hidden lg:block rounded-xl w-auto h-full"
+              src="imgs/illustration-working.svg"
               fetchpriority="high"
               alt="my profile picture"
               width="500"
@@ -1236,13 +1242,13 @@
         <div
           class="container m-auto p-12 pt-20 flex flex-col gap-8 lg:flex-row justify-start items-center border-grayishViolet lg:border-t-2 border-t-0 border-b-2"
         >
-          <div class="flex flex-col p-4 basis-2/5 justify-center items-center">
-            <img
+          <div class="flex flex-col p-4 basis-2/5 justify-evenly items-center">
+            <!-- <img
               src="imgs/illustration-working.svg"
               class="rounded-md w-full h-auto"
               width="1"
               height="1"
-            />
+            /> -->
             <h2 class="text-xl font-medium mt-4 text-darkViolet dark:text-cyan">
               Find me on:
             </h2>
@@ -1275,7 +1281,7 @@
             class="text-center lg:text-left border-t-2 border-grayishViolet lg:border-t-0"
           >
             <form class="form cursor-effect-none">
-              <h2 class="form__feedback p-3 pt-6 italic text-xl text-gray-400">
+              <h2 class="form__feedback p-3 pt-6 italic text-xl text-gray-500 dark:text-gray-300">
                 I'd love your feedback:
               </h2>
 

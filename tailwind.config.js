@@ -20,7 +20,8 @@ module.exports = {
         grayishViolet: 'hsl(257, 7%, 63%)',
         veryDarkBlue: 'hsl(255, 11%, 22%)',
         veryDarkViolet: 'hsl(260, 8%, 14%) ',
-        whiteish: 'rgb(255, 255, 255, 0.9)'
+        whiteish: 'rgb(255, 255, 255, 0.9)',
+        blackish: 'rgb(30, 30, 45,0.8)',
       },
       backgroundImage: {
         road: "url('../imgs/road3.jpg')",
@@ -28,6 +29,8 @@ module.exports = {
         wall: "url('../imgs/wall.jpg')",
         keboardWhite: "url('../imgs/keyboard-white.jpg')",
         keyboardDark: "url('../imgs/keyboard-dark.png')",
+          'header-desktop': "url('../imgs/bg-header-desktop.png')",
+      
       },
       spacing: {
         180: '32rem',
