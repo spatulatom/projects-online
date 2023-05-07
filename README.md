@@ -34,7 +34,7 @@
 
 ## About The Website
 
-- This website contains links to several ongoing and completed projects:
+- This website contains links and descriptions of my several ongoing and completed projects:
 
 ![Product Name Screen Shot](imgs/website.png )
 
@@ -43,7 +43,7 @@
 ### Website Built With
 
 
-
+- HTML
 - Tailwind,
 - JavaScript,
 - GitHub pages for deployment and remote repository,
