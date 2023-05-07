@@ -9,12 +9,13 @@
   <p>
     'projects-online' is a portfolio website. It consists of the frontend and the backend sections - this repository contains its frontend source code.
        <br />
+           <br />
+     <a href="https://spatulatom.github.io/projects-online/"><strong>VIEW THE DEPLOYED WEBSITE ON GitHub pages »</strong></a>
+    <br />
        <br />
     <a href="https://github.com/spatulatom/my-porfolio-backend"><strong>See also the backend source code of this website right here »</strong></a>
     <br />
-    <br />
-     <a href="https://spatulatom.github.io/projects-online/"><strong>View the deployed website on GitHub pages »</strong></a>
-    <br />
+
    
   </p>
 </div>
