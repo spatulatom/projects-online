@@ -197,30 +197,22 @@
       <div class="section">
         <!-- Div For Cursor Effect -->
         <!-- <div class="cursor hidden lg:block dark:border-white border-cyan"></div> -->
+
+        <!-- Content Container -->
         <div
-          class="container flex flex-col-reverse mx-auto p-7 lg:p-20 lg:flex-row items-center"
+          class="container flex flex-col-reverse mx-auto p-7 lg:flex-row items-center"
         >
-          <!-- Content Container -->
-          <!-- <div
-            class="flex flex-col space-y-10 mb-20 lg:mb-44 lg:mt-16 lg:w-1/2 xl:mb-30 bg-whiteish dark:bg-customBlack p-8 "
-          > -->
+        <!-- Left content: intro, date, avatar image -->
           <div
             class="flex flex-col space-y-10 mb-20 lg:mb-44 lg:mt-16 lg:w-1/2 xl:mb-30"
           >
-            <!-- Date -->
-            <!-- <h2
-              class="pt-16 lg:pt-0 lg:mt-0 text-sm lg:text-base text-gray-600 dark:text-gray-300"
-            >
-              Updated: <span class=""></span>
-            </h2> -->
-
-            <!-- name, my photo -->
+            <!-- name, my avatar photo -->
             <div class="flex pt-20 md:pt-0 gap-4 items-center">
-              <div class="md:w-20 md:h-20 w-16 h-16">
+              <div class="w-16 h-16">
                 <img
-                  class="rounded-full w-full "
+                  class="rounded-full w-full"
                   src="imgs/me3.jpg"
-                  loading="lazy"
+                  fetchpriority="high"
                   width="100"
                   height="100"
                 />
@@ -229,10 +221,9 @@
                 class="text-gray-600 md:text-lg font-medium dark:text-gray-300 flex flex-col"
               >
                 Tomasz Sypula
-                
               </div>
             </div>
-            <!-- welcome section -->
+            <!-- welcome section for mobile and destop-->
             <h1
               class="md:hidden dark:text-white font-bold text-center text-4xl lg:max-w-md lg:text-left"
             >
@@ -244,12 +235,12 @@
               Hello and Welcome.
             </h1>
             <div
-            class="text-gray-500  font-medium dark:text-gray-400 flex flex-col"
-          >
-            
-            <span>Updated: <span class="date"></span></span>
-          </div>
-
+              class="text-gray-500 font-medium dark:text-gray-400 flex flex-col"
+            >
+              <!-- date  -->
+              <span>Updated: <span class="date"></span></span>
+            </div>
+             <!-- intro -->
             <p class="text-base lg:text-lg text-gray-560 dark:text-gray-300">
               My name is Tomasz. Two years ago I started developing simple web
               apps with just
@@ -281,9 +272,7 @@
               >
               <span class="block"
                 >My portfolio below does reflect that
-                <span class=" lowercase">
-                  LEARNING JOURNEY</span
-                >
+                <span class="lowercase"> LEARNING JOURNEY</span>
                 (projects are listed in descending order).</span
               >
 
@@ -304,7 +293,7 @@
             </div>
           </div>
 
-          <!-- Image -->
+          <!-- Right content: Svg Image -->
           <div class="hidden lg:block pl-1 mb-8 mx-auto md:w-180 lg:mb-0 p-3">
             <img
               class="hidden lg:block rounded-xl w-auto h-full"
@@ -317,6 +306,7 @@
           </div>
         </div>
       </div>
+      
       <!-- Second Page - PROJECTS-->
       <div class="section bg-keyboardDark bg-cover bg-center">
         <!-- SLIDE NR 0 -->
@@ -428,7 +418,6 @@
               <img
                 class="hidden lg:block w-screen h-auto rounded-lg"
                 src="imgs/search.png"
-                fetchpriority="low"
                 width="500"
                 height="300"
                 loading="lazy"
@@ -452,7 +441,7 @@
                   class="text-sm text-gray-600 dark:text-white font-normal mb-2 text-justify"
                 >
                   SPA app with just one view that displays a paginated list of
-                  products. It's a simple Next.js/Typescropt project that lets
+                  products. It's a simple Next.js with TypeScript project that lets
                   me practice REACT TESTING LIBRARY. I am testing the frontend
                   plus I mock the APIs to mimic their behaviour. As for the app
                   features we have a search bar that allows products
@@ -511,7 +500,6 @@
               <img
                 class="hidden lg:block w-screen h-auto rounded-lg"
                 src="imgs/bookmark.png"
-                fetchpriority="low"
                 width="500"
                 height="300"
                 loading="lazy"
@@ -594,7 +582,6 @@
               <img
                 class="hidden lg:block w-screen h-auto rounded-lg"
                 src="imgs/e-fashion4.webp"
-                fetchpriority="low"
                 width="500"
                 height="300"
                 loading="lazy"
@@ -678,7 +665,6 @@
               <img
                 class="hidden lg:block w-screen h-auto rounded-lg"
                 src="imgs/eb.png"
-                fetchpriority="low"
                 width="500"
                 height="300"
                 loading="lazy"
@@ -759,8 +745,7 @@
       >
         <img
           class="hidden lg:block w-screen h-auto rounded-lg"
-          src="imgs/road3.jpg"
-              fetchpriority="low"
+          src="imgs/road3.jpg
               width="500"
               height="300"
               loading="lazy"
@@ -844,7 +829,6 @@
               <img
                 class="hidden lg:block w-screen h-auto rounded-lg"
                 src="imgs/typescript.png"
-                fetchpriority="low"
                 width="500"
                 height="300"
                 loading="lazy"
@@ -929,7 +913,6 @@
               <img
                 class="hidden lg:block w-screen h-auto rounded-lg"
                 src="imgs/td1.png"
-                fetchpriority="low"
                 width="500"
                 height="300"
                 loading="lazy"
@@ -1009,7 +992,6 @@
               <img
                 class="hidden lg:block w-screen h-auto rounded-lg"
                 src="imgs/todovanillajs.png"
-                fetchpriority="low"
                 width="500"
                 height="300"
                 loading="lazy"
@@ -1089,7 +1071,6 @@
               <img
                 class="hidden lg:block w-screen h-auto rounded-lg"
                 src="imgs/bootstrap1.png"
-                fetchpriority="low"
                 width="500"
                 height="300"
                 loading="lazy"
@@ -1169,7 +1150,6 @@
               <img
                 class="hidden lg:block w-screen h-auto rounded-lg"
                 src="imgs/japan.webp"
-                fetchpriority="low"
                 width="500"
                 height="300"
                 loading="lazy"
@@ -1215,7 +1195,7 @@
                         class="fab fa-github fa-xl text-gray-500 dark:text-white"
                       ></i
                     ></span>
-                    <span class="tooltiptext ">On GitHub</span>
+                    <span class="tooltiptext">On GitHub</span>
                   </a>
                   <a
                     href="https://spatulatom.github.io/sass-project/"
@@ -1261,7 +1241,7 @@
                 alt="github link"
               >
                 <i
-                  class="fab fa-github fa-2xl  text-gray-500  dark:text-grayishViolet hover:text-cyan hover:dark:text-cyan"
+                  class="fab fa-github fa-2xl text-gray-500 dark:text-grayishViolet hover:text-cyan hover:dark:text-cyan"
                 ></i>
               </a>
               <a
@@ -1270,7 +1250,7 @@
                 alt="github link"
               >
                 <i
-                  class="fab fa-linkedin fa-2xl text-gray-500 dark:text-grayishViolet transition-all hover:text-cyan  hover:dark:text-cyan" 
+                  class="fab fa-linkedin fa-2xl text-gray-500 dark:text-grayishViolet transition-all hover:text-cyan hover:dark:text-cyan"
                 ></i>
               </a>
             </ul>
@@ -1281,7 +1261,9 @@
             class="text-center lg:text-left border-t-2 border-grayishViolet lg:border-t-0"
           >
             <form class="form cursor-effect-none">
-              <h2 class="form__feedback p-3 pt-6 italic text-xl text-gray-500 dark:text-gray-300">
+              <h2
+                class="form__feedback p-3 pt-6 italic text-xl text-gray-500 dark:text-gray-300"
+              >
                 I'd love your feedback:
               </h2>
 
@@ -1316,7 +1298,7 @@
               <button
                 type="submit"
                 value="Send Message"
-                class="uppercase px-10 mx-auto font-medium hover:text-white text-gray-600 rounded-full bg-darkViolet dark:bg-cyan transition-all  md:text-base py-4 focus:outline-none"
+                class="uppercase px-10 mx-auto font-medium hover:text-white text-gray-600 rounded-full bg-darkViolet dark:bg-cyan transition-all md:text-base py-4 focus:outline-none"
               >
                 <i class="fa fa-paper-plane"></i>
                 Send
@@ -1328,7 +1310,9 @@
         <div
           class="p-4 flex flex-col justify-center space-x-3 items-center text-[#a3aca7]"
         >
-          <h4 class="dark:text-gray-400 text-gray-500 uppercase">&copy projects 2023</h4>
+          <h4 class="dark:text-gray-400 text-gray-500 uppercase">
+            &copy projects 2023
+          </h4>
 
           <a
             href="https://github.com/spatulatom/projects-online#readme"
