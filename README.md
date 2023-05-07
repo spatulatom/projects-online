@@ -47,7 +47,7 @@
 - JavaScript,
 - GitHub pages for deployment and remote repository,
 - Git for version control,
-- render.com for server deployment,
+- render.com for backend  node  server deployment,
 - fullpage.js library for vertical and horizontal scroll,
 - Node.js, Express.js for the backend server,
 - MongoDB for contact form data storage,
