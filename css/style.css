@@ -1161,6 +1161,16 @@ textarea {
   color: rgb(163 172 167 / var(--tw-text-opacity));
 }
 
+.text-veryDarkBlue {
+  --tw-text-opacity: 1;
+  color: hsl(255 11% 22% / var(--tw-text-opacity));
+}
+
+.text-red {
+  --tw-text-opacity: 1;
+  color: hsl(0 87% 67% / var(--tw-text-opacity));
+}
+
 .no-underline {
   text-decoration-line: none;
 }
