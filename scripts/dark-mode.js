@@ -4,6 +4,7 @@ const systemIcon = document.getElementById('system');
 const lightMobile = document.getElementById('light-mobile');
 const darkMobile = document.getElementById('dark-mobile');
 const systemMobile = document.getElementById('system-mobile');
+const dropDown = document.querySelector('.dropdown');
 
 // LOGIC BEHIND DARK/WHITE MODES + SYTEM OS MODE in Tailwind CSS
 // When setting up modes that are hybrid between opertaing system and
@@ -86,6 +87,10 @@ function darkMode() {
   lightIcon.classList.remove('text-darkViolet');
   systemIcon.classList.remove('text-cyan');
   darkIcon.classList.add('text-cyan');
+  dropDown.innerHTML= `<i
+  id="dark"
+  class="fa-solid fa-moon fa-xl cursor-pointer transition-all text-cyan"
+></i>`
   // mobile nav
   lightMobile.classList.remove('text-cyan');
   systemMobile.classList.remove('text-cyan');
@@ -98,6 +103,10 @@ function lightMode() {
   darkIcon.classList.remove('text-cyan');
   systemIcon.classList.remove('text-cyan');
   lightIcon.classList.add('text-darkViolet');
+  dropDown.innerHTML= `<i
+  class="fa-solid fa-sun fa-xl cursor-pointer text-cyan"
+>
+</i>`
   // mobile nav
   darkMobile.classList.remove('text-cyan');
   systemMobile.classList.remove('text-cyan');
@@ -110,6 +119,10 @@ function systemMode() {
   lightIcon.classList.remove('text-darkViolet');
   darkIcon.classList.remove('text-cyan');
   systemIcon.classList.add('text-cyan');
+  dropDown.innerHTML = `<i
+  id="system"
+  class="fa-solid fa-desktop fa-xl cursor-pointer text-cyan"
+></i`
   // mobile nav
   lightMobile.classList.remove('text-cyan');
   darkMobile.classList.remove('text-cyan');
@@ -124,3 +137,4 @@ function systemMode() {
     document.documentElement.classList.remove('dark');
   }
 }
+

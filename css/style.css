@@ -1456,6 +1456,10 @@ SO IT CAN BE STYLED */
   outline-offset: 2px;
 }
 
+.group:hover .group-hover\:flex {
+  display: flex;
+}
+
 .dark .dark\:border-white {
   --tw-border-opacity: 1;
   border-color: rgb(255 255 255 / var(--tw-border-opacity));
