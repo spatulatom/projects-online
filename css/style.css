@@ -744,10 +744,6 @@ textarea {
   margin-left: 0.75rem;
 }
 
-.mt-8 {
-  margin-top: 2rem;
-}
-
 .block {
   display: block;
 }
@@ -953,11 +949,6 @@ textarea {
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
-}
-
-.bg-slate-500 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(100 116 139 / var(--tw-bg-opacity));
 }
 
 .bg-keyboardDark {
@@ -1480,11 +1471,6 @@ SO IT CAN BE STYLED */
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
-.dark .dark\:bg-veryDarkBlue {
-  --tw-bg-opacity: 1;
-  background-color: hsl(255 11% 22% / var(--tw-bg-opacity));
-}
-
 .dark .dark\:bg-transparent {
   background-color: transparent;
 }
@@ -1492,6 +1478,11 @@ SO IT CAN BE STYLED */
 .dark .dark\:bg-cyan {
   --tw-bg-opacity: 1;
   background-color: hsl(180 66% 49% / var(--tw-bg-opacity));
+}
+
+.dark .dark\:bg-veryDarkBlue {
+  --tw-bg-opacity: 1;
+  background-color: hsl(255 11% 22% / var(--tw-bg-opacity));
 }
 
 .dark .dark\:text-white {
@@ -1549,14 +1540,6 @@ SO IT CAN BE STYLED */
 
   .md\:w-5\/12 {
     width: 41.666667%;
-  }
-
-  .md\:border {
-    border-width: 1px;
-  }
-
-  .md\:border-b-2 {
-    border-bottom-width: 2px;
   }
 
   .md\:border-t-2 {
