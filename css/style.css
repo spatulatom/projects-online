@@ -1089,6 +1089,26 @@ textarea {
   padding-top: 1.5rem;
 }
 
+.pr-14 {
+  padding-right: 3.5rem;
+}
+
+.pr-1 {
+  padding-right: 0.25rem;
+}
+
+.pr-16 {
+  padding-right: 4rem;
+}
+
+.pl-10 {
+  padding-left: 2.5rem;
+}
+
+.pr-6 {
+  padding-right: 1.5rem;
+}
+
 .text-center {
   text-align: center;
 }
