@@ -102,24 +102,31 @@
 
         <!-- Mode Dark/White Icons Desktop + GitHub Icon -->
         <li class="absolute right-0">
-          <div class="flex justify-end space-x-16 p-4 px-12 w-20vw">
-            <span class="dropdown group">ffff</span>
-            <div class="hidden group space-x-3 py-3">
-              <i
-                id="light"
-                class="fa-solid fa-sun fa-xl cursor-pointer transition-all hover:text-cyan text-gray-500"
-              >
-              </i>
-
-              <i
-                id="dark"
-                class="fa-solid fa-moon fa-xl cursor-pointer transition-all hover:text-cyan text-gray-500"
-              ></i>
-              <i
-                id="system"
-                class="fa-solid fa-desktop fa-xl cursor-pointer transition-all hover:text-cyan text-gray-500"
-              ></i>
+          <div class="flex justify-end space-x-16 p-4 px-12 w-20vw ">
+            <div class="group relative border-l-2  pl-8 pr-8 border-gray-400">
+            <div class="dropdown"></div>
+            <div class="hidden group group-hover:flex flex-col absolute right-[-30px] mt-0 space-y-3 pl-4 border-2 dark:border-0 border-gray-300 bg-white dark:bg-veryDarkBlue p-3 rounded-lg pr-12">
+              <div class="flex items-center space-x-3">
+                <i
+                  id="light"
+                  class="fa-solid fa-sun fa-xl cursor-pointer transition-all hover:text-cyan text-gray-500"
+                > 
+                </i> <span class="dark:text-gray-300 text-gray-800">Light</span>
+              </div>
+              <div class="flex items-center space-x-3">
+                <i
+                  id="dark"
+                  class="fa-solid fa-moon fa-xl cursor-pointer transition-all hover:text-cyan text-gray-500 "
+                ></i> <span class="dark:text-gray-300 text-gray-800" >Dark</span>
+              </div>
+              <div class="flex items-center space-x-3">
+                <i
+                  id="system"
+                  class="fa-solid fa-desktop fa-xl cursor-pointer transition-all hover:text-cyan text-gray-500"
+                ></i> <span class="dark:text-gray-300 text-gray-800">System</span>
+              </div>
             </div>
+          </div>
             <a
               target="_blank"
               href="https://github.com/spatulatom"
@@ -128,6 +135,7 @@
                 class="fab fa-github fa-xl cursor-pointer text-gray-500 transition-all hover:text-cyan"
               ></i
             ></a>
+          
           </div>
         </li>
       </ul>
@@ -202,9 +210,9 @@
 
         <!-- Content Container -->
         <div
-          class="container flex flex-col-reverse mx-auto p-4 pt-8 lg:flex-row items-center "
+          class="container flex flex-col-reverse mx-auto p-4 pt-8 lg:flex-row items-center"
         >
-        <!-- Left content: intro, date, avatar image -->
+          <!-- Left content: intro, date, avatar image -->
           <div
             class="flex flex-col space-y-10 mb-20 lg:mb-44 lg:mt-16 lg:w-7/12 xl:mb-30 bg-white dark:bg-transparent p-4 pb-20 mt-12 md:p-8 md:pb-12 border-t-2 border-grayishViolet dark:border-white border-b-2"
           >
@@ -219,9 +227,7 @@
                   height="100"
                 />
               </div>
-              <div
-                class="text-gray-600 text-sm dark:text-white flex flex-col "
-              >
+              <div class="text-gray-600 text-sm dark:text-white flex flex-col">
                 Tomasz Sypula
               </div>
             </div>
@@ -232,41 +238,58 @@
               Welcome.
             </h1>
             <h1
-              class="hidden md:block dark:text-white text-veryDarkBlue font-bold  text-4xl lg:max-w-md "
+              class="hidden md:block dark:text-white text-veryDarkBlue font-bold text-4xl lg:max-w-md"
             >
               Hello and Welcome.
             </h1>
-            <div
-              class="text-gray-600 dark:text-gray-300 flex text-sm flex-col"
-            >
+            <div class="text-gray-600 dark:text-gray-300 flex text-sm flex-col">
               <!-- date  -->
               <span>Updated: <span class="date"></span></span>
             </div>
-             <!-- intro -->
-            <p class=" text-gray-600 text-sm lg:text-base dark:text-gray-300 ">
+            <!-- intro -->
+            <p class="text-gray-600 text-sm lg:text-base dark:text-gray-300">
               My name is Tomasz. Two years ago I started developing simple web
               apps with just
-              <span class="text-veryDarkViolet dark:text-cyan font-semibold">vanilla JavaScript</span>,
-              <span class="text-veryDarkViolet dark:text-cyan font-semibold">HTML</span>
+              <span class="text-veryDarkViolet dark:text-cyan font-semibold"
+                >vanilla JavaScript</span
+              >,
+              <span class="text-veryDarkViolet dark:text-cyan font-semibold"
+                >HTML</span
+              >
               and
-              <span class="text-veryDarkViolet dark:text-cyan font-semibold">CSS</span>. Shortly after I
-              have discoverd
-              <span class="text-veryDarkViolet dark:text-cyan font-semibold">React.js</span>
+              <span class="text-veryDarkViolet dark:text-cyan font-semibold"
+                >CSS</span
+              >. Shortly after I have discoverd
+              <span class="text-veryDarkViolet dark:text-cyan font-semibold"
+                >React.js</span
+              >
               and, eventually,
-              <span class="text-veryDarkViolet dark:text-cyan font-semibold">the MERN stack</span>.
+              <span class="text-veryDarkViolet dark:text-cyan font-semibold"
+                >the MERN stack</span
+              >.
               <span class="block mt-2">
                 Currently in my projects I use mostly
-                <span class="text-veryDarkViolet dark:text-cyan font-semibold">Next.js</span>
+                <span class="text-veryDarkViolet dark:text-cyan font-semibold"
+                  >Next.js</span
+                >
                 integreted with
-                <span class="text-veryDarkViolet dark:text-cyan font-semibold"> TypeScript</span>,
-                <span class="text-veryDarkViolet dark:text-cyan font-semibold">Prisma</span>
+                <span class="text-veryDarkViolet dark:text-cyan font-semibold">
+                  TypeScript</span
+                >,
+                <span class="text-veryDarkViolet dark:text-cyan font-semibold"
+                  >Prisma</span
+                >
                 and
-                <span class="text-veryDarkViolet dark:text-cyan font-semibold">PostgreSQL</span>
+                <span class="text-veryDarkViolet dark:text-cyan font-semibold"
+                  >PostgreSQL</span
+                >
                 for backends,
-                <span class="text-veryDarkViolet dark:text-cyan font-semibold">Tailwind CSS </span>for
-                styling,
-                <span class="text-veryDarkViolet dark:text-cyan font-semibold">Cloudinary </span>for media
-                storage,
+                <span class="text-veryDarkViolet dark:text-cyan font-semibold"
+                  >Tailwind CSS </span
+                >for styling,
+                <span class="text-veryDarkViolet dark:text-cyan font-semibold"
+                  >Cloudinary </span
+                >for media storage,
                 <span class="text-veryDarkViolet dark:text-cyan font-semibold"
                   >React Testing Library
                 </span>
@@ -289,7 +312,7 @@
             <div class="mx-auto lg:mx-0 text-right">
               <a
                 href="#secondPage"
-                class="py-3 px-10 text-xl text-gray-600  uppercase font-semibold transition-all bg-darkViolet dark:bg-cyan rounded-md hover:text-green-600 hover:opacity-90"
+                class="py-3 px-10 text-xl text-gray-600 uppercase font-semibold transition-all bg-darkViolet dark:bg-cyan rounded-md hover:text-green-600 hover:opacity-90"
                 >get started</a
               >
             </div>
@@ -308,7 +331,7 @@
           </div>
         </div>
       </div>
-      
+
       <!-- Second Page - PROJECTS-->
       <div class="section bg-keyboardDark bg-cover bg-center">
         <!-- SLIDE NR 0 -->
@@ -346,7 +369,7 @@
                   Next.js 13 beta app (Typescript, Tailwind CSS)
                 </h2>
                 <h4
-                  class="text-sm  text-gray-600 dark:text-gray-300  mb-2 text-justify"
+                  class="text-sm text-gray-600 dark:text-gray-300 mb-2 text-justify"
                 >
                   'Chat Room' is a CRUD FULLSTACK Next.js app that allows me to
                   put into practice many of the Next.js 13 beta upgrades: a new
@@ -372,8 +395,8 @@
                 <h6
                   class="text-darkViolet dark:text-cyan font-semibold text-right text-xs mb-3"
                 >
-                  Next.js 13 beta, Prisma,
-                  PostgreSQL, Tailwind CSS, React Query, React Hot Toast, TypeScript, NextAuth.js, Vercel
+                  Next.js 13 beta, Prisma, PostgreSQL, Tailwind CSS, React
+                  Query, React Hot Toast, TypeScript, NextAuth.js, Vercel
                 </h6>
                 <div class="tooltips flex justify-around lg:justify-end">
                   <a
@@ -422,7 +445,6 @@
                 src="imgs/search.png"
                 width="500"
                 height="300"
-               
                 alt="screenshot of the project"
               />
             </a>
@@ -440,13 +462,13 @@
                   search item (React Testing Library, Tailwind CSS)
                 </h2>
                 <h4
-                  class="text-sm text-gray-600 dark:text-gray-300  mb-2 text-justify"
+                  class="text-sm text-gray-600 dark:text-gray-300 mb-2 text-justify"
                 >
                   SPA app with just one view that displays a paginated list of
-                  products. It's a simple Next.js with TypeScript project that lets
-                  me practice REACT TESTING LIBRARY. I am testing the frontend
-                  plus I mock the APIs to mimic their behaviour. As for the app
-                  features we have a search bar that allows products
+                  products. It's a simple Next.js with TypeScript project that
+                  lets me practice REACT TESTING LIBRARY. I am testing the
+                  frontend plus I mock the APIs to mimic their behaviour. As for
+                  the app features we have a search bar that allows products
                   search/filtering. Pagination and filtering are reflected in
                   the URL so users can copy-paste the URL to another browser
                   tab.
@@ -454,7 +476,7 @@
                 <h6
                   class="text-darkViolet dark:text-cyan font-semibold text-right text-xs mb-3"
                 >
-                  React Testing Library, Next.js, TypeScript, Context API, 
+                  React Testing Library, Next.js, TypeScript, Context API,
                   Tailwind CSS
                 </h6>
                 <div class="tooltips flex justify-around lg:justify-end">
@@ -504,7 +526,6 @@
                 src="imgs/bookmark.png"
                 width="500"
                 height="300"
-               
                 alt="screenshot of the project"
               />
             </a>
@@ -522,7 +543,7 @@
                   jokes manager (Next.js, Tailwind CSS, fullstack)
                 </h2>
                 <h4
-                  class="text-sm text-gray-600 dark:text-gray-300  mb-2 text-justify"
+                  class="text-sm text-gray-600 dark:text-gray-300 mb-2 text-justify"
                 >
                   Generate a joke and save it on your account. User login/create
                   account interface. User account managment options. It is a
@@ -586,7 +607,6 @@
                 src="imgs/e-fashion3.png"
                 width="500"
                 height="300"
-               
                 alt="screenshot of the project"
               />
             </a>
@@ -604,7 +624,7 @@
                   e-fashion (MERN app)
                 </h2>
                 <h4
-                  class="text-sm text-gray-600 dark:text-gray-300  mb-2 text-justify"
+                  class="text-sm text-gray-600 dark:text-gray-300 mb-2 text-justify"
                 >
                   A fullstack app, an online clothing store with user
                   authentication, sandbox PayPal payment, MongoDB and Amazon Web
@@ -669,7 +689,6 @@
                 src="imgs/eb.png"
                 width="500"
                 height="300"
-               
                 alt="screenshot of the project"
               />
             </a>
@@ -687,7 +706,7 @@
                   eventsbook (MERN app)
                 </h2>
                 <h4
-                  class="text-sm text-gray-600 dark:text-gray-300  mb-2 text-justify"
+                  class="text-sm text-gray-600 dark:text-gray-300 mb-2 text-justify"
                 >
                   A fullstack app, a social media platform where users can log
                   in/create an account, upload photos/create posts (about
@@ -833,7 +852,6 @@
                 src="imgs/typescript.png"
                 width="500"
                 height="300"
-               
                 alt="screenshot of the project"
               />
             </a>
@@ -851,7 +869,7 @@
                   a to-do list (TypeScript)
                 </h2>
                 <h4
-                  class="text-sm text-gray-600 dark:text-gray-300  mb-2 text-justify"
+                  class="text-sm text-gray-600 dark:text-gray-300 mb-2 text-justify"
                 >
                   This TypeScript in React To-Do list allows us to add tasks to
                   our list and then delete them upon clicking on them. It
@@ -917,7 +935,6 @@
                 src="imgs/td1.png"
                 width="500"
                 height="300"
-               
                 alt="screenshot of the project"
               />
             </a>
@@ -935,7 +952,7 @@
                   a to-do list (Redux)
                 </h2>
                 <h4
-                  class="text-sm text-gray-600 dark:text-gray-300  mb-2 text-justify"
+                  class="text-sm text-gray-600 dark:text-gray-300 mb-2 text-justify"
                 >
                   This project is a to-do list built with React and Redux
                   library. Tasks on the list can be marked as completed or they
@@ -996,7 +1013,6 @@
                 src="imgs/todovanillajs.png"
                 width="500"
                 height="300"
-               
                 alt="screenshot of the project"
               />
             </a>
@@ -1014,7 +1030,7 @@
                   a to-do list in Vanilla JavaScript
                 </h2>
                 <h4
-                  class="text-sm text-gray-600 dark:text-gray-300  mb-2 text-justify"
+                  class="text-sm text-gray-600 dark:text-gray-300 mb-2 text-justify"
                 >
                   This project is a simple to do list where todos can be
                   created, marked as completed ot deleted. Beside a search bar
@@ -1075,7 +1091,6 @@
                 src="imgs/bootstrap1.png"
                 width="500"
                 height="300"
-               
                 alt="screenshot of the project"
               />
             </a>
@@ -1093,7 +1108,7 @@
                   adhoc (Bootstrap)
                 </h2>
                 <h4
-                  class="text-sm text-gray-600 dark:text-gray-300  mb-2 text-justify"
+                  class="text-sm text-gray-600 dark:text-gray-300 mb-2 text-justify"
                 >
                   This project is using Bootstrap for creating a clear layout
                   and polished style of a demo commerce website. The website is
@@ -1154,7 +1169,6 @@
                 src="imgs/japan.webp"
                 width="500"
                 height="300"
-               
                 alt="screenshot of the project"
               />
             </a>
@@ -1172,7 +1186,7 @@
                   visit japan (SASS)
                 </h2>
                 <h4
-                  class="text-sm text-gray-600 dark:text-gray-300  mb-2 text-justify"
+                  class="text-sm text-gray-600 dark:text-gray-300 mb-2 text-justify"
                 >
                   This project is only a touch on SASS and an attempt to
                   familiarize with its concepts. Variables, lists, nestings,
@@ -1222,7 +1236,7 @@
       <div class="section">
         <!-- ther is a div in here added by fullpage.js with display-block proprty -->
         <div
-          class="container m-auto p-12 pt-20 flex flex-col gap-8 lg:flex-row justify-start items-center md:border-t-2  border-b-2 dark:border-white border-grayishViolet"
+          class="container m-auto p-12 pt-20 flex flex-col gap-8 lg:flex-row justify-start items-center md:border-t-2 border-b-2 dark:border-white border-grayishViolet"
         >
           <div class="flex flex-col p-4 basis-2/5 justify-evenly items-center">
             <!-- <img
@@ -1316,7 +1330,7 @@
             &copy projects 2023
           </h4>
 
-           <a
+          <a
             href="https://github.com/spatulatom/projects-online#readme"
             target="_blank"
             class="tooltip"
