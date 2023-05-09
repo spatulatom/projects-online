@@ -727,6 +727,142 @@ textarea {
   right: -30px;
 }
 
+.top-2 {
+  top: 0.5rem;
+}
+
+.left-5 {
+  left: 1.25rem;
+}
+
+.left-8 {
+  left: 2rem;
+}
+
+.right-6 {
+  right: 1.5rem;
+}
+
+.-right-64 {
+  right: -16rem;
+}
+
+.right-64 {
+  right: 16rem;
+}
+
+.right-\[-2rem\] {
+  right: -2rem;
+}
+
+.right-\[-4rem\] {
+  right: -4rem;
+}
+
+.right-\[-5rem\] {
+  right: -5rem;
+}
+
+.right-\[-rem\] {
+  right: -rem;
+}
+
+.right-\[-7rem\] {
+  right: -7rem;
+}
+
+.right-\[-6rem\] {
+  right: -6rem;
+}
+
+.right-\[-5\.5rem\] {
+  right: -5.5rem;
+}
+
+.right-\[-5\.8rem\] {
+  right: -5.8rem;
+}
+
+.right-\[-5\.7rem\] {
+  right: -5.7rem;
+}
+
+.right-\[-5\.6rem\] {
+  right: -5.6rem;
+}
+
+.right-3 {
+  right: 0.75rem;
+}
+
+.right-3\.5 {
+  right: 0.875rem;
+}
+
+.right-\[3\.6\] {
+  right: 3.6;
+}
+
+.right-\[3\.6rem\] {
+  right: 3.6rem;
+}
+
+.right-\[3\.\] {
+  right: 3.;
+}
+
+.right-\[3\] {
+  right: 3;
+}
+
+.right-\[3rem\] {
+  right: 3rem;
+}
+
+.right-\[2\.5rem\] {
+  right: 2.5rem;
+}
+
+.right-\[2rem\] {
+  right: 2rem;
+}
+
+.right-\[rem\] {
+  right: rem;
+}
+
+.right-\[1\.7rem\] {
+  right: 1.7rem;
+}
+
+.right-\[1\.rem\] {
+  right: 1.rem;
+}
+
+.right-\[1\.5rem\] {
+  right: 1.5rem;
+}
+
+.right-\[1\.3rem\] {
+  right: 1.3rem;
+}
+
+.right-\[1\.2rem\] {
+  right: 1.2rem;
+}
+
+.right-\[1\.1rem\] {
+  right: 1.1rem;
+}
+
+.right-\[1rem\] {
+  right: 1rem;
+}
+
+.right-\[\.9rem\] {
+  right: .9rem;
+}
+
 .z-10 {
   z-index: 10;
 }
@@ -745,6 +881,10 @@ textarea {
 
 .m-1 {
   margin: 0.25rem;
+}
+
+.m-6 {
+  margin: 1.5rem;
 }
 
 .mx-auto {
@@ -811,6 +951,10 @@ textarea {
 
 .mb-4 {
   margin-bottom: 1rem;
+}
+
+.mt-1 {
+  margin-top: 0.25rem;
 }
 
 .block {
@@ -987,6 +1131,18 @@ textarea {
   --tw-space-y-reverse: 0;
   margin-top: calc(0.75rem * calc(1 - var(--tw-space-y-reverse)));
   margin-bottom: calc(0.75rem * var(--tw-space-y-reverse));
+}
+
+.space-x-4 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-x-reverse: 0;
+  margin-right: calc(1rem * var(--tw-space-x-reverse));
+  margin-left: calc(1rem * calc(1 - var(--tw-space-x-reverse)));
+}
+
+.space-x-5 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-x-reverse: 0;
+  margin-right: calc(1.25rem * var(--tw-space-x-reverse));
+  margin-left: calc(1.25rem * calc(1 - var(--tw-space-x-reverse)));
 }
 
 .overflow-hidden {
@@ -1170,6 +1326,10 @@ textarea {
   padding: 0.5rem;
 }
 
+.p-8 {
+  padding: 2rem;
+}
+
 .px-12 {
   padding-left: 3rem;
   padding-right: 3rem;
@@ -1193,6 +1353,11 @@ textarea {
 .py-4 {
   padding-top: 1rem;
   padding-bottom: 1rem;
+}
+
+.px-3 {
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
 }
 
 .pt-8 {
@@ -1241,6 +1406,18 @@ textarea {
 
 .pr-12 {
   padding-right: 3rem;
+}
+
+.pr-4 {
+  padding-right: 1rem;
+}
+
+.pr-3 {
+  padding-right: 0.75rem;
+}
+
+.text-left {
+  text-align: left;
 }
 
 .text-center {
