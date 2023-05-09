@@ -72,7 +72,7 @@ window
   .addEventListener('change', ({ matches }) => {
     lightIcon.classList.remove('text-darkViolet');
     darkIcon.classList.remove('text-cyan');
-    // systemIcon.classList.add('text-cyan');
+    systemIcon.classList.add('text-cyan');
     // mobile nav
     lightMobile.classList.remove('text-darkViolet');
     darkMobile.classList.remove('text-cyan');
