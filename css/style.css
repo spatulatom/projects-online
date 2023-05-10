@@ -651,10 +651,6 @@ textarea {
   resize: vertical;
 }
 
-.static {
-  position: static;
-}
-
 .fixed {
   position: fixed;
 }
@@ -930,10 +926,6 @@ textarea {
   border-radius: 0.75rem;
 }
 
-.rounded {
-  border-radius: 0.25rem;
-}
-
 .rounded-br-md {
   border-bottom-right-radius: 0.375rem;
 }
@@ -1036,6 +1028,11 @@ textarea {
   padding-right: 3rem;
 }
 
+.py-3 {
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+}
+
 .py-2 {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
@@ -1051,21 +1048,6 @@ textarea {
   padding-right: 1rem;
 }
 
-.py-4 {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-}
-
-.py-1 {
-  padding-top: 0.25rem;
-  padding-bottom: 0.25rem;
-}
-
-.py-3 {
-  padding-top: 0.75rem;
-  padding-bottom: 0.75rem;
-}
-
 .pr-12 {
   padding-right: 3rem;
 }
@@ -1074,8 +1056,8 @@ textarea {
   padding-left: 2rem;
 }
 
-.pr-8 {
-  padding-right: 2rem;
+.pr-6 {
+  padding-right: 1.5rem;
 }
 
 .pt-8 {
@@ -1096,26 +1078,6 @@ textarea {
 
 .pt-6 {
   padding-top: 1.5rem;
-}
-
-.pr-14 {
-  padding-right: 3.5rem;
-}
-
-.pr-1 {
-  padding-right: 0.25rem;
-}
-
-.pr-16 {
-  padding-right: 4rem;
-}
-
-.pl-10 {
-  padding-left: 2.5rem;
-}
-
-.pr-6 {
-  padding-right: 1.5rem;
 }
 
 .text-center {
