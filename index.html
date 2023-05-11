@@ -79,21 +79,21 @@
       <!-- Flex Container for Desktop Nav -->
       <ul id="myMenu" class="hidden fixed z-10 lg:flex w-screen">
         <li class="group" data-menuanchor="firstPage" class="active">
-          <a
+          <a aria-label="Read more"
             class="inline-block bg-darkViolet dark:bg-white px-12 py-3 w-20vw mr-[1px] dark:text-gray-700 text-center font-semibold no-underline dark:hover:bg-cyan transition-all hover:bg-white hover:text-grayishViolet dark:hover:text-veryDarkViolet"
             href="#firstPage"
             >Home</a
           >
         </li>
         <li class="group" data-menuanchor="secondPage">
-          <a
+          <a aria-label="Read more"
             class="inline-block bg-darkViolet dark:bg-white px-12 py-3 w-20vw mr-[1px] dark:text-gray-700 text-center font-semibold no-underline dark:hover:bg-cyan transition-all hover:bg-white hover:text-grayishViolet dark:hover:text-veryDarkViolet"
             href="#secondPage"
             >Projects</a
           >
         </li>
         <li class="group" data-menuanchor="fourthPage">
-          <a
+          <a aria-label="Read more"
             class="inline-block bg-darkViolet dark:bg-white px-12 py-3 w-20vw mr-[1px] rounded-br-md dark:text-gray-700 text-center font-semibold no-underline dark:hover:bg-cyan transition-all hover:bg-white hover:text-grayishViolet dark:hover:text-veryDarkViolet"
             href="#fourthPage"
             >Contact</a
@@ -138,7 +138,7 @@
                 </div>
               </div>
             </div>
-            <a
+            <a aria-label="Read more"
               target="_blank"
               href="https://github.com/spatulatom"
               alt="github link"
@@ -164,13 +164,13 @@
       <div class="mobile-nav bg-gray-100 dark:bg-customBlack max-h-screen">
         <ul class="flex flex-col p-4 justify-center items-center h-full">
           <li class="mobile-nav__item text-grayishViolet dark:text-white">
-            <a href="#firstPage" class="link current">Home</a>
+            <a aria-label="Read more" href="#firstPage" class="link current">Home</a>
           </li>
           <li class="mobile-nav__item text-grayishViolet dark:text-white">
-            <a href="#secondPage" class="link">Projects</a>
+            <a aria-label="Read more" href="#secondPage" class="link">Projects</a>
           </li>
           <li class="mobile-nav__item text-grayishViolet dark:text-white">
-            <a href="#fourthPage" class="link">Contact</a>
+            <a aria-label="Read more" href="#fourthPage" class="link">Contact</a>
           </li>
           <!-- Mobile Nav Dark/White Font Awsome Icons -->
           <li
@@ -197,7 +197,7 @@
           </li>
           <li class="absolute top-0 m-4 right-0">
             <!-- Mobile Nav Social Icons Font Awsome-->
-            <a
+            <a aria-label="Read more"
               target="_blank"
               href="https://github.com/spatulatom"
               alt="github link"
@@ -235,6 +235,7 @@
                   fetchpriority="high"
                   width="100"
                   height="100"
+                  alt="avatar photo"
                 />
               </div>
               <div class="text-gray-600 text-sm dark:text-white flex flex-col">
@@ -320,7 +321,7 @@
               >
             </p>
             <div class="mx-auto lg:mx-0 text-right">
-              <a
+              <a aria-label="Read more"
                 href="#secondPage"
                 class="py-2 px-10 text-xl text-gray-600 font-medium transition-all bg-darkViolet dark:bg-cyan rounded-md hover:text-green-600 hover:opacity-90"
                 >Get started</a
@@ -351,7 +352,7 @@
           <div
             class="flex container flex-col xl:flex-row lg:px-14 justify-center items-center m-auto"
           >
-            <a
+            <a aria-label="Read more"
               href="https://testing-next-13-beta-typescript-tailwind-prisma.vercel.app/"
               target="_blank"
               class="hidden xl:block basis-7/12 overflow-hidden shadow-2xl"
@@ -378,7 +379,7 @@
                 >
                   Next.js 13 beta app (Typescript, Tailwind CSS)
                 </h2>
-                <h4
+                <p
                   class="text-sm text-gray-600 dark:text-gray-300 mb-2 text-justify"
                 >
                   'Chat Room' is a CRUD FULLSTACK Next.js app that allows me to
@@ -391,7 +392,7 @@
                    router.refresh() (for DELETING items I'm using React Query
                   for comparison); new ROUTE HANDLERS for the backend in a new
                   app/api directory.
-                  <a
+                  <a aria-label="Read more"
                     href="https://github.com/spatulatom/testing-next-13-beta-typescript-tailwind-prisma#readme"
                     target="_blank"
                   >
@@ -401,15 +402,15 @@
                       >>></span
                     ></a
                   >
-                </h4>
-                <h6
+                </p>
+                <h3
                   class="text-darkViolet dark:text-cyan font-semibold text-right text-xs mb-3"
                 >
                   Next.js 13 beta, Prisma, PostgreSQL, Tailwind CSS, React
                   Query, React Hot Toast, TypeScript, NextAuth.js, Vercel
-                </h6>
+                </h3>
                 <div class="tooltips flex justify-around lg:justify-end">
-                  <a
+                  <a aria-label="Read more"
                     href="https://github.com/spatulatom/testing-next-13-beta-typescript-tailwind-prisma#readme"
                     target="_blank"
                     class="tooltip"
@@ -421,7 +422,7 @@
                     ></span>
                     <span class="tooltiptext">On GitHub</span>
                   </a>
-                  <a
+                  <a aria-label="Read more"
                     href="https://testing-next-13-beta-typescript-tailwind-prisma.vercel.app/"
                     target="_blank"
                     class="tooltip"
@@ -445,7 +446,7 @@
           <div
             class="flex container flex-col xl:flex-row lg:px-14 justify-center items-center m-auto"
           >
-            <a
+            <a aria-label="Read more"
               href="https://spa-one-view.vercel.app/"
               target="_blank"
               class="hidden xl:block basis-7/12 overflow-hidden shadow-2xl"
@@ -471,7 +472,7 @@
                 >
                   search item (React Testing Library, Tailwind CSS)
                 </h2>
-                <h4
+                <p
                   class="text-sm text-gray-600 dark:text-gray-300 mb-2 text-justify"
                 >
                   SPA app with just one view that displays a paginated list of
@@ -482,15 +483,15 @@
                   search/filtering. Pagination and filtering are reflected in
                   the URL so users can copy-paste the URL to another browser
                   tab.
-                </h4>
-                <h6
+                </p>
+                <h3
                   class="text-darkViolet dark:text-cyan font-semibold text-right text-xs mb-3"
                 >
                   React Testing Library, Next.js, TypeScript, Context API,
                   Tailwind CSS
-                </h6>
+                </h3>
                 <div class="tooltips flex justify-around lg:justify-end">
-                  <a
+                  <a aria-label="Read more"
                     href="https://github.com/spatulatom/spa-one-view#readme"
                     target="_blank"
                     class="tooltip"
@@ -502,7 +503,7 @@
                     ></span>
                     <span class="tooltiptext">On GitHub</span>
                   </a>
-                  <a
+                  <a aria-label="Read more"
                     href="https://spa-one-view.vercel.app/"
                     target="_blank"
                     class="tooltip"
@@ -526,7 +527,7 @@
           <div
             class="flex container flex-col xl:flex-row lg:px-14 justify-center items-center m-auto"
           >
-            <a
+            <a aria-label="Read more"
               href="https://react-next-auth-ashy.vercel.app/"
               target="_blank"
               class="hidden xl:block basis-7/12 overflow-hidden shadow-2xl"
@@ -552,7 +553,7 @@
                 >
                   jokes manager (Next.js, Tailwind CSS, fullstack)
                 </h2>
-                <h4
+                <p
                   class="text-sm text-gray-600 dark:text-gray-300 mb-2 text-justify"
                 >
                   Generate a joke and save it on your account. User login/create
@@ -564,14 +565,14 @@
                   protection on the client and on the server side); MongoDB for
                   data storage; React Context for 'global' state management,
                   Tailwind CSS is used for styling.
-                </h4>
-                <h6
+                </p>
+                <h3
                   class="text-darkViolet dark:text-cyan font-semibold text-right text-xs mb-3"
                 >
                   Next.js, ailwind CSS, NextAuth.js, MongoDB, Vercel
-                </h6>
+                </h3>
                 <div class="tooltips flex justify-around lg:justify-end">
-                  <a
+                  <a aria-label="Read more"
                     href="https://github.com/spatulatom/react-next-auth#readme"
                     target="_blank"
                     class="tooltip"
@@ -583,7 +584,7 @@
                     ></span>
                     <span class="tooltiptext">On GitHub</span>
                   </a>
-                  <a
+                  <a aria-label="Read more"
                     href="https://react-next-auth-ashy.vercel.app/"
                     target="_blank"
                     class="tooltip"
@@ -607,7 +608,7 @@
           <div
             class="flex container flex-col xl:flex-row lg:px-14 justify-center items-center m-auto"
           >
-            <a
+            <a aria-label="Read more"
               href="https://e-fashion-dc7d0.web.app/"
               target="_blank"
               class="hidden xl:block basis-7/12 overflow-hidden shadow-2xl"
@@ -633,7 +634,7 @@
                 >
                   e-fashion (MERN app)
                 </h2>
-                <h4
+                <p
                   class="text-sm text-gray-600 dark:text-gray-300 mb-2 text-justify"
                 >
                   A fullstack app, an online clothing store with user
@@ -644,15 +645,15 @@
                   menu provides options for admin management of products, sales
                   ad more. Redux used for state managment. All newly created
                   users have admin access to all app's functionalities.
-                </h4>
-                <h6
+                </p>
+                <h3
                   class="text-darkViolet dark:text-cyan font-semibold text-right text-xs mb-3"
                 >
                   React.js, Redux, Node, Express.js, MongoDB, Cloudinary API,
                   Firebase and Render for deployment
-                </h6>
+                </h3>
                 <div class="tooltips flex justify-around lg:justify-end">
-                  <a
+                  <a aria-label="Read more"
                     href="https://github.com/spatulatom/e-store-redux-mern#readme-top"
                     target="_blank"
                     class="tooltip"
@@ -664,7 +665,7 @@
                     ></span>
                     <span class="tooltiptext">On GitHub</span>
                   </a>
-                  <a
+                  <a aria-label="Read more"
                     href="https://e-fashion-dc7d0.web.app/"
                     target="_blank"
                     class="tooltip"
@@ -689,7 +690,7 @@
           <div
             class="flex container flex-col xl:flex-row lg:px-14 justify-center items-center m-auto"
           >
-            <a
+            <a aria-label="Read more"
               href="https://eventsbook-91260.web.app/allevents"
               target="_blank"
               class="hidden xl:block basis-7/12 overflow-hidden shadow-2xl"
@@ -715,7 +716,7 @@
                 >
                   eventsbook (MERN app)
                 </h2>
-                <h4
+                <p
                   class="text-sm text-gray-600 dark:text-gray-300 mb-2 text-justify"
                 >
                   A fullstack app, a social media platform where users can log
@@ -726,15 +727,15 @@
                   the SendGrid API. User authentication with jwt token created
                   on the backend, pictures and data stored respectively on
                   Amazon Web Services and MongoDB.
-                </h4>
-                <h6
+                </p>
+                <h3
                   class="text-darkViolet dark:text-cyan font-semibold text-right text-xs mb-3"
                 >
                   React.js, Node, Express.js, MongoDB, Cloudinary API, Firebase
                   and Render for deployment
-                </h6>
+                </h3>
                 <div class="tooltips flex justify-around lg:justify-end">
-                  <a
+                  <a aria-label="Read more"
                     href="https://github.com/spatulatom/frontend-eventsbook#readme-top"
                     target="_blank"
                     class="tooltip"
@@ -746,7 +747,7 @@
                     ></span>
                     <span class="tooltiptext">On GitHub</span>
                   </a>
-                  <a
+                  <a aria-label="Read more"
                     href="https://eventsbook-91260.web.app/allevents"
                     target="_blank"
                     class="tooltip"
@@ -771,7 +772,7 @@
           <div
             class="flex container flex-col xl:flex-row lg:px-14 justify-center items-center m-auto"
           >
-            <a
+            <a aria-label="Read more"
               href="https://spatulatom.github.io/todo-reactjs-redux/"
               target="_blank"
               class="hidden xl:block basis-7/12 overflow-hidden shadow-2xl"
@@ -797,7 +798,7 @@
                 >
                   a to-do list (React.js, Redux)
                 </h2>
-                <h4
+                <p
                   class="text-sm text-gray-600 dark:text-gray-300 mb-2 text-justify"
                 >
                   This project is a to-do list built with React and Redux
@@ -806,14 +807,14 @@
                   display all tasks, only completed tasks or only uncompleted
                   tasks. Tasks are being saved in localStorage. Exploring the
                   Redux library while building this app was great fun.
-                </h4>
-                <h6
+                </p>
+                <h3
                   class="text-darkViolet dark:text-cyan font-semibold text-right text-xs mb-3"
                 >
                   HTML, CSS, React.js, Redux
-                </h6>
+                </h3>
                 <div class="tooltips flex justify-around lg:justify-end">
-                  <a
+                  <a aria-label="Read more"
                     href="https://github.com/spatulatom/todo-reactjs-redux/tree/master#readme-top"
                     target="_blank"
                     class="tooltip"
@@ -825,7 +826,7 @@
                     ></span>
                     <span class="tooltiptext">On GitHub</span>
                   </a>
-                  <a
+                  <a aria-label="Read more"
                     href="https://spatulatom.github.io/todo-reactjs-redux/"
                     target="_blank"
                     class="tooltip"
@@ -849,7 +850,7 @@
           <div
             class="flex container flex-col xl:flex-row lg:px-14 justify-center items-center m-auto"
           >
-            <a
+            <a aria-label="Read more"
               href="https://spatulatom.github.io/todo-vanillajs/"
               target="_blank"
               class="hidden xl:block basis-7/12 overflow-hidden shadow-2xl"
@@ -875,7 +876,7 @@
                 >
                   a to-do list (Vanilla JavaScript)
                 </h2>
-                <h4
+                <p
                   class="text-sm text-gray-600 dark:text-gray-300 mb-2 text-justify"
                 >
                   This project is a simple to do list where todos can be
@@ -883,14 +884,14 @@
                   we have an option of displaying either all todos, completed
                   todos or uncompleted todos. Created todos are being saved in
                   browser's localStorage.
-                </h4>
-                <h6
+                </p>
+                <h3
                   class="text-darkViolet dark:text-cyan font-semibold text-right text-xs mb-3"
                 >
                   HTML, CSS, Vanilla JavaScript, GitHub pages
-                </h6>
+                </h3>
                 <div class="tooltips flex justify-around lg:justify-end">
-                  <a
+                  <a aria-label="Read more"
                     href="https://github.com/spatulatom/todo-vanillajs"
                     target="_blank"
                     class="tooltip"
@@ -902,7 +903,7 @@
                     ></span>
                     <span class="tooltiptext">On GitHub</span>
                   </a>
-                  <a
+                  <a aria-label="Read more"
                     href="https://spatulatom.github.io/todo-vanillajs/"
                     target="_blank"
                     class="tooltip"
@@ -939,8 +940,8 @@
             </h2>
 
             <!-- Social Icons -->
-            <ul class="mt-4 flex space-x-6">
-              <a
+            <div class="mt-4 flex space-x-6">
+              <a aria-label="Read more"
                 target="_blank"
                 href="https://github.com/spatulatom"
                 alt="github link"
@@ -949,7 +950,7 @@
                   class="fab fa-github fa-2xl text-gray-500 dark:text-gray-300 hover:text-cyan hover:dark:text-cyan"
                 ></i>
               </a>
-              <a
+              <a aria-label="Read more"
                 target="_blank"
                 href="https://www.linkedin.com/in/tomasz-s-069249244/"
                 alt="github link"
@@ -958,7 +959,7 @@
                   class="fab fa-linkedin fa-2xl text-gray-500 dark:text-gray-300 transition-all hover:text-cyan hover:dark:text-cyan"
                 ></i>
               </a>
-            </ul>
+            </div>
           </div>
 
           <!-- Container for Form ---->
@@ -1015,11 +1016,11 @@
         <div
           class="p-4 flex flex-col justify-center space-x-3 items-center text-[#a3aca7]"
         >
-          <h4 class="dark:text-gray-400 text-gray-500 uppercase">
+          <p class="dark:text-gray-400 text-gray-500 uppercase">
             &copy projects 2023
-          </h4>
+          </p>
 
-          <!-- <a
+          <!-- <a aria-label="Read more"
             href="https://github.com/spatulatom/projects-online#readme"
             target="_blank"
             class="tooltip"
