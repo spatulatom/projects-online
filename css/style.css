@@ -1603,6 +1603,45 @@ SO IT CAN BE STYLED */
   opacity: 1;
 }
 
+.dark .dark\:dark .tooltips .tooltip {
+  position: relative;
+  display: inline-block;
+  margin-right: 3rem;
+  margin-left: 3rem;
+  text-decoration: none;
+}
+
+.dark .dark\:dark .tooltips .tooltip .tooltiptext {
+  display: none;
+  min-width: 9rem;
+  background-color: black;
+  color: black;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  background-color: white;
+  transition: all 3s linear;
+  font-size: small;
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 20;
+  bottom: 200%;
+  left: 50%;
+  margin-left: -4.5rem;
+  font-weight: 500;
+}
+
+.dark .dark\:dark .tooltips .tooltip .tooltiptext::after {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -14px;
+  border-width: 14px;
+  border-style: solid;
+  border-color: white transparent transparent transparent;
+}
+
 .dark .dark\:hover\:bg-cyan:hover {
   --tw-bg-opacity: 1;
   background-color: hsl(180 66% 49% / var(--tw-bg-opacity));
