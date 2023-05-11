@@ -1190,6 +1190,16 @@ textarea {
   color: hsl(180 66% 49% / var(--tw-text-opacity));
 }
 
+.text-white {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.text-gray-700 {
+  --tw-text-opacity: 1;
+  color: rgb(55 65 81 / var(--tw-text-opacity));
+}
+
 .no-underline {
   text-decoration-line: none;
 }
@@ -1517,6 +1527,10 @@ SO IT CAN BE STYLED */
   display: flex;
 }
 
+.dark .dark\:rounded-md {
+  border-radius: 0.375rem;
+}
+
 .dark .dark\:border-0 {
   border-width: 0px;
 }
@@ -1578,6 +1592,11 @@ SO IT CAN BE STYLED */
 .dark .dark\:text-gray-400 {
   --tw-text-opacity: 1;
   color: rgb(156 163 175 / var(--tw-text-opacity));
+}
+
+.dark .dark\:text-darkViolet {
+  --tw-text-opacity: 1;
+  color: hsl(180 66% 49% / var(--tw-text-opacity));
 }
 
 .dark .dark\:opacity-100 {
