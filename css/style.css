@@ -934,6 +934,10 @@ textarea {
   border-width: 2px;
 }
 
+.border {
+  border-width: 1px;
+}
+
 .border-l-2 {
   border-left-width: 2px;
 }
@@ -1119,6 +1123,16 @@ textarea {
 .text-xs {
   font-size: 0.75rem;
   line-height: 1rem;
+}
+
+.text-base {
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+.text-3xl {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
 }
 
 .font-semibold {
