@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-/* GENERAL STYLING - CURSOR EFFECT AS A RING FOLLOWING THE MOUSE CURSOR: */
+/* CURSOR EFFECT AS A RING FOLLOWING THE MOUSE CURSOR: */
 
 .cursor {
   top: 55%;
