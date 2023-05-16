@@ -934,10 +934,6 @@ textarea {
   border-width: 2px;
 }
 
-.border {
-  border-width: 1px;
-}
-
 .border-l-2 {
   border-left-width: 2px;
 }
@@ -1125,16 +1121,6 @@ textarea {
   line-height: 1rem;
 }
 
-.text-base {
-  font-size: 1rem;
-  line-height: 1.5rem;
-}
-
-.text-3xl {
-  font-size: 1.875rem;
-  line-height: 2.25rem;
-}
-
 .font-semibold {
   font-weight: 600;
 }
@@ -1189,6 +1175,11 @@ textarea {
   color: hsl(260 8% 14% / var(--tw-text-opacity));
 }
 
+.text-gray-700 {
+  --tw-text-opacity: 1;
+  color: rgb(55 65 81 / var(--tw-text-opacity));
+}
+
 .text-darkViolet {
   --tw-text-opacity: 1;
   color: hsl(180 66% 49% / var(--tw-text-opacity));
@@ -1202,16 +1193,6 @@ textarea {
 .text-cyan {
   --tw-text-opacity: 1;
   color: hsl(180 66% 49% / var(--tw-text-opacity));
-}
-
-.text-white {
-  --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
-.text-gray-700 {
-  --tw-text-opacity: 1;
-  color: rgb(55 65 81 / var(--tw-text-opacity));
 }
 
 .no-underline {
@@ -1321,7 +1302,7 @@ textarea {
   /* color: white; */
 }
 
-/* GENERAL STYLING - CURSOR EFFECT AS A RING FOLLOWING THE MOUSE CURSOR: */
+/* CURSOR EFFECT AS A RING FOLLOWING THE MOUSE CURSOR: */
 
 .cursor {
   top: 55%;
@@ -1528,10 +1509,6 @@ SO IT CAN BE STYLED */
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
-.hover\:opacity-90:hover {
-  opacity: 0.9;
-}
-
 .focus\:outline-none:focus {
   outline: 2px solid transparent;
   outline-offset: 2px;
@@ -1539,10 +1516,6 @@ SO IT CAN BE STYLED */
 
 .group:hover .group-hover\:flex {
   display: flex;
-}
-
-.dark .dark\:rounded-md {
-  border-radius: 0.375rem;
 }
 
 .dark .dark\:border-0 {
@@ -1608,52 +1581,8 @@ SO IT CAN BE STYLED */
   color: rgb(156 163 175 / var(--tw-text-opacity));
 }
 
-.dark .dark\:text-darkViolet {
-  --tw-text-opacity: 1;
-  color: hsl(180 66% 49% / var(--tw-text-opacity));
-}
-
 .dark .dark\:opacity-100 {
   opacity: 1;
-}
-
-.dark .dark\:dark .tooltips .tooltip {
-  position: relative;
-  display: inline-block;
-  margin-right: 3rem;
-  margin-left: 3rem;
-  text-decoration: none;
-}
-
-.dark .dark\:dark .tooltips .tooltip .tooltiptext {
-  display: none;
-  min-width: 9rem;
-  background-color: black;
-  color: black;
-  text-align: center;
-  border-radius: 6px;
-  padding: 5px 0;
-  background-color: white;
-  transition: all 3s linear;
-  font-size: small;
-  /* Position the tooltip */
-  position: absolute;
-  z-index: 20;
-  bottom: 200%;
-  left: 50%;
-  margin-left: -4.5rem;
-  font-weight: 500;
-}
-
-.dark .dark\:dark .tooltips .tooltip .tooltiptext::after {
-  content: '';
-  position: absolute;
-  top: 100%;
-  left: 50%;
-  margin-left: -14px;
-  border-width: 14px;
-  border-style: solid;
-  border-color: white transparent transparent transparent;
 }
 
 .dark .dark\:hover\:bg-cyan:hover {
@@ -1764,16 +1693,6 @@ SO IT CAN BE STYLED */
   .lg\:text-base {
     font-size: 1rem;
     line-height: 1.5rem;
-  }
-
-  .lg\:text-xl {
-    font-size: 1.25rem;
-    line-height: 1.75rem;
-  }
-
-  .lg\:text-lg {
-    font-size: 1.125rem;
-    line-height: 1.75rem;
   }
 }
 

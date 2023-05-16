@@ -11,12 +11,12 @@
     <title>Projects</title>
 
     <!-- favicon: -->
-    <link rel="icon" href="imgs/favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="/imgs/favicon.ico" type="image/x-icon" />
 
     <!-- fullpage.js  -->
     <link
       rel="stylesheet"
-      href="css/fullpage.css"
+      href="/css/fullpage.css"
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
@@ -31,7 +31,7 @@
     />
 
     <!-- css -->
-    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="/css/main.css" />
 
     <!-- google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -39,11 +39,11 @@
     <link
       href="https://fonts.googleapis.com/css2?family=Figtree:wght@300;400;500;600;700&family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap"
       rel="stylesheet"
-      rel="preload"
+      
     />
 
     <!-- tailwind -->
-    <link rel="stylesheet" href="css/style.css" rel="preload" />
+    <link rel="stylesheet" href="/css/style.css"  />
 
     <!-- Dark/Light Mode JavaScript -->
     <!-- It's best to inline this part in `head` to avoid FOUC (flash of unstyled content) when changing pages or themes -->
@@ -82,7 +82,7 @@
     <nav>
       <!-- Flex Container for Desktop Nav -->
       <ul id="myMenu" class="hidden fixed z-10 lg:flex w-screen">
-        <li class="group" data-menuanchor="firstPage" class="active">
+        <li class="group" data-menuanchor="firstPage">
           <a
             aria-label="Read more"
             class="inline-block bg-darkViolet dark:bg-white px-12 py-3 w-20vw mr-[1px] dark:text-gray-700 text-center font-semibold no-underline dark:hover:bg-cyan transition-all hover:bg-white hover:text-grayishViolet dark:hover:text-veryDarkViolet"
@@ -90,7 +90,7 @@
             >Home</a
           >
         </li>
-        <li class="group" data-menuanchor="secondPage">
+        <li class="grou active" data-menuanchor="secondPage">
           <a
             aria-label="Read more"
             class="inline-block bg-darkViolet dark:bg-white px-12 py-3 w-20vw mr-[1px] dark:text-gray-700 text-center font-semibold no-underline dark:hover:bg-cyan transition-all hover:bg-white hover:text-grayishViolet dark:hover:text-veryDarkViolet"
@@ -246,7 +246,7 @@
               <div class="w-16 h-16">
                 <img
                   class="rounded-full w-full border-2"
-                  src="imgs/me3.jpg"
+                  src="/imgs/me3.jpg"
                   fetchpriority="high"
                   width="100"
                   height="100"
@@ -350,7 +350,7 @@
           <div class="hidden lg:block p-10 mb-8 mx-auto md:w-5/12 lg:mb-0">
             <img
               class="hidden lg:block rounded-xl w-auto h-full"
-              src="imgs/illustration-working.svg"
+              src="/imgs/illustration-working.svg"
               fetchpriority="high"
               alt="my profile picture"
               width="500"
@@ -377,7 +377,7 @@
             >
               <img
                 class="hidden lg:block w-screen h-auto rounded-lg"
-                src="imgs/next13beta.png"
+                src="/imgs/next13beta.png"
                 fetchpriority="high"
                 width="500"
                 height="300"
@@ -476,7 +476,7 @@
             >
               <img
                 class="hidden lg:block w-screen h-auto rounded-lg"
-                src="imgs/search.png"
+                src="/imgs/search.png"
                 width="500"
                 height="300"
                 alt="screenshot of the project"
@@ -561,7 +561,7 @@
             >
               <img
                 class="hidden lg:block w-screen h-auto rounded-lg"
-                src="imgs/bookmark.png"
+                src="/imgs/bookmark.png"
                 width="500"
                 height="300"
                 alt="screenshot of the project"
@@ -645,7 +645,7 @@
             >
               <img
                 class="hidden lg:block w-screen h-auto rounded-lg"
-                src="imgs/e-fashion3.png"
+                src="/imgs/e-fashion3.png"
                 width="500"
                 height="300"
                 alt="screenshot of the project"
@@ -730,7 +730,7 @@
             >
               <img
                 class="hidden lg:block w-screen h-auto rounded-lg"
-                src="imgs/eb.png"
+                src="/imgs/eb.png"
                 width="500"
                 height="300"
                 alt="screenshot of the project"
@@ -815,7 +815,7 @@
             >
               <img
                 class="hidden lg:block w-screen h-auto rounded-lg"
-                src="imgs/td1.png"
+                src="/imgs/td1.png"
                 width="500"
                 height="300"
                 alt="screenshot of the project"
@@ -896,7 +896,7 @@
             >
               <img
                 class="hidden lg:block w-screen h-auto rounded-lg"
-                src="imgs/todovanillajs.png"
+                src="/imgs/todovanillajs.png"
                 width="500"
                 height="300"
                 alt="screenshot of the project"
@@ -971,7 +971,7 @@
         >
           <div class="flex flex-col p-4 basis-2/5 justify-evenly items-center">
             <!-- <img
-              src="imgs/illustration-working.svg"
+              src="/imgs/illustration-working.svg"
               class="rounded-md w-full h-auto"
               width="1"
               height="1"
@@ -1088,13 +1088,13 @@
     ></script>
 
     <!-- Scripts -->
-    <script src="./scripts/contact-form.js" defer></script>
+    <script src="/scripts/contact-form.js" defer></script>
     <!-- <script src="./scripts/coursor-effect.js"></script> -->
-    <script src="./scripts/mobile-nav.js" defer></script>
-    <script src="./scripts/date.js" async></script>
+    <script src="/scripts/mobile-nav.js" defer></script>
+    <script src="/scripts/date.js" async></script>
 
     <!-- More scripts For Fullpage.js -->
-    <script type="text/javascript" src="fullpage.extensions.min.js"></script>
+    <script type="text/javascript" src="/fullpage.extensions.min.js"></script>
     <script>
       new fullpage('#fullpage', {
         autoScrolling: false,
@@ -1110,6 +1110,6 @@
         // paddingBottom: '30px'
       });
     </script>
-    <script src="./scripts/dark-mode.js" async></script>
+    <script src="/scripts/dark-mode.js" async></script>
   </body>
 </html>
