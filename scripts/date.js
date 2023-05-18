@@ -23,7 +23,7 @@ const addDate = () => {
   }).format(newDate);
   date.innerHTML = localDate;
 };
-// addDate();
+addDate();
 document.addEventListener('DOMContentLoaded', () => {
   addDate();
 });
