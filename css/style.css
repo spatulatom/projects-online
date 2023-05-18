@@ -691,6 +691,10 @@ textarea {
   z-index: 30;
 }
 
+.z-50 {
+  z-index: 50;
+}
+
 .m-4 {
   margin: 1rem;
 }
@@ -774,6 +778,18 @@ textarea {
 
 .h-auto {
   height: auto;
+}
+
+.h-12 {
+  height: 3rem;
+}
+
+.h-1\/2 {
+  height: 50%;
+}
+
+.h-80 {
+  height: 20rem;
 }
 
 .max-h-screen {
@@ -989,6 +1005,11 @@ textarea {
 .bg-gray-100 {
   --tw-bg-opacity: 1;
   background-color: rgb(243 244 246 / var(--tw-bg-opacity));
+}
+
+.bg-red {
+  --tw-bg-opacity: 1;
+  background-color: hsl(0 87% 67% / var(--tw-bg-opacity));
 }
 
 .bg-keyboardDark {
