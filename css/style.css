@@ -1719,6 +1719,11 @@ SO IT CAN BE STYLED */
     font-size: 1rem;
     line-height: 1.5rem;
   }
+
+  .lg\:text-sm {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+  }
 }
 
 @media (min-width: 1280px) {
