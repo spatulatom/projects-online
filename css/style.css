@@ -699,6 +699,10 @@ textarea {
   z-index: 30;
 }
 
+.col-span-2 {
+  grid-column: span 2 / span 2;
+}
+
 .m-4 {
   margin: 1rem;
 }
@@ -709,6 +713,10 @@ textarea {
 
 .m-5 {
   margin: 1.25rem;
+}
+
+.m-2 {
+  margin: 0.5rem;
 }
 
 .mx-auto {
@@ -793,6 +801,10 @@ textarea {
   display: table;
 }
 
+.grid {
+  display: grid;
+}
+
 .contents {
   display: contents;
 }
@@ -853,6 +865,14 @@ textarea {
   width: 1.75rem;
 }
 
+.w-1\/4 {
+  width: 25%;
+}
+
+.w-1 {
+  width: 0.25rem;
+}
+
 .max-w-md {
   max-width: 28rem;
 }
@@ -891,6 +911,10 @@ textarea {
 
 .resize {
   resize: both;
+}
+
+.grid-cols-2 {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
 .flex-row {
@@ -935,6 +959,10 @@ textarea {
 
 .gap-8 {
   gap: 2rem;
+}
+
+.gap-12 {
+  gap: 3rem;
 }
 
 .space-x-1 > :not([hidden]) ~ :not([hidden]) {
@@ -1005,6 +1033,15 @@ textarea {
 
 .rounded-xl {
   border-radius: 0.75rem;
+}
+
+.rounded {
+  border-radius: 0.25rem;
+}
+
+.rounded-l {
+  border-top-left-radius: 0.25rem;
+  border-bottom-left-radius: 0.25rem;
 }
 
 .rounded-br-md {
@@ -1114,6 +1151,26 @@ textarea {
   background-color: transparent;
 }
 
+.bg-slate-400 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(148 163 184 / var(--tw-bg-opacity));
+}
+
+.bg-black {
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
+}
+
+.bg-gray-400 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(156 163 175 / var(--tw-bg-opacity));
+}
+
+.bg-gray-300 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(209 213 219 / var(--tw-bg-opacity));
+}
+
 .bg-keyboardDark {
   background-image: url('../imgs/keyboard-dark.png');
 }
@@ -1178,6 +1235,11 @@ textarea {
 .px-14 {
   padding-left: 3.5rem;
   padding-right: 3.5rem;
+}
+
+.px-2 {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
 }
 
 .pr-12 {
@@ -1818,6 +1880,10 @@ SO IT CAN BE STYLED */
     display: block;
   }
 
+  .md\:flex {
+    display: flex;
+  }
+
   .md\:hidden {
     display: none;
   }
@@ -1874,6 +1940,10 @@ SO IT CAN BE STYLED */
     display: flex;
   }
 
+  .lg\:grid {
+    display: grid;
+  }
+
   .lg\:hidden {
     display: none;
   }
@@ -1882,8 +1952,16 @@ SO IT CAN BE STYLED */
     width: 58.333333%;
   }
 
+  .lg\:w-1\/4 {
+    width: 25%;
+  }
+
   .lg\:max-w-md {
     max-width: 28rem;
+  }
+
+  .lg\:grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .lg\:flex-row {
