@@ -1776,6 +1776,10 @@ SO IT CAN BE STYLED */
   .\@5xl\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
+
+  .\@5xl\:flex-row {
+    flex-direction: row;
+  }
 }
 
 .dark .dark\:border-0 {
