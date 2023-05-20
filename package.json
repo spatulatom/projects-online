@@ -20,5 +20,8 @@
   "homepage": "https://github.com/spatulatom/projects-online#readme",
   "devDependencies": {
     "tailwindcss": "^3.2.4"
+  },
+  "dependencies": {
+    "@tailwindcss/container-queries": "^0.1.1"
   }
 }

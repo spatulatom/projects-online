@@ -699,20 +699,12 @@ textarea {
   z-index: 30;
 }
 
-.col-span-2 {
-  grid-column: span 2 / span 2;
-}
-
 .m-4 {
   margin: 1rem;
 }
 
 .m-auto {
   margin: auto;
-}
-
-.m-5 {
-  margin: 1.25rem;
 }
 
 .m-2 {
@@ -833,6 +825,10 @@ textarea {
   min-height: 100vh;
 }
 
+.min-h-full {
+  min-height: 100%;
+}
+
 .w-screen {
   width: 100vw;
 }
@@ -865,12 +861,12 @@ textarea {
   width: 1.75rem;
 }
 
-.w-1\/4 {
-  width: 25%;
-}
-
 .w-1 {
   width: 0.25rem;
+}
+
+.w-1\/4 {
+  width: 25%;
 }
 
 .max-w-md {
@@ -961,10 +957,6 @@ textarea {
   gap: 2rem;
 }
 
-.gap-12 {
-  gap: 3rem;
-}
-
 .space-x-1 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-x-reverse: 0;
   margin-right: calc(0.25rem * var(--tw-space-x-reverse));
@@ -1033,10 +1025,6 @@ textarea {
 
 .rounded-xl {
   border-radius: 0.75rem;
-}
-
-.rounded {
-  border-radius: 0.25rem;
 }
 
 .rounded-l {
@@ -1127,14 +1115,14 @@ textarea {
   background-color: rgb(243 244 246 / var(--tw-bg-opacity));
 }
 
-.bg-red {
+.bg-gray-300 {
   --tw-bg-opacity: 1;
-  background-color: hsl(0 87% 67% / var(--tw-bg-opacity));
+  background-color: rgb(209 213 219 / var(--tw-bg-opacity));
 }
 
-.bg-emerald-200 {
+.bg-black {
   --tw-bg-opacity: 1;
-  background-color: rgb(167 243 208 / var(--tw-bg-opacity));
+  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
 }
 
 .bg-customBlack {
@@ -1149,26 +1137,6 @@ textarea {
 
 .bg-transparent {
   background-color: transparent;
-}
-
-.bg-slate-400 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(148 163 184 / var(--tw-bg-opacity));
-}
-
-.bg-black {
-  --tw-bg-opacity: 1;
-  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
-}
-
-.bg-gray-400 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(156 163 175 / var(--tw-bg-opacity));
-}
-
-.bg-gray-300 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(209 213 219 / var(--tw-bg-opacity));
 }
 
 .bg-keyboardDark {
@@ -1235,11 +1203,6 @@ textarea {
 .px-14 {
   padding-left: 3.5rem;
   padding-right: 3.5rem;
-}
-
-.px-2 {
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
 }
 
 .pr-12 {
@@ -1401,14 +1364,14 @@ textarea {
   color: rgb(163 172 167 / var(--tw-text-opacity));
 }
 
-.text-cyan {
-  --tw-text-opacity: 1;
-  color: hsl(180 66% 49% / var(--tw-text-opacity));
-}
-
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.text-cyan {
+  --tw-text-opacity: 1;
+  color: hsl(180 66% 49% / var(--tw-text-opacity));
 }
 
 .text-gray-300 {
@@ -1488,6 +1451,10 @@ textarea {
 
 .ease-in-out {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.\@container {
+  container-type: inline-size;
 }
 
 .dark .tooltips .tooltip {
@@ -1793,6 +1760,44 @@ SO IT CAN BE STYLED */
   display: flex;
 }
 
+@container (min-width: 56rem) {
+  .\@4xl\:flex {
+    display: flex;
+  }
+
+  .\@4xl\:w-1\/4 {
+    width: 25%;
+  }
+}
+
+@container (min-width: 64rem) {
+  .\@5xl\:flex {
+    display: flex;
+  }
+
+  .\@5xl\:w-1\/4 {
+    width: 25%;
+  }
+
+  .\@5xl\:grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@container (min-width: 72rem) {
+  .\@6xl\:flex {
+    display: flex;
+  }
+
+  .\@6xl\:w-1\/4 {
+    width: 25%;
+  }
+
+  .\@6xl\:grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
 .dark .dark\:border-0 {
   border-width: 0px;
 }
@@ -1880,10 +1885,6 @@ SO IT CAN BE STYLED */
     display: block;
   }
 
-  .md\:flex {
-    display: flex;
-  }
-
   .md\:hidden {
     display: none;
   }
@@ -1938,10 +1939,6 @@ SO IT CAN BE STYLED */
 
   .lg\:flex {
     display: flex;
-  }
-
-  .lg\:grid {
-    display: grid;
   }
 
   .lg\:hidden {

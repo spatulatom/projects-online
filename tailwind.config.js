@@ -3,7 +3,7 @@ module.exports = {
   darkMode: 'class',
   // https://tailwindcss.com/docs/content-configuration#pattern-recommendations
   // if classes used in js files we need this config
-  content: ['./scripts/*.{html,js}', './index.html', './query.html'],
+  content: ['./scripts/*.{html,js}', './index.html', './query.html', './container-query.html'],
   theme: {
     extend: {
       fontFamily: {
@@ -40,5 +40,5 @@ module.exports = {
       }
     },
   },
-  plugins: [],
+  plugins: [ require('@tailwindcss/container-queries'),],
 };
