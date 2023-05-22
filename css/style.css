@@ -708,6 +708,11 @@ textarea {
   margin-right: auto;
 }
 
+.my-4 {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
 .mr-\[1px\] {
   margin-right: 1px;
 }
