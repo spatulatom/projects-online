@@ -12,6 +12,8 @@
 // body.addEventListener('load', addDate());
 
 // chatGPT SUGGESTIONS:
+
+
 const date = document.querySelector('.date');
 const body = document.getElementById('body');
 
