@@ -1,4 +1,48 @@
+// By adding "type": "module" to your package.json file,
+//  you're indicating that your project supports ECMAScript 
+//  modules. This allows you to use the import and export 
+//  syntax in your JavaScript files.
+
+// After making this change, you should be able to use the
+// import/export syntax without needing the .mjs file extension.
+
+// BUT IT DOSENT WORK , YOU NEED WEBPACK OR BUNDLE FOT IT TO WORK
+// ALSO WORKIN data.json JSON DOSENT FOR THE SAME REASON (YOU COULD FETCH IT 
+// Fetch the JSON file
+// fetch('data.json')
+//   .then(response => response.json())
+//   .then(data => {
+//     // Get the container element
+//     const container = document.getElementById('container');
+
+//     // Iterate over the data array and create HTML elements
+//     data.forEach(item => {
+//       // Create a new paragraph element
+//       const p = document.createElement('p');
+      
+//       // Set the text content of the paragraph
+//       p.textContent = `a1: ${item.a1}, h2: ${item.h2}`;
+
+//       // Append the paragraph to the container
+//       container.appendChild(p);
+//     });
+//   })
+//   .catch(error => {
+//     console.error('Error fetching JSON:', error);
+//   });
+// ) - BUT IT STILL DOSEN WORK
+
+
 const myArray = [
+  {
+    a1: 'https://testing-next-13-beta-typescript-tailwind-prisma.vercel.app/',
+    img: 'imgs/next13beta.png',
+    h2: `'Chat Room' (Next.js 13 beta, TypeScript, Tailwind CSS, fullstack)`,
+    p: `'Chat Room' is a CRUD full-stack Next.js app that allows me to explore many of the new Next.js 13 beta features like a new file convention with the app directory (not pages directory), where all components are now server components by default. I leverage the power of async/await and the new fetch() API in these server components for Static Site Generation (SSG) and Server-Side Rendering (SSR). To handle data fetching, I have implemented specialized pages such as error.js and loading.js. For managing data mutations across the app, I use the router.refresh() method. For item deletions, I utilize React Query for comparison. On the backend, the app benefits from new route handlers, organized within a dedicated new app/api directory. [Read more...](https://github.com/spatulatom/testing-next-13-beta-typescript-tailwind-prisma#readme)`,
+    h3: `Next.js 13 beta, Prisma, PostgreSQL, Tailwind CSS, React Query, React Hot Toast, TypeScript, NextAuth.js, Vercel`,
+    a2: 'https://github.com/spatulatom/testing-next-13-beta-typescript-tailwind-prisma#readme',
+    a3: 'https://testing-next-13-beta-typescript-tailwind-prisma.vercel.app/'
+  },
   {
     a1: 'https://spa-one-view.vercel.app',
     img: 'imgs/search.png',
@@ -58,4 +102,4 @@ const myArray = [
 ];
 
 
-export default My
+export default myArray;

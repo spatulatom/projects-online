@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "<a name=\"readme-top\"></a>",
   "main": "tailwind.config.js",
+  
   "scripts": {
     "watch": "tailwindcss -i ./input.css -o ./css/style.css --watch",
     "build": "tailwindcss -i ./input.css -o ./css/style.css"

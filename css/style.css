@@ -708,11 +708,6 @@ textarea {
   margin-right: auto;
 }
 
-.my-4 {
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-}
-
 .mr-\[1px\] {
   margin-right: 1px;
 }
@@ -733,18 +728,6 @@ textarea {
   margin-bottom: 2rem;
 }
 
-.mb-1 {
-  margin-bottom: 0.25rem;
-}
-
-.mb-2 {
-  margin-bottom: 0.5rem;
-}
-
-.mb-3 {
-  margin-bottom: 0.75rem;
-}
-
 .mt-4 {
   margin-top: 1rem;
 }
@@ -755,6 +738,18 @@ textarea {
 
 .mb-4 {
   margin-bottom: 1rem;
+}
+
+.mb-1 {
+  margin-bottom: 0.25rem;
+}
+
+.mb-2 {
+  margin-bottom: 0.5rem;
+}
+
+.mb-3 {
+  margin-bottom: 0.75rem;
 }
 
 .block {
@@ -825,12 +820,12 @@ textarea {
   width: 120%;
 }
 
-.basis-7\/12 {
-  flex-basis: 58.333333%;
-}
-
 .basis-2\/5 {
   flex-basis: 40%;
+}
+
+.basis-7\/12 {
+  flex-basis: 58.333333%;
 }
 
 .cursor-pointer {
@@ -1054,12 +1049,12 @@ textarea {
   padding: 3rem;
 }
 
-.p-6 {
-  padding: 1.5rem;
-}
-
 .p-8 {
   padding: 2rem;
+}
+
+.p-6 {
+  padding: 1.5rem;
 }
 
 .px-12 {
@@ -1150,14 +1145,14 @@ textarea {
   line-height: 1.75rem;
 }
 
-.text-xs {
-  font-size: 0.75rem;
-  line-height: 1rem;
-}
-
 .text-lg {
   font-size: 1.125rem;
   line-height: 1.75rem;
+}
+
+.text-xs {
+  font-size: 0.75rem;
+  line-height: 1rem;
 }
 
 .font-semibold {
