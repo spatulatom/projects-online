@@ -1,3 +1,5 @@
+// check buttom form comments
+
 const myArray = [
   {
     a1: 'https://testing-next-13-beta-typescript-tailwind-prisma.vercel.app/',
@@ -167,3 +169,41 @@ responsive width, the class on it is .fp-overflow-->
   // Append the div element to the container
   container.appendChild(tempContainer);
 });
+
+
+
+// By adding "type": "module" to your package.json file,
+//  you're indicating that your project supports ECMAScript 
+//  modules. This allows you to use the import and export 
+//  syntax in your JavaScript files. And that myArray could be imported
+
+// After making this change, you should be able to use the
+// import/export syntax without needing the .mjs file extension.
+
+// BUT IT DOSENT WORK , YOU NEED WEBPACK OR BUNDLE FOT IT TO WORK.
+// ALSO NOT WORKING WITH data.json JSON DOSENT FOR THE SAME REASON (YOU COULD FETCH IT 
+// you could fetch your data json without webpack bundle but it still dosent work:
+// Fetch the JSON file
+// fetch('data.json')
+//   .then(response => response.json())
+//   .then(data => {
+//     // Get the container element
+//     const container = document.getElementById('container');
+
+//     // Iterate over the data array and create HTML elements
+//     data.forEach(item => {
+//       // Create a new paragraph element
+//       const p = document.createElement('p');
+      
+//       // Set the text content of the paragraph
+//       p.textContent = `a1: ${item.a1}, h2: ${item.h2}`;
+
+//       // Append the paragraph to the container
+//       container.appendChild(p);
+//     });
+//   })
+//   .catch(error => {
+//     console.error('Error fetching JSON:', error);
+//   });
+// ) - BUT IT STILL DOSEN WORK
+// so 
