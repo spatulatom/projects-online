@@ -3,6 +3,7 @@ module.exports = {
   darkMode: 'class',
   // https://tailwindcss.com/docs/content-configuration#pattern-recommendations
   // if classes used in js files we need this config
+  // ['./*.html] -  any html classes in the root
   content: ['./scripts/*.{html,js}', './index.html', './query.html', './container-query.html', './chatgpt.html'],
   theme: {
     extend: {
