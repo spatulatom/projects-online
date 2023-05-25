@@ -73,6 +73,13 @@
 
       gtag('config', 'G-2Q4Z5D4HXG');
     </script>
+    
+    <!-- include the Cloudinary JavaScript library -->
+    <!-- https://cloudinary.com/documentation/responsive_client_side_js -->
+    <script
+      src="https://unpkg.com/cloudinary-core@latest/cloudinary-core-shrinkwrap.js"
+      type="text/javascript"
+    ></script>
   </head>
 
   <body
@@ -244,8 +251,8 @@
             <div class="flex md:pt-0 gap-4 items-center">
               <div class="w-16 h-16">
                 <img
-                  class="rounded-full w-full border-2"
-                  src="imgs/me3.jpg"
+                  class="cld-responsive rounded-full w-full border-2"
+                  src="https://res.cloudinary.com/dhf9cwbuu/image/upload/c_limit,w_auto/dpr_auto/v1685009474/me3_tr0gh5.jpg"
                   fetchpriority="high"
                   width="200"
                   height="200"
@@ -340,7 +347,7 @@
                 updates of those two software technologies.</span
               >
             </p>
-            
+
             <div class="mx-auto lg:mx-0 text-right">
               <a
                 aria-label="Read more"
@@ -357,18 +364,17 @@
               class="hidden lg:block rounded-xl w-auto h-full"
               src="imgs/illustration-working.svg"
               fetchpriority="high"
-              alt="my profile picture"
+              alt="svg illustration of a person sitting at the desk"
               width="500"
               height="300"
             />
           </div>
         </div>
-     
       </div>
 
       <!-- Second Page - PROJECTS-->
       <div id="projects" class="section bg-keyboardDark bg-cover bg-center">
-       <!-- here renderProjects.js renders html content for every project -->
+        <!-- here renderProjects.js renders html content for every project -->
       </div>
 
       <!-- Third Page - CONTACT -->
@@ -466,7 +472,7 @@
         <div
           class="p-4 flex flex-col justify-center space-x-3 items-center text-[#a3aca7]"
         >
-          <p class="dark:text-gray-400 text-gray-500 ">
+          <p class="dark:text-gray-400 text-gray-500">
             &copy web dev projects 2023
           </p>
 
@@ -517,5 +523,11 @@
       });
     </script>
     <script src="scripts/dark-mode.js" async></script>
+    <!-- Cloudinary responsive method -->
+    <script type="text/javascript">
+      var cl = cloudinary.Cloudinary.new({ cloud_name: 'demo' });
+      // replace 'demo' with your cloud name in the line above
+      cl.responsive();
+    </script>
   </body>
 </html>
