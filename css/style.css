@@ -1171,10 +1171,6 @@ textarea {
   text-transform: uppercase;
 }
 
-.lowercase {
-  text-transform: lowercase;
-}
-
 .italic {
   font-style: italic;
 }
@@ -1204,19 +1200,14 @@ textarea {
   color: hsl(255 11% 22% / var(--tw-text-opacity));
 }
 
-.text-veryDarkViolet {
+.text-darkViolet {
   --tw-text-opacity: 1;
-  color: hsl(260 8% 14% / var(--tw-text-opacity));
+  color: hsl(180 66% 49% / var(--tw-text-opacity));
 }
 
 .text-gray-700 {
   --tw-text-opacity: 1;
   color: rgb(55 65 81 / var(--tw-text-opacity));
-}
-
-.text-darkViolet {
-  --tw-text-opacity: 1;
-  color: hsl(180 66% 49% / var(--tw-text-opacity));
 }
 
 .text-\[\#a3aca7\] {
@@ -1232,6 +1223,21 @@ textarea {
 .text-cyan {
   --tw-text-opacity: 1;
   color: hsl(180 66% 49% / var(--tw-text-opacity));
+}
+
+.text-red {
+  --tw-text-opacity: 1;
+  color: hsl(0 87% 67% / var(--tw-text-opacity));
+}
+
+.text-veryDarkViolet {
+  --tw-text-opacity: 1;
+  color: hsl(260 8% 14% / var(--tw-text-opacity));
+}
+
+.text-gray-900 {
+  --tw-text-opacity: 1;
+  color: rgb(17 24 39 / var(--tw-text-opacity));
 }
 
 .no-underline {
@@ -1615,6 +1621,10 @@ SO IT CAN BE STYLED */
 .dark .dark\:bg-cyan {
   --tw-bg-opacity: 1;
   background-color: hsl(180 66% 49% / var(--tw-bg-opacity));
+}
+
+.dark .dark\:font-normal {
+  font-weight: 400;
 }
 
 .dark .dark\:text-white {
