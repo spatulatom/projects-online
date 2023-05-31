@@ -25,7 +25,7 @@ const addDate = () => {
   }).format(newDate);
   date.innerHTML = localDate;
 };
-addDate();
+
 document.addEventListener('DOMContentLoaded', () => {
   addDate();
 });
