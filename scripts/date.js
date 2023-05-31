@@ -17,7 +17,7 @@
 const date = document.querySelector('.date');
 const body = document.getElementById('body');
 
-const addDate = () => {
+function addDate(){
   console.log('loaded');
   let newDate = new Date(new Date().setHours(new Date().getHours() - 24));
   let localDate = new Intl.DateTimeFormat('en-GB', {
