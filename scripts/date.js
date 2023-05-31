@@ -13,22 +13,19 @@
 
 // chatGPT SUGGESTIONS:
 
-
 const date = document.querySelector('.date');
 const body = document.getElementById('body');
 
-function addDate(){
+function addDate() {
   console.log('loaded');
   let newDate = new Date(new Date().setHours(new Date().getHours() - 24));
   let localDate = new Intl.DateTimeFormat('en-GB', {
     dateStyle: 'full',
   }).format(newDate);
   date.innerHTML = localDate;
-};
+}
 
-document.addEventListener('DOMContentLoaded', () => {
-  addDate();
-});
+document.addEventListener('DOMContentLoaded', addDate());
 
 // Apologies for the confusion. You are correct; the `load` event does not typically apply to the `body` element.
 
@@ -78,3 +75,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
 // Moving the script to the end ensures that the DOM elements are a
 // vailable for manipulation when the code is executed.
+
+// COPYRIGHT DATE IN THE FOOTER:
+
+const element = document.getElementById('copyright-date');
+
+const currentDate = new Date();
+
+const year = currentDate.getFullYear();
+
+element.innerText = year;
