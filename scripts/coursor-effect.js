@@ -12,7 +12,6 @@ function cursor(e) {
   mouseCursor.style.left = e.pageX + 'px';
 }
 
-
 // cursor dissapearing on projects descriptions
 let projects = document.querySelectorAll('.cursor-effect-none');
 projects.forEach((project) => {
@@ -35,7 +34,6 @@ projects.forEach((project) => {
 //     mouseCursor.classList.remove('cursor-grow');
 //   });
 // });
-
 
 // cursor bigger on some content (currently not in use)
 // let projectBoxes = document.querySelectorAll('.bigger--white');

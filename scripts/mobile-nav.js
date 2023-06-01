@@ -6,7 +6,7 @@ let themeIcons = document.querySelectorAll('.icon');
 let mobileLinks = document.querySelectorAll('.link');
 
 // ADDING STYLING TO CLICKED LINK
-// remove class 'current' from link that has it (this class is 
+// remove class 'current' from link that has it (this class is
 // styled differently) and add that class to te link that has just bee clicked
 mobileLinks.forEach((link) => {
   console.log(mobileLinks, 'mobilelinks');
@@ -21,7 +21,6 @@ mobileLinks.forEach((link) => {
   });
 });
 
-
 // CHANGING HAMBURGER ICON STYLING DEPENDING ON A CLICK ON IT + SHOWING MOBILE MENU
 toggleButton.addEventListener('click', function () {
   toggleButton.classList.toggle('open');
@@ -35,7 +34,7 @@ mobileNavItems.forEach((item) => {
     toggleButton.classList.toggle('open');
   });
 });
- 
+
 // CHANGING HAMBURGER ICON STYLING + CLOSING MOBILE MENU UPON CLICKING ON DARK/WHITE MODE ICONS
 themeIcons.forEach((item) => {
   item.addEventListener('click', () => {

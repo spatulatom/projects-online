@@ -19,20 +19,17 @@ const dropDown = document.querySelector('.dropdown');
 
 // 2. SET UP THE COLOR OF THE ICONS DEPENDING ON FIRST LOAD AND REFRESH-
 
-
 if (!('color-theme' in localStorage)) {
   // systemIcon.classList.remove('text-cyan');
   systemIcon.classList.add('text-cyan');
   systemMobile.classList.add('text-cyan');
-  if(window.matchMedia('(prefers-color-scheme: dark)').matches){
+  if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
     dropDown.innerHTML = `<i
       id="dark"
       class="fa-solid fa-moon fa-xl cursor-pointer transition-all text-cyan"
     ></i>`;
-      systemMobile.classList.add('text-cyan');
-
-  }else{
-
+    systemMobile.classList.add('text-cyan');
+  } else {
     dropDown.innerHTML = `<i
     class="fa-solid fa-sun fa-xl cursor-pointer text-cyan"
   >
