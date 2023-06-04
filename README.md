@@ -49,7 +49,7 @@
 - Git for version control,
 - render.com for backend  node  server deployment,
 -  https://github.com/alvarotrigo/fullPage.js/ library for vertical and horizontal scroll,
-- Cloudinary for images storage and images responsivnes,
+- Cloudinary for images storage and images responsiveness,
 - Node.js, Express.js for the backend server,
 - MongoDB for contact form data storage,
 - SendGrid API for sending emails,
