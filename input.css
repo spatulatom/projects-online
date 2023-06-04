@@ -1,4 +1,3 @@
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -10,8 +9,8 @@
   left: 50%;
   position: absolute;
   -webkit-transform: translate(-50%, -50%);
-      -ms-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   pointer-events: none;
   width: 600px;
   height: 600px;
@@ -27,13 +26,12 @@
   transition: all 1.2s linear;
   z-index: 190;
   border-width: 2px;
-
 }
 .cursor-grow {
   -webkit-backdrop-filter: grayscale();
-          backdrop-filter: grayscale();
+  backdrop-filter: grayscale();
   -webkit-backdrop-filter: invert(100%);
-          backdrop-filter: invert(100%);
+  backdrop-filter: invert(100%);
   width: 300px;
   height: 300px;
 }
@@ -66,8 +64,8 @@
     left: 0;
     /* background: white; */
     -webkit-transform: rotate(0);
-        -ms-transform: rotate(0);
-            transform: rotate(0);
+    -ms-transform: rotate(0);
+    transform: rotate(0);
     -webkit-transition: all 0.5s;
     -o-transition: all 0.5s;
     transition: all 0.5s;
@@ -75,30 +73,30 @@
 
   .hamburger-middle {
     -webkit-transform: translateY(10px);
-        -ms-transform: translateY(10px);
-            transform: translateY(10px);
+    -ms-transform: translateY(10px);
+    transform: translateY(10px);
   }
 
   .hamburger-bottom {
     -webkit-transform: translateY(20px);
-        -ms-transform: translateY(20px);
-            transform: translateY(20px);
+    -ms-transform: translateY(20px);
+    transform: translateY(20px);
     /* background: white; */
   }
 
   .open {
     -webkit-transform: rotate(90deg);
-        -ms-transform: rotate(90deg);
-            transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
     -webkit-transform: translateY(0px);
-        -ms-transform: translateY(0px);
-            transform: translateY(0px);
+    -ms-transform: translateY(0px);
+    transform: translateY(0px);
   }
 
   .open .hamburger-top {
     -webkit-transform: rotate(45deg) translateY(6px) translateX(6px);
-        -ms-transform: rotate(45deg) translateY(6px) translateX(6px);
-            transform: rotate(45deg) translateY(6px) translateX(6px);
+    -ms-transform: rotate(45deg) translateY(6px) translateX(6px);
+    transform: rotate(45deg) translateY(6px) translateX(6px);
     background-color: hsl(180, 66%, 49%);
   }
 
@@ -108,8 +106,8 @@
 
   .open .hamburger-bottom {
     -webkit-transform: rotate(-45deg) translateY(6px) translateX(-6px);
-        -ms-transform: rotate(-45deg) translateY(6px) translateX(-6px);
-            transform: rotate(-45deg) translateY(6px) translateX(-6px);
+    -ms-transform: rotate(-45deg) translateY(6px) translateX(-6px);
+    transform: rotate(-45deg) translateY(6px) translateX(-6px);
     background-color: hsl(180, 66%, 49%);
   }
 }
@@ -118,8 +116,8 @@
 
 .mobile-nav {
   -webkit-transform: translateX(-100%);
-      -ms-transform: translateX(-100%);
-          transform: translateX(-100%);
+  -ms-transform: translateX(-100%);
+  transform: translateX(-100%);
   position: fixed;
   z-index: 28;
   top: 0;
@@ -148,14 +146,14 @@
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .mobile-nav__item {
@@ -183,21 +181,21 @@
   /* display: block !important; */
   opacity: 1;
   -webkit-transform: translateY(0);
-      -ms-transform: translateY(0);
-          transform: translateY(0);
+  -ms-transform: translateY(0);
+  transform: translateY(0);
 }
 
 /* SECTION 2 (PROJECTS) TOOLTIP WHEN HOVERING OVER GITHUB 
 ICONS AND AN EYE ICON UNDER PROJECT DESCRIPTION: */
 @layer utilities {
-.dark .tooltips .tooltip {
+  .dark .tooltips .tooltip {
     position: relative;
     display: inline-block;
     margin-right: 3rem;
     margin-left: 3rem;
     text-decoration: none;
   }
-.dark .tooltips .tooltip .tooltiptext {
+  .dark .tooltips .tooltip .tooltiptext {
     display: none;
     min-width: 9rem;
     background-color: black;
@@ -218,7 +216,7 @@ ICONS AND AN EYE ICON UNDER PROJECT DESCRIPTION: */
     margin-left: -4.5rem;
     font-weight: 500;
   }
- .dark .tooltips .tooltip .tooltiptext::after {
+  .dark .tooltips .tooltip .tooltiptext::after {
     content: '';
     position: absolute;
     top: 100%;
@@ -229,7 +227,6 @@ ICONS AND AN EYE ICON UNDER PROJECT DESCRIPTION: */
     border-color: white transparent transparent transparent;
   }
 
-  
   .tooltips .tooltip {
     position: relative;
     display: inline-block;
@@ -269,7 +266,6 @@ ICONS AND AN EYE ICON UNDER PROJECT DESCRIPTION: */
     border-color: gray transparent transparent transparent;
   }
 
-
   .tooltips .tooltip:hover .tooltiptext {
     display: block;
     opacity: 1;
@@ -278,9 +274,6 @@ ICONS AND AN EYE ICON UNDER PROJECT DESCRIPTION: */
   .tooltips .tooltip i {
     /* color: white; */
   }
-
-
-  
 }
 
 /* SECTION 3 (CONTACT) - CONTACT FORM: */
@@ -326,7 +319,7 @@ https://developer.mozilla.org/en-US/docs/Web/CSS/:autofill */
     margin-bottom: 15px;
     width: 100%;
     -webkit-box-sizing: border-box;
-            box-sizing: border-box;
+    box-sizing: border-box;
     outline: 0;
   }
   [type='email'] {
