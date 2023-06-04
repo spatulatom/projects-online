@@ -65,7 +65,7 @@
 - https://wave.webaim.org/ to check web accessibility,
 - https://balsamiq.com/ for wireframing.
 
-- Contact page of this project is using backend built wit Node and Express.js,
+- 'Contact page' of this project is using backend built wit Node.js, Express.js;
 SendGrid API is used for sending emails. The server is running on render.com. GitHub repository of the backend is stored <a href="https://github.com/spatulatom/my-porfolio-backend"><strong>right here »</strong></a>
 
 
