@@ -26,7 +26,6 @@
   <ol>
     <li><a href="#about-the-website">About The Website</a></li>
     <li><a href="#website-built-with">Website Built With</a></li>
-    <li><a href="#acknowledgments">Acknowledgments</a></li>
   </ol>
 </details>
 
@@ -49,7 +48,8 @@
 - GitHub pages for deployment and remote repository,
 - Git for version control,
 - render.com for backend  node  server deployment,
-- fullpage.js library for vertical and horizontal scroll,
+-  https://github.com/alvarotrigo/fullPage.js/ library for vertical and horizontal scroll,
+- Cloudinary for images storage and images responsivnes,
 - Node.js, Express.js for the backend server,
 - MongoDB for contact form data storage,
 - SendGrid API for sending emails,
@@ -71,13 +71,7 @@ SendGrid API is used for sending emails. The server is running on render.com. Gi
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- ACKNOWLEDGMENTS -->
 
-## Acknowledgments
-
-- https://alvarotrigo.com/fullPage/ for vertical and horizontal scrolling effect.
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- MARKDOWN LINKS & IMAGES -->
 
