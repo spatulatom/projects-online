@@ -18,7 +18,7 @@ const dropDown = document.querySelector('.dropdown');
 // <html> class + color ot the icons + local storage
 
 // 2. SET UP THE COLOR OF THE ICONS DEPENDING ON FIRST LOAD AND REFRESH-
-
+export default function modes() {}
 if (!('color-theme' in localStorage)) {
   // systemIcon.classList.remove('text-cyan');
   systemIcon.classList.add('text-cyan');
