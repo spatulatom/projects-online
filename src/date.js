@@ -15,7 +15,7 @@
 
 const date = document.querySelector('.date');
 const body = document.getElementById('body');
-
+export default function dates(){
 function addDate() {
   console.log('loaded');
   let newDate = new Date(new Date().setHours(new Date().getHours() - 24));
@@ -25,7 +25,7 @@ function addDate() {
   date.innerHTML = localDate;
 }
 
-document.addEventListener('DOMContentLoaded', addDate());
+document.addEventListener('DOMContentLoaded', addDate());}
 
 // Apologies for the confusion. You are correct; the `load` event does not typically apply to the `body` element.
 

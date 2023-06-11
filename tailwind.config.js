@@ -4,7 +4,8 @@ module.exports = {
   // https://tailwindcss.com/docs/content-configuration#pattern-recommendations
   // if classes used in js files we need this config
   // ['./*.html] -  any html classes in the root
-  content: ['./scripts/*.{html,js}', './index.html', './query.html', './container-query.html', './chatgpt.html'],
+  // content: ['./scripts/*.{html,js}', './index.html', './query.html', './container-query.html', './chatgpt.html'],
+  content: ['index.html','./src/**/*.{js,jsx,ts,tsx,html}'],
   theme: {
     extend: {
       fontFamily: {
@@ -24,15 +25,15 @@ module.exports = {
         whiteish: 'rgb(255, 255, 255, 0.9)',
         blackish: 'rgb(30, 30, 45,0.8)',
       },
-      backgroundImage: {
-        road: "url('../imgs/road3.jpg')",
-        view: "url('../imgs/view.jpg')",
-        wall: "url('../imgs/wall.jpg')",
-        keboardWhite: "url('../imgs/keyboard-white.jpg')",
-        keyboardDark: "url('../imgs/keyboard-dark.png')",
-          'header-desktop': "url('../imgs/bg-header-desktop.png')",
+      // backgroundImage: {
+      //   road: "url('/images/road3.jpg')",
+      //   view: "url('/images/view.jpg')",
+      //   wall: "url('/images/wall.jpg')",
+      //   keboardWhite: "url('/images/keyboard-white.jpg')",
+      //   keyboardDark: "url('/images/keyboard-dark.png')",
+      //     'header-desktop': "url('/images/bg-header-desktop.png')",
       
-      },
+      // },
       spacing: {
         180: '32rem',
       },

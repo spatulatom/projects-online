@@ -5,6 +5,8 @@ let themeIcons = document.querySelectorAll('.icon');
 
 let mobileLinks = document.querySelectorAll('.link');
 
+
+export default function mobileMenu(){
 // ADDING STYLING TO CLICKED LINK
 // remove class 'current' from link that has it (this class is
 // styled differently) and add that class to te link that has just bee clicked
@@ -42,3 +44,4 @@ themeIcons.forEach((item) => {
     toggleButton.classList.toggle('open');
   });
 });
+}

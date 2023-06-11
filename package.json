@@ -4,8 +4,9 @@
   "description": "<a name=\"readme-top\"></a>",
   "main": "tailwind.config.js",
   "scripts": {
-    "watch": "tailwindcss -i ./input.css -o ./css/style.css --watch",
-    "build": "tailwindcss -i ./input.css -o ./css/style.css"
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
   },
   "repository": {
     "type": "git",
@@ -19,7 +20,10 @@
   },
   "homepage": "https://github.com/spatulatom/projects-online#readme",
   "devDependencies": {
-    "tailwindcss": "^3.2.4"
+    "autoprefixer": "^10.4.14",
+    "postcss": "^8.4.24",
+    "tailwindcss": "^3.3.2",
+    "vite": "^4.3.9"
   },
   "dependencies": {
     "@tailwindcss/container-queries": "^0.1.1"
