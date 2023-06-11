@@ -1,13 +1,13 @@
 // above: https://laravel.com/docs/9.x/vite#working-with-blade-and-routes
-// "When referencing assets in your JavaScript or CSS, Vite automatically processes 
-// and versions them. In addition, when building Blade based applications, Vite 
-// can also process and version static assets that you reference solely in Blade 
+// "When referencing assets in your JavaScript or CSS, Vite automatically processes
+// and versions them. In addition, when building Blade based applications, Vite
+// can also process and version static assets that you reference solely in Blade
 // templates.
 
-// However, in order to accomplish this, you need to make Vite aware of your 
-// assets by importing the static assets into the application's entry point. 
-// For example, if you want to process and version all images stored in 
-// resources/images and all fonts stored in resources/fonts, you should add the 
+// However, in order to accomplish this, you need to make Vite aware of your
+// assets by importing the static assets into the application's entry point.
+// For example, if you want to process and version all images stored in
+// resources/images and all fonts stored in resources/fonts, you should add the
 // following in your application's resources/js/app.js entry point:"
 // 1. yet static assets refrenced in html dont have to be imported into entry point -
 // becuse html is an entry point (we can define in configs more entry points)
@@ -16,28 +16,25 @@
 // assets have to be imported into an entry point. I suppose if they are imported here
 // is fine since this file is imported into main.js which is imported into html in
 // a script tag
-// 3. I looks like we can import the files one by one with this syntax: 
+// 3. I looks like we can import the files one by one with this syntax:
 // import eb from '../images/eb.png'
-// or  use this syntax: 
+// or  use this syntax:
 // const modules = import.meta.glob([
-  // '../images/**',
-  // '../fonts/**',
-  // '../dist/assets/**',
+// '../images/**',
+// '../fonts/**',
+// '../dist/assets/**',
 // ]);
-// 4. When it comes to absolute vs relative paths used in img scr attributte it looks 
-// like it dosent matter but just in case its better to use absolute paths when app 
+// 4. When it comes to absolute vs relative paths used in img scr attributte it looks
+// like it dosent matter but just in case its better to use absolute paths when app
 // deployed and server confg changes and all those cases
 
-
-import next13 from '../images/next13beta.png'
-import search from '../images/search.png'
-import bookmark from '../images/bookmark.png'
-import eb from '../images/eb.png'
-import efashion from '../images/e-fashion3.png'
-import td1 from '../images/td1.png'
-import tdvanilla from '../images/todovanillajs.png'
-
-
+import next13 from '../images/next13beta.png';
+import search from '../images/search.png';
+import bookmark from '../images/bookmark.png';
+import eb from '../images/eb.png';
+import efashion from '../images/e-fashion3.png';
+import td1 from '../images/td1.png';
+import tdvanilla from '../images/todovanillajs.png';
 
 const myArray = [
   {
@@ -107,18 +104,15 @@ const myArray = [
   },
 ];
 
-
-
 const container = document.getElementById('projects');
 console.log('My arrayy');
-export default function renderProject(){
-myArray.forEach((obj) => {
+export default function renderProject() {
+  myArray.forEach((obj) => {
+    // Create a temporary container element
+    const tempContainer = document.createElement('div');
 
-  // Create a temporary container element
-  const tempContainer = document.createElement('div');
-
-  // Create the div structure using template literals
-  const div = `<div class="slide flex justify-center items-center p-12">
+    // Create the div structure using template literals
+    const div = `<div class="slide flex justify-center items-center p-12">
   <!-- there is another div in here added by fullpage and has probably set
 responsive width, the class on it is .fp-overflow-->
   <div
@@ -134,8 +128,8 @@ responsive width, the class on it is .fp-overflow-->
       <img
         class="hidden lg:block w-screen h-auto rounded-lg"
         src=${obj.img}
-  
-
+        fetchpriority="low"
+        loading="lazy"
         width="500"
         height="300"
         alt="screenshot of the project"
@@ -203,15 +197,16 @@ responsive width, the class on it is .fp-overflow-->
   </div>
 </div>`;
 
-  // Set the HTML content of the temporary container
-  tempContainer.innerHTML = div;
+    // Set the HTML content of the temporary container
+    tempContainer.innerHTML = div;
 
-  // Extract the first child element (the div) from the temporary container
+    // Extract the first child element (the div) from the temporary container
 
-  console.log('DIV', tempContainer);
-  // Append the div element to the container
-  container.appendChild(tempContainer);
-});}
+    console.log('DIV', tempContainer);
+    // Append the div element to the container
+    container.appendChild(tempContainer);
+  });
+}
 
 // By adding "type": "module" to your package.json file,
 //  you're indicating that your project supports ECMAScript
