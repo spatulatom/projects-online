@@ -7,7 +7,7 @@
     ></i>`,y.classList.add("text-cyan")):"mode-system"in localStorage?(i(),m.classList.add("text-cyan"),o.innerHTML=`<i
       class="fa-solid fa-sun fa-xl cursor-pointer text-cyan"
     >
-    </i>`,l.classList.add("text-cyan")):(i(),u.classList.add("text-darkViolet"),o.innerHTML=`<i
+    </i>`,l.classList.add("text-cyan")):(i(),u.classList.add("text-cyan"),o.innerHTML=`<i
       class="fa-solid fa-sun fa-xl cursor-pointer text-cyan"
     >
     </i>`,f.classList.add("text-cyan")):(i(),m.classList.add("text-cyan"),l.classList.add("text-cyan"),window.matchMedia("(prefers-color-scheme: dark)").matches?(o.innerHTML=`<i

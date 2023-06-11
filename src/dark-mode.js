@@ -85,7 +85,7 @@ if (!('color-theme' in localStorage)) {
       systemMobile.classList.add('text-cyan');
     } else {
       resetColorsDesktop();
-      lightIcon.classList.add('text-darkViolet');
+      lightIcon.classList.add('text-cyan');
       dropDown.innerHTML = `<i
       class="fa-solid fa-sun fa-xl cursor-pointer text-cyan"
     >
