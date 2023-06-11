@@ -10,7 +10,7 @@
     'projects-online' is a portfolio website. It consists of the frontend and the backend sections - this repository contains its frontend source code.
        <br />
            <br />
-     <a href="https://spatulatom.github.io/projects-online/"><strong>VIEW THE DEPLOYED WEBSITE »</strong></a>
+     <a href="https://projects-online.vercel.app/"><strong>VIEW THE DEPLOYED WEBSITE »</strong></a>
     <br />
        <br />
     <a href="https://github.com/spatulatom/my-porfolio-backend"><strong>See also the backend source code of this website right here »</strong></a>
@@ -45,7 +45,10 @@
 - HTML
 - Tailwind,
 - JavaScript,
-- GitHub pages for deployment and remote repository,
+- Vite for development server,
+- Vite for Optimized Build,
+- Vercel for Deployment
+- GitHub remote repository,
 - Git for version control,
 - render.com for backend  node  server deployment,
 -  https://github.com/alvarotrigo/fullPage.js/ library for vertical and horizontal scroll,
