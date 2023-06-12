@@ -23,7 +23,7 @@ const dropDown = document.querySelector('.dropdown');
 // bugs in the app becuse of that even though js was done on the premises that
 // the added class takes prcedence
 
-function resetColorsDesktop() {
+function resetColors() {
   lightIcon.classList.remove('text-cyan');
   darkIcon.classList.remove('text-cyan');
   systemIcon.classList.remove('text-cyan');
@@ -35,7 +35,7 @@ function resetColorsDesktop() {
 // 2. SET UP THE COLOR OF THE ICONS DEPENDING ON FIRST LOAD AND REFRESH-
 export default function modes() {}
 if (!('color-theme' in localStorage)) {
-  resetColorsDesktop();
+  resetColors();
   systemIcon.classList.add('text-cyan');
   systemMobile.classList.add('text-cyan');
   if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
@@ -57,7 +57,7 @@ if (!('color-theme' in localStorage)) {
       window.matchMedia('(prefers-color-scheme: dark)').matches)
   ) {
     if ('mode-system' in localStorage) {
-      resetColorsDesktop();
+      resetColors();
       systemIcon.classList.add('text-cyan');
       dropDown.innerHTML = `<i
       id="dark"
@@ -65,7 +65,7 @@ if (!('color-theme' in localStorage)) {
     ></i>`;
       systemMobile.classList.add('text-cyan');
     } else {
-      resetColorsDesktop();
+      resetColors();
       darkIcon.classList.add('text-cyan');
       dropDown.innerHTML = `<i
       id="dark"
@@ -75,7 +75,7 @@ if (!('color-theme' in localStorage)) {
     }
   } else {
     if ('mode-system' in localStorage) {
-      resetColorsDesktop();
+      resetColors();
       systemIcon.classList.add('text-cyan');
       dropDown.innerHTML = `<i
       class="fa-solid fa-sun fa-xl cursor-pointer text-cyan"
@@ -83,7 +83,7 @@ if (!('color-theme' in localStorage)) {
     </i>`;
       systemMobile.classList.add('text-cyan');
     } else {
-      resetColorsDesktop();
+      resetColors();
       lightIcon.classList.add('text-cyan');
       dropDown.innerHTML = `<i
       class="fa-solid fa-sun fa-xl cursor-pointer text-cyan"
@@ -99,7 +99,7 @@ if (!('color-theme' in localStorage)) {
 window
   .matchMedia('(prefers-color-scheme: dark)')
   .addEventListener('change', ({ matches }) => {
-    resetColorsDesktop();
+    resetColors();
     systemIcon.classList.add('text-cyan');
 
     systemMobile.classList.add('text-cyan');
@@ -137,7 +137,7 @@ lightMobile.addEventListener('click', lightMode);
 systemMobile.addEventListener('click', systemMode);
 
 function darkMode() {
-  resetColorsDesktop();
+  resetColors();
   darkIcon.classList.add('text-cyan');
   dropDown.innerHTML = `<i
   id="dark"
@@ -150,7 +150,7 @@ function darkMode() {
   localStorage.removeItem('mode-system');
 }
 function lightMode() {
-  resetColorsDesktop();
+  resetColors();
   lightIcon.classList.add('text-cyan');
   dropDown.innerHTML = `<i
   class="fa-solid fa-sun fa-xl cursor-pointer text-cyan"
@@ -164,7 +164,7 @@ function lightMode() {
   localStorage.removeItem('mode-system');
 }
 function systemMode() {
-  resetColorsDesktop();
+  resetColors();
   systemIcon.classList.add('text-cyan');
 
   systemMobile.classList.add('text-cyan');
