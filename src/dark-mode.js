@@ -35,7 +35,6 @@ function resetColorsDesktop() {
 // 2. SET UP THE COLOR OF THE ICONS DEPENDING ON FIRST LOAD AND REFRESH-
 export default function modes() {}
 if (!('color-theme' in localStorage)) {
-  // systemIcon.classList.remove('text-gray-500');
   resetColorsDesktop();
   systemIcon.classList.add('text-cyan');
   systemMobile.classList.add('text-cyan');
@@ -100,14 +99,9 @@ if (!('color-theme' in localStorage)) {
 window
   .matchMedia('(prefers-color-scheme: dark)')
   .addEventListener('change', ({ matches }) => {
-    // lightIcon.classList.remove('text-darkViolet');
-    // darkIcon.classList.remove('text-cyan');
-    // systemIcon.classList.remove('text-gray-500');
     resetColorsDesktop();
     systemIcon.classList.add('text-cyan');
-    // mobile nav
-    // lightMobile.classList.remove('text-darkViolet');
-    // darkMobile.classList.remove('text-cyan');
+
     systemMobile.classList.add('text-cyan');
 
     if (matches) {
@@ -143,19 +137,12 @@ lightMobile.addEventListener('click', lightMode);
 systemMobile.addEventListener('click', systemMode);
 
 function darkMode() {
-  // lightIcon.classList.remove('text-darkViolet');
-  // systemIcon.classList.remove('text-cyan');
-  // darkIcon.classList.remove('text-gray-500')
   resetColorsDesktop();
   darkIcon.classList.add('text-cyan');
   dropDown.innerHTML = `<i
   id="dark"
   class="fa-solid fa-moon fa-xl cursor-pointer transition-all text-cyan"
 ></i>`;
-  // mobile nav
-  // lightMobile.classList.remove('text-cyan');
-  // systemMobile.classList.remove('text-cyan');
-  // darkMobile.classList.remove('text-gray-500')
 
   darkMobile.classList.add('text-cyan');
   document.documentElement.classList.add('dark');
@@ -163,9 +150,6 @@ function darkMode() {
   localStorage.removeItem('mode-system');
 }
 function lightMode() {
-  // darkIcon.classList.remove('text-cyan');
-  // systemIcon.classList.remove('text-cyan');
-  // lightIcon.classList.remove('text-gray-500');
   resetColorsDesktop();
   lightIcon.classList.add('text-cyan');
   dropDown.innerHTML = `<i
@@ -173,28 +157,16 @@ function lightMode() {
 >
 </i>`;
   // mobile nav
-  // darkMobile.classList.remove('text-cyan');
-  // systemMobile.classList.remove('text-cyan');
-  // lightMobile.classList.remove('text-gray-500');
+
   lightMobile.classList.add('text-cyan');
   document.documentElement.classList.remove('dark');
   localStorage.setItem('color-theme', 'light');
   localStorage.removeItem('mode-system');
 }
 function systemMode() {
-  // lightIcon.classList.remove('text-darkViolet');
-  // darkIcon.classList.remove('text-cyan');
-  // systemIcon.classList.remove('text-gray-500');
   resetColorsDesktop();
   systemIcon.classList.add('text-cyan');
-  //   dropDown.innerHTML = `<i
-  //   id="system"
-  //   class="fa-solid fa-desktop fa-xl cursor-pointer text-cyan"
-  // ></i`
-  // mobile nav
-  // lightMobile.classList.remove('text-cyan');
-  // darkMobile.classList.remove('text-cyan');
-  // systemMobile.classList.remove('text-gray-500');
+
   systemMobile.classList.add('text-cyan');
 
   if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
