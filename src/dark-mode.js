@@ -95,10 +95,10 @@ if (!('color-theme' in localStorage)) {
 }
 // listen for OS mode changes (user changes their OS mode preference
 // while using your app)
-
-window
-  .matchMedia('(prefers-color-scheme: dark)')
-  .addEventListener('change', ({ matches }) => {
+const mediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
+  mediaQuery.addEventListener('change', ({ matches }) => {
+    console.log('EEEEEEVENTTTT listener triggered.');
+    
     resetColors();
     systemIcon.classList.add('text-cyan');
 
@@ -124,6 +124,16 @@ window
     </i>`;
     }
   });
+
+// clean up: 
+// Add event listener to remove the event listener when the user navigates away
+window.addEventListener('unload', () => {
+  setTimeout(() => {
+    mediaQuery.removeEventListener('change', handleChange);
+    console.log('Event listener removed.');
+  }, 1000); // Delay the removal for 1 second (adjust as needed) to see it ind the dev tolls but it dosent show
+});
+
 
 // 3. Listen for the click, set up: html class to 'dark' or remove the class +
 // SET UP COLOR OF THE ICONS WHEN MAUALLY SWITCHED + SAVE MODE IN LOCALSTORAGE
