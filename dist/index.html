@@ -32,11 +32,14 @@
 
    
     <!-- google fonts -->
+    <!-- https://web.dev/optimize-cls/?utm_source=lighthouse&utm_medium=devtools#web-fonts -->
+    <!-- the art above explains why web fonts can cause layout shift and how to prevent that
+    for example by using font-display: optional,  <link rel=preload> -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Figtree:wght@300;400;500;600;700&family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap"
-      rel="stylesheet"
+      rel="preload"
     />
 
     <!-- tailwind -->
@@ -57,7 +60,7 @@
     </script>
 
     <!-- Google tag (gtag.js) for Google Analitics -->
-    <script
+    <!-- <script
       async
       src="https://www.googletagmanager.com/gtag/js?id=G-2Q4Z5D4HXG"
       defer
@@ -70,7 +73,7 @@
       gtag('js', new Date());
 
       gtag('config', 'G-2Q4Z5D4HXG');
-    </script>
+    </script> -->
 
     <!-- include the Cloudinary JavaScript library -->
     <!-- https://cloudinary.com/documentation/responsive_client_side_js -->
