@@ -28,7 +28,7 @@
 // like it dosent matter but just in case its better to use absolute paths when app
 // deployed and server confg changes and all those cases
 
-import { myArray } from "./products-array";
+import { myArray } from './products-array';
 
 const container = document.getElementById('projects');
 console.log('My arrayy');
