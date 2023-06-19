@@ -1,31 +1,44 @@
-// const date = document.querySelector('.date');
-// const body = document.getElementById('body');
+// OOP programming:
+export default class LocalDate {
+  constructor() {
+    this.date = new Date(new Date().setHours(new Date().getHours() - 24));
+    this.selector = document.querySelector(`.date`);
+    document.addEventListener('DOMContentLoaded', this.addDate.bind(this));
+  }
 
-// const addDate = () => {
-//   console.log('loaded');
-//   let newDate = new Date(new Date().setHours(new Date().getHours() - 24));
-//   localDate = new Intl.DateTimeFormat('en-GB', { dateStyle: 'full' }).format(
-//     newDate
-//   );
-//   date.innerHTML = localDate;
-// };
-// body.addEventListener('load', addDate());
-
-// chatGPT SUGGESTIONS:
-
-const date = document.querySelector('.date');
-const body = document.getElementById('body');
-export default function dates(){
-function addDate() {
-  console.log('loaded');
-  let newDate = new Date(new Date().setHours(new Date().getHours() - 24));
-  let localDate = new Intl.DateTimeFormat('en-GB', {
-    dateStyle: 'full',
-  }).format(newDate);
-  date.innerHTML = localDate;
+  addDate() {
+    let local = new Intl.DateTimeFormat('en-GB', {
+      dateStyle: 'full',
+    }).format(this.date);
+    this.selector.innerHTML = local;
+  }
 }
 
-document.addEventListener('DOMContentLoaded', addDate());}
+
+// PREVOIUS CODE IN FUNCTIONAL PROGRAMMING:
+
+// const date = document.querySelector('.date');
+// const body = document.getElementById('body');
+// export default function dates(){
+// function addDate() {
+//   console.log('loaded');
+//   let newDate = new Date(new Date().setHours(new Date().getHours() - 24));
+//   let localDate = new Intl.DateTimeFormat('en-GB', {
+//     dateStyle: 'full',
+//   }).format(newDate);
+//   date.innerHTML = localDate;
+// }
+
+// document.addEventListener('DOMContentLoaded', addDate());}
+
+// const date = new LocalDate();
+// console.log('DATEEEEE')
+//  document.addEventListener('DOMContentLoaded', date.addDate);
+
+
+
+
+
 
 // Apologies for the confusion. You are correct; the `load` event does not typically apply to the `body` element.
 
