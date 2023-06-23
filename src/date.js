@@ -14,7 +14,6 @@ export default class LocalDate {
   }
 }
 
-
 // PREVOIUS CODE IN FUNCTIONAL PROGRAMMING:
 
 // const date = document.querySelector('.date');
@@ -34,11 +33,6 @@ export default class LocalDate {
 // const date = new LocalDate();
 // console.log('DATEEEEE')
 //  document.addEventListener('DOMContentLoaded', date.addDate);
-
-
-
-
-
 
 // Apologies for the confusion. You are correct; the `load` event does not typically apply to the `body` element.
 
