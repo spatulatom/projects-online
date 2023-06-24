@@ -1,5 +1,6 @@
 import './fullpage.css'
 import './index.css'
+// some non essential css can be downladed dynamiclly here to speed up loadong of the page
 
 import modes from "./dark-mode.js";
 import contactForm from "./contact-form.js";
