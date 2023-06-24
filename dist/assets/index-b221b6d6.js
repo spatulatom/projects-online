@@ -16,19 +16,19 @@
     ></i>`,l.classList.add("text-cyan")):o.innerHTML=`<i
     class="fa-solid fa-sun fa-xl cursor-pointer text-cyan"
   >
-  </i>`);const v=window.matchMedia("(prefers-color-scheme: dark)");v.addEventListener("change",({matches:e})=>{console.log("EEEEEEVENTTTT listener triggered."),i(),d.classList.add("text-cyan"),l.classList.add("text-cyan"),e?(localStorage.setItem("color-theme","dark"),localStorage.setItem("mode-system","system"),document.documentElement.classList.add("dark"),o.innerHTML=`<i
+  </i>`);const k=window.matchMedia("(prefers-color-scheme: dark)");k.addEventListener("change",({matches:e})=>{console.log("EEEEEEVENTTTT listener triggered."),i(),d.classList.add("text-cyan"),l.classList.add("text-cyan"),e?(localStorage.setItem("color-theme","dark"),localStorage.setItem("mode-system","system"),document.documentElement.classList.add("dark"),o.innerHTML=`<i
       id="dark"
       class="fa-solid fa-moon fa-xl cursor-pointer transition-all text-cyan"
     ></i>`,console.log("change to dark mode!")):(console.log("change to light mode!"),localStorage.setItem("color-theme","light"),localStorage.setItem("mode-system","system"),document.documentElement.classList.remove("dark"),o.innerHTML=`<i
       class="fa-solid fa-sun fa-xl cursor-pointer text-cyan"
     >
-    </i>`)});window.addEventListener("unload",()=>{setTimeout(()=>{v.removeEventListener("change",handleChange),console.log("Event listener removed.")},1e3)});g.addEventListener("click",w);u.addEventListener("click",L);d.addEventListener("click",k);y.addEventListener("click",w);f.addEventListener("click",L);l.addEventListener("click",k);function w(){i(),g.classList.add("text-cyan"),o.innerHTML=`<i
+    </i>`)});g.addEventListener("click",v);u.addEventListener("click",w);d.addEventListener("click",L);y.addEventListener("click",v);f.addEventListener("click",w);l.addEventListener("click",L);function v(){i(),g.classList.add("text-cyan"),o.innerHTML=`<i
   id="dark"
   class="fa-solid fa-moon fa-xl cursor-pointer transition-all text-cyan"
-></i>`,y.classList.add("text-cyan"),document.documentElement.classList.add("dark"),localStorage.setItem("color-theme","dark"),localStorage.removeItem("mode-system")}function L(){i(),u.classList.add("text-cyan"),o.innerHTML=`<i
+></i>`,y.classList.add("text-cyan"),document.documentElement.classList.add("dark"),localStorage.setItem("color-theme","dark"),localStorage.removeItem("mode-system")}function w(){i(),u.classList.add("text-cyan"),o.innerHTML=`<i
   class="fa-solid fa-sun fa-xl cursor-pointer text-cyan"
 >
-</i>`,f.classList.add("text-cyan"),document.documentElement.classList.remove("dark"),localStorage.setItem("color-theme","light"),localStorage.removeItem("mode-system")}function k(){i(),d.classList.add("text-cyan"),l.classList.add("text-cyan"),window.matchMedia("(prefers-color-scheme: dark)").matches?(localStorage.setItem("color-theme","dark"),localStorage.setItem("mode-system","system"),document.documentElement.classList.add("dark"),o.innerHTML=`<i
+</i>`,f.classList.add("text-cyan"),document.documentElement.classList.remove("dark"),localStorage.setItem("color-theme","light"),localStorage.removeItem("mode-system")}function L(){i(),d.classList.add("text-cyan"),l.classList.add("text-cyan"),window.matchMedia("(prefers-color-scheme: dark)").matches?(localStorage.setItem("color-theme","dark"),localStorage.setItem("mode-system","system"),document.documentElement.classList.add("dark"),o.innerHTML=`<i
     id="dark"
     class="fa-solid fa-moon fa-xl cursor-pointer transition-all text-cyan"
   ></i>`):(localStorage.setItem("color-theme","light"),localStorage.setItem("mode-system","system"),document.documentElement.classList.remove("dark"),o.innerHTML=`<i
