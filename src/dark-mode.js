@@ -127,12 +127,13 @@ const mediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
 
 // clean up: 
 // Add event listener to remove the event listener when the user navigates away
-window.addEventListener('unload', () => {
-  setTimeout(() => {
-    mediaQuery.removeEventListener('change', handleChange);
-    console.log('Event listener removed.');
-  }, 1000); // Delay the removal for 1 second (adjust as needed) to see it ind the dev tolls but it dosent show
-});
+// https://web.dev/bfcache/?utm_source=lighthouse&utm_medium=lr#never-use-the-unload-event
+// window.addEventListener('unload', () => {
+//   setTimeout(() => {
+//     mediaQuery.removeEventListener('change', handleChange);
+//     console.log('Event listener removed.');
+//   }, 1000); // Delay the removal for 1 second (adjust as needed) to see it ind the dev tolls but it dosent show
+// });
 
 
 // 3. Listen for the click, set up: html class to 'dark' or remove the class +
