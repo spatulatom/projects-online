@@ -59,6 +59,7 @@ responsive width, the class on it is .fp-overflow-->
         width="500"
         height="300"
         alt="screenshot of the project"
+        title="Project's screenshot"
       />
     </a>
 
