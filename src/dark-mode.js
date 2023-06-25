@@ -1,4 +1,4 @@
-'use strict'
+'use strict';
 
 const lightIcon = document.getElementById('light');
 const darkIcon = document.getElementById('dark');
@@ -98,36 +98,36 @@ if (!('color-theme' in localStorage)) {
 // listen for OS mode changes (user changes their OS mode preference
 // while using your app)
 const mediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
-  mediaQuery.addEventListener('change', ({ matches }) => {
-    console.log('EEEEEEVENTTTT listener triggered.');
-    
-    resetColors();
-    systemIcon.classList.add('text-cyan');
+mediaQuery.addEventListener('change', ({ matches }) => {
+  console.log('EEEEEEVENTTTT listener triggered.');
 
-    systemMobile.classList.add('text-cyan');
+  resetColors();
+  systemIcon.classList.add('text-cyan');
 
-    if (matches) {
-      localStorage.setItem('color-theme', 'dark');
-      localStorage.setItem('mode-system', 'system');
-      document.documentElement.classList.add('dark');
-      dropDown.innerHTML = `<i
+  systemMobile.classList.add('text-cyan');
+
+  if (matches) {
+    localStorage.setItem('color-theme', 'dark');
+    localStorage.setItem('mode-system', 'system');
+    document.documentElement.classList.add('dark');
+    dropDown.innerHTML = `<i
       id="dark"
       class="fa-solid fa-moon fa-xl cursor-pointer transition-all text-cyan"
     ></i>`;
-      console.log('change to dark mode!');
-    } else {
-      console.log('change to light mode!');
-      localStorage.setItem('color-theme', 'light');
-      localStorage.setItem('mode-system', 'system');
-      document.documentElement.classList.remove('dark');
-      dropDown.innerHTML = `<i
+    console.log('change to dark mode!');
+  } else {
+    console.log('change to light mode!');
+    localStorage.setItem('color-theme', 'light');
+    localStorage.setItem('mode-system', 'system');
+    document.documentElement.classList.remove('dark');
+    dropDown.innerHTML = `<i
       class="fa-solid fa-sun fa-xl cursor-pointer text-cyan"
     >
     </i>`;
-    }
-  });
+  }
+});
 
-// clean up: 
+// clean up:
 // Add event listener to remove the event listener when the user navigates away
 // https://web.dev/bfcache/?utm_source=lighthouse&utm_medium=lr#never-use-the-unload-event
 // window.addEventListener('unload', () => {
@@ -136,7 +136,6 @@ const mediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
 //     console.log('Event listener removed.');
 //   }, 1000); // Delay the removal for 1 second (adjust as needed) to see it ind the dev tolls but it dosent show
 // });
-
 
 // 3. Listen for the click, set up: html class to 'dark' or remove the class +
 // SET UP COLOR OF THE ICONS WHEN MAUALLY SWITCHED + SAVE MODE IN LOCALSTORAGE
