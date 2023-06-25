@@ -1,4 +1,5 @@
 'use strict';
+// module i think by default in strict mode
 
 const lightIcon = document.getElementById('light');
 const darkIcon = document.getElementById('dark');
