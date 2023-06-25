@@ -1,3 +1,5 @@
+'use strict'
+
 const lightIcon = document.getElementById('light');
 const darkIcon = document.getElementById('dark');
 const systemIcon = document.getElementById('system');
