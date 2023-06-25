@@ -1,3 +1,4 @@
+'use strict'
 // OOP programming:
 export default class LocalDate {
   constructor() {
