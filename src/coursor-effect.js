@@ -2,7 +2,7 @@ let mouseCursor = document.querySelector('.cursor');
 
 window.addEventListener('mousemove', cursor);
 
-function cursor(e) {
+export default function cursor(e) {
   console.log('cursor');
   // if we console.log(e) we get MouseEvent, we will only
   // use pageY and pageX and this will give us exact position
