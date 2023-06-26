@@ -71,20 +71,17 @@ responsive width, the class on it is .fp-overflow-->
         class="p-6 w-[120%] dark:opacity-100 bg-white dark:bg-veryDarkBlue xl:absolute right-0 border-t-2 border-b-2 border-grayishViolet dark:border-white z-10"
       >
         <h2
-          title="Project's title"
           class="text-darkViolet dark:text-cyan text-center mb-1 font-bold uppercase"
         >
          ${obj.h2}
         </h2>
         <p
-          title="Project's description"
           class="text-xs lg:text-sm text-gray-600 dark:text-gray-300 mb-2 text-justify"
         >
          ${obj.p}
        
         </p>
         <h3
-          title="Technologies used"
           class="text-darkViolet dark:text-cyan font-semibold text-right text-xs mb-3"
         >
        ${obj.h3}
