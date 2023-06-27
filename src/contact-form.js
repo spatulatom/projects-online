@@ -64,6 +64,6 @@ function contactForm() {
   };
 
   formData.addEventListener('submit', handleFormSubmit);
-};
+}
 
 export default contactForm;
