@@ -1,4 +1,4 @@
-'use strict'
+'use strict';
 // module i think by default in strict mode
 
 // OOP programming:
