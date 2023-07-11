@@ -21,6 +21,7 @@
   "homepage": "https://github.com/spatulatom/projects-online#readme",
   "devDependencies": {
     "autoprefixer": "^10.4.14",
+    "jest": "^29.6.1",
     "postcss": "^8.4.24",
     "tailwindcss": "^3.3.2",
     "vite": "^4.3.9"
