@@ -3,9 +3,11 @@
 
 // OOP programming:
  class LocalDate {
+  private date: Date;
+  private selector: HTMLElement;
   constructor() {
     this.date = new Date(new Date().setHours(new Date().getHours() - 24));
-    this.selector = document.querySelector(`.date`);
+    this.selector = document.querySelector(`.date`) as HTMLElement;
     // one option:
     // document.addEventListener('DOMContentLoaded', this.addDate.bind(this));
 
@@ -100,10 +102,21 @@
 
 // COPYRIGHT DATE IN THE FOOTER:
 
-const element = document.getElementById('copyright-date');
+// const element = document.getElementById('copyright-date');
 
-const currentDate = new Date();
+// const currentDate = new Date();
 
-const year = currentDate.getFullYear();
+// const year = currentDate.getFullYear();
 
-element.innerText = year;
+// element.innerText = year;
+
+// ts version: 
+const element: HTMLElement | null = document.getElementById('copyright-date');
+
+const currentDate: Date = new Date();
+
+const year: number = currentDate.getFullYear();
+
+if (element !== null) {
+  element.innerText = year.toString();
+}
