@@ -1,10 +1,12 @@
 import { addDate } from "./date";
 
+import (addDate)
+
 test('addDate should insert the formatted date as innerHTML', () => {
     const myInstance = new MyClass();
     myInstance.date = new Date();
     myInstance.selector = document.createElement('div');
-    myInstance.addDate();
+    addDate();
     const local = new Intl.DateTimeFormat('en-GB', {
       dateStyle: 'full',
     }).format(myInstance.date);

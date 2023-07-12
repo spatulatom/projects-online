@@ -1,6 +1,7 @@
 {
   "name": "projects-online",
   "version": "1.0.0",
+  "type": "module",
   "description": "<a name=\"readme-top\"></a>",
   "main": "tailwind.config.js",
   "scripts": {

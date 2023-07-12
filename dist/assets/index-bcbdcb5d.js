@@ -116,4 +116,4 @@ responsive width, the class on it is .fp-overflow-->
       </div>
     </div>
   </div>
-</div>`;s.innerHTML=m,console.log("DIV",s),U.appendChild(s)})}let u=document.querySelector(".cursor");window.addEventListener("mousemove",T);function T(e){console.log("cursor"),u.style.top=e.pageY+"px",u.style.left=e.pageX+"px"}let _=document.querySelectorAll(".cursor-effect-none");_.forEach(e=>{e.addEventListener("mouseover",()=>{u.classList.add("opacity-0")}),e.addEventListener("mouseleave",()=>{u.classList.remove("opacity-0")})});j();console.log("ADD DATEEEEE",R());P();z();T();
+</div>`;s.innerHTML=m,console.log("DIV",s),U.appendChild(s)})}let u=document.querySelector(".cursor");window.addEventListener("mousemove",T);function T(e){console.log("cursor"),u.style.top=e.pageY+"px",u.style.left=e.pageX+"px"}let _=document.querySelectorAll(".cursor-effect-none");_.forEach(e=>{e.addEventListener("mouseover",()=>{u.classList.add("opacity-0")}),e.addEventListener("mouseleave",()=>{u.classList.remove("opacity-0")})});j();R();P();z();T();
