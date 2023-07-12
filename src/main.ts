@@ -17,8 +17,8 @@ contactForm()
 
 // or we can just execute its method - that method has to have its 'this' bound plus need 
 // to be exported on its own
-console.log('ADD DATEEEEE', addDate())
-addDate
+
+addDate()
 mobileMenu()
 renderProject()
 cursor()
