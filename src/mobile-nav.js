@@ -1,9 +1,17 @@
+// "use strict" 
+//   // because this is a module, I'm strict by default
+
+
 let toggleButton = document.getElementById('menu-btn');
 let mobileNav = document.querySelector('.mobile-nav');
 let mobileNavItems = document.querySelectorAll('.mobile-nav__item a');
 let themeIcons = document.querySelectorAll('.icon');
 
 let mobileLinks = document.querySelectorAll('.link');
+
+
+
+
 
 export default function mobileMenu() {
   // ADDING STYLING TO CLICKED LINK
