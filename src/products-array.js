@@ -20,7 +20,7 @@ export const myArray = [
     a1: 'https://spa-one-view.vercel.app',
     img: `${search}`,
     h2: `'search item' (React Testing Library, Next.js, TypeScript,
-      Tailwind CSS)'`,
+      Tailwind CSS)`,
     p: 'A Single-Page Application (SPA) with just one view, which displays a paginated list of products. This project is built using Next.js with TypeScript, providing me with an opportunity to practice my skills with React Testing Library. During testing, I mock the APIs to replicate their behavior, allowing me to test the frontend effectively. The app includes a search bar that enables users to search and filter products based on their preferences. The pagination and filtering functionalities are reflected in the URL, allowing users to easily copy and paste the URL into another browser tab for later reference.',
     h3: ' React Testing Library, Next.js, TypeScript, Context API, Tailwind CSS, Vercel',
     a2: 'https://github.com/spatulatom/spa-one-view#readme',
