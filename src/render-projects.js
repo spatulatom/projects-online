@@ -42,7 +42,7 @@ export default function renderProject() {
   <!-- there is another div in here added by fullpage and has probably set
 responsive width, the class on it is .fp-overflow-->
   <div
-    class="flex container flex-col xl:flex-row lg:px-14 justify-center items-center m-auto"
+    class="flex container flex-col xl:flex-row lg:px-14 justify-center items-center m-auto cursor-effect-none"
   >
     <a
       aria-label="Read more"
