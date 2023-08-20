@@ -12,6 +12,7 @@ import cursor from './coursor-effect';
 
 modes()
 contactForm()
+
 // we can create a class instnace here but the whole class has to be exported from .date.js
 // const date = new LocalDate()
 
@@ -22,6 +23,7 @@ addDate()
 mobileMenu()
 renderProject()
 cursor()
+
 
 
 // trying dynamic import on hover over contact form

@@ -30,6 +30,8 @@
 
 import { myArray } from './products-array';
 
+
+
 const container = document.getElementById('projects');
 console.log('My arrayy');
 export default function renderProject() {
@@ -42,7 +44,7 @@ export default function renderProject() {
   <!-- there is another div in here added by fullpage and has probably set
 responsive width, the class on it is .fp-overflow-->
   <div
-    class="flex container flex-col xl:flex-row lg:px-14 justify-center items-center m-auto cursor-effect-none"
+    class="flex container flex-col xl:flex-row lg:px-14 justify-center items-center bigger"
   >
     <a
       aria-label="Read more"
@@ -59,7 +61,6 @@ responsive width, the class on it is .fp-overflow-->
         width="500"
         height="300"
         alt="screenshot of the project"
-        title="Project's screenshot"
       />
     </a>
 

@@ -14,8 +14,8 @@
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   pointer-events: none;
-  width: 600px;
-  height: 600px;
+  width: 700px;
+  height: 700px;
   border-radius: 50%;
   -webkit-transition-property: background, -webkit-transform;
   transition-property: background, -webkit-transform;
@@ -23,9 +23,9 @@
   transition-property: background, transform;
   transition-property: background, transform, -webkit-transform;
   background: transparent;
-  -webkit-transition: all 1.2s linear;
-  -o-transition: all 1.2s linear;
-  transition: all 1.2s linear;
+  -webkit-transition: all .8s linear;
+  -o-transition: all .8s linear;
+  transition: all .8s linear;
   z-index: 190;
   border-width: 2px;
 }
@@ -34,8 +34,8 @@
   backdrop-filter: grayscale();
   -webkit-backdrop-filter: invert(100%);
   backdrop-filter: invert(100%);
-  width: 300px;
-  height: 300px;
+  width: 400px;
+  height: 400px;
 }
 .cursor-grow--white {
   width: 380px;

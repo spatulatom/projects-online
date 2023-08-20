@@ -1,8 +1,10 @@
 let mouseCursor = document.querySelector('.cursor');
 
+function cursorEffect(){
+
 window.addEventListener('mousemove', cursor);
 
-export default function cursor(e) {
+ function cursor(e) {
   console.log('cursor');
   // if we console.log(e) we get MouseEvent, we will only
   // use pageY and pageX and this will give us exact position
@@ -24,16 +26,16 @@ projects.forEach((project) => {
 });
 
 // bigger cursor + filters on hover over elements with class="bigger" (currently not in use)
-// let biggers = document.querySelectorAll('.bigger');
+let biggers = document.querySelectorAll('.bigger');
 
-// biggers.forEach((bigger) => {
-//   bigger.addEventListener('mouseover', () => {
-//     mouseCursor.classList.add('cursor-grow');
-//   });
-//   bigger.addEventListener('mouseleave', () => {
-//     mouseCursor.classList.remove('cursor-grow');
-//   });
-// });
+biggers.forEach((bigger) => {
+  bigger.addEventListener('mouseover', () => {
+    mouseCursor.classList.add('cursor-grow');
+  });
+  bigger.addEventListener('mouseleave', () => {
+    mouseCursor.classList.remove('cursor-grow');
+  });
+});
 
 // cursor bigger on some content (currently not in use)
 // let projectBoxes = document.querySelectorAll('.bigger--white');
@@ -46,3 +48,5 @@ projects.forEach((project) => {
 //     mouseCursor.classList.remove('cursor-grow--white');
 //   });
 // });
+}
+export default cursorEffect;
