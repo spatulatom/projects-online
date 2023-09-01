@@ -44,13 +44,13 @@ export default function renderProject() {
   <!-- there is another div in here added by fullpage and has probably set
 responsive width, the class on it is .fp-overflow-->
   <div
-    class="flex container flex-col xl:flex-row lg:px-14 justify-center items-center bigger"
+    class="flex container flex-col xl:flex-row lg:px-14 justify-center items-center"
   >
     <a
       aria-label="Read more"
       href=${obj.a1}
       target="_blank"
-      class="hidden xl:block basis-7/12 overflow-hidden shadow-2xl"
+      class="hidden xl:block basis-7/12 overflow-hidden shadow-2xl bigger"
       rel="noopener"
     >
       <img
