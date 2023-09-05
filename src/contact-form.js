@@ -45,7 +45,7 @@ function contactForm() {
 
           setTimeout(() => {
             results.innerHTML =
-              'You will get a confirmation email from tom.sypula@gmail.com (it might be in the spam folder). Have a nice day! I will reply to you back soon!';
+              'You will get a confirmation email from tom.sypula@gmail.com (it might be in the spam folder). I will reply back to you within 24h. Thank you and have a nice day!';
           }, 6000);
         } else {
           const jsonResponse = await response.json();
