@@ -338,7 +338,7 @@ https://developer.mozilla.org/en-US/docs/Web/CSS/:autofill */
   }
 
   textarea {
-    height: 50px;
+    height: 150px;
     line-height: 150%;
     resize: vertical;
   }
