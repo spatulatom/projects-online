@@ -184,7 +184,10 @@
       <div class="mobile-nav bg-gray-100 dark:bg-customBlack max-h-screen">
         <ul class="flex flex-col p-4 justify-center items-center h-full">
           <li class="mobile-nav__item text-grayishViolet dark:text-white">
-            <a aria-label="Mobile nav home" href="#firstPage" class="link current"
+            <a
+              aria-label="Mobile nav home"
+              href="#firstPage"
+              class="link current"
               >Home</a
             >
           </li>
@@ -267,7 +270,8 @@
                 />
               </div>
               <div class="text-gray-600 text-sm dark:text-white flex flex-col">
-                Tom, </br> tom.sypula@gmail.com
+                Tom, <br />
+                tom.sypula@gmail.com
               </div>
             </div>
             <!-- welcome section for mobile and destop-->
@@ -288,8 +292,9 @@
             <!-- intro -->
             <div class="text-gray-600 text-sm lg:text-base dark:text-gray-300">
               <p>
-                Hi there, I'm Tom. Over the past two years, I have immersed myself
-                in the world of web development, starting with building simple
+                Hi there, I'm Tom. Over the past two years, I have immersed
+                myself in the world of web development, starting with building
+                simple
                 <span class="dark:text-cyan font-semibold dark:font-normal">
                   web apps </span
                 >using
@@ -336,7 +341,7 @@
 
             <div class="mx-auto lg:mx-0 text-right bigger">
               <a
-                aria-label="Jump to"
+                aria-label="Jump to the projects"
                 href="#secondPage"
                 class="py-2 px-10 text-xl font-medium transition-all bg-darkViolet dark:bg-cyan rounded-md"
                 >Get started</a
@@ -383,7 +388,7 @@
             <!-- Social Icons -->
             <div class="mt-4 flex space-x-6">
               <a
-                aria-label="Read more"
+                aria-label="Go to GitHub"
                 target="_blank"
                 href="https://github.com/spatulatom"
               >
@@ -392,7 +397,7 @@
                 ></i>
               </a>
               <a
-                aria-label="Read more"
+                aria-label="Go to LinkedIn"
                 target="_blank"
                 href="https://www.linkedin.com/in/tomasz-s-069249244/"
               >
@@ -410,15 +415,16 @@
           <div
             class="text-center lg:text-left border-t-2 border-b-2 border-grayishViolet pb-8 px-4 bg-white dark:bg-veryDarkBlue"
           >
-            <form class="form">
+            <form class="form" aria-label="Fill this form to leave feedback">
               <h2
                 class="form__feedback p-3 pt-6 italic text-lg text-gray-500 dark:text-gray-300"
               >
                 I'd love your feedback:
               </h2>
-
+              
               <input
-                name="name"
+                aria-label="input your name "
+                id="name"
                 type="text"
                 class="feedback-input"
                 placeholder="name"
@@ -449,7 +455,7 @@
                 required
               ></textarea>
               <button
-                aria-label="Submit"
+                aria-label="Clikc button to submit the form"
                 type="submit"
                 value="Send Message"
                 class="uppercase px-10 mx-auto font-medium hover:text-white text-gray-700 rounded-md bg-darkViolet dark:bg-cyan transition-all md:text-base py-3 focus:outline-none"
