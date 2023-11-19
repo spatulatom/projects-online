@@ -47,7 +47,7 @@ responsive width, the class on it is .fp-overflow-->
     class="flex container flex-col xl:flex-row lg:px-14 justify-center items-center"
   >
     <a
-      aria-label="Read more"
+      aria-label="Go to the deployed app"
       href=${obj.a1}
       target="_blank"
       class="hidden xl:block basis-7/12 overflow-hidden shadow-2xl bigger"
@@ -89,7 +89,7 @@ responsive width, the class on it is .fp-overflow-->
         </h3>
         <div class="tooltips flex justify-around lg:justify-end">
           <a
-            aria-label="Read more"
+            aria-label="Go to the GitHub repository"
             href="${obj.a2}"
             target="_blank"
             class="tooltip"
@@ -103,7 +103,7 @@ responsive width, the class on it is .fp-overflow-->
             <span class="tooltiptext">On GitHub</span>
           </a>
           <a
-            aria-label="Read more"
+            aria-label="Go to the deployed website"
             href="${obj.a3}"
             target="_blank"
             class="tooltip"
