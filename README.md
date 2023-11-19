@@ -35,7 +35,7 @@
 
 - This website contains links and descriptions of my several ongoing and completed projects:
 
-![Product Name Screen Shot](imgs/website.png )
+![Product Name Screen Shot](dist/assets/website-b24d3a98.png)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

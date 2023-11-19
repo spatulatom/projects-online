@@ -5,6 +5,7 @@ import eb from '../images/eb.png';
 import efashion from '../images/e-fashion3.png';
 import td1 from '../images/td1.png';
 import tdvanilla from '../images/todovanillajs.png';
+import readme from '../images/website.png';
 
 export const myArray = [
   {
