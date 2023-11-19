@@ -45,28 +45,17 @@
 - HTML
 - Tailwind,
 - JavaScript,
-- Vite for development server,
-- Vite for Optimized Build,
-- Vercel for Deployment
-- GitHub remote repository,
-- Git for version control,
+- TypeScript,
+- Jest Testing Framework for unit testing, 
+- Cloudinary for images storage and images responsiveness,
+- Vite for development server and for Optimized Build,
+- Vercel for Deployment,
 - render.com for backend  node  server deployment,
 -  https://github.com/alvarotrigo/fullPage.js/ library for vertical and horizontal scroll,
-- Cloudinary for images storage and images responsiveness,
 - Node.js, Express.js for the backend server,
 - MongoDB for contact form data storage,
 - SendGrid API for sending emails,
-- Visual Studio Code as a local IDE & repository,
-- Chrome Developer Tools for testing screen sizes and using Lighthouse,
-- Chrome, Firefox, Brave Browser, Edge and Opera for browser testing the responsiveness,
-- https://ui.dev/amiresponsive for testing and to make responsive image,
-- https://favicon.io/favicon-generator/ to create a favicon,
-- https://fontawesome.com/ for icons,
-- https://tinypng.com/ to optimize images,
-- https://www.remove.bg/ for removing images backgrounds,
-- https://chrome.google.com/webstore/detail/pesticide-for-chrome-with/neonnmencpneifkhlmhmfhfiklgjmloi during development,
-- https://wave.webaim.org/ to check web accessibility,
-- https://balsamiq.com/ for wireframing.
+
 
 - 'Contact page' of this project is using backend built wit Node.js, Express.js;
 SendGrid API is used for sending emails. The server is running on render.com. GitHub repository of the backend is stored <a href="https://github.com/spatulatom/my-porfolio-backend"><strong>right here »</strong></a>
