@@ -42,13 +42,11 @@
 ### Website Built With
 
 
-- HTML
+- Vite for development server and for Optimized Build,
 - Tailwind,
-- JavaScript,
-- TypeScript,
+- JavaScript, TypeScript,
 - Jest Testing Framework for unit testing, 
 - Cloudinary for images storage and images responsiveness,
-- Vite for development server and for Optimized Build,
 - Vercel for Deployment,
 - render.com for backend  node  server deployment,
 -  https://github.com/alvarotrigo/fullPage.js/ library for vertical and horizontal scroll,
