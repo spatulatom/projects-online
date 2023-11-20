@@ -3,8 +3,9 @@
 
 // OOP programming:
  class LocalDate {
-  private date: Date;
-  private selector: HTMLElement;
+  // Date and HTMLElement are globally availabe types
+  date: Date;
+  selector: HTMLElement;
   constructor() {
     this.date = new Date(new Date().setHours(new Date().getHours() - 24));
     this.selector = document.querySelector(`.date`) as HTMLElement;
