@@ -33,7 +33,7 @@ import { myArray } from './products-array';
 
 
 const container = document.getElementById('projects');
-console.log('My arrayy');
+// console.log('My arrayy');
 export default function renderProject() {
   myArray.forEach((obj) => {
     // Create a temporary container element
@@ -127,7 +127,7 @@ responsive width, the class on it is .fp-overflow-->
 
     // Extract the first child element (the div) from the temporary container
 
-    console.log('DIV', tempContainer);
+    // console.log('DIV', tempContainer);
     // Append the div element to the container
     container.appendChild(tempContainer);
   });
