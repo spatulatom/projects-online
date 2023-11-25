@@ -5,7 +5,7 @@ function cursorEffect(){
 window.addEventListener('mousemove', cursor);
 
  function cursor(e) {
-  console.log('cursor');
+  // console.log('cursor');
   // if we console.log(e) we get MouseEvent, we will only
   // use pageY and pageX and this will give us exact position
   // where coordinate where our mouse position is

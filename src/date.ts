@@ -2,13 +2,13 @@
 // module i think by default in strict mode
 
 // OOP programming:
- class LocalDate {
+ export class LocalDate {
   // Date and HTMLElement are globally availabe types
   date: Date;
   selector: HTMLElement;
   constructor() {
     this.date = new Date(new Date().setHours(new Date().getHours() - 24));
-    this.selector = document.querySelector(`.date`) as HTMLElement;
+    this.selector = document.querySelector('.date') as HTMLElement;
     // one option:
     // document.addEventListener('DOMContentLoaded', this.addDate.bind(this));
 
@@ -24,7 +24,11 @@
     let local = new Intl.DateTimeFormat('en-GB', {
       dateStyle: 'full',
     }).format(this.date);
-    this.selector.innerHTML = local;
+    if (this.selector) {
+      this.selector.innerHTML = local;
+    } else {
+      console.error('Selector is null');
+    }
   }
 }
  // const date = new LocalDate()

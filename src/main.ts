@@ -19,7 +19,11 @@ contactForm()
 // or we can just execute its method - that method has to have its 'this' bound plus need 
 // to be exported on its own
 
-addDate()
+document.addEventListener('DOMContentLoaded', () => {
+    // Your code here
+    addDate()
+  });
+
 mobileMenu()
 renderProject()
 cursor()
