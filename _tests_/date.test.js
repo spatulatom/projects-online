@@ -1,4 +1,4 @@
-import { LocalDate } from './date.js';
+import { LocalDate } from '../src/date.js';
 
 test('addDate should insert the formatted date as innerHTML', () => {
   const myInstance = new LocalDate();

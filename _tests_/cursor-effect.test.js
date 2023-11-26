@@ -1,4 +1,4 @@
-import cursorEffect from './coursor-effect';
+import cursorEffect from '../src/coursor-effect';
 
 describe('cursorEffect', () => {
   // The function adds an event listener to the window object for mousemove events.
