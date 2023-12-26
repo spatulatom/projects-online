@@ -67,6 +67,7 @@ Node 'understands'
 - install babel for typescript
 - add config to babel.config.json
 "@babel/preset-typescript"
+- npm i --save-dev @types/jest
 
 
 II. Approach nr 2
