@@ -9,6 +9,7 @@ function contactForm() {
     const data = new FormData(event.target);
     const object = {};
     data.forEach((value, key) => {
+      console.log('herrrrrr',object[key], value,data)
       object[key] = value;
     });
 
