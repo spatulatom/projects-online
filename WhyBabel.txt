@@ -1,6 +1,6 @@
-If you’re switching to ES modules in a Node.js project, you might need to update your package.json file 
-to tell Node.js to treat your .js 
-files as ES modules.
+If you’re switching to ES modules in a Node.js project, you might need to 
+update your package.json file 
+to tell Node.js to treat your .js files as ES modules.
 
 You can do this by adding a "type": "module" field to your package.json file. Here’s an example:
 
@@ -17,7 +17,6 @@ rename them to use the .cjs extension to tell Node.js to treat them as CommonJS 
 If you’re using Vite or another build tool that already supports ES modules, you might not need to 
 make any changes to your package.json file.
 
-I hope this helps! Is there anything else you’d like to know?
 
 2. No, you don’t necessarily need Babel in your project to use Jest with ES modules. 
 If you’re running Jest in a version of Node.js that 
@@ -70,6 +69,16 @@ Node 'understands'
 - npm i --save-dev @types/jest
 
 
-II. Approach nr 2
+6. Babel is a powerful tool that does more than just 
+1. translate newer JavaScript 
+syntax into older syntax for compatibility reasons. It can also 
+2. transform syntax to be compatible with different environments.
 
-try very simple here 
+For example, Node.js and browsers use different module systems. Browsers use
+ ES modules (import/export), while Node.js uses CommonJS (require/module.exports).
+  Babel can transform ES modules into CommonJS modules, making it possible to write 
+  code that works in both environments.
+
+Similarly, Jest, a testing framework, runs in a Node.js environment and doesn’t
+ understand the import/export syntax out of the box. Babel can be used to transform 
+ your tests written using ES modules syntax into a format that Jest can run
