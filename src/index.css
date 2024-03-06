@@ -14,8 +14,8 @@
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   pointer-events: none;
-  width: 200px;
-  height: 200px;
+  width: 700px;
+  height: 700px;
   border-radius: 50%;
   -webkit-transition-property: background, -webkit-transform;
   transition-property: background, -webkit-transform;
