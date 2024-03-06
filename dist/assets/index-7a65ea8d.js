@@ -1,13 +1,13 @@
-(function(){const o=document.createElement("link").relList;if(o&&o.supports&&o.supports("modulepreload"))return;for(const t of document.querySelectorAll('link[rel="modulepreload"]'))s(t);new MutationObserver(t=>{for(const a of t)if(a.type==="childList")for(const i of a.addedNodes)i.tagName==="LINK"&&i.rel==="modulepreload"&&s(i)}).observe(document,{childList:!0,subtree:!0});function c(t){const a={};return t.integrity&&(a.integrity=t.integrity),t.referrerPolicy&&(a.referrerPolicy=t.referrerPolicy),t.crossOrigin==="use-credentials"?a.credentials="include":t.crossOrigin==="anonymous"?a.credentials="omit":a.credentials="same-origin",a}function s(t){if(t.ep)return;t.ep=!0;const a=c(t);fetch(t.href,a)}})();const g=document.getElementById("light"),f=document.getElementById("dark"),m=document.getElementById("system"),y=document.getElementById("light-mobile"),b=document.getElementById("dark-mobile"),l=document.getElementById("system-mobile"),n=document.querySelector(".dropdown");function r(){g.classList.remove("text-cyan"),f.classList.remove("text-cyan"),m.classList.remove("text-cyan"),y.classList.remove("text-cyan"),b.classList.remove("text-cyan"),l.classList.remove("text-cyan")}"color-theme"in localStorage?localStorage.getItem("color-theme")==="dark"||!("color-theme"in localStorage)&&window.matchMedia("(prefers-color-scheme: dark)").matches?"mode-system"in localStorage?(r(),m.classList.add("text-cyan"),n.innerHTML=`<i
+(function(){const o=document.createElement("link").relList;if(o&&o.supports&&o.supports("modulepreload"))return;for(const t of document.querySelectorAll('link[rel="modulepreload"]'))s(t);new MutationObserver(t=>{for(const a of t)if(a.type==="childList")for(const i of a.addedNodes)i.tagName==="LINK"&&i.rel==="modulepreload"&&s(i)}).observe(document,{childList:!0,subtree:!0});function c(t){const a={};return t.integrity&&(a.integrity=t.integrity),t.referrerPolicy&&(a.referrerPolicy=t.referrerPolicy),t.crossOrigin==="use-credentials"?a.credentials="include":t.crossOrigin==="anonymous"?a.credentials="omit":a.credentials="same-origin",a}function s(t){if(t.ep)return;t.ep=!0;const a=c(t);fetch(t.href,a)}})();const f=document.getElementById("light"),g=document.getElementById("dark"),m=document.getElementById("system"),y=document.getElementById("light-mobile"),b=document.getElementById("dark-mobile"),l=document.getElementById("system-mobile"),n=document.querySelector(".dropdown");function r(){f.classList.remove("text-cyan"),g.classList.remove("text-cyan"),m.classList.remove("text-cyan"),y.classList.remove("text-cyan"),b.classList.remove("text-cyan"),l.classList.remove("text-cyan")}"color-theme"in localStorage?localStorage.getItem("color-theme")==="dark"||!("color-theme"in localStorage)&&window.matchMedia("(prefers-color-scheme: dark)").matches?"mode-system"in localStorage?(r(),m.classList.add("text-cyan"),n.innerHTML=`<i
       id="dark"
       class="fa-solid fa-moon fa-xl cursor-pointer transition-all text-cyan"
-    ></i>`,l.classList.add("text-cyan")):(r(),f.classList.add("text-cyan"),n.innerHTML=`<i
+    ></i>`,l.classList.add("text-cyan")):(r(),g.classList.add("text-cyan"),n.innerHTML=`<i
       id="dark"
       class="fa-solid fa-moon fa-xl cursor-pointer transition-all text-cyan"
     ></i>`,b.classList.add("text-cyan")):"mode-system"in localStorage?(r(),m.classList.add("text-cyan"),n.innerHTML=`<i
       class="fa-solid fa-sun fa-xl cursor-pointer text-cyan"
     >
-    </i>`,l.classList.add("text-cyan")):(r(),g.classList.add("text-cyan"),n.innerHTML=`<i
+    </i>`,l.classList.add("text-cyan")):(r(),f.classList.add("text-cyan"),n.innerHTML=`<i
       class="fa-solid fa-sun fa-xl cursor-pointer text-cyan"
     >
     </i>`,y.classList.add("text-cyan")):(r(),m.classList.add("text-cyan"),l.classList.add("text-cyan"),window.matchMedia("(prefers-color-scheme: dark)").matches?(n.innerHTML=`<i
@@ -22,10 +22,10 @@
     ></i>`,console.log("change to dark mode!")):(console.log("change to light mode!"),localStorage.setItem("color-theme","light"),localStorage.setItem("mode-system","system"),document.documentElement.classList.remove("dark"),n.innerHTML=`<i
       class="fa-solid fa-sun fa-xl cursor-pointer text-cyan"
     >
-    </i>`)});f.addEventListener("click",L);g.addEventListener("click",S);m.addEventListener("click",k);b.addEventListener("click",L);y.addEventListener("click",S);l.addEventListener("click",k);function L(){r(),f.classList.add("text-cyan"),n.innerHTML=`<i
+    </i>`)});g.addEventListener("click",L);f.addEventListener("click",S);m.addEventListener("click",k);b.addEventListener("click",L);y.addEventListener("click",S);l.addEventListener("click",k);function L(){r(),g.classList.add("text-cyan"),n.innerHTML=`<i
   id="dark"
   class="fa-solid fa-moon fa-xl cursor-pointer transition-all text-cyan"
-></i>`,b.classList.add("text-cyan"),document.documentElement.classList.add("dark"),localStorage.setItem("color-theme","dark"),localStorage.removeItem("mode-system")}function S(){r(),g.classList.add("text-cyan"),n.innerHTML=`<i
+></i>`,b.classList.add("text-cyan"),document.documentElement.classList.add("dark"),localStorage.setItem("color-theme","dark"),localStorage.removeItem("mode-system")}function S(){r(),f.classList.add("text-cyan"),n.innerHTML=`<i
   class="fa-solid fa-sun fa-xl cursor-pointer text-cyan"
 >
 </i>`,y.classList.add("text-cyan"),document.documentElement.classList.remove("dark"),localStorage.setItem("color-theme","light"),localStorage.removeItem("mode-system")}function k(){r(),m.classList.add("text-cyan"),l.classList.add("text-cyan"),window.matchMedia("(prefers-color-scheme: dark)").matches?(localStorage.setItem("color-theme","dark"),localStorage.setItem("mode-system","system"),document.documentElement.classList.add("dark"),n.innerHTML=`<i
@@ -45,7 +45,7 @@ responsive width, the class on it is .fp-overflow-->
       aria-label="Go to the deployed app"
       href=${e.a1}
       target="_blank"
-      class="hidden xl:block basis-7/12 overflow-hidden shadow-2xl bigger"
+      class="hidden xl:block basis-7/12 overflow-hidden shadow-2xl"
       rel="noopener"
     >
       <img
@@ -115,4 +115,4 @@ responsive width, the class on it is .fp-overflow-->
       </div>
     </div>
   </div>
-</div>`;o.innerHTML=c,U.appendChild(o)})}let p=document.querySelector(".cursor");function z(){window.addEventListener("mousemove",e);function e(s){p.style.top=s.pageY+"px",p.style.left=s.pageX+"px"}document.querySelectorAll(".cursor-effect-none").forEach(s=>{s.addEventListener("mouseover",()=>{p.classList.add("opacity-0")}),s.addEventListener("mouseleave",()=>{p.classList.remove("opacity-0")})}),document.querySelectorAll(".bigger").forEach(s=>{s.addEventListener("mouseover",()=>{p.classList.add("cursor-grow")}),s.addEventListener("mouseleave",()=>{p.classList.remove("cursor-grow")})})}E();document.addEventListener("DOMContentLoaded",()=>{M()});N();V();z();
+</div>`;o.innerHTML=c,U.appendChild(o)})}let p=document.querySelector(".cursor");function z(){window.addEventListener("mousemove",e);function e(s){p.style.top=s.pageY+"px",p.style.left=s.pageX+"px"}document.querySelectorAll(".cursor-none").forEach(s=>{s.addEventListener("mouseover",()=>{p.classList.add("cursor-effect-none")}),s.addEventListener("mouseleave",()=>{p.classList.remove("cursor-effect-none")})}),document.querySelectorAll(".bigger").forEach(s=>{s.addEventListener("mouseover",()=>{p.classList.add("cursor-grow")}),s.addEventListener("mouseleave",()=>{p.classList.remove("cursor-grow")})})}E();document.addEventListener("DOMContentLoaded",()=>{M()});N();V();z();

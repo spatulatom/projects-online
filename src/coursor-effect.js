@@ -15,13 +15,13 @@ window.addEventListener('mousemove', cursor);
 }
 
 // cursor dissapearing on projects descriptions
-let projects = document.querySelectorAll('.cursor-effect-none');
+let projects = document.querySelectorAll('.cursor-none');
 projects.forEach((project) => {
   project.addEventListener('mouseover', () => {
-    mouseCursor.classList.add('opacity-0');
+    mouseCursor.classList.add('cursor-effect-none');
   });
   project.addEventListener('mouseleave', () => {
-    mouseCursor.classList.remove('opacity-0');
+    mouseCursor.classList.remove('cursor-effect-none');
   });
 });
 
