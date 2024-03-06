@@ -72,7 +72,7 @@ responsive width, the class on it is .fp-overflow-->
         class="p-6 w-[120%] dark:opacity-100 bg-white dark:bg-veryDarkBlue xl:absolute right-0 border-t-2 border-b-2 border-grayishViolet dark:border-white z-10"
       >
         <h2
-          class="text-darkViolet dark:text-cyan text-center mb-1 font-bold uppercase"
+          class="text-gray-700  dark:text-white text-center mb-1 uppercase"
         >
          ${obj.h2}
         </h2>

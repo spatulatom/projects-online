@@ -14,8 +14,8 @@
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   pointer-events: none;
-  width: 700px;
-  height: 700px;
+  width: 1200px;
+  height: 1200px;
   border-radius: 50%;
   -webkit-transition-property: background, -webkit-transform;
   transition-property: background, -webkit-transform;
@@ -27,7 +27,7 @@
   -o-transition: all .8s linear;
   transition: all 8s linear;
   z-index: 190;
-  border-width: 2px;
+  border-width: 1px;
 }
 .cursor-grow {
   -webkit-backdrop-filter: grayscale();
