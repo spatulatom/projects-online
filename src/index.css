@@ -25,7 +25,7 @@
   background: transparent;
   -webkit-transition: all .8s linear;
   -o-transition: all .8s linear;
-  transition: all 6s linear;
+  transition: all 8s linear;
   z-index: 190;
   border-width: 1px;
 }
