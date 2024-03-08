@@ -65,11 +65,11 @@ responsive width, the class on it is .fp-overflow-->
     </a>
 
     <div
-      class="xl:basis-5/12 w-full flex items-center relative overflow-visible"
+      class="xl:basis-5/12 w-full flex items-center relative overflow-visible "
     >
       <!-- this wrapper div below is needed for the positioning of text over image -->
       <div
-        class="p-6 w-[120%] dark:opacity-100 bg-white dark:bg-veryDarkBlue xl:absolute right-0 border-t-2 border-b-2 border-grayishViolet dark:border-white z-10"
+        class="shadow-2xl p-6 w-[120%] dark:opacity-100 bg-white dark:bg-veryDarkBlue xl:absolute right-0 border-t-2 border-b-2 border-grayishViolet dark:border-white z-10"
       >
         <h2
           class="text-gray-700  dark:text-white text-center mb-1 uppercase"
