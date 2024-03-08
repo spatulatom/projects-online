@@ -50,11 +50,11 @@ responsive width, the class on it is .fp-overflow-->
       aria-label="Go to the deployed app"
       href=${obj.a1}
       target="_blank"
-      class="hidden xl:block basis-7/12 overflow-hidden shadow-2xl"
+      class="hidden xl:block basis-7/12 overflow-hidden shadow-2xl dark:border-t-2 dark:border-b-2"
       rel="noopener"
     >
       <img
-        class="hidden lg:block w-screen h-auto rounded-lg"
+        class="hidden lg:block w-screen h-auto"
         src=${obj.img}
         fetchpriority="low"
         
