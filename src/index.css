@@ -1,7 +1,10 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+ a{
+  
 
+ }
 
 
 /* CURSOR EFFECT AS A RING FOLLOWING THE MOUSE CURSOR: */
