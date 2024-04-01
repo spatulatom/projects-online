@@ -79,6 +79,17 @@
 
       gtag('config', 'G-B5VYN7BKMV');
     </script>
+    <script>
+      // Feature detects Navigation Timing API support.
+      if (window.performance) {
+        // Gets the number of milliseconds since page load
+        // (and rounds the result since the value must be an integer).
+        var timeSincePageLoad = Math.round(performance.now());
+
+        // Sends the timing hit to Google Analytics.
+        ga('send', 'timing', 'JS Dependencies', 'load', timeSincePageLoad);
+      }
+    </script>
 
     <!-- include the Cloudinary JavaScript library -->
     <!-- https://cloudinary.com/documentation/responsive_client_side_js -->
@@ -302,8 +313,8 @@
             <!-- intro -->
             <div class="text-gray-600 text-sm lg:text-base dark:text-gray-300">
               <p>
-                Hi there, I'm Tom. Welcome to my portfolio website, where I store
-                my web development projects.
+                Hi there, I'm Tom. Welcome to my portfolio website, where I
+                store my web development projects.
               </p>
               <p>
                 About two years ago, I started building simple
@@ -315,19 +326,21 @@
                 >. As I've delved deeper into the field, I've become fascinated
                 with
                 <span class="dark:text-cyan font-semibold dark:font-normal"
-                  >React  and Node.js</span>,
-                 and I leveraged those in my full-stack endeavors.
+                  >React and Node.js</span
+                >, and I leveraged those in my full-stack endeavors.
               </p>
               <br />
               <p>
-                Currently, I  mostly use
+                Currently, I mostly use
                 <span class="dark:text-cyan font-semibold dark:font-normal"
                   >Next.js</span
                 >
-                which allows me to build complete front-end and back-end apps. I use Next.js integrated with
+                which allows me to build complete front-end and back-end apps. I
+                use Next.js integrated with
                 <span class="dark:text-cyan font-semibold dark:font-normal"
                   >TypeScript</span
-                > for static type checking, and with
+                >
+                for static type checking, and with
                 <span class="dark:text-cyan font-semibold dark:font-normal"
                   >Tailwind CSS</span
                 >
@@ -350,12 +363,12 @@
                 >View LinkedIn</a
               >
               <a
-              aria-label="Got to Github"
-              target="_blank"
-              href="https://github.com/spatulatom"
-              class="leading-none py-4 px-10 text-gray-700 transition-all bg- dark:bg-transparent border-2 border-gray-500 hover:bg-gray-500 hover:text-white dark:text-white rounded-md dark:hover:bg-white dark:hover:text-veryDarkViolet"
-              >View Github</a
-            >
+                aria-label="Got to Github"
+                target="_blank"
+                href="https://github.com/spatulatom"
+                class="leading-none py-4 px-10 text-gray-700 transition-all bg- dark:bg-transparent border-2 border-gray-500 hover:bg-gray-500 hover:text-white dark:text-white rounded-md dark:hover:bg-white dark:hover:text-veryDarkViolet"
+                >View Github</a
+              >
             </div>
           </div>
 
@@ -395,13 +408,12 @@
               Find me on:
             </h2> -->
 
-          
             <h2 class="font-medium mb-4 text-gray-500 dark:text-gray-300">
-           Contact me at: spatulatom@gmail.com, 
+              Contact me at: spatulatom@gmail.com,
             </h2>
-              <!-- Social Icons -->
-              <div class="mt-4 flex space-x-6">
-                <a
+            <!-- Social Icons -->
+            <div class="mt-4 flex space-x-6">
+              <a
                 aria-label="Go to LinkedIn"
                 target="_blank"
                 href="https://www.linkedin.com/"
@@ -410,17 +422,16 @@
                   class="fab fa-linkedin fa-2xl text-gray-500 dark:text-gray-300 transition-all hover:text-cyan hover:dark:text-cyan"
                 ></i>
               </a>
-                <a
-                  aria-label="Go to GitHub"
-                  target="_blank"
-                  href="https://github.com/spatulatom"
-                >
-                  <i
-                    class="fab fa-github fa-2xl text-gray-500 dark:text-gray-300 hover:text-cyan hover:dark:text-cyan"
-                  ></i>
-                </a>
-             
-              </div>
+              <a
+                aria-label="Go to GitHub"
+                target="_blank"
+                href="https://github.com/spatulatom"
+              >
+                <i
+                  class="fab fa-github fa-2xl text-gray-500 dark:text-gray-300 hover:text-cyan hover:dark:text-cyan"
+                ></i>
+              </a>
+            </div>
           </div>
 
           <!-- Container for Send Form  -->
@@ -431,7 +442,7 @@
               <h2
                 class="form__feedback p-3 pt-6 text-lg text-gray-500 dark:text-gray-300"
               >
-               Send me a message :
+                Send me a message :
               </h2>
 
               <input
