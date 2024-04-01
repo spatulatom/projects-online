@@ -57,7 +57,7 @@ responsive width, the class on it is .fp-overflow-->
         class="hidden lg:block w-screen h-auto"
         src=${obj.img}
         fetchpriority="low"
-        
+        loading="lazy"
         width="500"
         height="300"
         alt="screenshot of the project"
