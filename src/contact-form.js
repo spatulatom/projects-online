@@ -9,7 +9,7 @@ function contactForm() {
     const data = new FormData(event.target);
     const object = {};
     data.forEach((value, key) => {
-      console.log('herrrrrr',object[key], value,data)
+      console.log('herrrrrr', object[key], value, data);
       object[key] = value;
     });
 
@@ -46,7 +46,7 @@ function contactForm() {
 
           setTimeout(() => {
             results.innerHTML =
-            'You will receive a confirmation email from spatulatom@gmail.com (it might be in the spam folder). I will reply back to you within 24 hours. Thank you and have a nice day!'
+              'You will receive a confirmation email from spatulatom@gmail.com (it might be in the spam folder). I will reply back to you within 24 hours. Thank you and have a nice day!';
           }, 6000);
         } else {
           const jsonResponse = await response.json();
