@@ -45,3 +45,26 @@ if (formData) {
     });
   });
 }
+
+// When you use dynamic imports for code splitting, the dynamically 
+// imported code is indeed not included in the initial bundle. Instead, 
+// it is split into separate chunks that are only loaded when needed. 
+// However, these chunks are still processed, optimized, and minimized 
+// by Vite during the build process.
+
+// How It Works:
+// Build Process:
+
+// During the build process, Vite analyzes your code and identifies 
+// dynamic imports.
+// Vite then creates separate chunks for these dynamically imported 
+// modules.
+// These chunks are optimized, minimized, and stored on the server 
+// as separate files.
+// Serving the Chunks:
+
+// When the application runs and the dynamic import is triggered 
+// (e.g., on hover), the browser makes a request to the server to 
+// fetch the corresponding chunk.
+// The server serves the optimized and minimized chunk to the browser.
+// The browser then executes the code from the chunk.
