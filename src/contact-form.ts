@@ -57,3 +57,43 @@ function contactForm() {
 }
 
 export default contactForm;
+ 
+
+
+
+// ### Summary of Changes when firl converted to typescript form js:
+// 1. **Type Annotations**: Added type annotations for 
+
+// event
+
+// , 
+
+// formData
+
+// , and 
+
+// results
+
+// .
+// 2. **Null Checks**: Added null checks for 
+
+// formData
+
+//  and 
+
+// results
+
+//  to ensure they exist before proceeding.
+// 3. **Type Casting**: Used type casting to specify the types of 
+
+// formData
+
+//  and 
+
+// results
+
+// .
+
+// This TypeScript version ensures type safety and better error handling.
+
+// Similar code found with 1 license type

@@ -36,6 +36,7 @@ const formData = document.querySelector('.form');
 if (formData) {
   formData.addEventListener('mouseover', () => {
     console.log('ONMOUSE');
+    // When you dynamically import a module in TypeScript, you don't need to specify the file extension (e.g., .ts or .js). The TypeScript compiler and the bundler (like Vite or Webpack) handle the resolution of the module based on the import path and the project's configuration.
     import('./contact-form').then((module) => {
       const contactForm = module.default;
       contactForm();
