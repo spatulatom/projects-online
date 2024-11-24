@@ -1,6 +1,10 @@
 import './fullpage.css'
 import './index.css'
-// some non essential css can be downladed dynamiclly here to speed up loadong of the page
+// some non essential css can be downladed dynamiclly here to speed up 
+// loadong of the page
+// when using Tailwind CSS, it's common to import the CSS file into your 
+// JavaScript or TypeScript entry point. This ensures that Tailwind's utility 
+// classes are available throughout your application. Here's why this is done:
 
 import modes from "./dark-mode.js";
 // import contactForm from "./contact-form.js";
@@ -11,7 +15,7 @@ import cursor from './coursor-effect';
 
 
 modes()
-contactForm()
+// contactForm()
 
 // we can create a class instnace here but the whole class has to be exported from .date.js
 // const date = new LocalDate()
