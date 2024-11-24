@@ -67,4 +67,4 @@ function contactForm() {
   formData.addEventListener('submit', handleFormSubmit);
 }
 
-export default contactForm;
+// export default contactForm;
