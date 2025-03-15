@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Geolocation API</h2>
+<p>Click the button to get your coordinates.</p>
+
+<button>Try It</button>
+
+<p id="demo"></p>
+
+<script>
+// const x = document.getElementById("demo");
+
+// function getLocation() {
+//   if (navigator.geolocation) {
+//     navigator.geolocation.getCurrentPosition(showPosition);
+//   } else { 
+//     x.innerHTML = "Geolocation is not supported by this browser.";
+//   }
+// }
+
+// function showPosition(position) {
+//   x.innerHTML = "Latitude: " + position.coords.latitude + 
+//   "<br>Longitude: " + position.coords.longitude;
+// }
+
+// trying navigator whic is web api for getting corrdinates:
+
+document.addEventListener('DOMContentLoaded', () => {
+  const demo = document.getElementById("demo");
+  const button = document.querySelector('button');
+  
+  button.addEventListener('click', getLocation);
+  
+  function getLocation() {
+    if (navigator.geolocation) {
+      navigator.geolocation.getCurrentPosition(showPosition, handleError);
+    } else { 
+      demo.innerHTML = "Geolocation is not supported by this browser.";
+    }
+  }
+  
+  function showPosition(position) {
+    demo.innerHTML = `Latitude: ${position.coords.latitude}<br>Longitude: ${position.coords.longitude}`;
+  }
+  
+  function handleError(error) {
+    switch(error.code) {
+      case error.PERMISSION_DENIED:
+        demo.innerHTML = "User denied the request for Geolocation."
+        break;
+      case error.POSITION_UNAVAILABLE:
+        demo.innerHTML = "Location information is unavailable."
+        break;
+      case error.TIMEOUT:
+        demo.innerHTML = "The request to get user location timed out."
+        break;
+      case error.UNKNOWN_ERROR:
+        demo.innerHTML = "An unknown error occurred."
+        break;
+    }
+  }
+});
+</script>
+
+</body>
+</html>
