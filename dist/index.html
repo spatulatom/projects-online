@@ -55,13 +55,13 @@
     <!-- It's best to inline this part in `head` to avoid FOUC (flash of unstyled content) when changing pages or themes -->
     <script>
       if (
-        localStorage.getItem('color-theme') === 'dark' ||
-        (!('color-theme' in localStorage) &&
-          window.matchMedia('(prefers-color-scheme: dark)').matches)
+        localStorage.getItem("color-theme") === "dark" ||
+        (!("color-theme" in localStorage) &&
+          window.matchMedia("(prefers-color-scheme: dark)").matches)
       ) {
-        document.documentElement.classList.add('dark');
+        document.documentElement.classList.add("dark");
       } else {
-        document.documentElement.classList.remove('dark');
+        document.documentElement.classList.remove("dark");
       }
     </script>
 
@@ -75,9 +75,9 @@
       function gtag() {
         dataLayer.push(arguments);
       }
-      gtag('js', new Date());
+      gtag("js", new Date());
 
-      gtag('config', 'G-B5VYN7BKMV');
+      gtag("config", "G-B5VYN7BKMV");
     </script>
     <script>
       // Feature detects Navigation Timing API support.
@@ -87,7 +87,7 @@
         var timeSincePageLoad = Math.round(performance.now());
 
         // Sends the timing hit to Google Analytics.
-        ga('send', 'timing', 'JS Dependencies', 'load', timeSincePageLoad);
+        ga("send", "timing", "JS Dependencies", "load", timeSincePageLoad);
       }
     </script>
 
@@ -315,6 +315,8 @@
                 Hi there, I'm Tom. Welcome to my portfolio website, where I
                 store my web development projects.
               </p>
+              <!-- In your index.html file, add this wherever you want the link to appear -->
+              <!-- <a href="./index2.html">Go to Page 2</a> -->
               <p>
                 About two years ago, I started building simple
                 <span class="dark:text-cyan font-semibold dark:font-normal">
@@ -496,10 +498,12 @@
             web dev projects <span id="copyright-date"></span>
           </p>
 
-          <a aria-label="Read more"
+          <a
+            aria-label="Read more"
             href="https://github.com/spatulatom/projects-online#readme"
             target="_blank"
-            class="tooltip" rel="noopener"
+            class="tooltip"
+            rel="noopener"
           >
             <span class="tooltiptext ml-3 hover:text-cyan"
               >(GitHub repository of this portfolio website
@@ -518,13 +522,13 @@
       referrerpolicy="no-referrer"
     ></script>
     <script>
-      new fullpage('#fullpage', {
+      new fullpage("#fullpage", {
         autoScrolling: false,
         slidesNavigation: true,
-        slidesNavPosition: 'bottom',
+        slidesNavPosition: "bottom",
         navigation: true,
-        anchors: ['firstPage', 'secondPage', 'fourthPage'],
-        menu: '#myMenu',
+        anchors: ["firstPage", "secondPage", "fourthPage"],
+        menu: "#myMenu",
         controlArrowsHTML: [
           '<div class="fp-arrow"></div>',
           '<div class="fp-arrow"></div>',
@@ -545,7 +549,7 @@
     <!-- Cloudinary responsive method -->
     <!-- there is more clodinary scripts in the head -->
     <script type="text/javascript">
-      var cl = cloudinary.Cloudinary.new({ cloud_name: 'dhf9cwbuu' });
+      var cl = cloudinary.Cloudinary.new({ cloud_name: "dhf9cwbuu" });
       // var cl = cloudinary.Cloudinary.new({ cloud_name: 'demo' });
       // replace 'demo' with your cloud name in the line above
       cl.responsive();
