@@ -44,6 +44,11 @@
     "typescript": "^5.1.6"
   },
   "browserslist": [
-    "extends browserslist-config-baseline"
+    "ie 11",
+    "ie 10",
+    "chrome 30-50",
+    "firefox 30-50",
+    "safari 8-10",
+    "opera 20-30"
   ]
 }
