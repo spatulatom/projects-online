@@ -21,7 +21,7 @@
   }
 
   addDate() {
-    let local = new Intl.DateTimeFormat('en-GB', {
+    const local = new Intl.DateTimeFormat('en-GB', {
       dateStyle: 'full',
     }).format(this.date);
     if (this.selector) {
