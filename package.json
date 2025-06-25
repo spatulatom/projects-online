@@ -31,6 +31,7 @@
     "browserslist-config-baseline": "^0.4.0",
     "eslint": "^9.29.0",
     "eslint-plugin-compat": "^6.0.2",
+    "eslint-plugin-es-x": "^8.7.0",
     "globals": "^16.2.0",
     "jest": "^29.6.1",
     "jest-environment-jsdom": "^29.7.0",
@@ -44,11 +45,6 @@
     "typescript": "^5.1.6"
   },
   "browserslist": [
-    "ie 11",
-    "ie 10",
-    "chrome 30-50",
-    "firefox 30-50",
-    "safari 8-10",
-    "opera 20-30"
-  ]
+    "extends browserslist-config-baseline"
+   ]
 }
