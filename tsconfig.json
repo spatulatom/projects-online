@@ -1,0 +1,45 @@
+{
+  "compilerOptions": {
+    /* TS CONFIGURATION EXPLAINED
+     *
+     * While Vite handles the transpilation of TypeScript files through esbuild,
+     * this tsconfig.json provides:
+     * 1. Better type checking for development
+     * 2. Improved IDE support and autocompletion
+     * 3. More control over TypeScript behavior
+     *
+     * NOTE: This file isn't required for Vite to process .ts files, but it
+     * enhances the development experience and type safety.
+     */
+    
+    /* Base Options */
+    "target": "ESNext",             // Compile to modern JavaScript (ES2020+)
+    "module": "ESNext",             // Use ES Modules (matches your package.json "type": "module")
+    "lib": ["ESNext", "DOM"],       // Include modern JS and DOM libraries
+    "jsx": "preserve",              // Let Vite handle JSX transformation
+    
+    /* Module Resolution */
+    "moduleResolution": "bundler",  // Use the bundler resolution strategy (for Vite)
+    "allowImportingTsExtensions": true, // Allow importing .ts files directly
+    "resolveJsonModule": true,      // Allow importing .json files
+    "isolatedModules": true,        // Ensure each file can be processed independently
+    
+    /* Type Checking */
+    "strict": true,                 // Enable all strict type checking options
+    "noImplicitAny": true,          // Raise error on expressions with implicit 'any' type
+    "strictNullChecks": true,       // Enable strict null checks
+    
+    /* Emit */
+    "noEmit": true,                 // Don't emit files (Vite handles this)
+    
+    /* Interoperability */
+    "esModuleInterop": true,        // Emit additional JS for compatibility
+    "forceConsistentCasingInFileNames": true, // Ensure consistent file name casing
+    
+    /* Advanced */
+    "skipLibCheck": true,           // Skip type checking of declaration files
+    "verbatimModuleSyntax": true    // Use exact imports
+  },
+  "include": ["src/**/*.ts", "src/**/*.tsx", "src/**/*.vue"],
+  "exclude": ["node_modules", "dist", "**/*.js"]
+}
