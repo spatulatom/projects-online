@@ -10,7 +10,29 @@ export default [
       globals: {
         ...globals.browser,
         ...globals.node,
+        ...globals.jest,
       },
+    },
+  },
+  // Add specific config for test files
+  {
+    files: ["**/*.test.js", "**/_tests_/**/*.js"],
+    languageOptions: {
+      globals: {
+        ...globals.jest,
+      },
+    },
+  },
+  // Ignore built/dist files
+  {
+    ignores: ["dist/**", "dist/**/*"],
+  },
+  // Special configuration for CJS files (like config files)
+  {
+    files: ["**/*.cjs"],
+    rules: {
+      "@typescript-eslint/no-require-imports": "off",
+      "@typescript-eslint/no-var-requires": "off",
     },
   },
 ];

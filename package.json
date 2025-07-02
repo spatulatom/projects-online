@@ -8,7 +8,9 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "test": "jest"
+    "test": "jest",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix"
   },
   "repository": {
     "type": "git",
@@ -46,5 +48,5 @@
   },
   "browserslist": [
     "extends browserslist-config-baseline"
-   ]
+  ]
 }

@@ -12,7 +12,7 @@ module.exports = {
         sans: ['Poppins', 'sans-serif'],
       },
       colors: {
-        blackish: 'rgb(0, 0, 0, 0.3)',
+        blackish2: 'rgb(0, 0, 0, 0.3)',
         // customBlack: 'rgb(30, 30, 40)',
         customBlack: 'rgb(30, 30, 45)',
         cyan: 'hsl(180, 66%, 49%)',

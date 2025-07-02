@@ -1,3 +1,27 @@
 {
-  "presets": ["@babel/preset-env"]
+  /* 
+   * BABEL CONFIGURATION EXPLAINED:
+   *
+   * This configuration is specifically tailored for Jest test compatibility.
+   * It converts ES Modules (ESM) to CommonJS format ONLY during test execution.
+   * Your source files remain as ES Modules for normal development/build processes.
+   *
+   * ALTERNATIVE APPROACH:
+   * It would be technically possible to keep tests running in ES Modules mode by:
+   * 1. Using a simpler config like: { "presets": ["@babel/preset-env"] }
+   * 2. Setting "modules": "auto" or removing the modules option entirely
+   * 3. Ensuring all imports use proper file extensions (.js)
+   *
+   * The CommonJS approach used here offers better Jest compatibility, especially
+   * for more complex test scenarios involving mocking and dynamic imports.
+   */
+  "presets": [
+    ["@babel/preset-env", {
+      // Target the current Node.js version running the tests
+      "targets": {"node": "current"},
+      
+      // Force conversion to CommonJS format for maximum Jest compatibility
+      "modules": "commonjs"
+    }]
+  ]
 }
