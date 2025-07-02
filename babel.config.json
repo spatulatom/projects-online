@@ -1,5 +1,5 @@
 {
-  /* 
+  /*
    * BABEL CONFIGURATION EXPLAINED:
    *
    * This configuration is specifically tailored for Jest test compatibility.
@@ -16,12 +16,15 @@
    * for more complex test scenarios involving mocking and dynamic imports.
    */
   "presets": [
-    ["@babel/preset-env", {
-      // Target the current Node.js version running the tests
-      "targets": {"node": "current"},
-      
-      // Force conversion to CommonJS format for maximum Jest compatibility
-      "modules": "commonjs"
-    }]
+    [
+      "@babel/preset-env",
+      {
+        // Target the current Node.js version running the tests
+        "targets": { "node": "current" },
+
+        // Force conversion to CommonJS format for maximum Jest compatibility
+        "modules": "commonjs"
+      }
+    ]
   ]
 }
