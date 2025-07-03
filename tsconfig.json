@@ -41,5 +41,7 @@
     "verbatimModuleSyntax": true // Use exact imports
   },
   "include": ["src/**/*.ts", "src/**/*.tsx", "src/**/*.vue"],
-  "exclude": ["node_modules", "dist", "**/*.js"]
+  "exclude": ["node_modules", "dist", "**/*.js"],
+  // Override rules for specific files
+  "files": ["src/declarations.d.ts"]
 }

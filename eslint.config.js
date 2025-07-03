@@ -35,4 +35,11 @@ export default [
       "@typescript-eslint/no-var-requires": "off",
     },
   },
+  // Allow any type in declaration files
+  {
+    files: ["**/*.d.ts"],
+    rules: {
+      "@typescript-eslint/no-explicit-any": "off",
+    },
+  },
 ];
