@@ -1,11 +1,70 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
- a{
-  
 
- }
+/* WCAG 2.2 GLOBAL FOCUS STYLES */
+@layer base {
+  /* High visibility focus indicator for all focusable elements */
+  *:focus {
+    outline: 3px solid theme("colors.cyan");
+    outline-offset: 2px;
+    border-radius: 4px;
+  }
 
+  /* Enhanced focus for interactive elements */
+  a:focus,
+  button:focus,
+  input:focus,
+  textarea:focus,
+  select:focus,
+  [tabindex]:focus {
+    outline: 3px solid theme("colors.cyan");
+    outline-offset: 2px;
+    box-shadow: 0 0 0 2px theme("colors.white"), 0 0 0 5px theme("colors.cyan");
+    border-radius: 4px;
+  }
+
+  /* Dark mode focus adjustments */
+  .dark *:focus,
+  .dark a:focus,
+  .dark button:focus,
+  .dark input:focus,
+  .dark textarea:focus,
+  .dark select:focus,
+  .dark [tabindex]:focus {
+    outline: 3px solid theme("colors.cyan");
+    outline-offset: 2px;
+    box-shadow: 0 0 0 2px theme("colors.gray.900"),
+      0 0 0 5px theme("colors.cyan");
+  }
+
+  /* Special handling for buttons with background colors */
+  button:focus {
+    position: relative;
+  }
+
+  /* Ensure focus is visible on form elements */
+  input:focus,
+  textarea:focus,
+  select:focus {
+    background-color: theme("colors.white");
+    color: theme("colors.gray.900");
+  }
+
+  .dark input:focus,
+  .dark textarea:focus,
+  .dark select:focus {
+    background-color: theme("colors.gray.100");
+    color: theme("colors.gray.900");
+  }
+
+  /* Skip link specific focus (already implemented but keeping for reference) */
+  .skip-link:focus {
+    outline: 3px solid theme("colors.cyan");
+    outline-offset: 2px;
+    box-shadow: 0 0 0 2px theme("colors.white"), 0 0 0 5px theme("colors.cyan");
+  }
+}
 
 /* CURSOR EFFECT AS A RING FOLLOWING THE MOUSE CURSOR: */
 
@@ -26,8 +85,8 @@
   transition-property: background, transform;
   transition-property: background, transform, -webkit-transform;
   background: transparent;
-  -webkit-transition: all .8s linear;
-  -o-transition: all .8s linear;
+  -webkit-transition: all 0.8s linear;
+  -o-transition: all 0.8s linear;
   transition: all 8s linear;
   z-index: 190;
   border-width: 1px;
@@ -45,8 +104,8 @@
   height: 380px;
   border: 4px solid white;
 }
-.cursor-effect-none{
-  opacity:0;
+.cursor-effect-none {
+  opacity: 0;
 }
 
 /* HAMBURGER MENU */
@@ -64,7 +123,7 @@
   .hamburger-top,
   .hamburger-middle,
   .hamburger-bottom {
-    content: '';
+    content: "";
     position: absolute;
     width: 2rem;
     height: 3px;
@@ -225,7 +284,7 @@ ICONS AND AN EYE ICON UNDER PROJECT DESCRIPTION: */
     font-weight: 500;
   }
   .dark .tooltips .tooltip .tooltiptext::after {
-    content: '';
+    content: "";
     position: absolute;
     top: 100%;
     left: 50%;
@@ -264,7 +323,7 @@ ICONS AND AN EYE ICON UNDER PROJECT DESCRIPTION: */
     font-weight: 500;
   }
   .tooltips .tooltip .tooltiptext::after {
-    content: '';
+    content: "";
     position: absolute;
     top: 100%;
     left: 50%;
@@ -277,10 +336,6 @@ ICONS AND AN EYE ICON UNDER PROJECT DESCRIPTION: */
   .tooltips .tooltip:hover .tooltiptext {
     display: block;
     opacity: 1;
-  }
-
-  .tooltips .tooltip i {
-    /* color: white; */
   }
 }
 
@@ -330,7 +385,7 @@ https://developer.mozilla.org/en-US/docs/Web/CSS/:autofill */
     box-sizing: border-box;
     outline: 0;
   }
-  [type='email'] {
+  [type="email"] {
     width: 49%;
   }
   .feedback-input--second {
@@ -415,7 +470,7 @@ SO IT CAN BE STYLED */
   /* cursor ring not displaying on medium and small devices */
 
   /* contact form input fields streching 100% */
-  [type='email'] {
+  [type="email"] {
     width: 100%;
   }
 }

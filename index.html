@@ -109,17 +109,17 @@
     </noscript>
 
     <!-- Skip Navigation Link -->
-    <a 
-      href="#main-content" 
-      class="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 focus:z-50 focus:bg-cyan focus:text-black focus:px-4 focus:py-2 focus:rounded"
-    >
-      Skip to main content
-    </a>
+        <!-- <a
+          href="#main-content"
+          class="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 focus:z-[9999] focus:bg-cyan focus:text-black focus:px-4 focus:py-2 focus:rounded focus:no-underline focus:font-medium focus:shadow-lg"
+        >
+          Skip to main content
+        </a> -->
 
     <!-- Nav Container -->
     <nav>
       <!-- Flex Container for Desktop Nav -->
-      <ul id="myMenu" class="hidden fixed z-10 lg:flex w-screen">
+      <ul id="myMenu" class="hidden lg:flex fixed z-10 w-screen">
         <li class="group" data-menuanchor="firstPage">
           <a
             aria-label="Nav home link"
@@ -162,8 +162,7 @@
                     type="button"
                     aria-label="Switch to light mode"
                     class="fa-solid fa-sun fa-xl cursor-pointer transition-all hover:text-cyan bg-transparent border-0 p-0"
-                  >
-                  </button>
+                  ></button>
                 </div>
                 <div class="flex items-center justify-end space-x-5">
                   <div class="dark:text-gray-300 text-gray-800">Dark</div>
@@ -279,295 +278,303 @@
 
     <!-- Container For All Pages -->
     <main id="main-content">
-    <div id="fullpage">
-      <!-- First Page - HOME -->
-      <div class="section">
-        <!-- Div For Cursor Effect -->
-        <div
-          class="cursor hidden lg:block dark:border-white border-veryDarkViolet"
-        ></div>
+      <div id="fullpage">
+        <!-- First Page - HOME -->
+        <div class="section">
+          <!-- Div For Cursor Effect -->
+          <!-- <div
+            class="cursor hidden lg:block dark:border-white border-veryDarkViolet"
+          ></div> -->
 
-        <!-- Content Container -->
-        <div
-          class="container flex flex-col-reverse mx-auto p-4 pt-8 lg:flex-row items-center"
-        >
-          <!-- Left content: intro, date, avatar image -->
+          <!-- Content Container -->
           <div
-            class="flex flex-col space-y-10 mb-20 lg:mb-44 lg:mt-16 lg:w-7/12 xl:mb-30 bg-white dark:bg-transparent p-4 pb-20 mt-12 md:p-8 md:pb-12 border-t-2 border-grayishViolet dark:border-white border-b-2"
+            class="container flex flex-col-reverse mx-auto p-4 pt-8 lg:flex-row items-center"
           >
-            <!-- name, my avatar photo -->
-            <!-- to prevent layout shifts you add width and height to the image
+            <!-- Left content: intro, date, avatar image -->
+            <div
+              class="flex flex-col space-y-10 mb-20 lg:mb-44 lg:mt-16 lg:w-7/12 xl:mb-30 bg-white dark:bg-transparent p-4 pb-20 mt-12 md:p-8 md:pb-12 border-t-2 border-grayishViolet dark:border-white border-b-2"
+            >
+              <!-- name, my avatar photo -->
+              <!-- to prevent layout shifts you add width and height to the image
             and then you can overwrite it in css or Tailwind CSS -->
-            <div class="flex md:pt-0 gap-4 items-center">
-              <div class="w-16 h-16">
-                <img
-                  class="cld-responsive rounded-full w-full border-2"
-                  src="https://res.cloudinary.com/dhf9cwbuu/image/upload/c_limit,w_auto/dpr_auto/v1685009474/me3_tr0gh5.jpg"
-                  fetchpriority="high"
-                  width="200"
-                  height="200"
-                  alt="avatar photo"
-                />
+              <div class="flex md:pt-0 gap-4 items-center">
+                <div class="w-16 h-16">
+                  <img
+                    class="cld-responsive rounded-full w-full border-2"
+                    src="https://res.cloudinary.com/dhf9cwbuu/image/upload/c_limit,w_auto/dpr_auto/v1685009474/me3_tr0gh5.jpg"
+                    fetchpriority="high"
+                    width="200"
+                    height="200"
+                    alt="avatar photo"
+                  />
+                </div>
+                <div
+                  class="text-gray-600 text-sm dark:text-white flex flex-col"
+                >
+                  Tom Spatula
+                </div>
               </div>
-              <div class="text-gray-600 text-sm dark:text-white flex flex-col">
-                Tom Spatula
+              <!-- welcome section for mobile and destop-->
+              <h1
+                class="md:hidden dark:text-white font-bold text-center text-lg lg:max-w-md lg:text-left uppercase"
+              >
+                Web Dev Projects
+              </h1>
+              <h1
+                class="hidden md:block dark:text-white text-gray-700 text-lg lg:max-w-md uppercase"
+              >
+                Web Development Projects
+              </h1>
+              <div
+                class="text-gray-600 dark:text-gray-300 flex text-sm flex-col"
+              >
+                <!-- date  -->
+                <span>Updated: <span class="date"></span></span>
               </div>
-            </div>
-            <!-- welcome section for mobile and destop-->
-            <h1
-              class="md:hidden dark:text-white font-bold text-center text-lg lg:max-w-md lg:text-left uppercase"
-            >
-              Web Dev Projects
-            </h1>
-            <h1
-              class="hidden md:block dark:text-white text-gray-700 text-lg lg:max-w-md uppercase"
-            >
-              Web Development Projects
-            </h1>
-            <div class="text-gray-600 dark:text-gray-300 flex text-sm flex-col">
-              <!-- date  -->
-              <span>Updated: <span class="date"></span></span>
-            </div>
-            <!-- intro -->
-            <div class="text-gray-600 text-sm lg:text-base dark:text-gray-300">
-              <p>
-                Hi there, I'm Tom. Welcome to my portfolio website, where I
-                store my web development projects.
-              </p>
-              <!-- In your index.html file, add this wherever you want the link to appear -->
-              <!-- <a href="./index2.html">Go to Page 2</a> -->
-              <p>
-                About two years ago, I started building simple
-                <span class="dark:text-cyan font-semibold dark:font-normal">
-                  web apps </span
-                >with
-                <span class="dark:text-cyan font-semibold dark:font-normal">
-                  vanilla JavaScript, HTML, and CSS</span
-                >. As I've delved deeper into the field, I've become fascinated
-                with
-                <span class="dark:text-cyan font-semibold dark:font-normal"
-                  >React and Node.js</span
-                >, and I leveraged those in my full-stack endeavors.
-              </p>
-              <br />
-              <p>
-                Currently, I mostly use
-                <span class="dark:text-cyan font-semibold dark:font-normal"
-                  >Next.js</span
+              <!-- intro -->
+              <div
+                class="text-gray-600 text-sm lg:text-base dark:text-gray-300"
+              >
+                <p>
+                  Hi there, I'm Tom. Welcome to my portfolio website, where I
+                  store my web development projects.
+                </p>
+                <!-- In your index.html file, add this wherever you want the link to appear -->
+                <!-- <a href="./index2.html">Go to Page 2</a> -->
+                <p>
+                  About two years ago, I started building simple
+                  <span class="dark:text-cyan font-semibold dark:font-normal">
+                    web apps </span
+                  >with
+                  <span class="dark:text-cyan font-semibold dark:font-normal">
+                    vanilla JavaScript, HTML, and CSS</span
+                  >. As I've delved deeper into the field, I've become
+                  fascinated with
+                  <span class="dark:text-cyan font-semibold dark:font-normal"
+                    >React and Node.js</span
+                  >, and I leveraged those in my full-stack endeavors.
+                </p>
+                <br />
+                <p>
+                  Currently, I mostly use
+                  <span class="dark:text-cyan font-semibold dark:font-normal"
+                    >Next.js</span
+                  >
+                  which allows me to build complete front-end and back-end apps.
+                  I use Next.js integrated with
+                  <span class="dark:text-cyan font-semibold dark:font-normal"
+                    >TypeScript</span
+                  >
+                  for static type checking, and with
+                  <span class="dark:text-cyan font-semibold dark:font-normal"
+                    >Tailwind CSS</span
+                  >
+                  for modern styling designs.<br />
+                </p>
+                <br />
+                <p>
+                  My portfolio below reflects that learning experience, with
+                  apps listed in descending order of their completion dates.
+                </p>
+                <br />
+              </div>
+
+              <div class="hidden mx-auto md:flex gap-4 flex-wrap">
+                <a
+                  aria-label="Go to LinkedIn"
+                  target="_blank"
+                  href="https://www.linkedin.com/"
+                  class="leading-none py-4 px-10 text-gray-700 transition-all bg-darkViolet dark:bg-cyan hover:bg-gray-500 hover:text-white dark:hover:text-veryDarkBlue rounded-md dark:hover:bg-white"
+                  >View LinkedIn</a
                 >
-                which allows me to build complete front-end and back-end apps. I
-                use Next.js integrated with
-                <span class="dark:text-cyan font-semibold dark:font-normal"
-                  >TypeScript</span
+                <a
+                  aria-label="Got to Github"
+                  target="_blank"
+                  href="https://github.com/spatulatom"
+                  class="leading-none py-4 px-10 text-gray-700 transition-all bg- dark:bg-transparent border-2 border-gray-500 hover:bg-gray-500 hover:text-white dark:text-white rounded-md dark:hover:bg-white dark:hover:text-veryDarkViolet"
+                  >View Github</a
                 >
-                for static type checking, and with
-                <span class="dark:text-cyan font-semibold dark:font-normal"
-                  >Tailwind CSS</span
-                >
-                for modern styling designs.<br />
-              </p>
-              <br />
-              <p>
-                My portfolio below reflects that learning experience, with apps
-                listed in descending order of their completion dates.
-              </p>
-              <br />
+              </div>
             </div>
 
-            <div class="hidden mx-auto md:flex gap-4 flex-wrap">
-              <a
-                aria-label="Go to LinkedIn"
-                target="_blank"
-                href="https://www.linkedin.com/"
-                class="leading-none py-4 px-10 text-gray-700 transition-all bg-darkViolet dark:bg-cyan hover:bg-gray-500 hover:text-white dark:hover:text-veryDarkBlue rounded-md dark:hover:bg-white"
-                >View LinkedIn</a
-              >
-              <a
-                aria-label="Got to Github"
-                target="_blank"
-                href="https://github.com/spatulatom"
-                class="leading-none py-4 px-10 text-gray-700 transition-all bg- dark:bg-transparent border-2 border-gray-500 hover:bg-gray-500 hover:text-white dark:text-white rounded-md dark:hover:bg-white dark:hover:text-veryDarkViolet"
-                >View Github</a
-              >
+            <!-- Right content: Svg Image -->
+            <div class="hidden lg:block p-10 mb-8 mx-auto md:w-5/12 lg:mb-0">
+              <img
+                class="hidden lg:block rounded-xl w-auto h-full"
+                src="/images/illustration-working.svg"
+                fetchpriority="high"
+                alt="svg illustration of a person sitting at the desk"
+                width="500"
+                height="300"
+              />
             </div>
-          </div>
-
-          <!-- Right content: Svg Image -->
-          <div class="hidden lg:block p-10 mb-8 mx-auto md:w-5/12 lg:mb-0">
-            <img
-              class="hidden lg:block rounded-xl w-auto h-full"
-              src="/images/illustration-working.svg"
-              fetchpriority="high"
-              alt="svg illustration of a person sitting at the desk"
-              width="500"
-              height="300"
-            />
           </div>
         </div>
-      </div>
 
-      <!-- Second Page - PROJECTS-->
-      <div id="projects" class="section bg-keyboardDark bg-cover bg-center">
-        <!-- here renderProjects.js renders html content for every project -->
-      </div>
+        <!-- Second Page - PROJECTS-->
+        <div id="projects" class="section bg-keyboardDark bg-cover bg-center">
+          <!-- here renderProjects.js renders html content for every project -->
+        </div>
 
-      <!-- Third Page - CONTACT -->
-      <div class="section">
-        <!-- ther is a div in here added by fullpage.js with display-block proprty -->
-        <div
-          class="container m-auto p-12 pt-20 flex flex-col gap-8 lg:flex-row justify-center items-center md:border-t-2 border-b-2 dark:border-white border-grayishViolet"
-        >
-          <div class="flex flex-col p-4 basis-2/5 justify-evenly items-center">
-            <!-- <img
+        <!-- Third Page - CONTACT -->
+        <div class="section">
+          <!-- ther is a div in here added by fullpage.js with display-block proprty -->
+          <div
+            class="container m-auto p-12 pt-20 flex flex-col gap-8 lg:flex-row justify-center items-center md:border-t-2 border-b-2 dark:border-white border-grayishViolet"
+          >
+            <div
+              class="flex flex-col p-4 basis-2/5 justify-evenly items-center"
+            >
+              <!-- <img
               src="imgs/illustration-working.svg"
               class="rounded-md w-full h-auto"
               width="1"
               height="1"
             /> -->
-            <!-- <h2 class="text-xl font-medium mt-4 text-darkViolet dark:text-cyan">
+              <!-- <h2 class="text-xl font-medium mt-4 text-darkViolet dark:text-cyan">
               Find me on:
             </h2> -->
 
-            <h2 class="font-medium mb-4 text-gray-500 dark:text-gray-300">
-              Find me on:
-            </h2>
-            <!-- Social Icons -->
-            <div class="mt-4 flex space-x-6">
-              <a
-                aria-label="Go to LinkedIn"
-                target="_blank"
-                href="https://www.linkedin.com/"
-              >
-                <i
-                  class="fab fa-linkedin fa-2xl text-gray-500 dark:text-gray-300 transition-all hover:text-cyan hover:dark:text-cyan"
-                ></i>
-              </a>
-              <a
-                aria-label="Go to GitHub"
-                target="_blank"
-                href="https://github.com/spatulatom"
-              >
-                <i
-                  class="fab fa-github fa-2xl text-gray-500 dark:text-gray-300 hover:text-cyan hover:dark:text-cyan"
-                ></i>
-              </a>
+              <h2 class="font-medium mb-4 text-gray-500 dark:text-gray-300">
+                Find me on:
+              </h2>
+              <!-- Social Icons -->
+              <div class="mt-4 flex space-x-6">
+                <a
+                  aria-label="Go to LinkedIn"
+                  target="_blank"
+                  href="https://www.linkedin.com/"
+                >
+                  <i
+                    class="fab fa-linkedin fa-2xl text-gray-500 dark:text-gray-300 transition-all hover:text-cyan hover:dark:text-cyan"
+                  ></i>
+                </a>
+                <a
+                  aria-label="Go to GitHub"
+                  target="_blank"
+                  href="https://github.com/spatulatom"
+                >
+                  <i
+                    class="fab fa-github fa-2xl text-gray-500 dark:text-gray-300 hover:text-cyan hover:dark:text-cyan"
+                  ></i>
+                </a>
+              </div>
+            </div>
+
+            <!-- Container for Send Form  -->
+            <div
+              class="text-center lg:text-left border-t-2 border-b-2 border-grayishViolet pb-8 px-4 bg-white dark:bg-veryDarkBlue"
+            >
+              <form class="form" aria-labelledby="form-heading">
+                <h2
+                  id="form-heading"
+                  class="form__feedback p-3 pt-6 text-lg text-gray-500 dark:text-gray-300"
+                >
+                  Send me a message
+                </h2>
+                <label for="name" class="sr-only">Name</label>
+                <input
+                  id="name"
+                  name="name"
+                  type="text"
+                  class="feedback-input"
+                  placeholder="name"
+                  maxlength="25"
+                  required
+                  aria-required="true"
+                />
+                <label for="email" class="sr-only">Email</label>
+                <input
+                  id="email"
+                  name="email"
+                  type="email"
+                  class="feedback-input"
+                  placeholder="email"
+                  maxlength="25"
+                  required
+                  aria-required="true"
+                  aria-describedby="email-desc"
+                />
+                <span id="email-desc" class="sr-only"
+                  >Please enter a valid email address</span
+                >
+                <label for="email2" class="sr-only">Confirm Email</label>
+                <input
+                  id="email2"
+                  name="email2"
+                  type="email"
+                  class="feedback-input feedback-input--second"
+                  placeholder="confirm email"
+                  maxlength="25"
+                  required
+                  aria-required="true"
+                  aria-describedby="email2-desc"
+                />
+                <span id="email2-desc" class="sr-only"
+                  >Please confirm your email address</span
+                >
+                <label for="message" class="sr-only">Message</label>
+                <textarea
+                  id="message"
+                  name="text"
+                  class="feedback-input"
+                  placeholder="your message (max 400 characters)"
+                  maxlength="400"
+                  required
+                  aria-required="true"
+                ></textarea>
+                <button
+                  type="submit"
+                  class="uppercase px-10 mx-auto font-medium hover:text-white text-gray-700 rounded-md bg-darkViolet dark:bg-cyan transition-all md:text-base py-3 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-cyan"
+                >
+                  <i class="fa fa-paper-plane" aria-hidden="true"></i>
+                  <span>Send</span>
+                </button>
+              </form>
             </div>
           </div>
-
-          <!-- Container for Send Form  -->
-          <div
-            class="text-center lg:text-left border-t-2 border-b-2 border-grayishViolet pb-8 px-4 bg-white dark:bg-veryDarkBlue"
-          >
-            <form class="form" aria-labelledby="form-heading">
-              <h2
-                id="form-heading"
-                class="form__feedback p-3 pt-6 text-lg text-gray-500 dark:text-gray-300"
-              >
-                Send me a message
-              </h2>
-              <label for="name" class="sr-only">Name</label>
-              <input
-                id="name"
-                name="name"
-                type="text"
-                class="feedback-input"
-                placeholder="name"
-                maxlength="25"
-                required
-                aria-required="true"
-              />
-              <label for="email" class="sr-only">Email</label>
-              <input
-                id="email"
-                name="email"
-                type="email"
-                class="feedback-input"
-                placeholder="email"
-                maxlength="25"
-                required
-                aria-required="true"
-                aria-describedby="email-desc"
-              />
-              <span id="email-desc" class="sr-only"
-                >Please enter a valid email address</span
-              >
-              <label for="email2" class="sr-only">Confirm Email</label>
-              <input
-                id="email2"
-                name="email2"
-                type="email"
-                class="feedback-input feedback-input--second"
-                placeholder="confirm email"
-                maxlength="25"
-                required
-                aria-required="true"
-                aria-describedby="email2-desc"
-              />
-              <span id="email2-desc" class="sr-only"
-                >Please confirm your email address</span
-              >
-              <label for="message" class="sr-only">Message</label>
-              <textarea
-                id="message"
-                name="text"
-                class="feedback-input"
-                placeholder="your message (max 400 characters)"
-                maxlength="400"
-                required
-                aria-required="true"
-              ></textarea>
-              <button
-                type="submit"
-                class="uppercase px-10 mx-auto font-medium hover:text-white text-gray-700 rounded-md bg-darkViolet dark:bg-cyan transition-all md:text-base py-3 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-cyan"
-              >
-                <i class="fa fa-paper-plane" aria-hidden="true"></i>
-                <span>Send</span>
-              </button>
-            </form>
-          </div>
-        </div>
-        <!-- Google Map -->
-        <div class="w-11/12 mx-auto my-12 px-4">
-          <h2
-            class="text-center text-lg font-medium uppercase text-gray-600 dark:text-white mb-8"
-          >
-            My city:
-          </h2>
-          <div class="w-full h-96">
-            <iframe
-              class="w-full h-full"
-              src="https://maps.google.com/maps?q=Palace%20of%20Culture%20and%20Science&t=&z=15&ie=UTF8&iwloc=&output=embed"
-              style="border: 0"
-              allowfullscreen=""
-              loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade"
-              title="Google Map showing Palace of Culture and Science location"
-            ></iframe>
-          </div>
-        </div>
-        <!-- Footer -->
-        <footer
-          class="p-4 flex flex-col justify-center space-x-3 items-center text-[#a3aca7]"
-        >
-          <p class="dark:text-gray-400 text-gray-500">
-            web dev projects <span id="copyright-date"></span>
-          </p>
-
-          <a
-            aria-label="Read more"
-            href="https://github.com/spatulatom/projects-online#readme"
-            target="_blank"
-            class="tooltip"
-            rel="noopener"
-          >
-            <span class="tooltiptext ml-3 hover:text-cyan"
-              >(GitHub repository of this portfolio website
-              <span><i class="fab fa-github fa-xl"></i></span>)</span
+          <!-- Google Map -->
+          <div class="w-11/12 mx-auto my-12 px-4">
+            <h2
+              class="text-center text-lg font-medium uppercase text-gray-600 dark:text-white mb-8"
             >
-          </a>
-        </footer>
+              My city:
+            </h2>
+            <div class="w-full h-96">
+              <iframe
+                class="w-full h-full"
+                src="https://maps.google.com/maps?q=Palace%20of%20Culture%20and%20Science&t=&z=15&ie=UTF8&iwloc=&output=embed"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+                title="Google Map showing Palace of Culture and Science location"
+              ></iframe>
+            </div>
+          </div>
+          <!-- Footer -->
+          <footer
+            class="p-4 flex flex-col justify-center space-x-3 items-center text-[#a3aca7]"
+          >
+            <p class="dark:text-gray-400 text-gray-500">
+              web dev projects <span id="copyright-date"></span>
+            </p>
+
+            <a
+              aria-label="Read more"
+              href="https://github.com/spatulatom/projects-online#readme"
+              target="_blank"
+              class="tooltip"
+              rel="noopener"
+            >
+              <span class="tooltiptext ml-3 hover:text-cyan"
+                >(GitHub repository of this portfolio website
+                <span><i class="fab fa-github fa-xl"></i></span>)</span
+              >
+            </a>
+          </footer>
+        </div>
       </div>
-    </div>
     </main>
 
     <!-- Script For Fullpage.js -->
