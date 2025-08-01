@@ -5,7 +5,7 @@ module.exports = {
   // if classes used in js files we need this config
   // ['./*.html] -  any html classes in the root
   // content: ['./scripts/*.{html,js}', './index.html', './query.html', './container-query.html', './chatgpt.html'],
-  content: ['index.html','./src/**/*.{js,jsx,ts,tsx,html}'],
+  content: ['index.html','about.html','./src/**/*.{js,jsx,ts,tsx,html}'],
   theme: {
     extend: {
       fontFamily: {

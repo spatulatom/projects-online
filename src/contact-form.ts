@@ -42,11 +42,11 @@ function contactForm() {
           results.innerHTML = 'Your message has been sent! Thank You, we will get back to you soon!';
           formData.reset();
         } else {
-          results.innerHTML = 'There was an error sending your message.';
+          results.innerHTML = 'There was an error sending your message <500';
         }
       } catch (error) {
         console.error('Error:', error);
-        results.innerHTML = 'There was an error sending your message.';
+        results.innerHTML = 'There was an error sending your message 500.';
       }
     }
   };

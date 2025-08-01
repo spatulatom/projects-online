@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Experimenting with Form</title>
+  </head>
+  <body>
+    <section class="min-h-screen">
+      <h1 class="text-center">Experimenting with Form</h1>
+      <form method="post" action="./about.html" class="flex flex-col items-center justify-center bg-gray-100 p-6 rounded-lg shadow-md w-96 mx-auto mt-20">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <button class="bg-gray-500 hover:bg-blue-500 mt-4 text-white font-bold py-2 px-4 rounded" type="submit">Submit</button>
+      </form>
+
+    </section>
+    <section class="min-h-screen flex flex-col items-center justify-center bg-black text-white">
+      <h2>In this section, we will explore the JavaScript Geolocation API.</h2>
+
+      <h2>JavaScript Geolocation API</h2>
+      <p>Click the button to get your coordinates.</p>
+
+      <button class="bg-cyan-500 hover:bg-cyan-600 text-white font-bold py-2 px-4 rounded bg-amber-300">Try It</button>
+
+      <p id="demo"></p>
+    </section>
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const demo = document.getElementById("demo");
+        const button = document.querySelector("button");
+
+        button.addEventListener("click", getLocation);
+
+        function getLocation() {
+          if (navigator.geolocation) {
+            navigator.geolocation.getCurrentPosition(showPosition, handleError);
+          } else {
+            demo.innerHTML = "Geolocation is not supported by this browser.";
+          }
+        }
+        // position argument is never passed to showPosition function?
+        // in the context of the Geolocation API, the position object is provided by the browser
+        // when you call navigator.geolocation.getCurrentPosition(showPosition, handleError),
+        // the browser internally handles the process. If the geolocation request is successful, the
+        // browser automatically invokes the showPosition function and passes the position object as
+        // an   argument. This is how callback functions work in JavaScript—arguments are provided by the
+        // function or API that calls the callback.
+
+        function showPosition(position) {
+          demo.innerHTML = `Latitude: ${position.coords.latitude}<br>Longitude: ${position.coords.longitude}`;
+        }
+
+        function handleError(error) {
+          switch (error.code) {
+            case error.PERMISSION_DENIED:
+              demo.innerHTML = "User denied the request for Geolocation.";
+              break;
+            case error.POSITION_UNAVAILABLE:
+              demo.innerHTML = "Location information is unavailable.";
+              break;
+            case error.TIMEOUT:
+              demo.innerHTML = "The request to get user location timed out.";
+              break;
+            case error.UNKNOWN_ERROR:
+              demo.innerHTML = "An unknown error occurred.";
+              break;
+          }
+        }
+      });
+    </script>
+     <script type="module" src="./src/main.ts"></script>
+  </body>
+</html>
