@@ -108,6 +108,14 @@
       <h2>Please enable JavaScript to run this page.</h2>
     </noscript>
 
+    <!-- Skip Navigation Link -->
+    <a 
+      href="#main-content" 
+      class="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 focus:z-50 focus:bg-cyan focus:text-black focus:px-4 focus:py-2 focus:rounded"
+    >
+      Skip to main content
+    </a>
+
     <!-- Nav Container -->
     <nav>
       <!-- Flex Container for Desktop Nav -->
@@ -149,18 +157,22 @@
               >
                 <div class="flex items-center justify-end space-x-5">
                   <div class="dark:text-gray-300 text-gray-800">Light</div>
-                  <i
+                  <button
                     id="light"
-                    class="fa-solid fa-sun fa-xl cursor-pointer transition-all hover:text-cyan"
+                    type="button"
+                    aria-label="Switch to light mode"
+                    class="fa-solid fa-sun fa-xl cursor-pointer transition-all hover:text-cyan bg-transparent border-0 p-0"
                   >
-                  </i>
+                  </button>
                 </div>
                 <div class="flex items-center justify-end space-x-5">
                   <div class="dark:text-gray-300 text-gray-800">Dark</div>
-                  <i
+                  <button
                     id="dark"
-                    class="fa-solid fa-moon fa-xl cursor-pointer transition-all hover:text-cyan"
-                  ></i>
+                    type="button"
+                    aria-label="Switch to dark mode"
+                    class="fa-solid fa-moon fa-xl cursor-pointer transition-all hover:text-cyan bg-transparent border-0 p-0"
+                  ></button>
                 </div>
                 <div class="flex items-center justify-end space-x-4">
                   <div
@@ -168,10 +180,12 @@
                   >
                     Your OS
                   </div>
-                  <i
+                  <button
                     id="system"
-                    class="fa-solid fa-desktop fa-xl cursor-pointer transition-all hover:text-cyan"
-                  ></i>
+                    type="button"
+                    aria-label="Use system theme preference"
+                    class="fa-solid fa-desktop fa-xl cursor-pointer transition-all hover:text-cyan bg-transparent border-0 p-0"
+                  ></button>
                 </div>
               </div>
             </div>
@@ -227,18 +241,24 @@
           </li>
           <li>
             <div class="flex space-x-6 pt-8">
-              <i
+              <button
                 id="light-mobile"
-                class="icon fa-regular fa-sun fa-2xl cursor-pointer transition-all hover:text-cyan"
-              ></i>
-              <i
+                type="button"
+                aria-label="Switch to light mode"
+                class="icon fa-regular fa-sun fa-2xl cursor-pointer transition-all hover:text-cyan bg-transparent border-0 p-0"
+              ></button>
+              <button
                 id="dark-mobile"
-                class="icon fa-solid fa-moon fa-2xl cursor-pointer transition-all hover:text-cyan"
-              ></i>
-              <i
+                type="button"
+                aria-label="Switch to dark mode"
+                class="icon fa-solid fa-moon fa-2xl cursor-pointer transition-all hover:text-cyan bg-transparent border-0 p-0"
+              ></button>
+              <button
                 id="system-mobile"
-                class="icon fa-solid fa-tablet-screen-button fa-2xl cursor-pointer transition-all hover:text-cyan"
-              ></i>
+                type="button"
+                aria-label="Use system theme preference"
+                class="icon fa-solid fa-tablet-screen-button fa-2xl cursor-pointer transition-all hover:text-cyan bg-transparent border-0 p-0"
+              ></button>
             </div>
           </li>
           <li class="absolute top-0 m-4 right-0">
@@ -258,6 +278,7 @@
     </nav>
 
     <!-- Container For All Pages -->
+    <main id="main-content">
     <div id="fullpage">
       <!-- First Page - HOME -->
       <div class="section">
@@ -520,6 +541,7 @@
               allowfullscreen=""
               loading="lazy"
               referrerpolicy="no-referrer-when-downgrade"
+              title="Google Map showing Palace of Culture and Science location"
             ></iframe>
           </div>
         </div>
@@ -546,6 +568,7 @@
         </footer>
       </div>
     </div>
+    </main>
 
     <!-- Script For Fullpage.js -->
     <script
