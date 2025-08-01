@@ -437,53 +437,70 @@
           <div
             class="text-center lg:text-left border-t-2 border-b-2 border-grayishViolet pb-8 px-4 bg-white dark:bg-veryDarkBlue"
           >
-            <form class="form" aria-label="Fill this form to leave feedback">
+            <form class="form" aria-labelledby="form-heading">
               <h2
+                id="form-heading"
                 class="form__feedback p-3 pt-6 text-lg text-gray-500 dark:text-gray-300"
               >
-                Send me a message :
+                Send me a message
               </h2>
-
+              <label for="name" class="sr-only">Name</label>
               <input
-                aria-label="input your name "
+                id="name"
                 name="name"
                 type="text"
                 class="feedback-input"
                 placeholder="name"
                 maxlength="25"
                 required
+                aria-required="true"
               />
+              <label for="email" class="sr-only">Email</label>
               <input
+                id="email"
                 name="email"
                 type="email"
                 class="feedback-input"
                 placeholder="email"
                 maxlength="25"
                 required
+                aria-required="true"
+                aria-describedby="email-desc"
               />
+              <span id="email-desc" class="sr-only"
+                >Please enter a valid email address</span
+              >
+              <label for="email2" class="sr-only">Confirm Email</label>
               <input
+                id="email2"
                 name="email2"
                 type="email"
                 class="feedback-input feedback-input--second"
                 placeholder="confirm email"
                 maxlength="25"
                 required
+                aria-required="true"
+                aria-describedby="email2-desc"
               />
+              <span id="email2-desc" class="sr-only"
+                >Please confirm your email address</span
+              >
+              <label for="message" class="sr-only">Message</label>
               <textarea
+                id="message"
                 name="text"
                 class="feedback-input"
                 placeholder="your message (max 400 characters)"
                 maxlength="400"
                 required
+                aria-required="true"
               ></textarea>
               <button
-                aria-label="Clikc button to submit the form"
                 type="submit"
-                value="Send Message"
-                class="uppercase px-10 mx-auto font-medium hover:text-white text-gray-700 rounded-md bg-darkViolet dark:bg-cyan transition-all md:text-base py-3 focus:outline-none"
+                class="uppercase px-10 mx-auto font-medium hover:text-white text-gray-700 rounded-md bg-darkViolet dark:bg-cyan transition-all md:text-base py-3 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-cyan"
               >
-                <i class="fa fa-paper-plane"></i>
-                Send
+                <i class="fa fa-paper-plane" aria-hidden="true"></i>
+                <span>Send</span>
               </button>
             </form>
           </div>
