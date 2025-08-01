@@ -42,11 +42,14 @@ function contactForm() {
           results.innerHTML = 'Your message has been sent! Thank You, we will get back to you soon!';
           formData.reset();
         } else {
-          results.innerHTML = 'There was an error sending your message <500';
+           const errorText = await response.json();
+          console.log('Response not ok:', response.status);
+          console.log('Response text:', errorText);
+          results.innerHTML = errorText.message || 'An error occurred';
         }
       } catch (error) {
         console.error('Error:', error);
-        results.innerHTML = 'There was an error sending your message 500.';
+        results.innerHTML = 'There was an error connecting to Render.com your message 500.';
       }
     }
   };
