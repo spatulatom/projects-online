@@ -109,9 +109,9 @@
     </noscript>
 
     <!-- Skip Navigation Link -->
-        <!-- <a
+    <!-- <a
           href="#main-content"
-          class="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 focus:z-[9999] focus:bg-cyan focus:text-black focus:px-4 focus:py-2 focus:rounded focus:no-underline focus:font-medium focus:shadow-lg"
+          class="sr-only focus-visible:not-sr-only focus-visible:absolute focus-visible:top-4 focus-visible:left-4 focus-visible:z-[9999] focus-visible:bg-cyan focus-visible:text-black focus-visible:px-4 focus-visible:py-2 focus-visible:rounded focus-visible:no-underline focus-visible:font-medium focus-visible:shadow-lg"
         >
           Skip to main content
         </a> -->
@@ -161,8 +161,17 @@
                     id="light"
                     type="button"
                     aria-label="Switch to light mode"
-                    class="fa-solid fa-sun fa-xl cursor-pointer transition-all hover:text-cyan bg-transparent border-0 p-0"
-                  ></button>
+                    class="cursor-pointer transition-all hover:text-cyan bg-transparent border-0 p-0"
+                    style="
+                      width: 44px;
+                      height: 44px;
+                      display: flex;
+                      align-items: center;
+                      justify-content: center;
+                    "
+                  >
+                    <i class="fa-solid fa-sun fa-xl" aria-hidden="true"></i>
+                  </button>
                 </div>
                 <div class="flex items-center justify-end space-x-5">
                   <div class="dark:text-gray-300 text-gray-800">Dark</div>
@@ -170,8 +179,17 @@
                     id="dark"
                     type="button"
                     aria-label="Switch to dark mode"
-                    class="fa-solid fa-moon fa-xl cursor-pointer transition-all hover:text-cyan bg-transparent border-0 p-0"
-                  ></button>
+                    class="cursor-pointer transition-all hover:text-cyan bg-transparent border-0 p-0"
+                    style="
+                      width: 44px;
+                      height: 44px;
+                      display: flex;
+                      align-items: center;
+                      justify-content: center;
+                    "
+                  >
+                    <i class="fa-solid fa-moon fa-xl" aria-hidden="true"></i>
+                  </button>
                 </div>
                 <div class="flex items-center justify-end space-x-4">
                   <div
@@ -183,8 +201,17 @@
                     id="system"
                     type="button"
                     aria-label="Use system theme preference"
-                    class="fa-solid fa-desktop fa-xl cursor-pointer transition-all hover:text-cyan bg-transparent border-0 p-0"
-                  ></button>
+                    class="cursor-pointer transition-all hover:text-cyan bg-transparent border-0 p-0"
+                    style="
+                      width: 44px;
+                      height: 44px;
+                      display: flex;
+                      align-items: center;
+                      justify-content: center;
+                    "
+                  >
+                    <i class="fa-solid fa-desktop fa-xl" aria-hidden="true"></i>
+                  </button>
                 </div>
               </div>
             </div>
@@ -203,7 +230,7 @@
       <!-- Hamburger Button for Mobile Nav-->
       <button
         id="menu-btn"
-        class="z-30 fixed top-4 left-4 block lg:hidden focus:outline-none hamburger"
+        class="z-30 fixed top-4 left-4 block lg:hidden focus-visible:outline-none hamburger"
       >
         <span class="hamburger-top bg-cyan"></span>
         <span class="hamburger-middle bg-cyan"></span>
@@ -211,7 +238,9 @@
       </button>
 
       <!--  Mobile Nav -->
-      <div class="mobile-nav bg-gray-100 dark:bg-customBlack max-h-screen">
+      <div
+        class="lg:hidden mobile-nav bg-gray-100 dark:bg-customBlack max-h-screen"
+      >
         <ul class="flex flex-col p-4 justify-center items-center h-full">
           <li class="mobile-nav__item text-grayishViolet dark:text-white">
             <a
@@ -244,20 +273,50 @@
                 id="light-mobile"
                 type="button"
                 aria-label="Switch to light mode"
-                class="icon fa-regular fa-sun fa-2xl cursor-pointer transition-all hover:text-cyan bg-transparent border-0 p-0"
-              ></button>
+                class="cursor-pointer transition-all hover:text-cyan bg-transparent border-0 p-0"
+                style="
+                  width: 44px;
+                  height: 44px;
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                "
+              >
+                <i class="fa-regular fa-sun fa-2xl" aria-hidden="true"></i>
+              </button>
               <button
                 id="dark-mobile"
                 type="button"
                 aria-label="Switch to dark mode"
-                class="icon fa-solid fa-moon fa-2xl cursor-pointer transition-all hover:text-cyan bg-transparent border-0 p-0"
-              ></button>
+                class="cursor-pointer transition-all hover:text-cyan bg-transparent border-0 p-0"
+                style="
+                  width: 44px;
+                  height: 44px;
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                "
+              >
+                <i class="fa-solid fa-moon fa-2xl" aria-hidden="true"></i>
+              </button>
               <button
                 id="system-mobile"
                 type="button"
                 aria-label="Use system theme preference"
-                class="icon fa-solid fa-tablet-screen-button fa-2xl cursor-pointer transition-all hover:text-cyan bg-transparent border-0 p-0"
-              ></button>
+                class="cursor-pointer transition-all hover:text-cyan bg-transparent border-0 p-0"
+                style="
+                  width: 44px;
+                  height: 44px;
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                "
+              >
+                <i
+                  class="fa-solid fa-tablet-screen-button fa-2xl"
+                  aria-hidden="true"
+                ></i>
+              </button>
             </div>
           </li>
           <li class="absolute top-0 m-4 right-0">
@@ -525,7 +584,7 @@
                 ></textarea>
                 <button
                   type="submit"
-                  class="uppercase px-10 mx-auto font-medium hover:text-white text-gray-700 rounded-md bg-darkViolet dark:bg-cyan transition-all md:text-base py-3 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-cyan"
+                  class="uppercase px-10 mx-auto font-medium hover:text-white text-gray-700 rounded-md bg-darkViolet dark:bg-cyan transition-all md:text-base py-3 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-cyan"
                 >
                   <i class="fa fa-paper-plane" aria-hidden="true"></i>
                   <span>Send</span>

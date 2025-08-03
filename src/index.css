@@ -4,20 +4,25 @@
 
 /* WCAG 2.2 GLOBAL FOCUS STYLES */
 @layer base {
-  /* High visibility focus indicator for all focusable elements */
-  *:focus {
-    outline: 3px solid theme("colors.cyan");
+  /* Remove default focus outline for all elements */
+  :focus {
+    outline: none;
+  }
+
+  /* High visibility focus indicator for keyboard navigation only */
+  :focus-visible {
+    /* outline: 3px solid theme("colors.cyan");
     outline-offset: 2px;
-    border-radius: 4px;
+    border-radius: 4px; */
   }
 
   /* Enhanced focus for interactive elements */
-  a:focus,
-  button:focus,
-  input:focus,
-  textarea:focus,
-  select:focus,
-  [tabindex]:focus {
+  a:focus-visible,
+  button:focus-visible,
+  input:focus-visible,
+  textarea:focus-visible,
+  select:focus-visible,
+  [tabindex]:focus-visible {
     outline: 3px solid theme("colors.cyan");
     outline-offset: 2px;
     box-shadow: 0 0 0 2px theme("colors.white"), 0 0 0 5px theme("colors.cyan");
@@ -25,13 +30,13 @@
   }
 
   /* Dark mode focus adjustments */
-  .dark *:focus,
-  .dark a:focus,
-  .dark button:focus,
-  .dark input:focus,
-  .dark textarea:focus,
-  .dark select:focus,
-  .dark [tabindex]:focus {
+  .dark *:focus-visible,
+  .dark a:focus-visible,
+  .dark button:focus-visible,
+  .dark input:focus-visible,
+  .dark textarea:focus-visible,
+  .dark select:focus-visible,
+  .dark [tabindex]:focus-visible {
     outline: 3px solid theme("colors.cyan");
     outline-offset: 2px;
     box-shadow: 0 0 0 2px theme("colors.gray.900"),
@@ -39,27 +44,27 @@
   }
 
   /* Special handling for buttons with background colors */
-  button:focus {
+  button:focus-visible {
     position: relative;
   }
 
   /* Ensure focus is visible on form elements */
-  input:focus,
-  textarea:focus,
-  select:focus {
+  input:focus-visible,
+  textarea:focus-visible,
+  select:focus-visible {
     background-color: theme("colors.white");
     color: theme("colors.gray.900");
   }
 
-  .dark input:focus,
-  .dark textarea:focus,
-  .dark select:focus {
+  .dark input:focus-visible,
+  .dark textarea:focus-visible,
+  .dark select:focus-visible {
     background-color: theme("colors.gray.100");
     color: theme("colors.gray.900");
   }
 
   /* Skip link specific focus (already implemented but keeping for reference) */
-  .skip-link:focus {
+  .skip-link:focus-visible {
     outline: 3px solid theme("colors.cyan");
     outline-offset: 2px;
     box-shadow: 0 0 0 2px theme("colors.white"), 0 0 0 5px theme("colors.cyan");
@@ -392,7 +397,7 @@ https://developer.mozilla.org/en-US/docs/Web/CSS/:autofill */
     float: right;
   }
 
-  .feedback-input:focus {
+  .feedback-input:focus-visible {
     color: rgb(34, 32, 32);
     background-color: #cacac0;
     border: 3px solid #7b1010;
@@ -457,7 +462,14 @@ SO IT CAN BE STYLED */
 .fp-slidesNav.fp-bottom {
   text-align: center;
 }
-
+.fp-overflow:focus-visible{
+  outline: none;
+  box-shadow: none;
+}
+.dark *:focus-visible, .dark a:focus-visible, .dark button:focus-visible, .dark input:focus-visible, .dark textarea:focus-visible, .dark select:focus-visible, .dark [tabindex]:focus-visible{
+  outline: none;
+  box-shadow: none;
+}
 @media (max-width: 1024px) {
   /* fullpage side nav arrows (not dots) */
   .fp-arrow.fp-controlArrow.fp-next {
