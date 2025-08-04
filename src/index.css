@@ -11,9 +11,9 @@
 
   /* High visibility focus indicator for keyboard navigation only */
   :focus-visible {
-    /* outline: 3px solid theme("colors.cyan");
+    outline: 3px solid theme("colors.cyan");
     outline-offset: 2px;
-    border-radius: 4px; */
+    border-radius: 4px;
   }
 
   /* Enhanced focus for interactive elements */
@@ -71,7 +71,11 @@
   }
 }
 
-/* CURSOR EFFECT AS A RING FOLLOWING THE MOUSE CURSOR: */
+
+
+
+@layer components {
+  /* CURSOR EFFECT AS A RING FOLLOWING THE MOUSE CURSOR: */
 
 .cursor {
   top: 55%;
@@ -115,7 +119,6 @@
 
 /* HAMBURGER MENU */
 
-@layer components {
   .hamburger {
     cursor: pointer;
     width: 2rem;
@@ -182,9 +185,8 @@
     transform: rotate(-45deg) translateY(6px) translateX(-6px);
     background-color: hsl(180, 66%, 49%);
   }
-}
 
-/* MOBILE MENU POPPING FROM THE LEFT SIDE */
+  /* MOBILE MENU POPPING FROM THE LEFT SIDE */
 
 .mobile-nav {
   -webkit-transform: translateX(-100%);
@@ -259,7 +261,7 @@
 
 /* SECTION 2 (PROJECTS) TOOLTIP WHEN HOVERING OVER GITHUB 
 ICONS AND AN EYE ICON UNDER PROJECT DESCRIPTION: */
-@layer utilities {
+
   .dark .tooltips .tooltip {
     position: relative;
     display: inline-block;
@@ -342,7 +344,12 @@ ICONS AND AN EYE ICON UNDER PROJECT DESCRIPTION: */
     display: block;
     opacity: 1;
   }
+
+
 }
+
+
+
 
 /* SECTION 3 (CONTACT) - CONTACT FORM: */
 /* code below overwrites mozilla default styling for autofill
