@@ -4,30 +4,20 @@
 
 /* WCAG 2.2 GLOBAL FOCUS STYLES */
 @layer base {
-/* Remove ONLY when it's not a keyboard (or similar) focus */
-  :focus:not(:focus-visible) {
+  /* Remove default focus outline for all elements */
+  :focus {
     outline: none;
   }
 
-  /* Strong, WCAG 2.2 compliant focus appearance */
+  /* High visibility focus indicator for keyboard navigation only */
   :focus-visible {
     outline: 3px solid theme("colors.cyan");
     outline-offset: 2px;
-    border-radius: 4px; /* optional */
+    border-radius: 4px;
   }
 
-  /* Optional subtle pointer focus for form controls */
-  /* input:focus:not(:focus-visible),
-  textarea:focus:not(:focus-visible),
-  select:focus:not(:focus-visible) {
-
-    box-shadow: 0 0 0 1px theme("colors.cyan") inset;
-    border-color: theme("colors.cyan");
-  } */
-
-
   /* Enhanced focus for interactive elements */
-  /* a:focus-visible,
+  a:focus-visible,
   button:focus-visible,
   input:focus-visible,
   textarea:focus-visible,
@@ -37,10 +27,10 @@
     outline-offset: 2px;
     box-shadow: 0 0 0 2px theme("colors.white"), 0 0 0 5px theme("colors.cyan");
     border-radius: 4px;
-  } */
+  }
 
   /* Dark mode focus adjustments */
-  /* .dark *:focus-visible,
+  .dark *:focus-visible,
   .dark a:focus-visible,
   .dark button:focus-visible,
   .dark input:focus-visible,
@@ -51,45 +41,34 @@
     outline-offset: 2px;
     box-shadow: 0 0 0 2px theme("colors.gray.900"),
       0 0 0 5px theme("colors.cyan");
-  } */
-
-
-  /* Why position: relative?
-
-Setting position: relative on a button when it is focused (and focus is visible) is 
-often done to create a positioning context for
- child elements or pseudo-elements (like ::before or ::after).
-For example, if you want to add a custom focus indicator (like a border, shadow, or outline) 
-using ::before or ::after, those pseudo-elements would need a positioning context. 
-position: relative ensures that the pseudo-elements are positioned relative to the button itself. */
+  }
 
   /* Special handling for buttons with background colors */
-  /* button:focus-visible {
+  button:focus-visible {
     position: relative;
-  } */
+  }
 
   /* Ensure focus is visible on form elements */
-  /* input:focus-visible,
+  input:focus-visible,
   textarea:focus-visible,
   select:focus-visible {
     background-color: theme("colors.white");
     color: theme("colors.gray.900");
-  } */
+  }
 
-  /* .dark input:focus-visible,
+  .dark input:focus-visible,
   .dark textarea:focus-visible,
   .dark select:focus-visible {
     background-color: theme("colors.gray.100");
     color: theme("colors.gray.900");
-  } */
+  }
 
   /* Skip link specific focus (already implemented but keeping for reference) */
-  /* .skip-link:focus-visible {
+  .skip-link:focus-visible {
     outline: 3px solid theme("colors.cyan");
     outline-offset: 2px;
     box-shadow: 0 0 0 2px theme("colors.white"), 0 0 0 5px theme("colors.cyan");
   }
- */
 }
 
 
@@ -383,13 +362,13 @@ https://developer.mozilla.org/en-US/docs/Web/CSS/:autofill */
 @layer components {
   input:-webkit-autofill,
   input:-webkit-autofill:hover,
-  /* input:-webkit-autofill:focus, */
+  input:-webkit-autofill:focus,
   textarea:-webkit-autofill,
   textarea:-webkit-autofill:hover,
-  /* textarea:-webkit-autofill:focus, */
+  textarea:-webkit-autofill:focus,
   select:-webkit-autofill,
-  /* select:-webkit-autofill:focus  */
-  select:-webkit-autofill:hover {
+  select:-webkit-autofill:hover,
+  select:-webkit-autofill:focus {
     border: 2px solid var(--red);
     -webkit-text-fill-color: rgb(34, 32, 32);
     background-color: #cacac0;
@@ -416,7 +395,7 @@ https://developer.mozilla.org/en-US/docs/Web/CSS/:autofill */
     width: 100%;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
-      
+    outline: 0;
   }
   [type="email"] {
     width: 49%;
@@ -425,11 +404,11 @@ https://developer.mozilla.org/en-US/docs/Web/CSS/:autofill */
     float: right;
   }
 
-  /* .feedback-input:focus-visible {
+  .feedback-input:focus-visible {
     color: rgb(34, 32, 32);
     background-color: #cacac0;
     border: 3px solid #7b1010;
-  } */
+  }
 
   textarea {
     height: 150px;
@@ -490,14 +469,14 @@ SO IT CAN BE STYLED */
 .fp-slidesNav.fp-bottom {
   text-align: center;
 }
-/* .fp-overflow:focus-visible{
+.fp-overflow:focus-visible{
   outline: none;
   box-shadow: none;
 }
 .dark *:focus-visible, .dark a:focus-visible, .dark button:focus-visible, .dark input:focus-visible, .dark textarea:focus-visible, .dark select:focus-visible, .dark [tabindex]:focus-visible{
   outline: none;
   box-shadow: none;
-} */
+}
 @media (max-width: 1024px) {
   /* fullpage side nav arrows (not dots) */
   .fp-arrow.fp-controlArrow.fp-next {
@@ -514,17 +493,3 @@ SO IT CAN BE STYLED */
     width: 100%;
   }
 }
-
-
-/* these 2 rukes:  it works for white light theme only on keybord nav, and werdlu enoigh wroks on the form for mouse nav too? */
-
-  /* :focus {
-    outline: none;
-  } */
-
-  /* High visibility focus indicator for keyboard navigation only */
-  /* :focus-visible {
-    outline: 3px solid theme("colors.cyan");
-    outline-offset: 2px;
-    border-radius: 4px;
-  } */
