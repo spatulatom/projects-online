@@ -656,6 +656,18 @@
           '<div class="fp-arrow"></div>',
         ],
         // paddingBottom: '30px'
+    afterRender: function () {
+      // Set tabindex to -1 only for FullPage.js navigation elements
+      document.querySelectorAll(".fp-controlArrow, #fp-nav a").forEach((el) => {
+        el.setAttribute("tabindex", "-1");
+      });
+    },
+    onLeave: function () {
+      // Ensure tabindex remains -1 for FullPage.js navigation elements
+      document.querySelectorAll(".fp-controlArrow, #fp-nav a").forEach((el) => {
+        el.setAttribute("tabindex", "-1");
+      });
+    },
       });
     </script>
 
