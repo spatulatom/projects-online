@@ -217,6 +217,7 @@ position: relative ensures that the pseudo-elements are positioned relative to t
   /* MOBILE MENU POPPING FROM THE LEFT SIDE */
 
 .mobile-nav {
+  visibility: hidden;
   -webkit-transform: translateX(-100%);
   -ms-transform: translateX(-100%);
   transform: translateX(-100%);
@@ -279,8 +280,15 @@ position: relative ensures that the pseudo-elements are positioned relative to t
   text-decoration: underline;
 }
 
+/* 
+Using display: none would prevent smooth transitions because the element is removed 
+from the rendering flow. However, you can still achieve the desired behavior (preventing keyboard 
+navigation when the menu is closed) without using display: none. 
+Instead, you can use visibility, opacity, and pointer-events to hide the menu while keeping it animatable. on .show and .mobile-nav classes: */
+
 .show {
   /* display: block !important; */
+  visibility: visible;
   opacity: 1;
   -webkit-transform: translateY(0);
   -ms-transform: translateY(0);
