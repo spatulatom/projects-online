@@ -109,12 +109,12 @@
     </noscript>
 
     <!-- Skip Navigation Link -->
-    <!-- <a
+    <a
           href="#main-content"
           class="sr-only focus-visible:not-sr-only focus-visible:absolute focus-visible:top-4 focus-visible:left-4 focus-visible:z-[9999] focus-visible:bg-cyan focus-visible:text-black focus-visible:px-4 focus-visible:py-2 focus-visible:rounded focus-visible:no-underline focus-visible:font-medium focus-visible:shadow-lg"
         >
           Skip to main content
-        </a> -->
+        </a>
 
     <!-- Nav Container -->
     <nav>
@@ -148,12 +148,12 @@
         <!-- Desktop Nav Rigth Corner - font awsome Icons: Dark Mode, White Mode, GitHub-->
         <li class="absolute right-0">
           <div class="flex justify-end space-x-1 p-4 pr-12 w-20vw">
-            <div
+            <div type="button" tabindex="0"
               class="group relative border-l-2 pl-8 pr-6 border-gray-400 dark:border-gray-600"
             >
               <div class="dropdown"></div>
               <div
-                class="hidden group-hover:flex flex-col absolute right-[.7rem] space-y-3 border-2 dark:border-0 border-gray-300 bg-white dark:bg-veryDarkBlue p-3 pl-8 rounded-lg"
+                class="hidden group-hover:flex group-focus-within:flex flex-col absolute right-[.7rem] space-y-3 border-2 dark:border-0 border-gray-300 bg-white dark:bg-veryDarkBlue p-3 pl-8 rounded-lg"
               >
                 <div class="flex items-center justify-end space-x-5">
                   <div class="dark:text-gray-300 text-gray-800">Light</div>
@@ -637,7 +637,7 @@
     </main>
 
     <!-- Script For Fullpage.js -->
-    <!-- <script
+    <script
       src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.11/fullpage.min.js"
       integrity="sha512-ojnoeSkK5NDwnuW5S0ZnddobHez8Bx1yVa3RE+Cd0fGEuY/NEd4sgVF/CJ6eDtnOeLZLbTJpNFrCkUYbHS2hRA=="
       crossorigin="anonymous"
@@ -656,8 +656,20 @@
           '<div class="fp-arrow"></div>',
         ],
         // paddingBottom: '30px'
+    afterRender: function () {
+      // Set tabindex to -1 only for FullPage.js navigation elements
+      document.querySelectorAll(".fp-controlArrow, #fp-nav a").forEach((el) => {
+        el.setAttribute("tabindex", "-1");
       });
-    </script> -->
+    },
+    onLeave: function () {
+      // Ensure tabindex remains -1 for FullPage.js navigation elements
+      document.querySelectorAll(".fp-controlArrow, #fp-nav a").forEach((el) => {
+        el.setAttribute("tabindex", "-1");
+      });
+    },
+      });
+    </script>
 
     <!-- Scripts -->
     <!-- <script src="scripts/app.js" type="module"></script>

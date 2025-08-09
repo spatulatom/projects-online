@@ -442,6 +442,8 @@ https://developer.mozilla.org/en-US/docs/Web/CSS/:autofill */
 
 /* FULLPAGE CLASS 'active' IS ADDED TO the CURRENT MENU LINK
 SO IT CAN BE STYLED */
+
+
 #myMenu .active a {
   color: rgb(107 114 128);
   background-color: white;
@@ -490,11 +492,11 @@ SO IT CAN BE STYLED */
 .fp-slidesNav.fp-bottom {
   text-align: center;
 }
-/* .fp-overflow:focus-visible{
+.fp-overflow:focus-visible{
   outline: none;
   box-shadow: none;
 }
-.dark *:focus-visible, .dark a:focus-visible, .dark button:focus-visible, .dark input:focus-visible, .dark textarea:focus-visible, .dark select:focus-visible, .dark [tabindex]:focus-visible{
+/* .dark *:focus-visible, .dark a:focus-visible, .dark button:focus-visible, .dark input:focus-visible, .dark textarea:focus-visible, .dark select:focus-visible, .dark [tabindex]:focus-visible{
   outline: none;
   box-shadow: none;
 } */
