@@ -4,10 +4,17 @@
 
 /* WCAG 2.2 GLOBAL FOCUS STYLES */
 @layer base {
-/* Remove ONLY when it's not a keyboard (or similar) focus */
-  :focus:not(:focus-visible) {
+/* Remove ONLY when it's not a keyboard (or similar) focus - but this is not even neede becuse tailwind dose it for focus
+ and many other browser default styles, if you want to cancel that go to tailwind.config.js:width: width: 
+ module.exports = {
+  corePlugins: {
+    preflight: false,  // This would disable Tailwind's CSS reset
+  },
+  // rest of your config...
+}; */
+  /* :focus:not(:focus-visible) {
     outline: none;
-  }
+  } */
 
   /* Strong, WCAG 2.2 compliant focus appearance */
   :focus-visible {
