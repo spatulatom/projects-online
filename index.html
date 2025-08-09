@@ -110,11 +110,11 @@
 
     <!-- Skip Navigation Link -->
     <a
-          href="#main-content"
-          class="sr-only focus-visible:not-sr-only focus-visible:absolute focus-visible:top-4 focus-visible:left-4 focus-visible:z-[9999] focus-visible:bg-cyan focus-visible:text-black focus-visible:px-4 focus-visible:py-2 focus-visible:rounded focus-visible:no-underline focus-visible:font-medium focus-visible:shadow-lg"
-        >
-          Skip to main content
-        </a>
+      href="#main-content"
+      class="sr-only focus-visible:not-sr-only focus-visible:absolute focus-visible:top-4 focus-visible:left-4 focus-visible:z-[9999] focus-visible:bg-cyan focus-visible:text-black focus-visible:px-4 focus-visible:py-2 focus-visible:rounded focus-visible:no-underline focus-visible:font-medium focus-visible:shadow-lg"
+    >
+      Skip to main content
+    </a>
 
     <!-- Nav Container -->
     <nav>
@@ -148,7 +148,9 @@
         <!-- Desktop Nav Rigth Corner - font awsome Icons: Dark Mode, White Mode, GitHub-->
         <li class="absolute right-0">
           <div class="flex justify-end space-x-1 p-4 pr-12 w-20vw">
-            <div type="button" tabindex="0"
+            <div
+              type="button"
+              tabindex="0"
               class="group relative border-l-2 pl-8 pr-6 border-gray-400 dark:border-gray-600"
             >
               <div class="dropdown"></div>
@@ -655,20 +657,84 @@
           '<div class="fp-arrow"></div>',
           '<div class="fp-arrow"></div>',
         ],
-        // paddingBottom: '30px'
-    afterRender: function () {
-      // Set tabindex to -1 only for FullPage.js navigation elements
-      document.querySelectorAll(".fp-controlArrow, #fp-nav a").forEach((el) => {
-        el.setAttribute("tabindex", "-1");
+        // Disable FullPage.js focus management completely
+        keyboardScrolling: false,
+        animateAnchor: false,
+        recordHistory: false,
+        afterRender: function () {
+          // Make FP UI unfocusable
+          document
+            .querySelectorAll(
+              ".fp-controlArrow, #fp-nav a, .fp-slidesNav a, .fp-overflow"
+            )
+            .forEach((el) => {
+              el.setAttribute("tabindex", "-1");
+            });
+
+          // Prevent initial focus from being trapped inside FP containers
+          let userInteracted = false;
+          function focusGuard(e) {
+            if (userInteracted) return;
+            const t = e.target;
+            if (
+              t &&
+              (t.closest(".fp-overflow") ||
+                t.closest("#fp-nav") ||
+                t.closest(".fp-slidesNav") ||
+                t.closest(".fp-controlArrow"))
+            ) {
+              // Drop focus until the user starts interacting
+              if (typeof t.blur === "function") t.blur();
+            }
+          }
+          function markInteracted() {
+            userInteracted = true;
+            window.removeEventListener("focusin", focusGuard, true);
+            window.removeEventListener("keydown", onKeyDown, true);
+            window.removeEventListener("mousedown", markInteracted, true);
+            window.removeEventListener("touchstart", markInteracted, true);
+          }
+          function onKeyDown(e) {
+            if (e.key === "Tab") markInteracted();
+          }
+          window.addEventListener("focusin", focusGuard, true);
+          window.addEventListener("keydown", onKeyDown, true);
+          window.addEventListener("mousedown", markInteracted, true);
+          window.addEventListener("touchstart", markInteracted, true);
+        },
+        onLeave: function () {
+          // Ensure FP UI remains unfocusable
+          document
+            .querySelectorAll(
+              ".fp-controlArrow, #fp-nav a, .fp-slidesNav a, .fp-overflow"
+            )
+            .forEach((el) => {
+              el.setAttribute("tabindex", "-1");
+            });
+        },
       });
-    },
-    onLeave: function () {
-      // Ensure tabindex remains -1 for FullPage.js navigation elements
-      document.querySelectorAll(".fp-controlArrow, #fp-nav a").forEach((el) => {
-        el.setAttribute("tabindex", "-1");
-      });
-    },
-      });
+    </script>
+
+    <!-- Ensure first Tab goes to Skip link (without altering natural tabindex) -->
+    <script>
+      (function () {
+        let firstTabHandled = false;
+        function handleFirstTab(e) {
+          if (e.key !== "Tab" || e.shiftKey || firstTabHandled) return;
+
+          // Treat the "first Tab" as the very first keyboard navigation,
+          // regardless of what element the browser thinks is active.
+          const skip = document.querySelector('a[href="#main-content"]');
+          if (skip) {
+            e.preventDefault();
+            firstTabHandled = true;
+            // Ensure it can receive focus (anchors already can)
+            skip.focus();
+          }
+          window.removeEventListener("keydown", handleFirstTab, true);
+        }
+        window.addEventListener("keydown", handleFirstTab, true);
+      })();
     </script>
 
     <!-- Scripts -->
