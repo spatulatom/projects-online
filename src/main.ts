@@ -13,6 +13,71 @@ import mobileMenu from "./mobile-nav.js";
 import renderProject from "./render-projects.js";
 // import cursor from "./coursor-effect.js";
 
+// ...existing code...
+
+// Modify the click event listener to specifically handle navigation links in the menu
+// adding js for tab navigation so when we tab navigate to anchor section the navigation pick up 
+// at that section and skipps everyting in between, by deafult browser tab order will not jump to anchor section after enter is pressed on tab nav
+document.addEventListener("click", (event) => {
+  const target = event.target as HTMLElement | null;
+  if (target && target.tagName === "A") {
+    const anchor = target as HTMLAnchorElement;
+    
+    // Check if this is a menu navigation link (from the #myMenu)
+    const isMenuLink = anchor.closest("#myMenu") !== null || 
+                       anchor.closest(".mobile-nav") !== null;
+    
+    if (anchor.hash) {
+      // Get section ID from the hash (e.g., #secondPage -> secondPage)
+      const sectionId = anchor.hash.substring(1);
+      
+      // For menu links, we need to find the actual section content
+      if (isMenuLink) {
+        // Wait for fullpage.js to complete its navigation
+        setTimeout(() => {
+          // Find the section
+          const section = document.querySelector(`.section[data-anchor="${sectionId}"], #${sectionId}`);
+          
+          if (section) {
+            // Find the first focusable element in the section
+            const focusTarget = findFirstFocusableElement(section as HTMLElement) || section;
+            
+            // Make it focusable if it's not already
+            if (!(focusTarget as HTMLElement).tabIndex) {
+              (focusTarget as HTMLElement).setAttribute("tabindex", "-1");
+            }
+            
+            // Set focus
+            (focusTarget as HTMLElement).focus();
+          }
+        }, 600); // Longer timeout to ensure fullpage.js navigation completes
+      } else {
+        // Handle regular in-page links (not from the menu)
+        const targetElement = document.querySelector(anchor.hash);
+        if (targetElement) {
+          setTimeout(() => {
+            targetElement.setAttribute("tabindex", "-1");
+            (targetElement as HTMLElement).focus();
+            targetElement.removeAttribute("tabindex");
+          }, 300);
+        }
+      }
+    }
+  }
+});
+
+// Helper function to find the first focusable element
+function findFirstFocusableElement(container: HTMLElement): HTMLElement | null {
+  const focusableElements = container.querySelectorAll(
+    'a[href], button, input, textarea, select, details, [tabindex]:not([tabindex="-1"])'
+  );
+  
+  return focusableElements.length > 0 ? focusableElements[0] as HTMLElement : null;
+}
+
+// ...existing code...
+
+
 
 modes()
 // contactForm()
